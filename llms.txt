@@ -1,0 +1,38 @@
+# Nocodeia
+
+> Nocodeia (Nocodeia Worldwide) constrói produtos digitais com no-code e IA e coloca no ar em 15 dias: automação de processos, agentes de IA, MVPs, sistemas internos e sites otimizados para Google e para IAs (SEO + GEO) com blog automatizado. Todo projeto começa com um diagnóstico grátis de 45 minutos e sai com preço e prazo fechados.
+
+Fundador: Alexandre, mais de 25 anos em tecnologia em empresas como IBM, Xerox, DHL, Bosch, Rocket.Chat e Neoway. Mestrado em Business Administration e Business Analytics pela Hult International Business School (EUA). O cliente fala direto com o fundador, do diagnóstico à entrega.
+
+Atende em português, inglês e espanhol. Contato: contato@nocodeiaww.com
+
+## Serviços
+
+- **Raio-X de automação** (1 semana): mapa das tarefas automatizáveis, horas economizadas estimadas e plano de ataque em ordem de retorno. Inclui protótipo clicável em 48 horas antes de fechar qualquer projeto.
+- **Automação de processos** (1 a 3 semanas): fluxos entre CRM, e-mail, planilhas e sistemas; alertas e relatórios automáticos. Para PMEs presas em planilha e retrabalho.
+- **Agentes de IA** (2 a 4 semanas): agente de atendimento no WhatsApp ou site, agente de prospecção e follow-up, agente de conteúdo.
+- **Site que o Google e a IA recomendam** (2 a 4 semanas + blog mensal): reformulação de site (rápido e pronto para celular), SEO para o Google, GEO para ser citado por ChatGPT, Gemini e Perplexity, e blog automatizado em que um agente de IA pesquisa, escreve e publica toda semana com aprovação do cliente.
+- **MVP de produto** (2 a 6 semanas): app ou plataforma com login e pagamentos, pronto para usuário real e investidor. Contas e dados no nome do cliente desde o dia 1.
+- **Sistema interno** (1 a 3 meses): portal, painel de gestão ou app de operação que substitui planilhas, com acesso por perfil e trilha de auditoria.
+- **Nocodeia contínuo** (mensal, sem fidelidade longa): novas funções, posts no blog, ajustes de SEO, monitoramento de agentes e suporte com prioridade.
+
+## Projetos entregues
+
+- **Proacta CRM**: CRM de vendas sob medida e agente de prospecção no LinkedIn. https://proactacrm.com
+- **Plataforma de OKR**: gestão de metas corporativas com painéis por pessoa, área e ciclo trimestral.
+- **Amore Totale**: agentes de IA de conteúdo (carrossel para Instagram e publicação de blog). Exemplo de post publicado pelo agente: https://blog.amoretotale.com.br/como-escolher-lingerie/
+- **Espelho**: pesquisa de empresas brasileiras por CNPJ.
+- **Motor de prospecção B2B com IA**.
+
+## Perguntas frequentes
+
+- **No-code aguenta crescer?** Sim. Plataformas maduras e APIs padrão de mercado; se o produto pedir código próprio, esse caminho fica desenhado desde o começo.
+- **E a segurança dos dados?** Controle de acesso, dados criptografados e LGPD/GDPR desde o primeiro dia.
+- **O produto fica meu?** Sim. Contas, dados e fluxos no nome do cliente.
+- **Quanto custa?** Depende do escopo. O cliente sai do diagnóstico com preço e prazo fechados.
+
+## Páginas
+
+- [Português](https://nocodeiaww.com/)
+- [English](https://nocodeiaww.com/en/)
+- [Español](https://nocodeiaww.com/es/)
