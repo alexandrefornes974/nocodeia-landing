@@ -40,6 +40,8 @@ details summary::-webkit-details-marker{display:none}
 @keyframes ncPulso{0%,100%{box-shadow:0 0 0 0 rgba(90,57,240,.55)}50%{box-shadow:0 0 0 6px rgba(90,57,240,0)}}
 @media (max-width: 760px){
 .nc-navlink{display:none !important}
+.nc-lang{display:none !important}
+.nc-burger{display:block !important}
 .nc-logo-full{display:none !important}
 .nc-logo-icon{display:block !important}
 .nc-hide-sm{display:none !important}
@@ -51,7 +53,6 @@ details summary::-webkit-details-marker{display:none}
 .nc-sobrepos-main{width:100% !important}
 }
 [id]{scroll-margin-top:88px}
-@media (max-width: 760px){[id]{scroll-margin-top:148px}}
 @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
 </style>
 </helmet>
@@ -70,8 +71,12 @@ details summary::-webkit-details-marker{display:none}
         <a class="nc-navlink" href="#projetos" style="font-size: 15px; text-decoration: none; color: #C9CCD4">Proyectos</a>
         <a class="nc-navlink" href="#sobre" style="font-size: 15px; text-decoration: none; color: #C9CCD4">Sobre mí</a>
         <a class="nc-navlink" href="#como" style="font-size: 15px; text-decoration: none; color: #C9CCD4">Cómo funciona</a>
-        <div role="group" aria-label="Idioma" style="display: flex; gap: 2px; padding: 3px; border: 1px solid #343843; border-radius: 10px"><a href="/" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; text-decoration: none; color: #A7ABB6; border-radius: 7px">PT</a><a href="/en/" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; text-decoration: none; color: #A7ABB6; border-radius: 7px">EN</a><a href="/es/" aria-current="page" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; text-decoration: none; color: #FFFFFF; background: #2A2D35; border-radius: 7px">ES</a></div>
+        <div class="nc-lang" role="group" aria-label="Idioma" style="display: flex; gap: 2px; padding: 3px; border: 1px solid #343843; border-radius: 10px"><a href="/" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; text-decoration: none; color: #A7ABB6; border-radius: 7px">PT</a><a href="/en/" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; text-decoration: none; color: #A7ABB6; border-radius: 7px">EN</a><a href="/es/" aria-current="page" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; text-decoration: none; color: #FFFFFF; background: #2A2D35; border-radius: 7px">ES</a></div>
         <a href="#vaga" style="font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; background: #0047FF; padding: 12px 18px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Reservar lugar</a>
+        <details class="nc-burger" style="display: none">
+          <summary aria-label="Abrir menú" style="min-width: 44px; min-height: 44px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid #343843; border-radius: 10px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></summary>
+          <div class="nc-burger-painel" style="position: absolute; left: 0; right: 0; top: 100%; background: #121316; border-bottom: 1px solid #23262D; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55); padding: 4px clamp(20px, 5vw, 48px) 22px; display: flex; flex-direction: column"><a href="#servicos" style="display: block; padding: 14px 0; font-size: 18px; font-weight: 500; text-decoration: none; color: #FFFFFF; border-bottom: 1px solid #23262D">Servicios</a><a href="#projetos" style="display: block; padding: 14px 0; font-size: 18px; font-weight: 500; text-decoration: none; color: #FFFFFF; border-bottom: 1px solid #23262D">Proyectos</a><a href="#sobre" style="display: block; padding: 14px 0; font-size: 18px; font-weight: 500; text-decoration: none; color: #FFFFFF; border-bottom: 1px solid #23262D">Sobre mí</a><a href="#como" style="display: block; padding: 14px 0; font-size: 18px; font-weight: 500; text-decoration: none; color: #FFFFFF; border-bottom: 1px solid #23262D">Cómo funciona</a><div role="group" aria-label="Idioma" style="align-self: flex-start; margin-top: 18px; display: flex; gap: 2px; padding: 3px; border: 1px solid #343843; border-radius: 10px"><a href="/" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; text-decoration: none; color: #A7ABB6; border-radius: 7px">PT</a><a href="/en/" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; text-decoration: none; color: #A7ABB6; border-radius: 7px">EN</a><a href="/es/" aria-current="page" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; text-decoration: none; color: #FFFFFF; background: #2A2D35; border-radius: 7px">ES</a></div></div>
+        </details>
       </div>
     </nav>
   </header>
@@ -1048,6 +1053,12 @@ class Component extends DCLogic {
     };
   }
 }
+</script>
+<script>
+document.addEventListener('click', function (e) {
+  var m = document.querySelector('.nc-burger[open]');
+  if (m && (!m.contains(e.target) || e.target.closest('.nc-burger-painel a'))) m.removeAttribute('open');
+});
 </script>
 </body>
 </html>
