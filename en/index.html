@@ -914,6 +914,8 @@ class Component extends DCLogic {
   }
   enviarLead(email) {
     // Cole aqui a URL do webhook (n8n, Formspree, etc.). Vazio = não envia.
+    // Abre o WhatsApp da Nocodeia com o e-mail já escrito na mensagem.
+    try { window.open('https://wa.me/5511967886969?text=' + encodeURIComponent('Hi! I want my spot at Nocodeia. My email: ' + email), '_blank', 'noopener'); } catch (e) {}
     const ENDPOINT = '';
     if (!ENDPOINT) return;
     try {
