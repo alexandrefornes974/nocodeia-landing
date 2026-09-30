@@ -1,0 +1,12 @@
+{
+  "name": "nocodeia-blog-builder",
+  "private": true,
+  "type": "module",
+  "description": "Gera as páginas estáticas do blog (PT/EN/ES) a partir de _blog/posts/",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
