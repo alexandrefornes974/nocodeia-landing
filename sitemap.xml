@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://nocodeiaww.com/</loc></url>
-<url><loc>https://nocodeiaww.com/en/</loc></url>
-<url><loc>https://nocodeiaww.com/es/</loc></url>
+<url><loc>https://nocodeiaww.com/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/en/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/es/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/blog/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/en/blog/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/es/blog/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/blog/agente-de-ia-para-whatsapp/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/en/blog/ai-agent-for-whatsapp/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/es/blog/agente-de-ia-para-whatsapp/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/blog/ia-para-pequenas-empresas/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/en/blog/ai-for-small-business/</loc><lastmod>2026-09-30</lastmod></url>
+<url><loc>https://nocodeiaww.com/es/blog/ia-para-pymes/</loc><lastmod>2026-09-30</lastmod></url>
 </urlset>

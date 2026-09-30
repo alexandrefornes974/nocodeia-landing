@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agente de IA para WhatsApp: los 3 caminos y cuál elegir | Nocodeia</title>
+<meta name="description" content="Agente de IA para WhatsApp: por qué la IA nativa de la app es limitada, cuándo basta el no-code y cuándo conviene un agente programado a la medida.">
+<link rel="canonical" href="https://nocodeiaww.com/es/blog/agente-de-ia-para-whatsapp/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/blog/agente-de-ia-para-whatsapp/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/blog/ai-agent-for-whatsapp/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/blog/agente-de-ia-para-whatsapp/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/blog/agente-de-ia-para-whatsapp/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Agente de IA para WhatsApp: los 3 caminos y cuál elegir | Nocodeia">
+<meta property="og:description" content="Agente de IA para WhatsApp: por qué la IA nativa de la app es limitada, cuándo basta el no-code y cuándo conviene un agente programado a la medida.">
+<meta property="og:url" content="https://nocodeiaww.com/es/blog/agente-de-ia-para-whatsapp/">
+<meta property="og:image" content="https://nocodeiaww.com/blog/img/agente-de-ia-para-whatsapp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://nocodeiaww.com/es/blog/agente-de-ia-para-whatsapp/#post",
+   "headline": "Agente de IA para WhatsApp: los 3 caminos y cuál elegir",
+   "description": "Agente de IA para WhatsApp: por qué la IA nativa de la app es limitada, cuándo basta el no-code y cuándo conviene un agente programado a la medida.",
+   "inLanguage": "es",
+   "datePublished": "2026-09-30",
+   "dateModified": "2026-09-30",
+   "image": "https://nocodeiaww.com/blog/img/agente-de-ia-para-whatsapp.jpg",
+   "url": "https://nocodeiaww.com/es/blog/agente-de-ia-para-whatsapp/",
+   "mainEntityOfPage": "https://nocodeiaww.com/es/blog/agente-de-ia-para-whatsapp/",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre",
+    "url": "https://nocodeiaww.com/#sobre"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://nocodeiaww.com/assets/icon.png"
+    }
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://nocodeiaww.com/es/blog/#blog",
+    "name": "Blog de Nocodeia"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://nocodeiaww.com/es/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://nocodeiaww.com/es/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Agente de IA para WhatsApp: los 3 caminos y cuál elegir",
+     "item": "https://nocodeiaww.com/es/blog/agente-de-ia-para-whatsapp/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/es/blog/agente-de-ia-para-whatsapp/#faq",
+   "inLanguage": "es",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿WhatsApp Business tiene IA?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí, pero limitada. Desde febrero de 2026, WhatsApp Business en Brasil ofrece una IA que responde a los clientes, recomienda productos del catálogo y, cuando hace falta, transfiere la conversación a una persona. Requiere la app en portugués y al menos un producto en el catálogo."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Un agente de IA para WhatsApp es gratis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Depende de la parte. En la plataforma oficial de WhatsApp, los mensajes de servicio enviados en respuesta al cliente no se cobran, pero la herramienta o la infraestructura que ejecuta el agente y el armado sí tienen costo. Las fuentes consultadas no dicen si la IA nativa de WhatsApp Business es de pago; revísalo en tu app."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cómo activar el agente de IA en WhatsApp Business?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "En la app de WhatsApp Business, abre el menú Herramientas y busca la opción \"IA para empresas\", según el lanzamiento en Brasil. La app debe estar en portugués y el catálogo necesita al menos un producto."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Se puede crear un agente de IA para WhatsApp con n8n?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí, y es un buen camino para empezar. n8n es una herramienta de automatización visual: conectas WhatsApp con un modelo de IA, hojas de cálculo y agendas arrastrando bloques. Cuando las reglas se complican o el volumen crece, el agente programado a la medida llega más lejos."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/es/" aria-label="Nocodeia"><img src="/assets/logo_h.png" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/es/">Inicio</a>
+<a class="item" href="/es/#servicos">Servicios</a>
+<a class="item" href="/es/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/blog/agente-de-ia-para-whatsapp/" hreflang="pt-BR">PT</a><a href="/en/blog/ai-agent-for-whatsapp/" hreflang="en">EN</a><a href="/es/blog/agente-de-ia-para-whatsapp/" hreflang="es" aria-current="page">ES</a></div>
+<a class="botao" href="/es/#vaga">Reservar lugar</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/es/blog/">← Todos los posts</a>
+<h1>Agente de IA para WhatsApp: los 3 caminos y cuál elegir</h1>
+<p class="resumo">Agente de IA para WhatsApp: por qué la IA nativa de la app es limitada, cuándo basta el no-code y cuándo conviene un agente programado a la medida.</p>
+<div class="meta"><span>Por Alexandre</span><span>·</span><time datetime="2026-09-30">30 de septiembre de 2026</time><span>·</span><span>10 min de lectura</span></div>
+<figure class="capa"><img src="/blog/img/agente-de-ia-para-whatsapp.jpg" alt="Dueño de una pequeña tienda respondiendo a clientes por WhatsApp en el celular, en el mostrador" width="1200" height="630"><figcaption>Foto: Amina Filkins / Pexels</figcaption></figure>
+<div class="conteudo">
+<p>Un agente de IA para WhatsApp es un asistente que conversa con el cliente en lenguaje natural y realiza tareas, como resolver dudas, agendar citas o registrar pedidos. Hay tres caminos: la IA nativa de WhatsApp Business, bastante limitada; las herramientas no-code (armadas arrastrando bloques), un punto intermedio; y el agente programado a la medida, el más completo.</p>
+<p>Si el WhatsApp de tu empresa se volvió una fila de &quot;¿lo tienen disponible?&quot;, &quot;¿a qué hora abren?&quot; y &quot;¿cuánto cuesta?&quot;, y alguien de tu equipo pasa el día respondiendo lo mismo, este texto es para ti. A continuación: qué hace un agente, hasta dónde llega cada camino, cuánto cuesta por partes y cómo elegir.</p>
+<h2 id="que-hace-un-agente-de-ia-en-whatsapp-que-un-chatbot-de-menu-no-hace">¿Qué hace un agente de IA en WhatsApp que un chatbot de menú no hace?</h2>
+<p>El chatbot de menú sigue botones y un guion fijo; el agente de IA entiende la frase que escribió el cliente, busca la información y realiza una acción. En otras palabras, el agente es un asistente de IA que responde y también realiza tareas.</p>
+<p>Quien ya usó un chatbot de menú conoce el problema: si el cliente escribe algo fuera de las opciones &quot;1, 2 o 3&quot;, la conversación se traba. El agente lo maneja mejor porque interpreta el pedido en vez de esperar un número.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Chatbot de menú</th>
+<th>Agente de IA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cómo entiende al cliente</td>
+<td>Solo por los botones y las palabras previstas</td>
+<td>Entiende frases sueltas, con errores de escritura y todo</td>
+</tr>
+<tr>
+<td>Cuando la pregunta se sale del guion</td>
+<td>Repite el menú o se traba</td>
+<td>Busca la respuesta en la base de información de la empresa</td>
+</tr>
+<tr>
+<td>Realiza tareas</td>
+<td>Rara vez</td>
+<td>Consulta la agenda, registra pedidos, llena hojas de cálculo</td>
+</tr>
+<tr>
+<td>Pasa a una persona</td>
+<td>Cuando el cliente elige la opción &quot;hablar con un asesor&quot;</td>
+<td>Cuando nota que no sabe o que el caso es delicado</td>
+</tr>
+</tbody></table>
+<h2 id="la-ia-propia-de-whatsapp-business-le-sirve-a-tu-empresa">¿La IA propia de WhatsApp Business le sirve a tu empresa?</h2>
+<p>Para la mayoría de las empresas, sirve de poco. El 24 de febrero de 2026, Meta lanzó en Brasil una IA dentro de WhatsApp Business que responde a los clientes las 24 horas y recomienda productos del catálogo, según <a href="https://forbes.com.br/forbes-tech/2026/02/whatsapp-business-lanca-ia-agentica-para-pmes/" target="_blank" rel="noopener">Forbes Brasil</a> (en portugués). Cuando hace falta, transfiere la conversación a un asesor humano, como muestra <a href="https://canaltech.com.br/apps/whatsapp-business-ganha-agente-de-ia-para-responder-mensagens-de-clientes/" target="_blank" rel="noopener">Canaltech</a> (en portugués).</p>
+<p>En ese lanzamiento en Brasil, la app debe estar en portugués y la empresa necesita tener al menos un producto en el catálogo. Se activa en el menú Herramientas, en la opción &quot;IA para empresas&quot;, también según <a href="https://canaltech.com.br/apps/whatsapp-business-ganha-agente-de-ia-para-responder-mensagens-de-clientes/" target="_blank" rel="noopener">Canaltech</a>. Las fuentes consultadas no dicen si la función es gratuita o de pago, así que revísalo en tu app.</p>
+<p>Las mismas fuentes dicen que se puede personalizar con el idioma y la información de la empresa. Pero nada dicen sobre que consulte tu agenda, tu inventario o tu sistema, registre pedidos o recuerde el historial de cada cliente.</p>
+<p>En nuestra evaluación, funciona como un empleado de mostrador que conoce el catálogo y lo que registraste: ayuda, pero no resuelve la atención de una empresa que depende de otros sistemas.</p>
+<h2 id="cuales-son-los-3-caminos-para-tener-un-agente-de-ia-en-whatsapp">¿Cuáles son los 3 caminos para tener un agente de IA en WhatsApp?</h2>
+<p>Son la IA nativa de WhatsApp Business, las herramientas no-code y el agente programado a la medida. La diferencia es hasta dónde llega cada uno. La tabla combina lo que describen las fuentes con nuestra evaluación:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>IA nativa de WhatsApp Business</th>
+<th>Herramientas no-code</th>
+<th>Agente programado a la medida</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Qué hace</td>
+<td>Resuelve dudas y muestra el catálogo</td>
+<td>Responde y realiza las tareas que la herramienta permite</td>
+<td>Responde y realiza las tareas que tú definas, conectado a tus sistemas</td>
+</tr>
+<tr>
+<td>Se conecta con tus sistemas (agenda, inventario, CRM, el sistema de clientes y ventas)</td>
+<td>No aparece en las fuentes</td>
+<td>Con los que la herramienta ya sabe conectar (conector listo)</td>
+<td>Con cualquier sistema que tenga una forma de integración</td>
+</tr>
+<tr>
+<td>Sigue las reglas de tu negocio</td>
+<td>Solo lo que se puede personalizar en la app</td>
+<td>Reglas simples</td>
+<td>Reglas detalladas, con las excepciones que tú definas</td>
+</tr>
+<tr>
+<td>Control sobre datos y costos</td>
+<td>Definido por Meta</td>
+<td>Definido por la plataforma</td>
+<td>Mayor: tu empresa elige dónde guardar las conversaciones y qué modelo de IA usar (los mensajes por la API siguen la tarifa de Meta)</td>
+</tr>
+<tr>
+<td>Ideal para</td>
+<td>Probar la idea</td>
+<td>Empezar y validar</td>
+<td>Atención que es parte central del negocio</td>
+</tr>
+</tbody></table>
+<p><strong>Las herramientas no-code</strong>, como n8n (herramienta de automatización visual), son un buen comienzo: puedes armar un agente que responde y registra pedidos en una hoja de cálculo sin escribir código. El límite aparece cuando las reglas se complican, cuando hay que conectar muchos sistemas o cuando crece el volumen de conversaciones y, en los planes que cobran por ejecución, el costo sube junto.</p>
+<p><strong>El agente programado a la medida</strong> se escribe en código para tu negocio. Se conecta con cualquier sistema que tenga una forma de integración, sigue tus reglas, incluidas las excepciones, guarda el historial de cada cliente y deja los datos bajo el control de tu empresa. Hace todo lo que hacen los otros dos y va más allá, y es lo que hace Nocodeia: <a href="/es/#servicos">agentes de IA a la medida</a>, entregados en semanas.</p>
+<h2 id="que-tareas-de-atencion-puedes-delegar-a-un-agente-de-ia">¿Qué tareas de atención puedes delegar a un agente de IA?</h2>
+<p>Las repetitivas, con respuesta conocida y regla clara. Las más comunes en pymes:</p>
+<ul>
+<li><strong>Preguntas frecuentes:</strong> horario de atención, dirección, precio de lista, plazo de entrega.</li>
+<li><strong>Catálogo:</strong> enviar fotos y opciones cuando el cliente pregunta &quot;¿qué tienen de X?&quot;.</li>
+<li><strong>Agendamiento:</strong> la clínica que agenda consultas, el salón que agenda citas, el taller mecánico que agenda revisiones.</li>
+<li><strong>Pedidos y cotizaciones:</strong> la panadería que recibe el pedido del pastel y lo registra en una hoja de cálculo, con nombre, fecha y sabor.</li>
+<li><strong>Calificación:</strong> el despacho que pregunta el tipo de servicio y el tamaño del cliente antes de pasarlo al vendedor.</li>
+<li><strong>Aviso a una persona:</strong> cuando el cliente se queja, pide descuento o pregunta algo que el agente no sabe responder.</li>
+</ul>
+<p>Según las fuentes, la IA nativa cubre las dos primeras; de las demás, no hay mención. De la tercera en adelante, el agente necesita conectarse con la agenda, la hoja de cálculo o el CRM (el sistema de clientes y ventas) de la empresa.</p>
+<h2 id="cuanto-cuesta-tener-un-agente-de-ia-en-whatsapp">¿Cuánto cuesta tener un agente de IA en WhatsApp?</h2>
+<p>El costo tiene tres partes, y cada empresa las combina a su manera. Por eso, desconfía de quien te da un precio cerrado sin entender tu atención.</p>
+<ol>
+<li><strong>Los mensajes.</strong> Si el agente usa la plataforma oficial de WhatsApp (la llamada API, la puerta de entrada para que los sistemas hablen con WhatsApp), Meta cobra por mensaje entregado, con un valor que varía por país y por tipo de mensaje. Los mensajes de servicio y de utilidad enviados en respuesta al cliente no se cobran, según la <a href="https://whatsappbusiness.com/es-la/products/platform-pricing/" target="_blank" rel="noopener">página oficial de precios de WhatsApp</a>.</li>
+<li><strong>La herramienta o la infraestructura.</strong> En el no-code, es la suscripción de la plataforma, que suele subir con el volumen de ejecuciones. En el agente programado, es el servidor y el modelo de IA que usa.</li>
+<li><strong>El armado.</strong> En la IA nativa, la configuras tú. En el no-code, la armas tú o alguien más. En el agente programado, un equipo lo desarrolla, lo prueba y lo ajusta contigo.</li>
+</ol>
+<p>Para estimar la primera parte, haz la cuenta con tus números: cuántos mensajes de marketing envías al mes por la tarifa de tu categoría. Si tu WhatsApp es casi solo atención, esa parte suele ser pequeña.</p>
+<h2 id="como-armar-tu-primer-agente-paso-a-paso">¿Cómo armar tu primer agente, paso a paso?</h2>
+<p>Se puede armar en cinco pasos, como muestra la <a href="https://exame.com/inteligencia-artificial/como-construir-um-agente-no-code-em-15-minutos-que-responde-seus-clientes/" target="_blank" rel="noopener">guía de Exame</a> (en portugués) sobre agentes no-code. Los pasos 1, 2, 3 y 5 valen para los tres caminos; el paso 4 requiere una herramienta no-code o un agente programado:</p>
+<ol>
+<li><strong>Define qué responde el agente.</strong> Anota las 10 preguntas que más recibe tu equipo. Ese es el alcance inicial.</li>
+<li><strong>Alimenta al agente con la información.</strong> Lista de precios, horarios, políticas de cambio, catálogo. Un dato equivocado aquí es una respuesta equivocada allá.</li>
+<li><strong>Elige dónde trabaja.</strong> ¿Solo en WhatsApp? ¿También en el sitio web? ¿En qué número?</li>
+<li><strong>Dale acciones.</strong> Consultar la agenda, registrar el pedido en la hoja de cálculo, avisar al vendedor.</li>
+<li><strong>Pruébalo antes de lanzarlo.</strong> Conversa con el agente como si fueras un cliente difícil. Intenta confundirlo.</li>
+</ol>
+<p>En Nocodeia construimos agentes programados a la medida, y el camino empieza antes del paso 1: un <a href="/es/#como">diagnóstico gratis de 45 minutos</a> para entender tu atención, después un alcance con precio y plazo cerrados, y la entrega suele tomar de 2 a 4 semanas.</p>
+<p>Construimos agentes como el de prospección en LinkedIn de Proacta CRM y los agentes de contenido de Amore Totale (mira los <a href="/es/#projetos">proyectos que ya entregamos</a>), y los errores que más vemos son siempre los mismos:</p>
+<ul>
+<li><strong>Base de información desactualizada.</strong> El precio cambió y nadie le avisó al agente.</li>
+<li><strong>Ninguna regla sobre cuándo llamar a una persona.</strong> El agente insiste en una conversación que no puede resolver, y el cliente se rinde.</li>
+</ul>
+<h2 id="que-cuidados-tomar-con-los-datos-de-los-clientes">¿Qué cuidados tomar con los datos de los clientes?</h2>
+<p>El agente conversa con personas y guarda lo que escriben, así que la ley de protección de datos lo alcanza igual que al resto de la empresa (en Brasil, es la LGPD, Ley General de Protección de Datos). Los cuidados básicos:</p>
+<ul>
+<li><strong>Recoge solo lo necesario.</strong> Si para agendar basta con el nombre y la hora, no pidas un número de identificación.</li>
+<li><strong>Sé transparente.</strong> Dile al cliente que está hablando con una IA.</li>
+<li><strong>Saca a la IA de los temas delicados.</strong> Salud, datos financieros y quejas serias van a una persona.</li>
+<li><strong>Sabe dónde se guardan las conversaciones</strong> y quién accede a ellas. En el agente programado a la medida, esa decisión es de tu empresa.</li>
+</ul>
+<p>En Brasil, la referencia oficial sobre el tema es la <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener">Autoridad Nacional de Protección de Datos (ANPD)</a> (en portugués).</p>
+<h2 id="cuando-no-vale-la-pena-usar-un-agente-de-ia">¿Cuándo no vale la pena usar un agente de IA?</h2>
+<p>No vale la pena cuando el volumen de mensajes es bajo, cuando cada venta depende de negociar caso por caso o cuando la información cambia a diario y nadie tiene tiempo de actualizar al agente. Si recibes diez mensajes al día y los respondes todos con calma, unas buenas respuestas rápidas en el propio WhatsApp Business bastan. El agente empieza a pagar la inversión cuando la fila de mensajes repetidos le roba horas a tu equipo.</p>
+<p>Si tu caso va más allá de WhatsApp, mira también <a href="/es/blog/ia-para-pymes/">por dónde empezar con IA en marketing y ventas</a>.</p>
+<h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+<h3 id="whatsapp-business-tiene-ia">¿WhatsApp Business tiene IA?</h3>
+<p>Sí, pero limitada. Desde febrero de 2026, WhatsApp Business en Brasil ofrece una IA que responde a los clientes, recomienda productos del catálogo y, cuando hace falta, transfiere la conversación a una persona. Requiere la app en portugués y al menos un producto en el catálogo.</p>
+<h3 id="un-agente-de-ia-para-whatsapp-es-gratis">¿Un agente de IA para WhatsApp es gratis?</h3>
+<p>Depende de la parte. En la plataforma oficial de WhatsApp, los mensajes de servicio enviados en respuesta al cliente no se cobran, pero la herramienta o la infraestructura que ejecuta el agente y el armado sí tienen costo. Las fuentes consultadas no dicen si la IA nativa de WhatsApp Business es de pago; revísalo en tu app.</p>
+<h3 id="como-activar-el-agente-de-ia-en-whatsapp-business">¿Cómo activar el agente de IA en WhatsApp Business?</h3>
+<p>En la app de WhatsApp Business, abre el menú Herramientas y busca la opción &quot;IA para empresas&quot;, según el lanzamiento en Brasil. La app debe estar en portugués y el catálogo necesita al menos un producto.</p>
+<h3 id="se-puede-crear-un-agente-de-ia-para-whatsapp-con-n8n">¿Se puede crear un agente de IA para WhatsApp con n8n?</h3>
+<p>Sí, y es un buen camino para empezar. n8n es una herramienta de automatización visual: conectas WhatsApp con un modelo de IA, hojas de cálculo y agendas arrastrando bloques. Cuando las reglas se complican o el volumen crece, el agente programado a la medida llega más lejos.</p>
+<h2 id="quieres-un-agente-completo-atendiendo-tu-whatsapp">¿Quieres un agente completo atendiendo tu WhatsApp?</h2>
+<p>En el diagnóstico gratis de 45 minutos, revisamos tu atención, te mostramos cuál de los tres caminos tiene sentido para tu empresa y sales con precio y plazo cerrados. <a href="/es/#vaga">Agenda tu diagnóstico gratis</a>.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">Agentes de IA</p>
+<h2>¿Quieres esto funcionando en tu empresa?</h2>
+<p>Diagnóstico gratis de 45 minutos. Sales con precio y plazo cerrados.</p>
+<a class="botao" href="/es/#vaga">Quiero mi diagnóstico gratis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.png" alt=""><p><strong>Alexandre, fundador de Nocodeia</strong><br>Más de 25 años en tecnología, en empresas como IBM, Xerox, DHL y Bosch. Hoy lanza productos con no-code e IA en semanas.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.png" alt=""><img src="/assets/wordmark.png" alt="nocodeia worldwide"></div>
+<p><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a></p><p>© 2026 Nocodeia. Hecho con no-code, claro.</p></footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-30",
+  "updated": "2026-09-30",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: Amina Filkins / Pexels",
+  "service": "agentes",
+  "keyword": "agente de ia para whatsapp",
+  "audience": "pme",
+  "pt": {
+    "slug": "agente-de-ia-para-whatsapp",
+    "title": "Agente de IA para WhatsApp: os 3 caminhos e qual escolher",
+    "description": "Agente de IA para WhatsApp: por que a IA nativa do app é limitada, quando o no-code resolve e quando vale mais um agente programado sob medida.",
+    "image_alt": "Dono de pequena loja respondendo clientes pelo WhatsApp no celular, no balcão"
+  },
+  "en": {
+    "slug": "ai-agent-for-whatsapp",
+    "title": "AI Agent for WhatsApp: The 3 Options and Which to Choose",
+    "description": "AI agent for WhatsApp: why the app's built-in AI falls short, when no-code tools are enough and when a custom-coded agent is worth the investment.",
+    "image_alt": "Small shop owner answering customers on WhatsApp on his phone at the counter"
+  },
+  "es": {
+    "slug": "agente-de-ia-para-whatsapp",
+    "title": "Agente de IA para WhatsApp: los 3 caminos y cuál elegir",
+    "description": "Agente de IA para WhatsApp: por qué la IA nativa de la app es limitada, cuándo basta el no-code y cuándo conviene un agente programado a la medida.",
+    "image_alt": "Dueño de una pequeña tienda respondiendo a clientes por WhatsApp en el celular, en el mostrador"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-30",
+  "updated": "2026-09-30",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: RDNE Stock project / Pexels",
+  "service": "automacao",
+  "keyword": "ia para pequenas empresas",
+  "audience": "pme",
+  "pt": {
+    "slug": "ia-para-pequenas-empresas",
+    "title": "IA para pequenas empresas: por onde começar em vendas",
+    "description": "IA para pequenas empresas funciona melhor começando por marketing e vendas. Veja o que dizem as pesquisas, que tarefas automatizar antes e como escolher.",
+    "image_alt": "Equipe de pequena empresa analisando resultados de vendas no notebook"
+  },
+  "en": {
+    "slug": "ai-for-small-business",
+    "title": "AI for Small Business: Where to Start in Sales",
+    "description": "AI for small business works best when you start with marketing and sales. See what the research says, which tasks to automate first and how to choose.",
+    "image_alt": "Small business team reviewing sales results on a laptop"
+  },
+  "es": {
+    "slug": "ia-para-pymes",
+    "title": "IA para pymes: por dónde empezar en ventas",
+    "description": "La IA para pymes funciona mejor si empiezas por marketing y ventas. Mira qué dicen las encuestas, qué tareas automatizar primero y cómo elegir bien.",
+    "image_alt": "Equipo de una pequeña empresa revisando resultados de ventas en la laptop"
+  }
+}
