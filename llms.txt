@@ -40,6 +40,7 @@ Atende em português, inglês e espanhol. Contato: contato@nocodeiaww.com
 <!-- blog:inicio -->
 ## Blog
 
+- [No-code vale a pena? Quando trocar por código sob medida](https://nocodeiaww.com/blog/no-code-vale-a-pena/): No-code vale a pena para validar rápido. Veja os sinais de que sua startup chegou ao limite e como passar para código sob medida sem jogar trabalho fora.
 - [Agente de IA para WhatsApp: os 3 caminhos e qual escolher](https://nocodeiaww.com/blog/agente-de-ia-para-whatsapp/): Agente de IA para WhatsApp: por que a IA nativa do app é limitada, quando o no-code resolve e quando vale mais um agente programado sob medida.
 - [IA para pequenas empresas: por onde começar em vendas](https://nocodeiaww.com/blog/ia-para-pequenas-empresas/): IA para pequenas empresas funciona melhor começando por marketing e vendas. Veja o que dizem as pesquisas, que tarefas automatizar antes e como escolher.
 <!-- blog:fim -->

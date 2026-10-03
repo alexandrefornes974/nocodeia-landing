@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-03",
+  "updated": "2026-10-03",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: ThisIsEngineering / Pexels",
+  "service": "mvp",
+  "keyword": "no code vale a pena",
+  "audience": "startup",
+  "pt": {
+    "slug": "no-code-vale-a-pena",
+    "title": "No-code vale a pena? Quando trocar por código sob medida",
+    "description": "No-code vale a pena para validar rápido. Veja os sinais de que sua startup chegou ao limite e como passar para código sob medida sem jogar trabalho fora.",
+    "image_alt": "Dois fundadores de startup analisando um protótipo em frente ao quadro de planejamento"
+  },
+  "en": {
+    "slug": "is-no-code-worth-it",
+    "title": "Is No-Code Worth It? When to Switch to Custom Code",
+    "description": "Is no-code worth it? Yes, for validating fast. See the signs your startup has outgrown it and how to switch to custom code without throwing work away.",
+    "image_alt": "Two startup founders reviewing a prototype in front of a planning board"
+  },
+  "es": {
+    "slug": "plataformas-no-code-vale-la-pena",
+    "title": "Plataformas no code: ¿valen la pena o es hora de programar?",
+    "description": "Las plataformas no code valen la pena para validar rápido. Mira las señales de que tu startup llegó al límite y cómo pasar a código sin perder trabajo.",
+    "image_alt": "Dos fundadores de startup analizando un prototipo frente al tablero de planificación"
+  }
+}
