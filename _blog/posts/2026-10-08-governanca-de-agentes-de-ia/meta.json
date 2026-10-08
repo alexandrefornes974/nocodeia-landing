@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-08",
+  "updated": "2026-10-08",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: RDNE Stock project / Pexels",
+  "service": "sistema-interno",
+  "keyword": "governança de agentes de ia",
+  "audience": "grande-empresa",
+  "pt": {
+    "slug": "governanca-de-agentes-de-ia",
+    "title": "Governança de agentes de IA: por que uma regra só falha",
+    "description": "Governança de agentes de IA não se resolve com uma regra só. Veja os 4 níveis de autonomia do Gartner, os controles de cada um e onde entra a LGPD.",
+    "image_alt": "Executivos analisando relatórios com gráficos numa reunião de negócios"
+  },
+  "en": {
+    "slug": "ai-agent-governance",
+    "title": "AI Agent Governance: Why One Rule for Every Agent Fails",
+    "description": "AI agent governance can't rest on a single rule. See Gartner's 4 autonomy levels, the controls each one calls for and where data protection law fits in.",
+    "image_alt": "Executives reviewing reports with charts in a business meeting"
+  },
+  "es": {
+    "slug": "gobernanza-de-agentes-de-ia",
+    "title": "Gobernanza de agentes de IA: por qué una sola regla falla",
+    "description": "La gobernanza de agentes de IA no se resuelve con una sola regla. Mira los 4 niveles de autonomía de Gartner, sus controles y dónde entra la LGPD.",
+    "image_alt": "Ejecutivos analizando informes con gráficos en una reunión de negocios"
+  }
+}

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Governança de agentes de IA: por que uma regra só falha | Nocodeia</title>
+<meta name="description" content="Governança de agentes de IA não se resolve com uma regra só. Veja os 4 níveis de autonomia do Gartner, os controles de cada um e onde entra a LGPD.">
+<link rel="canonical" href="https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/blog/ai-agent-governance/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/blog/gobernanza-de-agentes-de-ia/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Governança de agentes de IA: por que uma regra só falha | Nocodeia">
+<meta property="og:description" content="Governança de agentes de IA não se resolve com uma regra só. Veja os 4 níveis de autonomia do Gartner, os controles de cada um e onde entra a LGPD.">
+<meta property="og:url" content="https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/">
+<meta property="og:image" content="https://nocodeiaww.com/blog/img/governanca-de-agentes-de-ia.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/#post",
+   "headline": "Governança de agentes de IA: por que uma regra só falha",
+   "description": "Governança de agentes de IA não se resolve com uma regra só. Veja os 4 níveis de autonomia do Gartner, os controles de cada um e onde entra a LGPD.",
+   "inLanguage": "pt-BR",
+   "datePublished": "2026-10-08",
+   "dateModified": "2026-10-08",
+   "image": "https://nocodeiaww.com/blog/img/governanca-de-agentes-de-ia.jpg",
+   "url": "https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/",
+   "mainEntityOfPage": "https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre",
+    "url": "https://nocodeiaww.com/#sobre"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://nocodeiaww.com/assets/icon.png"
+    }
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://nocodeiaww.com/blog/#blog",
+    "name": "Blog da Nocodeia"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Início",
+     "item": "https://nocodeiaww.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://nocodeiaww.com/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Governança de agentes de IA: por que uma regra só falha",
+     "item": "https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/#faq",
+   "inLanguage": "pt-BR",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "O que é governança de IA?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "É o conjunto de regras, responsáveis e controles que define como a empresa usa inteligência artificial com segurança. Para agentes de IA, inclui o que cada um pode fazer sozinho, quem aprova e como tudo fica registrado."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "O que são agentes de IA autônomos?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "São agentes que agem sozinhos dentro de controles definidos, o nível 4 da classificação do Gartner. Os humanos revisam exceções, registros de auditoria e resultados, em vez de aprovar cada ação."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Existe um framework de governança de IA?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Existe. O NIST AI RMF, do instituto de padrões dos Estados Unidos, é uma referência pública de uso voluntário, organizada em quatro funções: governar, mapear, medir e gerenciar."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "O que é human in the loop?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "É ter um humano que revisa ou aprova a ação do agente antes que ela aconteça. Na nossa leitura, isso corresponde aos níveis 2 e 3 da classificação do Gartner."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/" aria-label="Nocodeia"><img src="/assets/logo_h.png" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/">Início</a>
+<a class="item" href="/#servicos">Serviços</a>
+<a class="item" href="/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/blog/governanca-de-agentes-de-ia/" hreflang="pt-BR" aria-current="page">PT</a><a href="/en/blog/ai-agent-governance/" hreflang="en">EN</a><a href="/es/blog/gobernanza-de-agentes-de-ia/" hreflang="es">ES</a></div>
+<a class="botao" href="/#vaga">Garantir vaga</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/blog/">← Todos os posts</a>
+<h1>Governança de agentes de IA: por que uma regra só falha</h1>
+<p class="resumo">Governança de agentes de IA não se resolve com uma regra só. Veja os 4 níveis de autonomia do Gartner, os controles de cada um e onde entra a LGPD.</p>
+<div class="meta"><span>Por Alexandre</span><span>·</span><time datetime="2026-10-08">8 de outubro de 2026</time><span>·</span><span>8 min de leitura</span></div>
+<figure class="capa"><img src="/blog/img/governanca-de-agentes-de-ia.jpg" alt="Executivos analisando relatórios com gráficos numa reunião de negócios" width="1200" height="630"><figcaption>Foto: RDNE Stock project / Pexels</figcaption></figure>
+<div class="conteudo">
+<p>Governança de agentes de IA é o conjunto de regras que define o que cada agente pode ver, sugerir ou fazer sozinho, quem aprova suas ações e como tudo fica registrado. O Gartner recomenda governança proporcional: classificar os agentes por nível de autonomia e aplicar a cada nível os controles correspondentes, em vez de uma regra única.</p>
+<p>Se você lidera uma área numa empresa grande, provavelmente já tem agentes de IA rodando: um que resume contratos, outro que sugere respostas para clientes, talvez um que já dispara e-mails. Agente de IA é um assistente que, além de responder, executa tarefas. A pergunta que chega à sua mesa é sempre a mesma: quanto controle cada um precisa?</p>
+<h2 id="por-que-uma-regra-unica-de-governanca-faz-os-agentes-de-ia-fracassarem">Por que uma regra única de governança faz os agentes de IA fracassarem?</h2>
+<p>Porque ela trata agentes muito diferentes como se fossem iguais. Segundo comunicado do <a href="https://www.prnewswire.com/br/comunicados-para-a-imprensa/gartner-aponta-que-a-aplicacao-de-governanca-uniforme-aos-agentes-de-inteligencia-artificial-levara-ao-fracasso-desses-agentes-nas-empresas-302792743.html" target="_blank" rel="noopener">Gartner de 5 de junho de 2026</a>, &quot;até 2027, 40% das empresas irão rebaixar ou desativar agentes de IA autônomos devido a lacunas de governança&quot; identificadas somente após incidentes em produção.</p>
+<p>Shiva Varma, diretor analista sênior do Gartner, descreve dois modos de falha. No primeiro, a empresa restringe demais os agentes simples, o que &quot;retarda a entrega e estimula o desenvolvimento paralelo&quot;. No segundo, restringe de menos os agentes mais autônomos, o que aumenta os riscos operacionais, de segurança e de conformidade. Para ele, o erro é tratar a governança &quot;como binária, ou totalmente restrita ou totalmente confiável&quot;.</p>
+<p>Na nossa leitura, &quot;desenvolvimento paralelo&quot; é o que todo gestor já viu acontecer: a área monta o próprio agente por fora da TI porque o caminho oficial trava. O agente sai do controle exatamente porque a regra era pesada demais para o que ele fazia.</p>
+<p>Grandes bancos já falam disso em público. Em tradução livre de reportagem da <a href="https://www.fundssociety.com/en/?p=310186" target="_blank" rel="noopener">Funds Society</a>, Jane Fraser, CEO do Citi, disse no Sibos 2026, conferência anual do setor financeiro, que no banco nenhum agente é criado sem passar pela camada interna de controle (ARC), e previu que um mesmo agente poderá ficar sujeito a vários mecanismos de supervisão.</p>
+<h2 id="quais-sao-os-4-niveis-de-autonomia-de-um-agente-de-ia">Quais são os 4 níveis de autonomia de um agente de IA?</h2>
+<p>O Gartner classifica os agentes em quatro níveis, do que só lê ao que age sozinho, e associa a cada nível os seus controles:</p>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>O que o agente pode fazer</th>
+<th>Controles que o Gartner pede</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. Observação</td>
+<td>Só lê fontes definidas; o resultado aparece só para quem pediu. Ex.: resumo de documentos, busca de dados</td>
+<td>Acesso a dados com escopo definido, autenticação, registro de uso, testes básicos de funcionalidade e segurança</td>
+</tr>
+<tr>
+<td>2. Aconselhamento</td>
+<td>Gera recomendações e ações propostas; um humano revisa tudo e executa à mão</td>
+<td>Tudo do nível 1, mais testes de precisão e de alucinação, avaliação de qualidade específica do domínio e treinamento de usuários</td>
+</tr>
+<tr>
+<td>3. Agir com aprovação</td>
+<td>Grava dados, envia comunicações ou muda configurações só após aprovação humana explícita de cada ação</td>
+<td>Testes de segurança aprofundados, fluxos de aprovação claros com trilha de auditoria e resposta a incidentes específica por agente</td>
+</tr>
+<tr>
+<td>4. Agir de forma autônoma</td>
+<td>Age sozinho dentro de controles definidos; humanos revisam exceções, registros de auditoria e resultados agregados</td>
+<td>A governança mais rigorosa: monitoramento contínuo, controles aplicados, reversão rápida, um mecanismo que interrompe o agente se ele violar limites e definição clara de responsabilidade pelo comportamento do agente</td>
+</tr>
+</tbody></table>
+<p>Dois termos da tabela pedem explicação. Alucinação é quando a IA inventa uma resposta com cara de verdade. Trilha de auditoria é o registro de quem fez o quê e quando. Sobre o nível 3, Shiva Varma faz um alerta que vale para todo gestor: &quot;A revisão humana só é eficaz se continuar sendo um controle significativo&quot;. Ele fala em fadiga de aprovação: aprovar no automático, sem ler, é o mesmo que não ter aprovação.</p>
+<h2 id="como-classificar-os-agentes-que-a-sua-empresa-ja-tem-ou-planeja">Como classificar os agentes que a sua empresa já tem ou planeja?</h2>
+<p>Comece pelo inventário e use quatro perguntas simples. O Gartner define os níveis; o roteiro abaixo é a forma como, na nossa avaliação, uma área consegue aplicá-los na prática:</p>
+<ol>
+<li><strong>Faça o inventário.</strong> Liste os agentes em uso e em projeto, área por área, incluindo os que foram montados fora da TI.</li>
+<li><strong>Responda quatro perguntas para cada agente.</strong> Ele só lê? Ele sugere? Ele grava ou envia algo? Ele faz isso sem ninguém aprovar? As respostas dão o nível.</li>
+<li><strong>Veja quais dados ele toca.</strong> Se mexe com dados pessoais de clientes ou funcionários, o cuidado sobe.</li>
+<li><strong>Meça o estrago de um erro.</strong> Pergunte o que acontece se ele errar e se dá para desfazer.</li>
+<li><strong>Defina um dono.</strong> Todo agente precisa de uma pessoa na área que responda por ele.</li>
+</ol>
+<p>Um agente que só resume relatórios internos fica no nível 1 e pode andar rápido. Um que responde cliente e altera cadastro está no nível 3 ou 4 e precisa de outra régua.</p>
+<h2 id="que-controles-cada-nivel-pede-no-dia-a-dia-da-operacao">Que controles cada nível pede no dia a dia da operação?</h2>
+<p>Na prática, os controles da tabela viram cinco coisas que um gestor consegue cobrar da equipe ou do fornecedor:</p>
+<ul>
+<li><strong>Acesso por perfil:</strong> cada agente e cada pessoa veem só o que precisam.</li>
+<li><strong>Registro de uso e trilha de auditoria:</strong> dá para saber o que o agente fez, quando e com quais dados.</li>
+<li><strong>Fila de aprovação humana</strong> para ações de risco, como gravar, enviar ou alterar.</li>
+<li><strong>Testes antes de ir ao ar</strong>, inclusive de respostas erradas.</li>
+<li><strong>Botão de parar e de desfazer</strong>, para interromper o agente e reverter o que ele fez.</li>
+</ul>
+<p>Um exemplo simples de controle é o <a href="/blog/agente-de-ia-para-whatsapp/">agente que passa a conversa para um humano</a> quando o caso foge do que ele sabe resolver.</p>
+<p>Se a sua empresa quer uma referência pública, o <a href="https://www.nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial" target="_blank" rel="noopener">NIST AI RMF</a>, o framework de gestão de riscos de IA do instituto de padrões dos Estados Unidos, foi lançado em 26 de janeiro de 2023, é de uso voluntário e se organiza em quatro funções: Govern, Map, Measure e Manage (governar, mapear, medir e gerenciar).</p>
+<h2 id="onde-a-lgpd-entra-na-governanca-dos-agentes-de-ia">Onde a LGPD entra na governança dos agentes de IA?</h2>
+<p>Entra sempre que o agente trata dados pessoais. Três artigos da <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">Lei Geral de Proteção de Dados</a> conversam diretamente com os controles acima:</p>
+<ul>
+<li><strong>Artigo 20:</strong> o titular pode pedir a revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem seus interesses, inclusive as que definem perfil profissional, de consumo e de crédito. Agente que decide sozinho sobre uma pessoa precisa de um caminho de revisão.</li>
+<li><strong>Artigo 37:</strong> o controlador e o operador devem manter registro das operações de tratamento. É onde a trilha de auditoria ajuda.</li>
+<li><strong>Artigo 46:</strong> a lei pede medidas de segurança técnicas e administrativas contra acessos não autorizados. É onde o acesso por perfil ajuda.</li>
+</ul>
+<p>Um cuidado de vocabulário: na LGPD, &quot;agentes de tratamento&quot; são o controlador e o operador, ou seja, empresas e pessoas, e não agentes de IA. Este texto não é parecer jurídico; envolva o encarregado de dados (o DPO) e o jurídico da empresa.</p>
+<h2 id="como-a-nocodeia-constroi-agentes-com-controle-desde-o-primeiro-dia">Como a Nocodeia constrói agentes com controle desde o primeiro dia?</h2>
+<p>Construímos <a href="/#servicos">sistemas internos e agentes sob medida</a>, programados em código, com a governança desenhada junto e não depois. Na prática, cada agente nasce com:</p>
+<ol>
+<li><strong>Nível de autonomia definido no escopo:</strong> o que ele lê, o que ele sugere e o que ele executa.</li>
+<li><strong>Regras de negócio explícitas</strong> do que pode e do que não pode fazer.</li>
+<li><strong>Aprovação humana nas ações de risco</strong>, como gravar, enviar ou alterar.</li>
+<li><strong>Trilha de auditoria</strong> de cada ação.</li>
+<li><strong>Acesso por perfil.</strong></li>
+<li><strong>LGPD considerada desde o desenho.</strong></li>
+</ol>
+<p>O caminho começa com um <a href="/#como">diagnóstico grátis de 45 minutos</a>, segue com um escopo de preço e prazo fechados e chega ao sistema interno em 1 a 3 meses.</p>
+<p>Já construímos o Proacta CRM, um CRM (sistema de gestão de clientes) de vendas com agente de prospecção no LinkedIn, e uma plataforma de gestão de metas (OKR) para estrutura corporativa. Veja os <a href="/#projetos">projetos que já entregamos</a>. O fundador tem mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch, e você fala direto com ele do começo ao fim.</p>
+<h2 id="quando-nao-dar-autonomia-total-a-um-agente-de-ia">Quando não dar autonomia total a um agente de IA?</h2>
+<p>Na nossa avaliação, não dê autonomia total quando a ação não pode ser desfeita, quando mexe com dinheiro, dado pessoal ou comunicação com cliente sem revisão, quando não há registro do que o agente fez ou quando ninguém na área é dono dele. Nesses casos, comece num nível mais baixo e suba o agente de nível conforme ele acumula histórico de acertos. Essa progressão é posição nossa; o comunicado do Gartner não trata de promoção de nível.</p>
+<h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+<h3 id="o-que-e-governanca-de-ia">O que é governança de IA?</h3>
+<p>É o conjunto de regras, responsáveis e controles que define como a empresa usa inteligência artificial com segurança. Para agentes de IA, inclui o que cada um pode fazer sozinho, quem aprova e como tudo fica registrado.</p>
+<h3 id="o-que-sao-agentes-de-ia-autonomos">O que são agentes de IA autônomos?</h3>
+<p>São agentes que agem sozinhos dentro de controles definidos, o nível 4 da classificação do Gartner. Os humanos revisam exceções, registros de auditoria e resultados, em vez de aprovar cada ação.</p>
+<h3 id="existe-um-framework-de-governanca-de-ia">Existe um framework de governança de IA?</h3>
+<p>Existe. O NIST AI RMF, do instituto de padrões dos Estados Unidos, é uma referência pública de uso voluntário, organizada em quatro funções: governar, mapear, medir e gerenciar.</p>
+<h3 id="o-que-e-human-in-the-loop">O que é human in the loop?</h3>
+<p>É ter um humano que revisa ou aprova a ação do agente antes que ela aconteça. Na nossa leitura, isso corresponde aos níveis 2 e 3 da classificação do Gartner.</p>
+<h2 id="sua-empresa-ja-tem-agentes-de-ia-sem-regra-clara">Sua empresa já tem agentes de IA sem regra clara?</h2>
+<p>No diagnóstico gratuito de 45 minutos, a gente olha os agentes que a sua área usa ou planeja, ajuda a classificar cada um e mostra como construir com controle desde o início. Você sai com preço e prazo fechados. <a href="/#vaga">Marque seu diagnóstico grátis</a>.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">Sistema interno</p>
+<h2>Quer isso funcionando na sua empresa?</h2>
+<p>Diagnóstico grátis de 45 minutos. Você sai com preço e prazo fechados.</p>
+<a class="botao" href="/#vaga">Quero meu diagnóstico grátis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.png" alt=""><p><strong>Alexandre, fundador da Nocodeia</strong><br>Mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch. Hoje coloca produtos no ar com no-code e IA em semanas.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.png" alt=""><img src="/assets/wordmark.png" alt="nocodeia worldwide"></div>
+<p><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a></p><p>© 2026 Nocodeia. Feito com no-code, claro.</p></footer>
+</body>
+</html>

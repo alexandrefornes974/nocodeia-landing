@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Agent Governance: Why One Rule for Every Agent Fails | Nocodeia</title>
+<meta name="description" content="AI agent governance can't rest on a single rule. See Gartner's 4 autonomy levels, the controls each one calls for and where data protection law fits in.">
+<link rel="canonical" href="https://nocodeiaww.com/en/blog/ai-agent-governance/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/blog/ai-agent-governance/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/blog/gobernanza-de-agentes-de-ia/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="AI Agent Governance: Why One Rule for Every Agent Fails | Nocodeia">
+<meta property="og:description" content="AI agent governance can't rest on a single rule. See Gartner's 4 autonomy levels, the controls each one calls for and where data protection law fits in.">
+<meta property="og:url" content="https://nocodeiaww.com/en/blog/ai-agent-governance/">
+<meta property="og:image" content="https://nocodeiaww.com/blog/img/governanca-de-agentes-de-ia.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://nocodeiaww.com/en/blog/ai-agent-governance/#post",
+   "headline": "AI Agent Governance: Why One Rule for Every Agent Fails",
+   "description": "AI agent governance can't rest on a single rule. See Gartner's 4 autonomy levels, the controls each one calls for and where data protection law fits in.",
+   "inLanguage": "en",
+   "datePublished": "2026-10-08",
+   "dateModified": "2026-10-08",
+   "image": "https://nocodeiaww.com/blog/img/governanca-de-agentes-de-ia.jpg",
+   "url": "https://nocodeiaww.com/en/blog/ai-agent-governance/",
+   "mainEntityOfPage": "https://nocodeiaww.com/en/blog/ai-agent-governance/",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre",
+    "url": "https://nocodeiaww.com/#sobre"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://nocodeiaww.com/assets/icon.png"
+    }
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://nocodeiaww.com/en/blog/#blog",
+    "name": "Nocodeia Blog"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://nocodeiaww.com/en/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://nocodeiaww.com/en/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "AI Agent Governance: Why One Rule for Every Agent Fails",
+     "item": "https://nocodeiaww.com/en/blog/ai-agent-governance/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/en/blog/ai-agent-governance/#faq",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is AI governance?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It's the set of rules, owners and controls that defines how a company uses artificial intelligence safely. For AI agents, it covers what each one can do on its own, who approves and how everything gets logged."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are autonomous AI agents?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They're agents that act on their own within defined guardrails, level 4 in Gartner's classification. Humans review exceptions, audit logs and outcomes instead of approving each action."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there an AI governance framework?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The NIST AI RMF, from the US National Institute of Standards and Technology, is a voluntary public reference organized into four functions: govern, map, measure and manage."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is human in the loop?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It means having a human who reviews or approves the agent's action before it happens. In our reading, that corresponds to levels 2 and 3 of Gartner's classification."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/en/" aria-label="Nocodeia"><img src="/assets/logo_h.png" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/en/">Home</a>
+<a class="item" href="/en/#servicos">Services</a>
+<a class="item" href="/en/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/blog/governanca-de-agentes-de-ia/" hreflang="pt-BR">PT</a><a href="/en/blog/ai-agent-governance/" hreflang="en" aria-current="page">EN</a><a href="/es/blog/gobernanza-de-agentes-de-ia/" hreflang="es">ES</a></div>
+<a class="botao" href="/en/#vaga">Get a spot</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/en/blog/">← All posts</a>
+<h1>AI Agent Governance: Why One Rule for Every Agent Fails</h1>
+<p class="resumo">AI agent governance can't rest on a single rule. See Gartner's 4 autonomy levels, the controls each one calls for and where data protection law fits in.</p>
+<div class="meta"><span>By Alexandre</span><span>·</span><time datetime="2026-10-08">October 8, 2026</time><span>·</span><span>8 min read</span></div>
+<figure class="capa"><img src="/blog/img/governanca-de-agentes-de-ia.jpg" alt="Executives reviewing reports with charts in a business meeting" width="1200" height="630"><figcaption>Foto: RDNE Stock project / Pexels</figcaption></figure>
+<div class="conteudo">
+<p>AI agent governance is the set of rules that defines what each agent can see, suggest or do on its own, who approves its actions and how everything gets logged. Gartner recommends proportional governance: classify agents by autonomy level and apply to each level its matching controls, instead of a single rule.</p>
+<p>If you lead a department at a large company, you probably already have AI agents running: one that summarizes contracts, another that suggests replies to customers, maybe one that already sends emails. An AI agent is an assistant that, besides answering, carries out tasks. The question that lands on your desk is always the same: how much control does each one need?</p>
+<h2 id="why-does-a-single-governance-rule-make-ai-agents-fail">Why does a single governance rule make AI agents fail?</h2>
+<p>Because it treats very different agents as if they were the same. A <a href="https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure" target="_blank" rel="noopener">Gartner press release from May 26, 2026</a> predicts that &quot;by 2027, 40% of enterprises will demote or decommission autonomous AI agents due to governance gaps identified only after production incidents occur.&quot;</p>
+<p>Shiva Varma, Senior Director Analyst at Gartner, describes two failure modes. In the first, the company over-restricts simple agents, which &quot;slows delivery and drives shadow development.&quot; In the second, it under-restricts more autonomous agents, which increases operational, security and compliance risk. In his view, the mistake is treating governance &quot;as binary, either locked down or fully trusted.&quot;</p>
+<p>In our reading, &quot;shadow development&quot; is something every manager has seen happen: the department builds its own agent outside IT because the official path is stuck. The agent slips out of control precisely because the rule was too heavy for what it did.</p>
+<p>Big banks already talk about this in public. According to a <a href="https://www.fundssociety.com/en/?p=310186" target="_blank" rel="noopener">Funds Society</a> report, Citi CEO Jane Fraser said at Sibos 2026, the financial industry&#39;s annual conference, that no agent is created at the bank without going through its internal control layer (ARC), and predicted that a single agent may end up subject to several oversight mechanisms.</p>
+<h2 id="what-are-the-4-autonomy-levels-of-an-ai-agent">What are the 4 autonomy levels of an AI agent?</h2>
+<p>Gartner classifies agents into four levels, from the one that only reads to the one that acts on its own, and ties each level to its own controls:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>What the agent can do</th>
+<th>Controls Gartner calls for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. Observe</td>
+<td>Only reads defined sources; output is visible only to the person who asked. E.g.: document summaries, data retrieval</td>
+<td>Scoped data access, authentication, usage logging, basic functional and security testing</td>
+</tr>
+<tr>
+<td>2. Advise</td>
+<td>Generates recommendations and proposed actions; a human reviews everything and carries it out manually</td>
+<td>Everything in level 1, plus accuracy and hallucination testing, domain-specific quality evaluation and user training</td>
+</tr>
+<tr>
+<td>3. Act with approval</td>
+<td>Writes data, sends communications or changes settings only after explicit human approval of each action</td>
+<td>Strong security testing, clear approval workflows with audit trails and agent-specific incident response</td>
+</tr>
+<tr>
+<td>4. Act autonomously</td>
+<td>Acts on its own within defined guardrails; humans review exceptions, audit logs and aggregated outcomes</td>
+<td>The most rigorous governance: continuous monitoring, enforced guardrails, rapid rollback, a mechanism that halts the agent if it crosses its limits and clear ownership of the agent&#39;s behavior</td>
+</tr>
+</tbody></table>
+<p>Two terms in the table need explaining. A hallucination is when the AI makes up an answer that sounds true. An audit trail is the record of who did what and when. On level 3, Shiva Varma gives a warning every manager should hear: &quot;human review is effective only if it remains a meaningful control.&quot; He talks about approval fatigue: approving on autopilot, without reading, is the same as having no approval at all.</p>
+<h2 id="how-do-you-classify-the-agents-your-company-already-has-or-is-planning">How do you classify the agents your company already has or is planning?</h2>
+<p>Start with an inventory and use four simple questions. Gartner defines the levels; the steps below are how, in our assessment, a department can apply them in practice:</p>
+<ol>
+<li><strong>Take inventory.</strong> List the agents in use and in the works, department by department, including the ones built outside IT.</li>
+<li><strong>Answer four questions for each agent.</strong> Does it only read? Does it suggest? Does it write or send something? Does it do that without anyone approving? The answers give you the level.</li>
+<li><strong>Check what data it touches.</strong> If it handles personal data of customers or employees, the level of care goes up.</li>
+<li><strong>Size the damage of a mistake.</strong> Ask what happens if it gets something wrong and whether it can be undone.</li>
+<li><strong>Name an owner.</strong> Every agent needs someone in the department who answers for it.</li>
+</ol>
+<p>An agent that only summarizes internal reports sits at level 1 and can move fast. One that answers customers and changes records is at level 3 or 4 and needs a different yardstick.</p>
+<h2 id="what-controls-does-each-level-need-in-day-to-day-operations">What controls does each level need in day-to-day operations?</h2>
+<p>In practice, the controls in the table become five things a manager can ask of the team or the vendor:</p>
+<ul>
+<li><strong>Role-based access:</strong> each agent and each person sees only what they need.</li>
+<li><strong>Usage logs and audit trail:</strong> you can tell what the agent did, when and with which data.</li>
+<li><strong>Human approval queue</strong> for risky actions, like writing, sending or changing something.</li>
+<li><strong>Testing before going live</strong>, including for wrong answers.</li>
+<li><strong>Stop and undo button</strong>, to halt the agent and roll back what it did.</li>
+</ul>
+<p>A simple example of a control is the <a href="/en/blog/ai-agent-for-whatsapp/">agent that hands the conversation to a human</a> when the case goes beyond what it knows how to solve.</p>
+<p>If your company wants a public reference, the <a href="https://www.nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial" target="_blank" rel="noopener">NIST AI RMF</a>, the AI risk management framework from the US National Institute of Standards and Technology, was released on January 26, 2023, is voluntary and is organized into four functions: Govern, Map, Measure and Manage.</p>
+<h2 id="where-does-data-protection-law-brazil-39-s-lgpd-fit-into-ai-agent-governance">Where does data protection law (Brazil&#39;s LGPD) fit into AI agent governance?</h2>
+<p>It comes in whenever the agent handles personal data. In Brazil, that law is the LGPD, the General Data Protection Law, and three of its articles (<a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">full text</a>, in Portuguese) line up directly with the controls above:</p>
+<ul>
+<li><strong>Article 20:</strong> the data subject can request a review of decisions made solely on the basis of automated processing of personal data that affect their interests, including those that define their professional, consumer and credit profile. An agent that decides on its own about a person needs a review path.</li>
+<li><strong>Article 37:</strong> the controller and the processor must keep records of their data processing operations. This is where the audit trail helps.</li>
+<li><strong>Article 46:</strong> the law calls for technical and administrative security measures against unauthorized access. This is where role-based access helps.</li>
+</ul>
+<p>A word of caution on vocabulary: in the LGPD, &quot;processing agents&quot; (agentes de tratamento) are the controller and the processor, meaning companies and people, not AI agents. This post is not legal advice; involve your data protection officer (DPO) and your company&#39;s legal team.</p>
+<h2 id="how-does-nocodeia-build-agents-with-controls-from-day-one">How does Nocodeia build agents with controls from day one?</h2>
+<p>We build <a href="/en/#servicos">custom internal systems and agents</a>, written in code, with governance designed alongside them rather than added later. In practice, every agent comes with:</p>
+<ol>
+<li><strong>Autonomy level defined in the scope:</strong> what it reads, what it suggests and what it carries out.</li>
+<li><strong>Explicit business rules</strong> for what it can and cannot do.</li>
+<li><strong>Human approval for risky actions</strong>, like writing, sending or changing something.</li>
+<li><strong>Audit trail</strong> of every action.</li>
+<li><strong>Role-based access.</strong></li>
+<li><strong>LGPD considered from the design stage.</strong></li>
+</ol>
+<p>The path starts with a <a href="/en/#como">free 45-minute consultation</a>, moves to a scope with a fixed price and timeline, and gets to the internal system in 1 to 3 months.</p>
+<p>We&#39;ve built Proacta CRM, a sales CRM (customer management system) with a LinkedIn prospecting agent, and a goal management (OKR) platform for corporate structures. See the <a href="/en/#projetos">projects we&#39;ve delivered</a>. The founder has more than 25 years in tech, at companies like IBM, Xerox, DHL and Bosch, and you talk directly with him from start to finish.</p>
+<h2 id="when-should-you-not-give-an-ai-agent-full-autonomy">When should you not give an AI agent full autonomy?</h2>
+<p>In our assessment, don&#39;t give full autonomy when the action can&#39;t be undone, when it involves money, personal data or customer communication without review, when there&#39;s no record of what the agent did or when nobody in the department owns it. In those cases, start at a lower level and move the agent up as it builds a track record of getting things right. That progression is our position; the Gartner press release does not cover moving agents up a level.</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="what-is-ai-governance">What is AI governance?</h3>
+<p>It&#39;s the set of rules, owners and controls that defines how a company uses artificial intelligence safely. For AI agents, it covers what each one can do on its own, who approves and how everything gets logged.</p>
+<h3 id="what-are-autonomous-ai-agents">What are autonomous AI agents?</h3>
+<p>They&#39;re agents that act on their own within defined guardrails, level 4 in Gartner&#39;s classification. Humans review exceptions, audit logs and outcomes instead of approving each action.</p>
+<h3 id="is-there-an-ai-governance-framework">Is there an AI governance framework?</h3>
+<p>Yes. The NIST AI RMF, from the US National Institute of Standards and Technology, is a voluntary public reference organized into four functions: govern, map, measure and manage.</p>
+<h3 id="what-is-human-in-the-loop">What is human in the loop?</h3>
+<p>It means having a human who reviews or approves the agent&#39;s action before it happens. In our reading, that corresponds to levels 2 and 3 of Gartner&#39;s classification.</p>
+<h2 id="does-your-company-already-have-ai-agents-without-clear-rules">Does your company already have AI agents without clear rules?</h2>
+<p>In the free 45-minute consultation, we look at the agents your department uses or is planning, help you classify each one and show you how to build with controls from the start. You walk away with a fixed price and timeline. <a href="/en/#vaga">Book your free consultation</a>.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">Internal system</p>
+<h2>Want this working in your business?</h2>
+<p>Free 45-minute diagnosis. You leave with a fixed price and deadline.</p>
+<a class="botao" href="/en/#vaga">Get my free diagnosis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.png" alt=""><p><strong>Alexandre, founder of Nocodeia</strong><br>25+ years in tech at companies like IBM, Xerox, DHL and Bosch. Today he ships products with no-code and AI in weeks.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.png" alt=""><img src="/assets/wordmark.png" alt="nocodeia worldwide"></div>
+<p><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a></p><p>© 2026 Nocodeia. Built with no-code, of course.</p></footer>
+</body>
+</html>
