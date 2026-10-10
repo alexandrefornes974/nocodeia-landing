@@ -1144,6 +1144,12 @@ class Component extends DCLogic {
   enviarLead(email) {
     // Cole aqui a URL do webhook (n8n, Formspree, etc.). Vazio = não envia.
     // Abre o WhatsApp da Nocodeia com o e-mail já escrito na mensagem.
+    try {
+      if (window.gtag) gtag('event', 'generate_lead', {
+        lead_source: 'form_vaga',
+        page_language: document.documentElement.lang
+      });
+    } catch (e) {}
     try { window.open('https://wa.me/5511967886969?text=' + encodeURIComponent('¡Hola! Quiero mi lugar en Nocodeia. Mi e-mail: ' + email), '_blank', 'noopener'); } catch (e) {}
     const ENDPOINT = '';
     if (!ENDPOINT) return;
