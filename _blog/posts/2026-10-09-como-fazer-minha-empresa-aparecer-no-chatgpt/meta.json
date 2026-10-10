@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-09",
+  "updated": "2026-10-09",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: RDNE Stock project / Pexels",
+  "service": "site-seo-geo",
+  "keyword": "como fazer minha empresa aparecer no chatgpt",
+  "audience": "pme",
+  "pt": {
+    "slug": "como-fazer-minha-empresa-aparecer-no-chatgpt",
+    "title": "Como fazer minha empresa aparecer no ChatGPT: guia para PME",
+    "description": "Sua empresa não aparece quando o cliente pergunta ao ChatGPT? Veja o que faz o site ser lido pela IA, o que um estudo mostrou e o que ninguém garante.",
+    "image_alt": "Pequeno empreendedor olhando um site no notebook, com caixas de produtos sobre a mesa"
+  },
+  "en": {
+    "slug": "how-to-get-my-business-on-chatgpt",
+    "title": "How to Get My Business on ChatGPT: A Small Business Guide",
+    "description": "Your business doesn't show up when customers ask ChatGPT? See what helps AI read your website, what a study found and what no one can guarantee.",
+    "image_alt": "Small business owner looking at a website on a laptop, with product boxes on the desk"
+  },
+  "es": {
+    "slug": "como-hacer-que-mi-empresa-aparezca-en-chatgpt",
+    "title": "Cómo hacer que mi empresa aparezca en ChatGPT: guía pyme",
+    "description": "¿Tu empresa no aparece cuando el cliente le pregunta a ChatGPT? Mira qué hace que la IA lea tu sitio, qué mostró un estudio y qué nadie garantiza.",
+    "image_alt": "Pequeño emprendedor mirando un sitio web en la laptop, con cajas de productos sobre la mesa"
+  }
+}

@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<!-- Aviso de cookies Nocodeia v1: precisa ser o PRIMEIRO item dentro do <head> -->
+<script>
+window.NOCODEIA_AVISO = {"namespace":"nocodeia","politica":"/privacidade/#site","cor":"#0047FF","corTexto":"#1a1a1a","fonte":"inherit","semMarketing":true,"textos":{"essenciais":"Necessários para o site funcionar e para lembrar a sua escolha de cookies. Não podem ser desligados.","estatisticas":"Contam visitas e mostram quais páginas interessam mais, para melhorarmos o site. Os dados são agregados.","aviso":"Usamos cookies para o site funcionar e, se você permitir, para entender como ele é usado."}};
+(function(w,d){var ns=w.NOCODEIA_AVISO.namespace,FILAS=["dataLayer","dataLayerGa4"];
+function lido(id){try{return localStorage.getItem("stcm."+ns+".consent."+id)}catch(e){return null}}
+function args(){return arguments}
+function estado(a,m){return{analytics_storage:a?"granted":"denied",ad_storage:m?"granted":"denied",ad_user_data:m?"granted":"denied",ad_personalization:m?"granted":"denied"}}
+var a=lido("analytics")==="true",m=lido("marketing")==="true",ini=estado(a,m);ini.wait_for_update=500;
+var antes=[args("consent","default",ini),args("set","ads_data_redaction",!m)];
+/* Google: a decisão "padrão" entra na frente de tudo, mesmo se a plataforma recriar a fila depois */
+function prep(f){if(!f.__nc){for(var i=antes.length-1;i>=0;i--)f.unshift(antes[i]);f.__nc=1}return f}
+FILAS.forEach(function(n){var atual=prep(w[n]||[]);try{Object.defineProperty(w,n,{configurable:true,enumerable:true,get:function(){return atual},set:function(v){atual=prep(v||[])}})}catch(e){w[n]=atual}});
+w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n){w[n].push(args("consent","update",s))});w.dataLayer.push({event:"nc_consent_update",nc_analytics:a,nc_marketing:m})}};
+})(window,document);
+</script>
+<script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1PHQ7W3WDX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1PHQ7W3WDX');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como fazer minha empresa aparecer no ChatGPT: guia para PME | Nocodeia</title>
+<meta name="description" content="Sua empresa não aparece quando o cliente pergunta ao ChatGPT? Veja o que faz o site ser lido pela IA, o que um estudo mostrou e o que ninguém garante.">
+<link rel="canonical" href="https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/blog/how-to-get-my-business-on-chatgpt/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/blog/como-hacer-que-mi-empresa-aparezca-en-chatgpt/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Como fazer minha empresa aparecer no ChatGPT: guia para PME | Nocodeia">
+<meta property="og:description" content="Sua empresa não aparece quando o cliente pergunta ao ChatGPT? Veja o que faz o site ser lido pela IA, o que um estudo mostrou e o que ninguém garante.">
+<meta property="og:url" content="https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/">
+<meta property="og:image" content="https://nocodeiaww.com/blog/img/como-fazer-minha-empresa-aparecer-no-chatgpt.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/#post",
+   "headline": "Como fazer minha empresa aparecer no ChatGPT: guia para PME",
+   "description": "Sua empresa não aparece quando o cliente pergunta ao ChatGPT? Veja o que faz o site ser lido pela IA, o que um estudo mostrou e o que ninguém garante.",
+   "inLanguage": "pt-BR",
+   "datePublished": "2026-10-09",
+   "dateModified": "2026-10-09",
+   "image": "https://nocodeiaww.com/blog/img/como-fazer-minha-empresa-aparecer-no-chatgpt.jpg",
+   "url": "https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/",
+   "mainEntityOfPage": "https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre",
+    "url": "https://nocodeiaww.com/#sobre"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://nocodeiaww.com/assets/icon.png"
+    }
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://nocodeiaww.com/blog/#blog",
+    "name": "Blog da Nocodeia"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Início",
+     "item": "https://nocodeiaww.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://nocodeiaww.com/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Como fazer minha empresa aparecer no ChatGPT: guia para PME",
+     "item": "https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/#faq",
+   "inLanguage": "pt-BR",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "O que é SEO para IA?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "São os ajustes para o site ser lido e citado por IAs como ChatGPT e Gemini, também chamados de GEO."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Qual a diferença entre SEO e GEO?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "SEO cuida de o site aparecer no Google; GEO cuida de o site ser citado na resposta da IA. O GEO depende do SEO: o Google afirma que \"As práticas recomendadas de SEO continuam sendo relevantes\" para os recursos de IA dele."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "De onde o ChatGPT tira as informações?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Do que aprendeu no treinamento e, quando a pergunta pede informação atual, de pesquisa na web, que pode trazer links para as fontes. Segundo a OpenAI, o robô GPTBot coleta conteúdo que pode ser usado no treinamento, e o OAI-SearchBot serve à busca."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "O ChatGPT tem anúncio?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tem. Segundo o Canaltech, no Brasil desde agosto, nos planos gratuito e Go, separados da resposta."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "O que é llms.txt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "É um arquivo de texto com um resumo do site para IAs. É opcional: o Google não exige, e 12,1% dos sites do estudo da Conversion têm um."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/" aria-label="Nocodeia"><img src="/assets/logo_h.png" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/">Início</a>
+<a class="item" href="/#servicos">Serviços</a>
+<a class="item" href="/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/" hreflang="pt-BR" aria-current="page">PT</a><a href="/en/blog/how-to-get-my-business-on-chatgpt/" hreflang="en">EN</a><a href="/es/blog/como-hacer-que-mi-empresa-aparezca-en-chatgpt/" hreflang="es">ES</a></div>
+<a class="botao" href="/#vaga">Garantir vaga</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/blog/">← Todos os posts</a>
+<h1>Como fazer minha empresa aparecer no ChatGPT: guia para PME</h1>
+<p class="resumo">Sua empresa não aparece quando o cliente pergunta ao ChatGPT? Veja o que faz o site ser lido pela IA, o que um estudo mostrou e o que ninguém garante.</p>
+<div class="meta"><span>Por Alexandre</span><span>·</span><time datetime="2026-10-09">9 de outubro de 2026</time><span>·</span><span>9 min de leitura</span></div>
+<figure class="capa"><img src="/blog/img/como-fazer-minha-empresa-aparecer-no-chatgpt.jpg" alt="Pequeno empreendedor olhando um site no notebook, com caixas de produtos sobre a mesa" width="1200" height="630"><figcaption>Foto: RDNE Stock project / Pexels</figcaption></figure>
+<div class="conteudo">
+<p>Fazer sua empresa aparecer no ChatGPT depende de o site ser encontrado e lido pelos robôs de busca que alimentam a IA. O caminho: liberar o robô da OpenAI, publicar páginas que respondem às dúvidas reais do cliente e manter o básico do Google em dia. Ninguém garante a citação, mas dá para aumentar as chances.</p>
+<p>Imagine a cena. Um cliente abre o ChatGPT e pergunta &quot;qual a melhor oficina mecânica no meu bairro?&quot;. A resposta traz três nomes, e nenhum é o seu. Você atende bem e até tem site. Este guia mostra o que está ao seu alcance sem promessa mágica.</p>
+<h2 id="por-que-a-sua-empresa-nao-aparece-quando-o-cliente-pergunta-ao-chatgpt">Por que a sua empresa não aparece quando o cliente pergunta ao ChatGPT?</h2>
+<p>Porque o ChatGPT só consegue indicar o seu site se encontrar e ler o que está nele. Segundo a <a href="https://help.openai.com/en/articles/9237897-searching-the-web-with-chatgpt" target="_blank" rel="noopener">central de ajuda da OpenAI</a>, em tradução livre, o ChatGPT &quot;pode pesquisar na web automaticamente quando a sua pergunta se beneficia de informação atual&quot;, e as respostas com pesquisa &quot;podem incluir citações&quot;, ou seja, links para as fontes.</p>
+<p>Quem faz essa leitura são os robôs: programas que visitam sites e leem o conteúdo, como um leitor automático. Se o robô não entra no seu site, ou entra e não acha texto que responda à pergunta do cliente, a sua empresa fica fora da lista. Na nossa avaliação, o problema costuma estar no site, e não na qualidade do seu serviço.</p>
+<h2 id="como-o-chatgpt-e-o-google-escolhem-os-sites-que-entram-na-resposta">Como o ChatGPT e o Google escolhem os sites que entram na resposta?</h2>
+<p>Nenhuma das duas empresas publica a regra completa de escolha; elas publicam as condições para o site poder entrar. Antes da tabela: robots.txt é o arquivo do site que diz quais robôs podem entrar; indexar é o buscador guardar a página no catálogo dele, como o fichário de uma biblioteca.</p>
+<table>
+<thead>
+<tr>
+<th>Ferramenta</th>
+<th>O que a empresa dona diz</th>
+<th>O que isso significa para o seu site</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ChatGPT (OpenAI)</td>
+<td>O robô OAI-SearchBot mostra sites nos resultados de busca do ChatGPT. Quem bloqueia esse robô não aparece nas respostas de busca, e a <a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener">OpenAI recomenda liberá-lo no robots.txt</a>.</td>
+<td>Confira se o seu site não bloqueia esse robô.</td>
+</tr>
+<tr>
+<td>ChatGPT (OpenAI)</td>
+<td>A busca do ChatGPT às vezes usa outros provedores de busca e reescreve a pergunta em buscas mais específicas. A Microsoft aparece na lista desses provedores.</td>
+<td>Na nossa avaliação, estar bem cadastrado nos buscadores comuns também conta (a Microsoft é dona do Bing).</td>
+</tr>
+<tr>
+<td>Google (Visões gerais criadas por IA e Modo IA)</td>
+<td>&quot;Não há requisitos adicionais&quot;. A página precisa estar indexada e qualificada para aparecer com trecho na Pesquisa, e &quot;A indexação e a veiculação não são garantidas&quot;, diz o <a href="https://developers.google.com/search/docs/appearance/ai-features?hl=pt-br" target="_blank" rel="noopener">Google Search Central</a>.</td>
+<td>O SEO de sempre é a porta de entrada da IA do Google.</td>
+</tr>
+</tbody></table>
+<p>Visão geral criada por IA é o resumo que aparece no topo da página do Google; Modo IA é o modo de busca do Google em que a IA dá uma resposta mais completa, com links para os sites. SEO são os ajustes para o site aparecer no Google.</p>
+<h2 id="o-que-um-estudo-com-1-954-sites-muito-acessados-no-brasil-mostrou">O que um estudo com 1.954 sites muito acessados no Brasil mostrou?</h2>
+<p>Mostrou que até sites grandes ainda estão pouco preparados para agentes de IA. O estudo State of Crawl 2027, publicado em 29/09/2026 pela <a href="https://www.conversion.com.br/blog/state-of-crawl" target="_blank" rel="noopener">Conversion</a>, agência de SEO, mediu o preparo dos sites para buscadores e para agentes de IA. Agente de IA é a IA que não só responde, mas tenta fazer tarefas pelo usuário, como comparar opções e reservar. Segundo a Conversion:</p>
+<ul>
+<li>Foram analisados 1.954 domínios de grande audiência no Brasil.</li>
+<li>84,2% atingem o patamar técnico de SEO; só 0,5% atingem o patamar para agentes de IA. Diferença: 83,7 pontos percentuais (84,2 menos 0,5).</li>
+<li>&quot;Preparado&quot; é o site com nota igual ou maior que 70 em cada dimensão.</li>
+<li>A nota mediana (a do meio da fila) é 81,8 no técnico e 25,0 no preparo para agentes.</li>
+<li>1.645 sites chegam a pelo menos 70 pontos no técnico; no preparo para agentes, só 10.</li>
+<li>llms.txt (arquivo de resumo do site para IAs, explicado abaixo) aparece em 12,1% dos sites; política de IA declarada (aviso do site sobre como IAs podem usar o conteúdo) em 18,8%; e texto legível sem JavaScript (o código que monta partes da página no navegador) em 69,9%.</li>
+</ul>
+<p>Três cuidados ao ler esses números. A amostra é de sites de alto tráfego, escolhidos por estimativa de visitas da Semrush (ferramenta de SEO) de julho de 2026, e não de pequenas empresas. O estudo mede sinais técnicos que ajudam agentes a navegar e agir no site, não se a empresa é citada nas respostas do ChatGPT. E a própria Conversion escreve: &quot;Isso não prova que 99,5% dos sites sejam invisíveis à IA&quot;.</p>
+<p>Na nossa avaliação, a lição para a PME é animadora: se até os sites grandes ainda não se prepararam para agentes de IA, a pequena empresa que fizer o básico bem feito não está atrasada.</p>
+<h2 id="o-que-deixa-o-site-da-sua-empresa-pronto-para-ser-lido-pela-ia">O que deixa o site da sua empresa pronto para ser lido pela IA?</h2>
+<p>Um site pronto para a IA é, antes de tudo, um site que o robô consegue abrir e entender. Confira:</p>
+<ol>
+<li><strong>Robots.txt sem bloquear o OAI-SearchBot nem o robô do Google.</strong> A OpenAI recomenda liberar o robô dela, e o Google pede para conferir o robots.txt e a hospedagem.</li>
+<li><strong>Site cadastrado no Google Search Console e no Bing Webmaster Tools.</strong> São painéis gratuitos para avisar o buscador que o site existe e ver se as páginas foram indexadas. O Bing é recomendação nossa, pela ligação com a Microsoft.</li>
+<li><strong>Texto importante escrito na página, não só em imagem.</strong> O Google recomenda &quot;Disponibilizar conteúdo importante em forma de texto&quot;, e o estudo chama de &quot;legível sem JavaScript&quot; o site que entrega ao menos 80% das palavras já no código enviado pelo servidor.</li>
+<li><strong>Cada página com título e descrição.</strong> São dois dos critérios técnicos do estudo.</li>
+<li><strong>Sitemap publicado.</strong> É o mapa com a lista de páginas do site, outro critério do estudo.</li>
+<li><strong>Páginas que respondem em texto o que o cliente pergunta:</strong> o que você faz, para quem, onde atende, como contratar e, quando der, faixa de preço. Na nossa avaliação, a IA só pode citar o que está escrito.</li>
+<li><strong>llms.txt, se quiser.</strong> É um arquivo de texto com um resumo do site para IAs. É opcional: o Google diz que &quot;Não é necessário criar novos arquivos legíveis por máquina, arquivos de texto de IA ou marcação&quot; para os recursos de IA dele, e a Conversion avisa que a presença do arquivo &quot;não garante&quot; que sistemas externos o consultem.</li>
+</ol>
+<p>E os dados estruturados, etiquetas escondidas no código que dizem &quot;isto é o nome da empresa, isto é o serviço&quot;? O Google afirma que &quot;não é obrigatório adicionar dados estruturados especiais&quot;. Trate como boa prática de SEO, não como requisito da IA. Na nossa avaliação, não existe arquivo mágico.</p>
+<h2 id="como-a-nocodeia-preparou-o-proprio-site-para-o-google-e-para-a-ia">Como a Nocodeia preparou o próprio site para o Google e para a IA?</h2>
+<p>Aplicamos no nosso site o mesmo checklist. O que está no ar:</p>
+<ol>
+<li><strong>Robots.txt aberto</strong>, que libera todos os robôs e aponta o sitemap.</li>
+<li><strong>Sitemap</strong> com as páginas e os posts.</li>
+<li><strong>llms.txt</strong> com serviços, fundador e projetos entregues.</li>
+<li><strong>Dados estruturados:</strong> empresa, pessoa, site e perguntas frequentes na página inicial; artigo, trilha de navegação e perguntas frequentes em cada post.</li>
+<li><strong>Páginas estáticas</strong>, com o texto já no código, sem depender de JavaScript.</li>
+<li><strong>Google Search Console e Bing Webmaster Tools</strong> configurados em 03/10/2026, com o sitemap enviado.</li>
+<li><strong>Blog semanal em português, inglês e espanhol</strong>, escrito com agentes de IA e aprovado por uma pessoa antes de ir ao ar.</li>
+</ol>
+<p>Ainda é cedo para medir quantas citações isso traz; o que fizemos foi tirar os obstáculos do caminho do robô. É o trabalho do serviço <a href="/#servicos">Site que o Google e a IA recomendam</a>: reformulação do site, SEO, GEO (ajustes para o site ser lido e citado por IAs como ChatGPT e Gemini) e blog automatizado, em 2 a 4 semanas, mais o blog mensal. Veja também os <a href="/#projetos">projetos que já saíram do papel</a>.</p>
+<h2 id="da-para-pagar-para-aparecer-no-chatgpt">Dá para pagar para aparecer no ChatGPT?</h2>
+<p>Existe anúncio no ChatGPT, mas anúncio não é ser citado na resposta. Segundo o <a href="https://canaltech.com.br/inteligencia-artificial/chatgpt-comeca-a-exibir-mais-anuncios-agora-no-gerador-de-imagens/" target="_blank" rel="noopener">Canaltech</a>, em 05/10/2026, anúncios convencionais podem aparecer no Brasil desde agosto para os planos gratuito e Go; assinantes de Plus, Pro, Business, Enterprise e Edu não recebem publicidade.</p>
+<p>O anúncio fica separado da resposta. Segundo a OpenAI, citada pelo Canaltech, &quot;as respostas geradas pelo ChatGPT funcionam de forma independente do sistema de publicidade&quot;. O anúncio com imagem começa a ser testado em outubro nos Estados Unidos, sem data para o Brasil.</p>
+<h2 id="o-que-ninguem-pode-garantir-sobre-aparecer-no-chatgpt">O que ninguém pode garantir sobre aparecer no ChatGPT?</h2>
+<p>Ninguém controla a resposta da IA. O Google escreve que &quot;A indexação e a veiculação não são garantidas&quot;. A OpenAI informa que, depois de mudar o robots.txt, os sistemas dela podem levar cerca de 24 horas para se ajustar. Esse é o prazo de leitura do arquivo, não um prazo para aparecer nas respostas.</p>
+<p>Na nossa avaliação, desconfie de quem promete &quot;primeiro lugar no ChatGPT&quot;. Dá para tirar os obstáculos, publicar respostas claras e acompanhar. Veja <a href="/#como">como funciona o diagnóstico de 45 minutos</a>. Se o seu interesse é usar IA dentro da empresa, leia <a href="/blog/ia-para-pequenas-empresas/">IA para pequenas empresas: por onde começar</a>.</p>
+<h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+<h3 id="o-que-e-seo-para-ia">O que é SEO para IA?</h3>
+<p>São os ajustes para o site ser lido e citado por IAs como ChatGPT e Gemini, também chamados de GEO.</p>
+<h3 id="qual-a-diferenca-entre-seo-e-geo">Qual a diferença entre SEO e GEO?</h3>
+<p>SEO cuida de o site aparecer no Google; GEO cuida de o site ser citado na resposta da IA. O GEO depende do SEO: o Google afirma que &quot;As práticas recomendadas de SEO continuam sendo relevantes&quot; para os recursos de IA dele.</p>
+<h3 id="de-onde-o-chatgpt-tira-as-informacoes">De onde o ChatGPT tira as informações?</h3>
+<p>Do que aprendeu no treinamento e, quando a pergunta pede informação atual, de pesquisa na web, que pode trazer links para as fontes. Segundo a OpenAI, o robô GPTBot coleta conteúdo que pode ser usado no treinamento, e o OAI-SearchBot serve à busca.</p>
+<h3 id="o-chatgpt-tem-anuncio">O ChatGPT tem anúncio?</h3>
+<p>Tem. Segundo o Canaltech, no Brasil desde agosto, nos planos gratuito e Go, separados da resposta.</p>
+<h3 id="o-que-e-llms-txt">O que é llms.txt?</h3>
+<p>É um arquivo de texto com um resumo do site para IAs. É opcional: o Google não exige, e 12,1% dos sites do estudo da Conversion têm um.</p>
+<h2 id="por-onde-comecar">Por onde começar?</h2>
+<p>No diagnóstico gratuito de 45 minutos, a gente olha o seu site com você e mostra o que falta para os robôs lerem e para ele responder às perguntas dos seus clientes. Você sai com preço e prazo fechados. <a href="/#vaga">Marque seu diagnóstico grátis</a>.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">Site que o Google e a IA recomendam</p>
+<h2>Quer isso funcionando na sua empresa?</h2>
+<p>Diagnóstico grátis de 45 minutos. Você sai com preço e prazo fechados.</p>
+<a class="botao" href="/#vaga">Quero meu diagnóstico grátis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.png" alt=""><p><strong>Alexandre, fundador da Nocodeia</strong><br>Mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch. Hoje coloca produtos no ar com no-code e IA em semanas.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.png" alt=""><img src="/assets/wordmark.png" alt="nocodeia worldwide"></div>
+<p><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a></p><p>© 2026 Nocodeia. Feito com no-code, claro.</p></footer>
+</body>
+</html>
