@@ -17,14 +17,18 @@ w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n)
 })(window,document);
 </script>
 <script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1PHQ7W3WDX"></script>
+<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-1PHQ7W3WDX');
 </script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
+<!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Automation, AI agents, MVPs and internal tools built with no-code and AI. Free 45-minute diagnosis, fixed price and deadline.">
@@ -226,6 +230,10 @@ w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n)
 <script src="/support.js"></script>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1147,12 +1155,8 @@ class Component extends DCLogic {
   enviarLead(email) {
     // Cole aqui a URL do webhook (n8n, Formspree, etc.). Vazio = não envia.
     // Abre o WhatsApp da Nocodeia com o e-mail já escrito na mensagem.
-    try {
-      if (window.gtag) gtag('event', 'generate_lead', {
-        lead_source: 'form_vaga',
-        page_language: document.documentElement.lang
-      });
-    } catch (e) {}
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'generate_lead', lead_source: 'form_vaga' });
     try { window.open('https://wa.me/5511967886969?text=' + encodeURIComponent('Hi! I want my spot at Nocodeia. My email: ' + email), '_blank', 'noopener'); } catch (e) {}
     const ENDPOINT = '';
     if (!ENDPOINT) return;
