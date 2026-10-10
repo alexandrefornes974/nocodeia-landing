@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-10",
+  "updated": "2026-10-10",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: Lukas Blazek / Pexels",
+  "service": "site-seo-geo",
+  "keyword": "métricas de marketing digital",
+  "audience": "pme",
+  "pt": {
+    "slug": "metricas-de-marketing-digital",
+    "title": "Sua empresa trabalha com dados e métricas em seu site?",
+    "description": "Você quer retorno do site, das redes e dos anúncios, mas mede o que volta? Veja as métricas de marketing digital que importam e o método MTAM para medir.",
+    "image_alt": "Notebook sobre um sofá mostrando um painel de análise de visitas do site, com gráficos de usuários, países e dispositivos"
+  }
+}

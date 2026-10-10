@@ -40,6 +40,7 @@ Atende em português, inglês e espanhol. Contato: contato@nocodeiaww.com
 <!-- blog:inicio -->
 ## Blog
 
+- [Sua empresa trabalha com dados e métricas em seu site?](https://nocodeiaww.com/blog/metricas-de-marketing-digital/): Você quer retorno do site, das redes e dos anúncios, mas mede o que volta? Veja as métricas de marketing digital que importam e o método MTAM para medir.
 - [Como fazer minha empresa aparecer no ChatGPT: guia para PME](https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/): Sua empresa não aparece quando o cliente pergunta ao ChatGPT? Veja o que faz o site ser lido pela IA, o que um estudo mostrou e o que ninguém garante.
 - [Governança de agentes de IA: por que uma regra só falha](https://nocodeiaww.com/blog/governanca-de-agentes-de-ia/): Governança de agentes de IA não se resolve com uma regra só. Veja os 4 níveis de autonomia do Gartner, os controles de cada um e onde entra a LGPD.
 - [No-code vale a pena? Quando trocar por código sob medida](https://nocodeiaww.com/blog/no-code-vale-a-pena/): No-code vale a pena para validar rápido. Veja os sinais de que sua startup chegou ao limite e como passar para código sob medida sem jogar trabalho fora.
