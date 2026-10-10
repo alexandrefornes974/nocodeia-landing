@@ -11,7 +11,7 @@ Atende em português, inglês e espanhol. Contato: contato@nocodeiaww.com
 - **Raio-X de automação** (1 semana): mapa das tarefas automatizáveis, horas economizadas estimadas e plano de ataque em ordem de retorno. Inclui protótipo clicável em 48 horas antes de fechar qualquer projeto.
 - **Automação de processos** (1 a 3 semanas): fluxos entre CRM, e-mail, planilhas e sistemas; alertas e relatórios automáticos. Para PMEs presas em planilha e retrabalho.
 - **Agentes de IA** (2 a 4 semanas): agente de atendimento no WhatsApp ou site, agente de prospecção e follow-up, agente de conteúdo.
-- **Site que o Google e a IA recomendam** (2 a 4 semanas + blog mensal): reformulação de site (rápido e pronto para celular), SEO para o Google, GEO para o site estar pronto para ser encontrado e citado por ChatGPT, Gemini e Perplexity, e blog automatizado em que um agente de IA pesquisa, escreve e publica toda semana com aprovação do cliente.
+- **Site que o Google e a IA recomendam** (2 a 4 semanas + blog e relatório mensal): reformulação de site (rápido e pronto para celular), SEO para o Google, GEO para o site estar pronto para ser encontrado e citado por ChatGPT, Gemini e Perplexity, e blog automatizado em que um agente de IA pesquisa, escreve e publica toda semana com aprovação do cliente.
 - **MVP de produto** (2 a 6 semanas): app ou plataforma com login e pagamentos, pronto para usuário real e investidor. Contas e dados no nome do cliente desde o dia 1.
 - **Sistema interno** (1 a 3 meses): portal, painel de gestão ou app de operação que substitui planilhas, com acesso por perfil e trilha de auditoria.
 - **Nocodeia contínuo** (mensal, sem fidelidade longa): novas funções, posts no blog, ajustes de SEO, monitoramento de agentes e suporte com prioridade.
