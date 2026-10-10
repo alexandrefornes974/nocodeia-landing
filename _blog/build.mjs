@@ -230,7 +230,17 @@ function cabecalho(l, alternativos, pagina) {
 </div></nav></header>`;
 }
 
-const rodape = l => `<footer><div class="marca"><img src="/assets/icon.png" alt=""><img src="/assets/wordmark.png" alt="nocodeia worldwide"></div>
+// Perfis da Nocodeia: ícones no rodapé e sameAs da empresa nos dados estruturados (mesma lista das páginas fixas).
+const REDES = [
+  ['LinkedIn', 'https://www.linkedin.com/company/nocodeiaww/', '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>'],
+  ['Instagram', 'https://www.instagram.com/nocodeiaww/', '<rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>'],
+  ['Facebook', 'https://www.facebook.com/profile.php?id=61595488161472', '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>'],
+];
+const PREP = { pt: 'no', en: 'on', es: 'en' };
+const redes = l => `<div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center">${REDES.map(([nome, url, svg]) =>
+  `<a href="${url.replace(/&/g, '&amp;')}" target="_blank" rel="noopener me" aria-label="Nocodeia ${PREP[l]} ${nome}" title="Nocodeia ${PREP[l]} ${nome}" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${svg}</svg></a>`).join('')}</div>`;
+
+const rodape = l => `<footer><div class="marca"><img src="/assets/icon.png" alt=""><img src="/assets/wordmark.png" alt="nocodeia worldwide"></div>${redes(l)}
 <p><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a></p><p>© ${new Date().getFullYear()} Nocodeia. ${IDIOMAS[l].rodape}</p></footer>`;
 
 function documento({ l, titulo, descricao, canonico, alternativos, imagem, tipoOg, ld, corpo, pagina }) {
@@ -305,7 +315,7 @@ function paginaPost(p, l) {
         inLanguage: L.html, datePublished: m.date, dateModified: m.updated || m.date,
         image: `${BASE_URL}${imagem}`, url: `${BASE_URL}${canonico}`, mainEntityOfPage: `${BASE_URL}${canonico}`,
         author: { '@type': 'Person', '@id': `${BASE_URL}/#fundador`, name: 'Alexandre Fornes', url: `${BASE_URL}/#sobre`, sameAs: ['https://www.linkedin.com/in/alexandredefornes/'] },
-        publisher: { '@type': 'Organization', '@id': `${BASE_URL}/#empresa`, name: 'Nocodeia', logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/icon.png` } },
+        publisher: { '@type': 'Organization', '@id': `${BASE_URL}/#empresa`, name: 'Nocodeia', sameAs: REDES.map(r => r[1]), logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/icon.png` } },
         isPartOf: { '@type': 'Blog', '@id': `${BASE_URL}${urlBlog(l)}#blog`, name: L.blogTitulo }
       },
       {
