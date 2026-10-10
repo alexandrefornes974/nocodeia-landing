@@ -296,7 +296,7 @@ function paginaPost(p, l) {
         '@type': 'BlogPosting', '@id': `${BASE_URL}${canonico}#post`, headline: v.title, description: v.description,
         inLanguage: L.html, datePublished: m.date, dateModified: m.updated || m.date,
         image: `${BASE_URL}${imagem}`, url: `${BASE_URL}${canonico}`, mainEntityOfPage: `${BASE_URL}${canonico}`,
-        author: { '@type': 'Person', '@id': `${BASE_URL}/#fundador`, name: 'Alexandre', url: `${BASE_URL}/#sobre` },
+        author: { '@type': 'Person', '@id': `${BASE_URL}/#fundador`, name: 'Alexandre Fornes', url: `${BASE_URL}/#sobre`, sameAs: ['https://www.linkedin.com/in/alexandredefornes/'] },
         publisher: { '@type': 'Organization', '@id': `${BASE_URL}/#empresa`, name: 'Nocodeia', logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/icon.png` } },
         isPartOf: { '@type': 'Blog', '@id': `${BASE_URL}${urlBlog(l)}#blog`, name: L.blogTitulo }
       },
