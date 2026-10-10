@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Aviso de cookies Nocodeia v1: precisa ser o PRIMEIRO item dentro do <head> -->
+<script>
+window.NOCODEIA_AVISO = {"namespace":"nocodeia","politica":"/privacidade/#site","cor":"#0047FF","corTexto":"#1a1a1a","fonte":"inherit","semMarketing":true,"textos":{"essenciaisRotulo":"Essential","essenciais":"Needed for the site to work and to remember your cookie choice. They cannot be turned off.","estatisticasRotulo":"Statistics","estatisticas":"Count visits and show which pages interest people most, so we can improve the site. Data is aggregated.","aviso":"We use cookies to make the site work and, if you allow it, to understand how it is used.","politica":"Privacy policy (in Portuguese)","aceitar":"Accept all","recusar":"Reject non-essential","escolher":"Choose","escolherAria":"Choose which cookies to allow","preferenciasTitulo":"Your cookie preferences","preferencias":"Turn each type on or off. You can change your mind at any time using the icon in the corner of the screen.","salvar":"Save and close","credito":"Cookie banner by Silktide"}};
+(function(w,d){var ns=w.NOCODEIA_AVISO.namespace,FILAS=["dataLayer","dataLayerGa4"];
+function lido(id){try{return localStorage.getItem("stcm."+ns+".consent."+id)}catch(e){return null}}
+function args(){return arguments}
+function estado(a,m){return{analytics_storage:a?"granted":"denied",ad_storage:m?"granted":"denied",ad_user_data:m?"granted":"denied",ad_personalization:m?"granted":"denied"}}
+var a=lido("analytics")==="true",m=lido("marketing")==="true",ini=estado(a,m);ini.wait_for_update=500;
+var antes=[args("consent","default",ini),args("set","ads_data_redaction",!m)];
+/* Google: a decisão "padrão" entra na frente de tudo, mesmo se a plataforma recriar a fila depois */
+function prep(f){if(!f.__nc){for(var i=antes.length-1;i>=0;i--)f.unshift(antes[i]);f.__nc=1}return f}
+FILAS.forEach(function(n){var atual=prep(w[n]||[]);try{Object.defineProperty(w,n,{configurable:true,enumerable:true,get:function(){return atual},set:function(v){atual=prep(v||[])}})}catch(e){w[n]=atual}});
+w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n){w[n].push(args("consent","update",s))});w.dataLayer.push({event:"nc_consent_update",nc_analytics:a,nc_marketing:m})}};
+})(window,document);
+</script>
+<script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
+<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Does Your Company Use Digital Marketing Metrics? | Nocodeia</title>
+<meta name="description" content="Want a return from your site, social media and ads, but do you measure what comes back? See the digital marketing metrics that matter and the MTAM method.">
+<link rel="canonical" href="https://nocodeiaww.com/en/blog/digital-marketing-metrics/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/blog/metricas-de-marketing-digital/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/blog/digital-marketing-metrics/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/blog/metricas-de-marketing-digital-para-pymes/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/blog/metricas-de-marketing-digital/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Does Your Company Use Digital Marketing Metrics? | Nocodeia">
+<meta property="og:description" content="Want a return from your site, social media and ads, but do you measure what comes back? See the digital marketing metrics that matter and the MTAM method.">
+<meta property="og:url" content="https://nocodeiaww.com/en/blog/digital-marketing-metrics/">
+<meta property="og:image" content="https://nocodeiaww.com/blog/img/metricas-de-marketing-digital.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://nocodeiaww.com/en/blog/digital-marketing-metrics/#post",
+   "headline": "Does Your Company Use Digital Marketing Metrics?",
+   "description": "Want a return from your site, social media and ads, but do you measure what comes back? See the digital marketing metrics that matter and the MTAM method.",
+   "inLanguage": "en",
+   "datePublished": "2026-10-10",
+   "dateModified": "2026-10-10",
+   "image": "https://nocodeiaww.com/blog/img/metricas-de-marketing-digital.jpg",
+   "url": "https://nocodeiaww.com/en/blog/digital-marketing-metrics/",
+   "mainEntityOfPage": "https://nocodeiaww.com/en/blog/digital-marketing-metrics/",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre Fornes",
+    "url": "https://nocodeiaww.com/#sobre",
+    "sameAs": [
+     "https://www.linkedin.com/in/alexandredefornes/"
+    ]
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://nocodeiaww.com/assets/icon.png"
+    }
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://nocodeiaww.com/en/blog/#blog",
+    "name": "Nocodeia Blog"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://nocodeiaww.com/en/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://nocodeiaww.com/en/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Does Your Company Use Digital Marketing Metrics?",
+     "item": "https://nocodeiaww.com/en/blog/digital-marketing-metrics/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/en/blog/digital-marketing-metrics/#faq",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is Google Analytics free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Google says, on the Analytics page, that it offers the tools free of charge to understand the customer journey. There's a paid version, Analytics 360, aimed at large enterprises."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I know how many people visit my website?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Install GA4 on the website and check the visits report. To know how many became leads, mark the WhatsApp click and the form submission as key events."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are vanity metrics?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They're numbers that feel good but don't show sales, like likes and followers. They only count when you can tie them to leads or sales."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a UTM?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It's a tag added to the end of a link that tells GA4 where the visit came from, like \"instagram\" or \"email.\" Google recommends always using source, medium and campaign."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/en/" aria-label="Nocodeia"><img src="/assets/logo_h.png" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/en/">Home</a>
+<a class="item" href="/en/#servicos">Services</a>
+<a class="item" href="/en/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/blog/metricas-de-marketing-digital/" hreflang="pt-BR">PT</a><a href="/en/blog/digital-marketing-metrics/" hreflang="en" aria-current="page">EN</a><a href="/es/blog/metricas-de-marketing-digital-para-pymes/" hreflang="es">ES</a></div>
+<a class="botao" href="/en/#vaga">Get a spot</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/en/blog/">← All posts</a>
+<h1>Does Your Company Use Digital Marketing Metrics?</h1>
+<p class="resumo">Want a return from your site, social media and ads, but do you measure what comes back? See the digital marketing metrics that matter and the MTAM method.</p>
+<div class="meta"><span>By Alexandre</span><span>·</span><time datetime="2026-10-10">October 10, 2026</time><span>·</span><span>10 min read</span></div>
+<figure class="capa"><img src="/blog/img/metricas-de-marketing-digital.jpg" alt="Laptop on a couch showing a website analytics dashboard, with charts of users, countries and devices" width="1200" height="630"><figcaption>Foto: Lukas Blazek / Pexels</figcaption></figure>
+<div class="conteudo">
+<p>Digital marketing metrics are the numbers that show whether the money spent on your website, social media and ads comes back as customers. Many businesses want a return but don&#39;t measure it. For a small business, a few numbers are enough: how many people saw the brand on Google, how many visited, how many got in touch and from where.</p>
+<p>You pay for the website, boost posts on Instagram, maybe run Google ads. At the end of the month, someone asks: &quot;how many customers did this bring in?&quot; If the answer is &quot;a few, I think,&quot; this guide is for you. It shows which numbers to watch, how Google&#39;s free tool figures out where each customer came from and, just as honestly, what stays out of the count.</p>
+<h2 id="why-do-businesses-want-a-return-but-not-measure-what-comes-back">Why do businesses want a return but not measure what comes back?</h2>
+<p>Because asking for a return is easy; setting up the measurement takes work and gets pushed back. The 2025 trends report from <a href="https://localiq.com/blog/small-business-marketing-trends-report/" target="_blank" rel="noopener">LocaliQ</a>, a marketing company, surveyed over 730 small business owners and marketers, 74% of them in the US or Canada. It&#39;s a mostly North American sample, but it shows the contradiction clearly.</p>
+<p>In the report&#39;s words: &quot;Return on investment was the top metric, with 60% indicating it is &#39;very important.&#39;&quot; At the same time, &quot;Nearly half (47%) are using website analytics like Google Analytics.&quot; In our reading, return is the most valued metric, and fewer than half use the tool that helps measure it on the website.</p>
+<p>In Brazil, where Nocodeia is based, a different survey points the same way. The <a href="https://sebraepr.com.br/impulsiona/pequenos-negocios-avancam-em-maturidade-digital-em-2025/" target="_blank" rel="noopener">Digital Maturity Indicator 2025, from Sebrae and ABDI</a> (in Portuguese), two Brazilian organizations that support small businesses and industry, assessed over 7,000 Brazilian micro and small businesses between May and June 2025. The indicator, on a scale of 0 to 80 points, rose from 35 to 37. According to Sebrae, &quot;collaborative innovation and the use of data are still the main challenges&quot; (our translation).</p>
+<p>In our assessment, a business that doesn&#39;t measure can&#39;t tell which channel pays off. It ends up cutting what worked or sticking with what brings in no one.</p>
+<h2 id="why-should-everything-point-to-your-company-39-s-website">Why should everything point to your company&#39;s website?</h2>
+<p>Because the website is where you can follow the customer&#39;s path from start to finish. The rule we use at Nocodeia is this: everything converges on the website, because that&#39;s where we can measure the customer&#39;s full path. What happens on social media and in AI tools we measure on each platform and bring together in a single dashboard.</p>
+<p>In practice, the Instagram post, the LinkedIn profile and the Facebook page take people to the website. There they read, compare and click the WhatsApp button or send the form. Almost every step of that path can be counted.</p>
+<p>Many businesses do the opposite. According to the <a href="https://cetic.br/media/docs/publicacoes/2/20250512121759/tic_empresas_2024_resumo_executivo.pdf" target="_blank" rel="noopener">ICT Enterprises 2024 survey from Cetic.br</a> (in Portuguese), a Brazilian research center on internet use, 53% of Brazilian companies with more than ten people employed had a website in 2024, down from 54% in 2019. For these companies, social media is the main form of online presence. The data was collected between March and November 2024.</p>
+<p>In our assessment, a social media profile is rented land: the platform decides what you see of your own numbers. The website is land you own.</p>
+<h2 id="which-digital-marketing-metrics-should-a-small-business-track">Which digital marketing metrics should a small business track?</h2>
+<p>Five numbers a month cover most of a small business&#39;s decisions. It&#39;s the report we use in the Nocodeia method, with five lines at most:</p>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>What it answers</th>
+<th>Where to see it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Google impressions</td>
+<td>How many times the site showed up in search</td>
+<td>Google Search Console</td>
+</tr>
+<tr>
+<td>Visits</td>
+<td>How many people came to the site</td>
+<td>GA4</td>
+</tr>
+<tr>
+<td>Leads or sales</td>
+<td>How many clicked WhatsApp, sent the form or bought</td>
+<td>GA4 (key events)</td>
+</tr>
+<tr>
+<td>Where they came from</td>
+<td>Google, Instagram, AI, direct link</td>
+<td>GA4 (channels)</td>
+</tr>
+<tr>
+<td>One recommendation</td>
+<td>What to do next month</td>
+<td>Whoever analyzes the numbers</td>
+</tr>
+</tbody></table>
+<p>Two terms from the table. Google Search Console is a free Google dashboard that shows, among other things, how many times your site appeared in search results. GA4 (Google Analytics 4) is Google&#39;s free tool that counts website visits and what people do on the site.</p>
+<p>Notice what was left out: likes and followers. These are the so-called vanity metrics, numbers that feel good but don&#39;t pay the bills. They only make it into the report when they lead someone to get in touch.</p>
+<h2 id="how-does-ga4-figure-out-where-each-customer-came-from">How does GA4 figure out where each customer came from?</h2>
+<p>With three pieces: the tag on the link, the record of actions and the split by channel. GA4 does the split on its own, based on the address the person came from; the tag and the record of actions make that count more precise and show who became a lead.</p>
+<ol>
+<li><p><strong>Tag on the link (UTM).</strong> A UTM is a bit of text added to the end of a link that says where the visit came from. According to the Google Analytics help page on campaign URLs, when someone clicks a tagged link, &quot;the URL parameters are sent to Analytics, and the parameter values are visible in the Traffic acquisition report.&quot; Google says you should always use three tags: source (utm_source), medium (utm_medium) and campaign (utm_campaign).</p>
+<p>In practice, the link in your Instagram bio becomes something like <code>yoursite.com/?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=bio</code>.</p>
+</li>
+<li><p><strong>Record of actions (events).</strong> An event is each action GA4 records, like clicking the WhatsApp button or sending the form. The action that&#39;s worth money to you is marked as a key event, what many people call a conversion. That number answers &quot;how many customers did the website bring in.&quot;</p>
+</li>
+<li><p><strong>Split by channel.</strong> GA4 groups visits into channels, such as organic search, social media and direct. According to the <a href="https://support.google.com/analytics/answer/9756891?hl=en" target="_blank" rel="noopener">Google Analytics help page on channel groups</a>, there is a channel called &quot;AI Assistant,&quot; for people who arrive from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok. People who arrive through Google&#39;s AI Overviews and AI Mode (the AI-generated answers inside Google Search) fall under &quot;Organic Search.&quot;</p>
+</li>
+</ol>
+<h2 id="what-usually-goes-wrong-when-a-business-sets-it-up-alone">What usually goes wrong when a business sets it up alone?</h2>
+<p>You can start on your own: Search Console and Google Analytics are free. Installing is the easy part; setting things up so the numbers can be trusted is another story.</p>
+<p>If the tool is installed without the consent setup, it stores cookies before the visitor answers the cookie notice. In Brazil, in our assessment, that may conflict with the LGPD, the country&#39;s data protection law. The same tool installed twice can count visits double. And, as Google itself warns, a link tagged &quot;Meta&quot; and another tagged &quot;meta&quot; become two different sources in the report.</p>
+<p>None of this shows an error on screen: the dashboard keeps showing numbers, just wrong ones. We ran into several of these issues while setting up Nocodeia&#39;s own website: even the team&#39;s computer was blocking Google Analytics, and tests run from it showed zero visits. In our assessment, deciding with wrong data is worse than having no data.</p>
+<h2 id="what-is-nocodeia-39-s-mtam-method">What is Nocodeia&#39;s MTAM method?</h2>
+<p>MTAM is Nocodeia&#39;s method for measuring a small business&#39;s marketing in four steps that repeat every month. Each letter is a step:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>What we do</th>
+<th>Question it answers</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>M</strong>easure the starting point</td>
+<td>We set the &quot;month zero&quot;: how many people see, visit and contact you today</td>
+<td>Where are we?</td>
+</tr>
+<tr>
+<td><strong>T</strong>ag the links</td>
+<td>We add UTMs to social media links, turn WhatsApp and the form into events and check the AI channel in GA4</td>
+<td>Where does each lead come from?</td>
+</tr>
+<tr>
+<td><strong>A</strong>im every channel at the site</td>
+<td>We make social media, Google and AI tools point to the website, with SEO (adjustments to show up on Google) and GEO (adjustments to be read and cited by AI tools)</td>
+<td>How can more people get here?</td>
+</tr>
+<tr>
+<td><strong>M</strong>onitor and decide</td>
+<td>We deliver the monthly five-number report and one recommendation: what kind of post to make, what to adjust in SEO or GEO</td>
+<td>What do we do next month?</td>
+</tr>
+</tbody></table>
+<p>After the last step, the cycle goes back to the start: the month&#39;s result becomes the new starting point. For the part about being cited by AI tools, see the guide <a href="/en/blog/how-to-get-my-business-on-chatgpt/">how to get my business on ChatGPT</a>.</p>
+<p>Two practical rules go with the method. We follow an analytics checklist on every website, so no tag is forgotten. And the GA4 and Search Console accounts stay in the client&#39;s Google account, not ours: if you ever switch providers, the history is still yours. The monthly recommendation comes from analyzing the numbers; the tool that will speed up that part is still being built.</p>
+<h2 id="how-does-nocodeia-measure-its-own-website">How does Nocodeia measure its own website?</h2>
+<p>With the same pieces we recommend. On October 9, 2026, Nocodeia&#39;s website started measuring visits and form leads with GA4, a cookie notice and a lead event (the record of each person who asks to be contacted). Google Search Console and Bing Webmaster Tools, the equivalent dashboard for Microsoft&#39;s search engine, have been set up since October 3, 2026.</p>
+<p>It&#39;s still too early to show results, and we&#39;d rather not make any up. In tests on October 9, 2026, when the visitor accepted cookies, the form submission showed up in GA4 along with the channel the visitor came from.</p>
+<h2 id="what-can-no-tool-measure">What can no tool measure?</h2>
+<p>The numbers show a trend, not the exact count of every customer. The blind spots:</p>
+<ul>
+<li><strong>People who decline cookies.</strong> A cookie is a small file the website stores in the browser to recognize the visit. According to the <a href="https://support.google.com/analytics/answer/9976101?hl=en" target="_blank" rel="noopener">Google Analytics help page on consent mode</a>, it depends on how the cookie notice was installed. In one setup, the site sends Google only a minimal signal, with no cookie, and GA4 fills the gaps with estimates. In the other, the tool stays blocked and &quot;no data is collected.&quot;</li>
+<li><strong>Links forwarded on WhatsApp.</strong> For Google, &quot;Direct&quot; is anyone who arrives &quot;via a saved link or by entering your URL.&quot; In our assessment, a link copied and sent in a chat usually lands there, because it arrives without a tag.</li>
+<li><strong>People who see the brand in an AI answer and don&#39;t click.</strong> No click, no visit, and nothing shows up on the website.</li>
+<li><strong>Reach on social media.</strong> How many people saw the post stays in the Instagram, Facebook and LinkedIn dashboards, not in GA4.</li>
+<li><strong>Sales closed on WhatsApp.</strong> The website records the click on the button; the sale happens in the chat, outside the site.</li>
+<li><strong>Blockers.</strong> Ad blockers can prevent part of the count, as happened on our team&#39;s computer.</li>
+</ul>
+<p>That&#39;s why we bring each platform&#39;s numbers together in a single dashboard and look at the direction of the curve, month by month.</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="is-google-analytics-free">Is Google Analytics free?</h3>
+<p>Yes. Google says, on the Analytics page, that it offers the tools free of charge to understand the customer journey. There&#39;s a paid version, Analytics 360, aimed at large enterprises.</p>
+<h3 id="how-do-i-know-how-many-people-visit-my-website">How do I know how many people visit my website?</h3>
+<p>Install GA4 on the website and check the visits report. To know how many became leads, mark the WhatsApp click and the form submission as key events.</p>
+<h3 id="what-are-vanity-metrics">What are vanity metrics?</h3>
+<p>They&#39;re numbers that feel good but don&#39;t show sales, like likes and followers. They only count when you can tie them to leads or sales.</p>
+<h3 id="what-is-a-utm">What is a UTM?</h3>
+<p>It&#39;s a tag added to the end of a link that tells GA4 where the visit came from, like &quot;instagram&quot; or &quot;email.&quot; Google recommends always using source, medium and campaign.</p>
+<h2 id="where-should-you-start">Where should you start?</h2>
+<p>Start with month zero: knowing how many people see, visit and contact your business today. If you want reliable numbers from the first month, without finding the mistakes later, Nocodeia can help. In the <a href="/en/#como">45-minute consultation</a>, we look at this with you and show what&#39;s missing for your website to tell where each lead comes from. That&#39;s the work of our <a href="/en/#servicos">A website Google and AI recommend</a> service, with a monthly report. <a href="/en/#vaga">Book your free consultation</a>.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">A website Google and AI recommend</p>
+<h2>Want this working in your business?</h2>
+<p>Free 45-minute diagnosis. You leave with a fixed price and deadline.</p>
+<a class="botao" href="/en/#vaga">Get my free diagnosis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.png" alt=""><p><strong>Alexandre, founder of Nocodeia</strong><br>25+ years in tech at companies like IBM, Xerox, DHL and Bosch. Today he ships products with no-code and AI in weeks.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.png" alt=""><img src="/assets/wordmark.png" alt="nocodeia worldwide"></div>
+<p><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a></p><p>© 2026 Nocodeia. Built with no-code, of course.</p></footer>
+</body>
+</html>

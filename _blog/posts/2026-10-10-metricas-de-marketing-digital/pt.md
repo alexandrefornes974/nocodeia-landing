@@ -1,4 +1,4 @@
-# Sua empresa trabalha com dados e métricas em seu site?
+# Sua empresa usa métricas de marketing digital no site?
 
 Métricas de marketing digital são os números que mostram se o dinheiro investido em site, redes sociais e anúncios volta como cliente. Muita empresa quer retorno, mas não mede o que volta. Para uma pequena empresa, poucos números bastam: quantas pessoas viram a marca no Google, quantas visitaram o site, quantas chamaram e de onde vieram.
 

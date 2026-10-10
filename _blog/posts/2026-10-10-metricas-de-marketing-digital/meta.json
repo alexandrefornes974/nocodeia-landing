@@ -9,8 +9,20 @@
   "audience": "pme",
   "pt": {
     "slug": "metricas-de-marketing-digital",
-    "title": "Sua empresa trabalha com dados e métricas em seu site?",
+    "title": "Sua empresa usa métricas de marketing digital no site?",
     "description": "Você quer retorno do site, das redes e dos anúncios, mas mede o que volta? Veja as métricas de marketing digital que importam e o método MTAM para medir.",
     "image_alt": "Notebook sobre um sofá mostrando um painel de análise de visitas do site, com gráficos de usuários, países e dispositivos"
+  },
+  "en": {
+    "slug": "digital-marketing-metrics",
+    "title": "Does Your Company Use Digital Marketing Metrics?",
+    "description": "Want a return from your site, social media and ads, but do you measure what comes back? See the digital marketing metrics that matter and the MTAM method.",
+    "image_alt": "Laptop on a couch showing a website analytics dashboard, with charts of users, countries and devices"
+  },
+  "es": {
+    "slug": "metricas-de-marketing-digital-para-pymes",
+    "title": "¿Tu empresa usa métricas de marketing digital en su sitio?",
+    "description": "Quieres retorno del sitio, las redes y los anuncios, pero ¿mides lo que vuelve? Mira las métricas de marketing digital que importan y el método MTAM.",
+    "image_alt": "Laptop sobre un sofá con un panel de análisis de visitas del sitio, con gráficos de usuarios, países y dispositivos"
   }
 }
