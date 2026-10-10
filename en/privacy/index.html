@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Aviso de cookies Nocodeia v1: precisa ser o PRIMEIRO item dentro do <head> -->
+<script>
+window.NOCODEIA_AVISO = {"namespace":"nocodeia","politica":"/en/privacy/#site","cor":"#0047FF","corTexto":"#1a1a1a","fonte":"inherit","semMarketing":false,"textos":{"essenciaisRotulo":"Essential","essenciais":"Needed for the site to work and to remember your cookie choice. They cannot be turned off.","estatisticasRotulo":"Statistics","estatisticas":"Count visits, show which pages interest people most and measure the site speed and errors, so we can improve the site.","aviso":"We use cookies to make the site work and, if you allow it, to understand how it is used and measure ads.","marketing":"Allow us to measure and personalize ads on Meta (Instagram/Facebook) and LinkedIn.","politica":"Privacy policy","aceitar":"Accept all","recusar":"Reject non-essential","escolher":"Choose","escolherAria":"Choose which cookies to allow","preferenciasTitulo":"Your cookie preferences","preferencias":"Turn each type on or off. You can change your mind at any time using the icon in the corner of the screen.","salvar":"Save and close","credito":"Cookie banner by Silktide"}};
+(function(w,d){var ns=w.NOCODEIA_AVISO.namespace,FILAS=["dataLayer","dataLayerGa4"];
+function lido(id){try{return localStorage.getItem("stcm."+ns+".consent."+id)}catch(e){return null}}
+function args(){return arguments}
+function estado(a,m){return{analytics_storage:a?"granted":"denied",ad_storage:m?"granted":"denied",ad_user_data:m?"granted":"denied",ad_personalization:m?"granted":"denied"}}
+var a=lido("analytics")==="true",m=lido("marketing")==="true",ini=estado(a,m);ini.wait_for_update=500;
+var antes=[args("consent","default",ini),args("set","ads_data_redaction",!m)];
+/* Google: a decisão "padrão" entra na frente de tudo, mesmo se a plataforma recriar a fila depois */
+function prep(f){if(!f.__nc){for(var i=antes.length-1;i>=0;i--)f.unshift(antes[i]);f.__nc=1}return f}
+FILAS.forEach(function(n){var atual=prep(w[n]||[]);try{Object.defineProperty(w,n,{configurable:true,enumerable:true,get:function(){return atual},set:function(v){atual=prep(v||[])}})}catch(e){w[n]=atual}});
+w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n){w[n].push(args("consent","update",s))});w.dataLayer.push({event:"nc_consent_update",nc_analytics:a,nc_marketing:m})}};
+})(window,document);
+</script>
+<script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
+<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Nocodeia</title>
+<meta name="description" content="How nocodeiaww.com handles visitor data: contact form, cookies, Google Analytics, Microsoft Clarity, Better Stack, Meta Pixel and LinkedIn Insight Tag.">
+<link rel="canonical" href="https://nocodeiaww.com/en/privacy/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/privacidade/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/privacy/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/privacidad/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/privacidade/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta name="theme-color" content="#121316">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Privacy Policy | Nocodeia">
+<meta property="og:description" content="How nocodeiaww.com handles visitor data: contact form, cookies, Google Analytics, Microsoft Clarity, Better Stack, Meta Pixel and LinkedIn Insight Tag.">
+<meta property="og:url" content="https://nocodeiaww.com/en/privacy/">
+<meta property="og:image" content="https://nocodeiaww.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,30px);line-height:1.15;letter-spacing:-.02em;margin:44px 0 14px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/en/" aria-label="Nocodeia"><img src="/assets/logo_h.png" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/en/">Home</a>
+<a class="item" href="/en/#servicos">Services</a>
+<a class="item" href="/en/blog/">Blog</a>
+<a class="botao" href="/en/#vaga">Get a spot</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/en/">← Back to home</a>
+<h1>Privacy Policy</h1>
+<div class="meta"><span>Last updated: October 10, 2026</span><span>Controller: Nocodeia</span></div>
+<div class="conteudo">
+
+<p>This page explains how nocodeiaww.com, including the blog, handles visitor data. The full policy, which also covers an internal Nocodeia app, is available <a href="/privacidade/" hreflang="pt-BR">in Portuguese</a>.</p>
+
+<h2 id="site">1. This website: form, cookies, statistics and ads</h2>
+<ul>
+<li><strong>"I want my spot" form:</strong> the email you type is not stored on the site. It is placed in a WhatsApp message to Nocodeia, which is only sent if you press "send" in WhatsApp.</li>
+<li><strong>Visit statistics (Google Analytics 4):</strong> we use it to know how many people visit the site and which pages interest them most. Statistics cookies (<code>_ga</code> and <code>_ga_*</code>) are only set if you accept them in the cookie banner. Without your consent, Google may receive cookieless signals that do not identify you. We do not use this data for advertising.</li>
+<li><strong>Page behavior (Microsoft Clarity):</strong> with your consent in the cookie banner, we use Microsoft Clarity to understand how people browse the site, with heatmaps (where people click) and browsing recordings. The data goes to Microsoft.</li>
+<li><strong>Site performance and errors (Better Stack):</strong> with your consent in the cookie banner, we use Better Stack to measure site speed, find technical errors and view browsing recordings (clicks, scrolling and movements). What you type in forms is not recorded. Your IP address and approximate location (city) are also logged. Better Stack sets cookies in your browser, and the data goes to Better Stack, Inc., in the United States. We do not use this data for advertising.</li>
+<li><strong>Ads (Meta Pixel and LinkedIn Insight Tag):</strong> only with your consent in the "Marketing" category of the cookie banner, the site sends browsing data to Meta (Facebook and Instagram), through the Meta Pixel, and to LinkedIn, through the LinkedIn Insight Tag, to measure and personalize ads. Each of these companies handles this data under its own privacy policy.</li>
+<li><strong>Your cookie choice</strong> is saved in your own browser. You can change your mind at any time using the icon in the corner of the screen.</li>
+<li><strong>Hosting:</strong> the site is delivered by Cloudflare, which processes technical connection data (such as the IP address) to deliver the pages and protect the site against attacks.</li>
+<li><strong>Providers outside Brazil:</strong> Google, Microsoft, Meta, LinkedIn, Better Stack and Cloudflare may process this data on servers outside Brazil, under their own terms.</li>
+<li><strong>Your rights (LGPD, Brazil's General Data Protection Law):</strong> you can request access to, correction or deletion of your data and withdraw your consent by writing to the email below.</li>
+</ul>
+
+<h2>2. Contact</h2>
+<p>Questions about this policy: <a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a>.</p>
+
+</div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.png" alt=""><img src="/assets/wordmark.png" alt="nocodeia worldwide"></div>
+<p><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a></p><p>© 2026 Nocodeia. Made with no-code, of course.</p></footer>
+</body>
+</html>
