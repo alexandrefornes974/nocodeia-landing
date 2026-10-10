@@ -4,6 +4,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, rmSync
 import { join, dirname, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
+import { avisoCookies } from './aviso-cookies.mjs';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const SITE = join(AQUI, '..');
@@ -238,6 +239,7 @@ function documento({ l, titulo, descricao, canonico, alternativos, imagem, tipoO
   return `<!doctype html>
 <html lang="${IDIOMAS[l].html}">
 <head>
+${avisoCookies(l)}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PHQ7W3WDX"></script>
 <script>
@@ -351,7 +353,7 @@ ${meus.length ? `<div class="grade">\n${cartoes}\n</div>` : `<p class="sub-blog"
 // ---------- sitemap e llms.txt ----------
 function sitemap(posts) {
   const hoje = new Date().toISOString().slice(0, 10);
-  const urls = [['/', hoje], ['/en/', hoje], ['/es/', hoje], ['/privacidade/', '2026-10-04']];
+  const urls = [['/', hoje], ['/en/', hoje], ['/es/', hoje], ['/privacidade/', '2026-10-09']];
   if (posts.length) for (const l of Object.keys(IDIOMAS)) if (posts.some(p => p.versoes[l])) urls.push([urlBlog(l), posts.find(p => p.versoes[l]).meta.updated || posts.find(p => p.versoes[l]).meta.date]);
   for (const p of posts) for (const l of Object.keys(p.versoes)) urls.push([urlPost(l, p.versoes[l].slug), p.meta.updated || p.meta.date]);
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(([u, d]) => `<url><loc>${BASE_URL}${u}</loc><lastmod>${d}</lastmod></url>`).join('\n')}\n</urlset>\n`;

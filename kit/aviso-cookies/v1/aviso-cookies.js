@@ -34,49 +34,73 @@
     }, 0);
   }
 
+  // Textos padr\u00e3o (loja, portugu\u00eas). Cada site pode trocar qualquer um em NOCODEIA_AVISO.textos;
+  // NOCODEIA_AVISO.semMarketing = true esconde a categoria Marketing (site sem pixel de an\u00fancio).
+  var t = {
+    essenciaisRotulo: 'Essenciais',
+    essenciais: 'Necess\u00e1rios para o site funcionar: carrinho, login e seguran\u00e7a. N\u00e3o podem ser desligados.',
+    estatisticasRotulo: 'Estat\u00edsticas',
+    estatisticas: 'Contam visitas e mostram quais p\u00e1ginas e produtos interessam mais, para melhorarmos a loja. Os dados s\u00e3o agregados.',
+    marketingRotulo: 'Marketing',
+    marketing: 'Permitem mostrar an\u00fancios no Google, Facebook e Instagram de acordo com o que voc\u00ea viu aqui.',
+    aviso: 'Usamos cookies para o site funcionar, entender como ele \u00e9 usado e mostrar an\u00fancios relevantes. Voc\u00ea escolhe o que permitir.',
+    politica: 'Pol\u00edtica de privacidade',
+    aceitar: 'Aceitar todos',
+    recusar: 'Recusar n\u00e3o essenciais',
+    escolher: 'Escolher',
+    escolherAria: 'Escolher quais cookies permitir',
+    preferenciasTitulo: 'Suas prefer\u00eancias de cookies',
+    preferencias: 'Ligue ou desligue cada tipo. Voc\u00ea pode mudar de ideia a qualquer momento pelo \u00edcone no canto da tela.',
+    salvar: 'Salvar e fechar',
+    credito: 'Aviso de cookies por Silktide'
+  };
+  var outros = cfg.textos || {};
+  for (var k in outros) if (Object.prototype.hasOwnProperty.call(outros, k)) t[k] = outros[k];
+
   var politica = cfg.politica
-    ? ' <a href="' + cfg.politica + '">Pol\u00edtica de privacidade</a>'
+    ? ' <a href="' + cfg.politica + '">' + t.politica + '</a>'
     : '';
 
   function iniciar() {
     if (!w.silktideConsentManager || !w.silktideConsentManager.init) return;
+    var tipos = [
+      {
+        id: 'essential',
+        label: t.essenciaisRotulo,
+        description: '<p>' + t.essenciais + '</p>',
+        required: true
+      },
+      {
+        id: 'analytics',
+        label: t.estatisticasRotulo,
+        description: '<p>' + t.estatisticas + '</p>',
+        onAccept: function () { marcar('a', true); },
+        onReject: function () { marcar('a', false); }
+      }
+    ];
+    if (!cfg.semMarketing) tipos.push({
+      id: 'marketing',
+      label: t.marketingRotulo,
+      description: '<p>' + t.marketing + '</p>',
+      onAccept: function () { marcar('m', true); },
+      onReject: function () { marcar('m', false); }
+    });
     w.silktideConsentManager.init({
       namespace: cfg.namespace || 'site',
-      consentTypes: [
-        {
-          id: 'essential',
-          label: 'Essenciais',
-          description: '<p>Necess\u00e1rios para o site funcionar: carrinho, login e seguran\u00e7a. N\u00e3o podem ser desligados.</p>',
-          required: true
-        },
-        {
-          id: 'analytics',
-          label: 'Estat\u00edsticas',
-          description: '<p>Contam visitas e mostram quais p\u00e1ginas e produtos interessam mais, para melhorarmos a loja. Os dados s\u00e3o agregados.</p>',
-          onAccept: function () { marcar('a', true); },
-          onReject: function () { marcar('a', false); }
-        },
-        {
-          id: 'marketing',
-          label: 'Marketing',
-          description: '<p>Permitem mostrar an\u00fancios no Google, Facebook e Instagram de acordo com o que voc\u00ea viu aqui.</p>',
-          onAccept: function () { marcar('m', true); },
-          onReject: function () { marcar('m', false); }
-        }
-      ],
+      consentTypes: tipos,
       text: {
         prompt: {
-          description: '<p>Usamos cookies para o site funcionar, entender como ele \u00e9 usado e mostrar an\u00fancios relevantes. Voc\u00ea escolhe o que permitir.' + politica + '</p>',
-          acceptAllButtonText: 'Aceitar todos',
-          rejectNonEssentialButtonText: 'Recusar n\u00e3o essenciais',
-          preferencesButtonText: 'Escolher',
-          preferencesButtonAccessibleLabel: 'Escolher quais cookies permitir'
+          description: '<p>' + t.aviso + politica + '</p>',
+          acceptAllButtonText: t.aceitar,
+          rejectNonEssentialButtonText: t.recusar,
+          preferencesButtonText: t.escolher,
+          preferencesButtonAccessibleLabel: t.escolherAria
         },
         preferences: {
-          title: 'Suas prefer\u00eancias de cookies',
-          description: '<p>Ligue ou desligue cada tipo. Voc\u00ea pode mudar de ideia a qualquer momento pelo \u00edcone no canto da tela.</p>',
-          saveButtonText: 'Salvar e fechar',
-          creditLinkText: 'Aviso de cookies por Silktide'
+          title: t.preferenciasTitulo,
+          description: '<p>' + t.preferencias + '</p>',
+          saveButtonText: t.salvar,
+          creditLinkText: t.credito
         }
       },
       prompt: { position: cfg.posicao || 'bottomLeft' },
