@@ -7,14 +7,16 @@ const TEXTOS = {
   pt: {
     essenciais: 'Necessários para o site funcionar e para lembrar a sua escolha de cookies. Não podem ser desligados.',
     estatisticas: 'Contam visitas e mostram quais páginas interessam mais, para melhorarmos o site. Os dados são agregados.',
-    aviso: 'Usamos cookies para o site funcionar e, se você permitir, para entender como ele é usado.',
+    aviso: 'Usamos cookies para o site funcionar e, se você permitir, para entender como ele é usado e medir anúncios.',
+    marketing: 'Permitem medir e personalizar anúncios no Meta (Instagram/Facebook) e no LinkedIn.',
   },
   en: {
     essenciaisRotulo: 'Essential',
     essenciais: 'Needed for the site to work and to remember your cookie choice. They cannot be turned off.',
     estatisticasRotulo: 'Statistics',
     estatisticas: 'Count visits and show which pages interest people most, so we can improve the site. Data is aggregated.',
-    aviso: 'We use cookies to make the site work and, if you allow it, to understand how it is used.',
+    aviso: 'We use cookies to make the site work and, if you allow it, to understand how it is used and measure ads.',
+    marketing: 'Allow us to measure and personalize ads on Meta (Instagram/Facebook) and LinkedIn.',
     politica: 'Privacy policy (in Portuguese)',
     aceitar: 'Accept all',
     recusar: 'Reject non-essential',
@@ -30,7 +32,8 @@ const TEXTOS = {
     essenciais: 'Necesarias para que el sitio funcione y para recordar tu elección de cookies. No se pueden desactivar.',
     estatisticasRotulo: 'Estadísticas',
     estatisticas: 'Cuentan visitas y muestran qué páginas interesan más, para mejorar el sitio. Los datos son agregados.',
-    aviso: 'Usamos cookies para que el sitio funcione y, si lo permites, para entender cómo se usa.',
+    aviso: 'Usamos cookies para que el sitio funcione y, si lo permites, para entender cómo se usa y medir anuncios.',
+    marketing: 'Permiten medir y personalizar anuncios en Meta (Instagram/Facebook) y LinkedIn.',
     politica: 'Política de privacidad (en portugués)',
     aceitar: 'Aceptar todas',
     recusar: 'Rechazar no esenciales',
@@ -47,7 +50,7 @@ const TEXTOS = {
 const SNIPPET = readFileSync(new URL('../kit/aviso-cookies/v1/snippet-head.html', import.meta.url), 'utf8');
 
 export function avisoCookies(l) {
-  const cfg = { namespace: 'nocodeia', politica: '/privacidade/#site', cor: '#0047FF', corTexto: '#1a1a1a', fonte: 'inherit', semMarketing: true, textos: TEXTOS[l] };
+  const cfg = { namespace: 'nocodeia', politica: '/privacidade/#site', cor: '#0047FF', corTexto: '#1a1a1a', fonte: 'inherit', semMarketing: false, textos: TEXTOS[l] };
   const ini = SNIPPET.indexOf('window.NOCODEIA_AVISO = {');
   const fim = SNIPPET.indexOf('};', ini) + 2;
   return SNIPPET.slice(0, ini) + 'window.NOCODEIA_AVISO = ' + JSON.stringify(cfg) + ';' + SNIPPET.slice(fim).replace('https://nocodeiaww.com/kit/', '/kit/').trimEnd();

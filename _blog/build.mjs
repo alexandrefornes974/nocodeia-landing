@@ -361,7 +361,7 @@ ${meus.length ? `<div class="grade">\n${cartoes}\n</div>` : `<p class="sub-blog"
 // ---------- sitemap e llms.txt ----------
 function sitemap(posts) {
   const hoje = new Date().toISOString().slice(0, 10);
-  const urls = [['/', hoje], ['/en/', hoje], ['/es/', hoje], ['/privacidade/', '2026-10-09']];
+  const urls = [['/', hoje], ['/en/', hoje], ['/es/', hoje], ['/privacidade/', '2026-10-10']];
   if (posts.length) for (const l of Object.keys(IDIOMAS)) if (posts.some(p => p.versoes[l])) urls.push([urlBlog(l), posts.find(p => p.versoes[l]).meta.updated || posts.find(p => p.versoes[l]).meta.date]);
   for (const p of posts) for (const l of Object.keys(p.versoes)) urls.push([urlPost(l, p.versoes[l].slug), p.meta.updated || p.meta.date]);
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(([u, d]) => `<url><loc>${BASE_URL}${u}</loc><lastmod>${d}</lastmod></url>`).join('\n')}\n</urlset>\n`;
