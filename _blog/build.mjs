@@ -220,7 +220,7 @@ function cabecalho(l, alternativos, pagina) {
     return `<a href="${href}" hreflang="${IDIOMAS[k].html}"${k === l ? ' aria-current="page"' : ''}>${k.toUpperCase()}</a>`;
   }).join('');
   return `<header class="topo"><nav aria-label="Principal">
-<a class="logo" href="${L.base}/" aria-label="Nocodeia"><img src="/assets/logo_h.png" alt="nocodeia worldwide"></a>
+<a class="logo" href="${L.base}/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="nocodeia worldwide"></a>
 <div class="menu">
 <a class="item" href="${L.base}/">${L.inicio}</a>
 <a class="item" href="${L.base}/#servicos">${L.servicos}</a>
@@ -240,8 +240,9 @@ const PREP = { pt: 'no', en: 'on', es: 'en' };
 const redes = l => `<div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center">${REDES.map(([nome, url, svg]) =>
   `<a href="${url.replace(/&/g, '&amp;')}" target="_blank" rel="noopener me" aria-label="Nocodeia ${PREP[l]} ${nome}" title="Nocodeia ${PREP[l]} ${nome}" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${svg}</svg></a>`).join('')}</div>`;
 
-const rodape = l => `<footer><div class="marca"><img src="/assets/icon.png" alt=""><img src="/assets/wordmark.png" alt="nocodeia worldwide"></div>${redes(l)}
-<p><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a></p><p>© ${new Date().getFullYear()} Nocodeia. ${IDIOMAS[l].rodape}</p></footer>`;
+const LOCAL_RODAPE = {"pt":"Campinas (SP) · atendimento remoto em todo o Brasil e no exterior","en":"Campinas, Brazil · remote service across Brazil and abroad","es":"Campinas (Brasil) · atención remota en todo Brasil y el exterior"};
+const rodape = l => `<footer><div class="marca"><img src="/assets/icon.webp" alt=""><img src="/assets/wordmark.webp" alt="nocodeia worldwide"></div>${redes(l)}
+<p><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--></p><p>${LOCAL_RODAPE[l]}</p><p>© ${new Date().getFullYear()} Nocodeia. ${IDIOMAS[l].rodape}</p></footer>`;
 
 function documento({ l, titulo, descricao, canonico, alternativos, imagem, tipoOg, ld, corpo, pagina }) {
   const hreflang = Object.entries(alternativos).map(([k, u]) => `<link rel="alternate" hreflang="${IDIOMAS[k].html}" href="${BASE_URL}${u}">`).join('\n')
@@ -343,7 +344,7 @@ ${servico ? `<p class="servico">${esc(servico)}</p>` : ''}
 <p>${L.ctaNota}</p>
 <a class="botao" href="${L.base}/#vaga">${L.ctaBotao}</a>
 </aside>
-<div class="autor"><img src="/assets/icon.png" alt=""><p><strong>${L.autor}</strong><br>${L.autorBio}</p></div>
+<div class="autor"><img src="/assets/icon.webp" alt=""><p><strong>${L.autor}</strong><br>${L.autorBio}</p></div>
 </article>`;
   return { html: documento({ l, titulo: `${v.title} | Nocodeia`, descricao: v.description, canonico, alternativos, imagem, tipoOg: 'article', ld, corpo, pagina: 'post' }), canonico, imagem };
 }
