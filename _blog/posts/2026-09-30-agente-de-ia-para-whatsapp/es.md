@@ -64,7 +64,7 @@ El costo tiene tres partes, y cada empresa las combina a su manera. Por eso, des
 2. **La herramienta o la infraestructura.** En el no-code, es la suscripción de la plataforma, que suele subir con el volumen de ejecuciones. En el agente programado, es el servidor y el modelo de IA que usa.
 3. **El armado.** En la IA nativa, la configuras tú. En el no-code, la armas tú o alguien más. En el agente programado, un equipo lo desarrolla, lo prueba y lo ajusta contigo.
 
-Para estimar la primera parte, haz la cuenta con tus números: cuántos mensajes de marketing envías al mes por la tarifa de tu categoría. Si tu WhatsApp es casi solo atención, esa parte suele ser pequeña. Para la segunda parte, mira [cómo estimar el costo por conversación de un agente de IA](/es/blog/cuanto-cuesta-un-agente-de-ia/).
+Para estimar la primera parte, haz la cuenta con tus números: cuántos mensajes de marketing envías al mes por la tarifa de tu categoría. Si tu WhatsApp es casi solo atención, esa parte suele ser pequeña. Para la segunda parte, mira [cómo estimar el costo por conversación de un agente de IA](/es/blog/cuanto-cuesta-un-agente-de-ia/). Y si tu negocio no puede vender por WhatsApp, mira [el caso de Amore Totale, que atiende con IA en su sitio](/es/casos/amore-totale/).
 
 ## ¿Cómo armar tu primer agente, paso a paso?
 

@@ -20,7 +20,7 @@ Base em Campinas (SP), com atendimento remoto em todo o Brasil e no exterior. At
 
 - **Proacta CRM**: CRM de vendas sob medida e agente de prospecção no LinkedIn. https://proactacrm.com
 - **Plataforma de OKR**: gestão de metas corporativas com painéis por pessoa, área e ciclo trimestral.
-- **Amore Totale**: agentes de IA de conteúdo (carrossel para Instagram e publicação de blog). Exemplo de post publicado pelo agente: https://blog.amoretotale.com.br/como-escolher-lingerie/
+- **Amore Totale**: Amora, agente de IA de atendimento no site, no Instagram e no Facebook, sem vender pelo WhatsApp (a política do WhatsApp Business proíbe produtos para adultos). Consulta catálogo, calcula frete e passa para a equipe por alerta no Telegram com resumo. Resolveu 80% das conversas sem humano nos primeiros meses; o investimento se paga em 2 a 4 meses. Case completo: https://nocodeiaww.com/casos/amore-totale/ . Também tem agentes de conteúdo (carrossel para Instagram e blog). Exemplo de post publicado pelo agente: https://blog.amoretotale.com.br/como-escolher-lingerie/
 - **Espelho**: pesquisa de empresas brasileiras por CNPJ.
 - **Motor de prospecção B2B com IA**.
 

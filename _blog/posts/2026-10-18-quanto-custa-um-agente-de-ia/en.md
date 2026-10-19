@@ -71,7 +71,7 @@ A warning against optimistic math: Claude offers a 50% discount on batch process
 
 ## How does Nocodeia keep agent costs under control?
 
-By building the controls into the project from the start, not after the first bill. We build custom-coded agents, like the prospecting agent for Proacta CRM and the content agents for Amore Totale. The path is always the same:
+By building the controls into the project from the start, not after the first bill. We build custom-coded agents, like the prospecting agent for Proacta CRM and [Amora, Amore Totale's customer service agent](/en/cases/amore-totale/). The path is always the same:
 
 1. **A free 45-minute consultation** to understand your support and your conversation volume.
 2. **A scope with fixed price and timeline**, already taking into account the conversation volume from the consultation.

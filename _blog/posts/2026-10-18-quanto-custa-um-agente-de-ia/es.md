@@ -71,7 +71,7 @@ Un aviso contra la cuenta optimista: Claude da un 50% de descuento en el procesa
 
 ## ¿Cómo mantiene Nocodeia bajo control el costo de los agentes?
 
-Poniendo los controles en el proyecto desde el inicio, y no después de la primera factura. Construimos agentes programados a la medida, como el agente de prospección de Proacta CRM y los agentes de contenido de Amore Totale. El camino es siempre el mismo:
+Poniendo los controles en el proyecto desde el inicio, y no después de la primera factura. Construimos agentes programados a la medida, como el agente de prospección de Proacta CRM y [Amora, la agente de atención de Amore Totale](/es/casos/amore-totale/). El camino es siempre el mismo:
 
 1. **Diagnóstico gratis de 45 minutos** para entender tu atención y el volumen de conversaciones.
 2. **Alcance con precio y plazo cerrados**, que ya considera el volumen de conversaciones del diagnóstico.

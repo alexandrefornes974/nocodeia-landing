@@ -1,3 +1,4 @@
 _blog export-ignore
 .gitignore export-ignore
 .gitattributes export-ignore
+_casos export-ignore
