@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-18",
+  "updated": "2026-10-18",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: MART PRODUCTION / Pexels",
+  "service": "agentes",
+  "keyword": "quanto custa um agente de ia",
+  "audience": "startup",
+  "pt": {
+    "slug": "quanto-custa-um-agente-de-ia",
+    "title": "Quanto custa um agente de IA? O custo real por conversa",
+    "description": "Quanto custa um agente de IA de atendimento? Veja as partes do custo, como estimar o valor por conversa e quando pagar por resolução compensa na startup.",
+    "image_alt": "Atendente com fone de ouvido trabalhando no notebook num escritório"
+  },
+  "en": {
+    "slug": "how-much-does-an-ai-agent-cost",
+    "title": "How Much Does an AI Agent Cost? Real Cost per Conversation",
+    "description": "How much does an AI agent cost for customer support? See the cost components, how to estimate cost per conversation and when paying per resolution wins.",
+    "image_alt": "Support agent wearing a headset working on a laptop in an office"
+  },
+  "es": {
+    "slug": "cuanto-cuesta-un-agente-de-ia",
+    "title": "¿Cuánto cuesta un agente de IA? Costo real por conversación",
+    "description": "¿Cuánto cuesta un agente de IA de atención? Mira las partes del costo, cómo estimar el valor por conversación y cuándo conviene pagar por resolución.",
+    "image_alt": "Agente de atención con auriculares trabajando en la laptop en una oficina"
+  }
+}

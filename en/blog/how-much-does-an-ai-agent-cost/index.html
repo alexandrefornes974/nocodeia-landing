@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Aviso de cookies Nocodeia v1: precisa ser o PRIMEIRO item dentro do <head> -->
+<script>
+window.NOCODEIA_AVISO = {"namespace":"nocodeia","politica":"/en/privacy/#site","cor":"#0047FF","corTexto":"#1a1a1a","fonte":"inherit","semMarketing":false,"textos":{"essenciaisRotulo":"Essential","essenciais":"Needed for the site to work and to remember your cookie choice. They cannot be turned off.","estatisticasRotulo":"Statistics","estatisticas":"Count visits, show which pages interest people most and measure the site speed and errors, so we can improve the site.","aviso":"We use cookies to make the site work and, if you allow it, to understand how it is used and measure ads.","marketing":"Allow us to measure and personalize ads on Meta (Instagram/Facebook) and LinkedIn.","politica":"Privacy policy","aceitar":"Accept all","recusar":"Reject non-essential","escolher":"Choose","escolherAria":"Choose which cookies to allow","preferenciasTitulo":"Your cookie preferences","preferencias":"Turn each type on or off. You can change your mind at any time using the icon in the corner of the screen.","salvar":"Save and close","credito":"Cookie banner by Silktide"}};
+(function(w,d){var ns=w.NOCODEIA_AVISO.namespace,FILAS=["dataLayer","dataLayerGa4"];
+function lido(id){try{return localStorage.getItem("stcm."+ns+".consent."+id)}catch(e){return null}}
+function args(){return arguments}
+function estado(a,m){return{analytics_storage:a?"granted":"denied",ad_storage:m?"granted":"denied",ad_user_data:m?"granted":"denied",ad_personalization:m?"granted":"denied"}}
+var a=lido("analytics")==="true",m=lido("marketing")==="true",ini=estado(a,m);ini.wait_for_update=500;
+var antes=[args("consent","default",ini),args("set","ads_data_redaction",!m)];
+/* Google: a decisão "padrão" entra na frente de tudo, mesmo se a plataforma recriar a fila depois */
+function prep(f){if(!f.__nc){for(var i=antes.length-1;i>=0;i--)f.unshift(antes[i]);f.__nc=1}return f}
+FILAS.forEach(function(n){var atual=prep(w[n]||[]);try{Object.defineProperty(w,n,{configurable:true,enumerable:true,get:function(){return atual},set:function(v){atual=prep(v||[])}})}catch(e){w[n]=atual}});
+w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n){w[n].push(args("consent","update",s))});w.dataLayer.push({event:"nc_consent_update",nc_analytics:a,nc_marketing:m})}};
+})(window,document);
+</script>
+<script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
+<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Much Does an AI Agent Cost? Real Cost per Conversation | Nocodeia</title>
+<meta name="description" content="How much does an AI agent cost for customer support? See the cost components, how to estimate cost per conversation and when paying per resolution wins.">
+<link rel="canonical" href="https://nocodeiaww.com/en/blog/how-much-does-an-ai-agent-cost/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/blog/quanto-custa-um-agente-de-ia/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/blog/how-much-does-an-ai-agent-cost/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/blog/cuanto-cuesta-un-agente-de-ia/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/blog/quanto-custa-um-agente-de-ia/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Much Does an AI Agent Cost? Real Cost per Conversation | Nocodeia">
+<meta property="og:description" content="How much does an AI agent cost for customer support? See the cost components, how to estimate cost per conversation and when paying per resolution wins.">
+<meta property="og:url" content="https://nocodeiaww.com/en/blog/how-much-does-an-ai-agent-cost/">
+<meta property="og:image" content="https://nocodeiaww.com/blog/img/quanto-custa-um-agente-de-ia.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://nocodeiaww.com/en/blog/how-much-does-an-ai-agent-cost/#post",
+   "headline": "How Much Does an AI Agent Cost? Real Cost per Conversation",
+   "description": "How much does an AI agent cost for customer support? See the cost components, how to estimate cost per conversation and when paying per resolution wins.",
+   "inLanguage": "en",
+   "datePublished": "2026-10-18",
+   "dateModified": "2026-10-18",
+   "image": "https://nocodeiaww.com/blog/img/quanto-custa-um-agente-de-ia.jpg",
+   "url": "https://nocodeiaww.com/en/blog/how-much-does-an-ai-agent-cost/",
+   "mainEntityOfPage": "https://nocodeiaww.com/en/blog/how-much-does-an-ai-agent-cost/",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre Fornes",
+    "url": "https://nocodeiaww.com/#sobre",
+    "sameAs": [
+     "https://www.linkedin.com/in/alexandredefornes/"
+    ]
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "sameAs": [
+     "https://www.linkedin.com/company/nocodeiaww/",
+     "https://www.instagram.com/nocodeiaww/",
+     "https://www.facebook.com/profile.php?id=61595488161472"
+    ],
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://nocodeiaww.com/assets/icon.png"
+    }
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://nocodeiaww.com/en/blog/#blog",
+    "name": "Nocodeia Blog"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://nocodeiaww.com/en/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://nocodeiaww.com/en/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "How Much Does an AI Agent Cost? Real Cost per Conversation",
+     "item": "https://nocodeiaww.com/en/blog/how-much-does-an-ai-agent-cost/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/en/blog/how-much-does-an-ai-agent-cost/#faq",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How much does it cost to build an AI agent?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The build is a cost separate from operation, and it depends on the scope: channels, integrations and rules. That's why we set the price after the consultation, not with a generic number."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does an AI chatbot cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the billing model. Ready-made platforms like Intercom and Zendesk charge per resolution; your own chatbot pays per token for the model it uses. A menu-based chatbot, without AI, doesn't consume tokens."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does an AI token cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Each model has its own price, billed per million tokens. On Claude Sonnet 5.5, it's $2 per million input tokens and $10 per million output tokens, according to the official page in October 2026."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much does the WhatsApp API cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Meta charges per delivered template message, with prices that vary by country and category. Regular messages within the 24-hour window opened by the customer are free."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there a free AI agent?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There are tools with limited free plans, good for testing. An agent in production pays for the model and the channel based on usage."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/en/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/en/">Home</a>
+<a class="item" href="/en/#servicos">Services</a>
+<a class="item" href="/en/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/blog/quanto-custa-um-agente-de-ia/" hreflang="pt-BR">PT</a><a href="/en/blog/how-much-does-an-ai-agent-cost/" hreflang="en" aria-current="page">EN</a><a href="/es/blog/cuanto-cuesta-un-agente-de-ia/" hreflang="es">ES</a></div>
+<a class="botao" href="/en/#vaga">Get a spot</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/en/blog/">← All posts</a>
+<h1>How Much Does an AI Agent Cost? Real Cost per Conversation</h1>
+<p class="resumo">How much does an AI agent cost for customer support? See the cost components, how to estimate cost per conversation and when paying per resolution wins.</p>
+<div class="meta"><span>By Alexandre</span><span>·</span><time datetime="2026-10-18">October 18, 2026</time><span>·</span><span>8 min read</span></div>
+<figure class="capa"><img src="/blog/img/quanto-custa-um-agente-de-ia.jpg" alt="Support agent wearing a headset working on a laptop in an office" width="1200" height="630"><figcaption>Foto: MART PRODUCTION / Pexels</figcaption></figure>
+<div class="conteudo">
+<p>An AI agent&#39;s cost is the sum of four parts: the AI model, billed per token (a chunk of text); the channel, like WhatsApp; a server or platform; and the build. On Zendesk, a ready-made platform, resolutions above the allowance cost from R$9.50 in Brazil, plus the license. With your own agent, you can estimate cost per conversation.</p>
+<p>You want to put an AI agent on your product&#39;s support, and your cofounder or investor keeps asking the same question: how much will this cost when volume grows? The answer no longer fits on a single license line. This guide shows how to run the numbers before the agent goes live, without guessing.</p>
+<h2 id="why-is-ai-customer-support-no-longer-just-a-fixed-license-fee">Why is AI customer support no longer just a fixed license fee?</h2>
+<p>Because billing now follows usage or results, not the number of agents. You used to pay a license per support agent (the &quot;seat&quot;) or a near-fixed monthly fee for a menu-based chatbot. With AI agents, every conversation consumes model processing, and vendors pass that consumption on to you.</p>
+<p>The venture capital firm Bessemer Venture Partners documented the shift in February 2026: &quot;By and large, AI-native companies are abandoning seat-based SaaS pricing in favor of usage-, output-, and outcome-based models,&quot; according to <a href="https://www.bvp.com/atlas/the-ai-pricing-and-monetization-playbook" target="_blank" rel="noopener">Bessemer&#39;s AI pricing and monetization playbook</a>.</p>
+<p>In practice, this changes two things for your startup. Cost rises with the number of conversations. And it can be estimated per conversation. One term will come up constantly from here on: a token is a chunk of text, roughly part of a word, that the model reads and writes. It&#39;s the unit AI APIs bill by (an API is the door your system uses to ask the model for an answer).</p>
+<h2 id="what-are-the-cost-components-of-an-ai-customer-support-agent">What are the cost components of an AI customer support agent?</h2>
+<p>There are five: the AI model, the channel, the server or platform, the build and the time of the backup human on the cases the agent hands off. The first four are the ones from the answer above.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>How it&#39;s billed</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AI model</td>
+<td>Per input token (what the model reads) and output token (what it writes)</td>
+<td>Claude Sonnet 5.5: $2 per million input tokens and $10 per million output tokens, on the <a href="https://claude.com/pricing" target="_blank" rel="noopener">Claude pricing page</a>, checked in October 2026</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>On WhatsApp, Meta charges per delivered template message</td>
+<td>Regular messages within the 24-hour window opened by the customer are free, according to the <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">WhatsApp pricing documentation</a></td>
+</tr>
+<tr>
+<td>Server or platform</td>
+<td>Hosting, database or a tool subscription</td>
+<td>Depends on how the agent is built</td>
+</tr>
+<tr>
+<td>Build and adjustments</td>
+<td>A project with a defined scope</td>
+<td>Fixed price after the consultation</td>
+</tr>
+<tr>
+<td>Backup human</td>
+<td>Team time on the cases the agent hands off</td>
+<td>Depends on the handoff rule</td>
+</tr>
+</tbody></table>
+<p>A template message is the pre-approved text a business uses to start a conversation or notify the customer outside the window. The details of <a href="/en/blog/ai-agent-for-whatsapp/">what WhatsApp messages cost for an agent</a> are in our guide on the topic.</p>
+<p>Notice that only the first row grows with every message exchanged. In our assessment, that&#39;s where most billing surprises come from.</p>
+<h2 id="how-do-you-estimate-the-cost-per-conversation-before-the-agent-goes-live">How do you estimate the cost per conversation before the agent goes live?</h2>
+<p>Multiply the tokens in a typical conversation by the model&#39;s price. In four steps:</p>
+<ol>
+<li><strong>Count the exchanges.</strong> Pull real conversations from your support and see how many messages the customer sends before the issue is solved.</li>
+<li><strong>Estimate the tokens in each exchange.</strong> Input includes the agent&#39;s instructions, the knowledge base excerpt it looked up and the conversation history. Output is the reply.</li>
+<li><strong>Multiply by the price</strong> on the official page of the model you&#39;ll use.</li>
+<li><strong>Multiply by your monthly</strong> conversation volume.</li>
+</ol>
+<p>Now a hypothetical example, with numbers you should replace with your own. A conversation with 8 exchanges, at 3,000 input tokens and 150 output tokens per exchange, adds up to 24,000 input tokens and 1,200 output tokens.</p>
+<p>On Claude Sonnet 5.5, that comes to $0.048 for input plus $0.012 for output: about $0.06 per conversation, or $60 per thousand conversations. On Claude Haiku 5.5, a smaller model that costs $0.10 and $0.50 per million tokens for requests of up to 100,000 tokens, the same conversation costs about $0.003.</p>
+<p>This math covers the model only. Channel, server and build come on top.</p>
+<h2 id="pay-per-resolution-or-build-your-own-agent-which-makes-sense-for-a-startup">Pay per resolution or build your own agent: which makes sense for a startup?</h2>
+<p>It depends on your volume and on how long your conversations run. Compare the cost per conversation you calculated with the per-resolution price of ready-made platforms.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>How it bills</th>
+<th>What to watch</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Intercom Fin</td>
+<td>From $0.99 per outcome, charged once per conversation, with no required agent seat, per <a href="https://www.intercom.com/pricing" target="_blank" rel="noopener">Intercom&#39;s pricing</a></td>
+<td>With a helpdesk (support ticketing system) from another company, there&#39;s a minimum commitment, for example 50 outcomes per month</td>
+</tr>
+<tr>
+<td>Zendesk</td>
+<td>In Brazil, plans include 5 or 10 automated resolutions per licensed agent per month. Each extra one costs R$9.50 with a commitment or R$12 pay as you go, per <a href="https://www.zendesk.com.br/pricing/" target="_blank" rel="noopener">Zendesk&#39;s Brazilian pricing page</a> (in Portuguese)</td>
+<td>The allowance grows with the number of agent licenses</td>
+</tr>
+<tr>
+<td>Your own agent</td>
+<td>Tokens + channel + server + build</td>
+<td>Requires a build; the cost per conversation follows the math in the previous section</td>
+</tr>
+</tbody></table>
+<p>Per-resolution billing is predictable per unit and skips the build. The flip side: the price is the same for a short or a long conversation. Bessemer itself uses Fin as an example: &quot;If Fin resolves a ticket in three messages or thirty, the customer pays the same.&quot; And each vendor defines what counts as a resolution. At Intercom, the definition includes, for example, a conversation in which the customer stops asking for help.</p>
+<p>Your own agent requires an upfront investment in the build. In our assessment, it makes more sense when volume is high and the agent needs to talk to your startup&#39;s systems, such as your CRM (customer management system), database and billing. The rule of thumb: run the numbers and compare at your real volume, not the volume on the pitch deck slide.</p>
+<h2 id="what-makes-the-cost-of-an-ai-agent-spike">What makes the cost of an AI agent spike?</h2>
+<p>Bloated context, an expensive model answering simple questions and conversations that never end. The usual suspects, each with its own control:</p>
+<ul>
+<li><strong>Huge instructions and knowledge base sent with every exchange.</strong> Control: caching, which reuses the fixed part of the text. On the Claude pricing page, reading from cache on Sonnet 5.5 costs $0.10 per million tokens, versus $2 for regular input.</li>
+<li><strong>An expensive model answering &quot;what are your hours?&quot;</strong> Control: a smaller model handles triage and only calls the bigger one when needed.</li>
+<li><strong>Conversations going in circles.</strong> Control: a cap on exchanges. After it, a human takes over.</li>
+<li><strong>WhatsApp template messages outside the 24-hour window.</strong> Control: keep support inside the window opened by the customer.</li>
+<li><strong>Nobody watching the bill.</strong> Control: a spending alert when the month goes past an agreed amount.</li>
+</ul>
+<p>A warning against optimistic math: Claude offers a 50% discount on batch processing, but batch doesn&#39;t work for live support, because the reply doesn&#39;t come back right away.</p>
+<h2 id="how-does-nocodeia-keep-agent-costs-under-control">How does Nocodeia keep agent costs under control?</h2>
+<p>By building the controls into the project from the start, not after the first bill. We build custom-coded agents, like the prospecting agent for Proacta CRM and the content agents for Amore Totale. The path is always the same:</p>
+<ol>
+<li><strong>A free 45-minute consultation</strong> to understand your support and your conversation volume.</li>
+<li><strong>A scope with fixed price and timeline</strong>, already taking into account the conversation volume from the consultation.</li>
+<li><strong>Delivery, usually in 2 to 4 weeks</strong>, with four controls built in: a smaller model for triage, cached instructions, a cap on exchanges with handoff to a human and a spending alert.</li>
+</ol>
+<p>They add to the <a href="/en/blog/ai-agent-governance/">control rules for each agent</a> we&#39;ve already described, such as human approval for risky actions and an audit trail.</p>
+<h2 id="when-is-an-ai-agent-not-worth-it-for-your-startup">When is an AI agent not worth it for your startup?</h2>
+<p>When conversation volume is low or questions are rare and very different from one another. Other signs: there&#39;s no organized knowledge base for the agent to look up, or a good FAQ page already does the job.</p>
+<p>For us, in those cases the build doesn&#39;t pay for itself, and a well-trained human does better. It&#39;s the same logic as <a href="/en/blog/is-no-code-worth-it/">the usage-based cost math for a no-code platform</a>: run the numbers before you decide.</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="how-much-does-it-cost-to-build-an-ai-agent">How much does it cost to build an AI agent?</h3>
+<p>The build is a cost separate from operation, and it depends on the scope: channels, integrations and rules. That&#39;s why we set the price after the consultation, not with a generic number.</p>
+<h3 id="how-much-does-an-ai-chatbot-cost">How much does an AI chatbot cost?</h3>
+<p>It depends on the billing model. Ready-made platforms like Intercom and Zendesk charge per resolution; your own chatbot pays per token for the model it uses. A menu-based chatbot, without AI, doesn&#39;t consume tokens.</p>
+<h3 id="how-much-does-an-ai-token-cost">How much does an AI token cost?</h3>
+<p>Each model has its own price, billed per million tokens. On Claude Sonnet 5.5, it&#39;s $2 per million input tokens and $10 per million output tokens, according to the official page in October 2026.</p>
+<h3 id="how-much-does-the-whatsapp-api-cost">How much does the WhatsApp API cost?</h3>
+<p>Meta charges per delivered template message, with prices that vary by country and category. Regular messages within the 24-hour window opened by the customer are free.</p>
+<h3 id="is-there-a-free-ai-agent">Is there a free AI agent?</h3>
+<p>There are tools with limited free plans, good for testing. An agent in production pays for the model and the channel based on usage.</p>
+<h2 id="want-to-know-what-your-startup-39-s-agent-will-cost">Want to know what your startup&#39;s agent will cost?</h2>
+<p>In the free 45-minute consultation, we look at your support and your conversation volume and tell you honestly whether an agent is worth it. You walk away with a fixed price and timeline for <a href="/en/#servicos">custom AI agents</a>. <a href="/en/#vaga">Book your free 45-minute consultation</a>.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">AI agents</p>
+<h2>Want this working in your business?</h2>
+<p>Free 45-minute diagnosis. You leave with a fixed price and deadline.</p>
+<a class="botao" href="/en/#vaga">Get my free diagnosis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.webp" alt=""><p><strong>Alexandre, founder of Nocodeia</strong><br>25+ years in tech at companies like IBM, Xerox, DHL and Bosch. Today he ships products with no-code and AI in weeks.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.webp" alt=""><img src="/assets/wordmark.webp" alt="nocodeia worldwide"></div><div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia on LinkedIn" title="Nocodeia on LinkedIn" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia on Instagram" title="Nocodeia on Instagram" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me" aria-label="Nocodeia on Facebook" title="Nocodeia on Facebook" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+<p><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--></p><p>Campinas, Brazil · remote service across Brazil and abroad</p><p>© 2026 Nocodeia. Built with no-code, of course.</p></footer>
+</body>
+</html>

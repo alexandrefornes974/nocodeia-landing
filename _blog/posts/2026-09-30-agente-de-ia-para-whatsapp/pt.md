@@ -64,7 +64,7 @@ O custo tem três partes, e cada empresa combina as três de um jeito. Por isso 
 2. **A ferramenta ou a infraestrutura.** No no-code, é a assinatura da plataforma, que costuma subir com o volume de execuções. No agente programado, é o servidor e o modelo de IA que ele usa.
 3. **A montagem.** Na IA nativa, você mesmo configura. No no-code, você ou alguém monta. No agente programado, uma equipe desenvolve, testa e ajusta com você.
 
-Para estimar a primeira parte, faça a conta com os seus números: quantas mensagens de marketing você manda por mês vezes a taxa da sua categoria. Se o seu WhatsApp é quase só atendimento, essa parte tende a ser pequena.
+Para estimar a primeira parte, faça a conta com os seus números: quantas mensagens de marketing você manda por mês vezes a taxa da sua categoria. Se o seu WhatsApp é quase só atendimento, essa parte tende a ser pequena. Para a segunda parte, veja [como estimar o custo por conversa de um agente de IA](/blog/quanto-custa-um-agente-de-ia/).
 
 ## Como montar o primeiro agente, passo a passo?
 

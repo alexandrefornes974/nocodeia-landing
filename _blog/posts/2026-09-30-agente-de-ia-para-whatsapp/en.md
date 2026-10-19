@@ -64,7 +64,7 @@ The cost has three parts, and every business combines them differently. That's w
 2. **The tool or the infrastructure.** With no-code, it's the platform subscription, which usually goes up with the number of executions. With a coded agent, it's the server and the AI model it uses.
 3. **The setup.** With the built-in AI, you configure it yourself. With no-code, you or someone else builds it. With a coded agent, a team develops, tests and fine-tunes it with you.
 
-To estimate the first part, run the numbers yourself: how many marketing messages you send per month times the rate for your category. If your WhatsApp is almost all customer service, this part tends to be small.
+To estimate the first part, run the numbers yourself: how many marketing messages you send per month times the rate for your category. If your WhatsApp is almost all customer service, this part tends to be small. For the second part, see [how to estimate an AI agent's cost per conversation](/en/blog/how-much-does-an-ai-agent-cost/).
 
 ## How do you build your first agent, step by step?
 
