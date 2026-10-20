@@ -19,9 +19,9 @@ const BASE = 'https://nocodeiaww.com';
 
 // Molde: um post já publicado em cada idioma (só o "casco" da página é aproveitado).
 const IDIOMAS = {
-  pt: { lang: 'pt-BR', pasta: 'casos', molde: 'blog/quanto-custa-um-agente-de-ia/index.html', inicio: '/', volta: '← Projetos', casos: 'Casos', home: 'Início', meta: 'Case de cliente', atualizado: 'Atualizado em', faq: 'Perguntas frequentes', mes: ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'], data: (d, m, a, M) => `${d} de ${M[m]} de ${a}` },
-  en: { lang: 'en', pasta: 'en/cases', molde: 'en/blog/how-much-does-an-ai-agent-cost/index.html', inicio: '/en/', volta: '← Projects', casos: 'Cases', home: 'Home', meta: 'Client case', atualizado: 'Updated', faq: 'FAQ', mes: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], data: (d, m, a, M) => `${M[m]} ${d}, ${a}` },
-  es: { lang: 'es', pasta: 'es/casos', molde: 'es/blog/cuanto-cuesta-un-agente-de-ia/index.html', inicio: '/es/', volta: '← Proyectos', casos: 'Casos', home: 'Inicio', meta: 'Caso de cliente', atualizado: 'Actualizado el', faq: 'Preguntas frecuentes', mes: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'], data: (d, m, a, M) => `${d} de ${M[m]} de ${a}` },
+  pt: { lang: 'pt-BR', pasta: 'casos', molde: 'blog/quanto-custa-um-agente-de-ia/index.html', moldeIndice: 'blog/index.html', inicio: '/', volta: '← Todos os casos', titulo: 'Casos de clientes', subtitulo: 'Projetos da Nocodeia funcionando em empresas de verdade: o problema, o que foi feito e os números.', descricao: 'Casos de clientes da Nocodeia: agentes de IA, automação e sites no ar em empresas de verdade, com o problema, a solução e os resultados medidos.', ver: 'Ver case', casos: 'Casos', home: 'Início', meta: 'Case de cliente', atualizado: 'Atualizado em', faq: 'Perguntas frequentes', mes: ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'], data: (d, m, a, M) => `${d} de ${M[m]} de ${a}` },
+  en: { lang: 'en', pasta: 'en/cases', molde: 'en/blog/how-much-does-an-ai-agent-cost/index.html', moldeIndice: 'en/blog/index.html', inicio: '/en/', volta: '← All cases', titulo: 'Client case studies', subtitulo: 'Nocodeia projects running in real businesses: the problem, what we built and the numbers.', descricao: 'Nocodeia client case studies: AI agents, automation and websites live in real businesses, with the problem, the solution and the measured results.', ver: 'Read case', casos: 'Cases', home: 'Home', meta: 'Client case', atualizado: 'Updated', faq: 'FAQ', mes: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], data: (d, m, a, M) => `${M[m]} ${d}, ${a}` },
+  es: { lang: 'es', pasta: 'es/casos', molde: 'es/blog/cuanto-cuesta-un-agente-de-ia/index.html', moldeIndice: 'es/blog/index.html', inicio: '/es/', volta: '← Todos los casos', titulo: 'Casos de clientes', subtitulo: 'Proyectos de Nocodeia funcionando en empresas reales: el problema, lo que se hizo y los números.', descricao: 'Casos de clientes de Nocodeia: agentes de IA, automatización y sitios funcionando en empresas reales, con el problema, la solución y los resultados.', ver: 'Ver caso', casos: 'Casos', home: 'Inicio', meta: 'Caso de cliente', atualizado: 'Actualizado el', faq: 'Preguntas frecuentes', mes: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'], data: (d, m, a, M) => `${d} de ${M[m]} de ${a}` },
 };
 
 const ESTILO = `<style>
@@ -44,7 +44,21 @@ function trocar(html, re, novo, nome) {
   return html.replace(re, novo);
 }
 
+// Deixa só o item "Casos" do menu marcado como página atual.
+function marcarMenu(html, cfg) {
+  html = html.replace(/(<a class="item" [^>]*?) aria-current="page"/g, '$1');
+  return trocar(html, new RegExp(`<a class="item" href="/${cfg.pasta}/">`), `<a class="item" href="/${cfg.pasta}/" aria-current="page">`, 'item Casos no menu');
+}
+
+const ESTILO_INDICE = `<style>
+.cartao .faixa{aspect-ratio:1200/630;background:var(--grad);display:flex;flex-direction:column;justify-content:flex-end;gap:6px;padding:22px}
+.cartao .faixa strong{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(44px,6vw,64px);line-height:1;letter-spacing:-.02em;color:#fff}
+.cartao .faixa span{font-size:15px;line-height:1.35;color:#fff;max-width:28ch}
+.cartao .cliente{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--suave)}
+</style>`;
+
 let total = 0;
+const indice = { pt: [], en: [], es: [] };
 for (const nomeCaso of readdirSync(AQUI, { withFileTypes: true }).filter(d => d.isDirectory()).map(d => d.name)) {
   const pastaCaso = join(AQUI, nomeCaso);
   const meta = JSON.parse(readFileSync(join(pastaCaso, 'meta.json'), 'utf8'));
@@ -90,7 +104,7 @@ for (const nomeCaso of readdirSync(AQUI, { withFileTypes: true }).filter(d => d.
         {
           '@type': 'BreadcrumbList', itemListElement: [
             { '@type': 'ListItem', position: 1, name: cfg.home, item: `${BASE}${cfg.inicio}` },
-            { '@type': 'ListItem', position: 2, name: cfg.casos, item: `${BASE}${cfg.inicio}#projetos` },
+            { '@type': 'ListItem', position: 2, name: cfg.casos, item: `${BASE}/${cfg.pasta}/` },
             { '@type': 'ListItem', position: 3, name: m.title, item: url(l) },
           ],
         },
@@ -106,7 +120,7 @@ for (const nomeCaso of readdirSync(AQUI, { withFileTypes: true }).filter(d => d.
     const main = `<main>
 ${ESTILO}
 <article>
-<a class="volta" href="${cfg.inicio}#projetos">${cfg.volta}</a>
+<a class="volta" href="/${cfg.pasta}/">${cfg.volta}</a>
 <h1>${esc(m.title)}</h1>
 <p class="resumo">${esc(m.description)}</p>
 <div class="meta"><span>${cfg.meta}: ${esc(meta.cliente)}</span><span>·</span><span>${cfg.atualizado} <time datetime="${meta.updated}">${dataTexto}</time></span></div>
@@ -129,7 +143,7 @@ ${autor}
     html = trocar(html, /<meta property="og:image" content="[^"]*">/, `<meta property="og:image" content="${BASE}/assets/og-image.png">`, 'og:image');
     html = trocar(html, /<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">\n${JSON.stringify(ld, null, 1)}\n</script>`, 'json-ld');
     html = trocar(html, /<div class="idiomas"[\s\S]*?<\/div>/, idiomas, 'idiomas');
-    html = html.replace(/(<a class="item" [^>]*?) aria-current="page"/g, '$1');
+    html = marcarMenu(html, cfg);
     html = trocar(html, /<main>[\s\S]*<\/main>/, main, 'main');
 
     if (!CHECK) {
@@ -137,8 +151,52 @@ ${autor}
       mkdirSync(destino, { recursive: true });
       writeFileSync(join(destino, 'index.html'), html);
     }
+    indice[l].push({ meta, m, url: rel(l) });
     total++;
     console.log(`${CHECK ? 'ok (check)' : 'gerado'}: ${rel(l)} · ${faq.length} perguntas no FAQ`);
   }
 }
-console.log(`ok: ${total} página(s) de case.`);
+// Página-lista de casos em cada idioma (molde: o índice do blog).
+const idiomasComCaso = Object.keys(IDIOMAS).filter(l => indice[l].length);
+for (const l of idiomasComCaso) {
+  const cfg = IDIOMAS[l];
+  const urlIndice = x => `${BASE}/${IDIOMAS[x].pasta}/`;
+  const itens = indice[l].sort((a, b) => b.meta.date.localeCompare(a.meta.date));
+  const cartoes = itens.map(({ meta, m, url }) => {
+    const d = m.destaque;
+    const faixa = d ? `<div class="faixa"><strong>${esc(d.numero)}</strong><span>${esc(d.texto)}</span></div>` : `<div class="faixa"><strong>${esc(meta.cliente)}</strong></div>`;
+    return `<a class="cartao" href="${url}">${faixa}<div class="corpo"><span class="cliente">${esc(meta.cliente)}</span><h2>${esc(m.title)}</h2><p>${esc(m.description)}</p><span class="mais">${cfg.ver} →</span></div></a>`;
+  }).join('\n');
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'CollectionPage', '@id': `${urlIndice(l)}#casos`, name: cfg.titulo, description: cfg.descricao,
+    inLanguage: cfg.lang, url: urlIndice(l), publisher: { '@id': `${BASE}/#empresa` },
+    hasPart: itens.map(({ m, url }) => ({ '@type': 'Article', headline: m.title, url: `${BASE}${url}` })),
+  };
+  const alternativos = idiomasComCaso.map(x => `<link rel="alternate" hreflang="${IDIOMAS[x].lang}" href="${urlIndice(x)}">`).join('\n')
+    + `\n<link rel="alternate" hreflang="x-default" href="${urlIndice(idiomasComCaso.includes('pt') ? 'pt' : l)}">`;
+  const idiomas = `<div class="idiomas" role="group" aria-label="${l === 'en' ? 'Language' : 'Idioma'}">`
+    + idiomasComCaso.map(x => `<a href="/${IDIOMAS[x].pasta}/" hreflang="${IDIOMAS[x].lang}"${x === l ? ' aria-current="page"' : ''}>${x.toUpperCase()}</a>`).join('') + '</div>';
+  const main = `<main>
+${ESTILO_INDICE}
+<h1 class="titulo-blog">${esc(cfg.titulo)}</h1>
+<p class="sub-blog">${esc(cfg.subtitulo)}</p>
+<div class="grade">
+${cartoes}
+</div>
+</main>`;
+  let html = readFileSync(join(SITE, cfg.moldeIndice), 'utf8');
+  html = trocar(html, /<title>[\s\S]*?<\/title>/, `<title>${esc(cfg.titulo)} | Nocodeia</title>`, 'title');
+  html = trocar(html, /<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(cfg.descricao)}">`, 'description');
+  html = trocar(html, /<link rel="canonical" href="[^"]*">/, `<link rel="canonical" href="${urlIndice(l)}">`, 'canonical');
+  html = trocar(html, /(<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n?)+/, alternativos + '\n', 'hreflang');
+  html = trocar(html, /<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${esc(cfg.titulo)} | Nocodeia">`, 'og:title');
+  html = trocar(html, /<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${esc(cfg.descricao)}">`, 'og:description');
+  html = trocar(html, /<meta property="og:url" content="[^"]*">/, `<meta property="og:url" content="${urlIndice(l)}">`, 'og:url');
+  html = trocar(html, /<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">\n${JSON.stringify(ld, null, 1)}\n</script>`, 'json-ld');
+  html = trocar(html, /<div class="idiomas"[\s\S]*?<\/div>/, idiomas, 'idiomas');
+  html = marcarMenu(html, cfg);
+  html = trocar(html, /<main>[\s\S]*<\/main>/, main, 'main');
+  if (!CHECK) writeFileSync(join(SITE, cfg.pasta, 'index.html'), html);
+  console.log(`${CHECK ? 'ok (check)' : 'gerado'}: /${cfg.pasta}/ · ${itens.length} caso(s)`);
+}
+console.log(`ok: ${total} página(s) de case e ${idiomasComCaso.length} lista(s) de casos.`);

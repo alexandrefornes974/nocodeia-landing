@@ -17,7 +17,7 @@ const IDIOMAS = {
     base: '', html: 'pt-BR', og: 'pt_BR', locale: 'pt-BR',
     blog: 'Blog', blogTitulo: 'Blog da Nocodeia',
     blogDescricao: 'Automação, agentes de IA, no-code e sites que o Google e a IA recomendam — explicado sem jargão, com exemplos do dia a dia de empresa.',
-    inicio: 'Início', servicos: 'Serviços', cta: 'Garantir vaga', leitura: 'min de leitura', por: 'Por',
+    inicio: 'Início', servicos: 'Serviços', casos: 'Casos', cta: 'Garantir vaga', leitura: 'min de leitura', por: 'Por',
     atualizado: 'Atualizado em', voltar: '← Todos os posts', semPosts: 'Os primeiros posts chegam em breve.',
     faq: ['perguntas frequentes', 'faq'], rodape: 'Feito com no-code, claro.',
     ctaTitulo: 'Quer isso funcionando na sua empresa?', ctaBotao: 'Quero meu diagnóstico grátis',
@@ -30,7 +30,7 @@ const IDIOMAS = {
     base: '/en', html: 'en', og: 'en_US', locale: 'en-US',
     blog: 'Blog', blogTitulo: 'Nocodeia Blog',
     blogDescricao: 'Automation, AI agents, no-code and websites Google and AI recommend — explained without jargon, with real business examples.',
-    inicio: 'Home', servicos: 'Services', cta: 'Get a spot', leitura: 'min read', por: 'By',
+    inicio: 'Home', servicos: 'Services', casos: 'Cases', cta: 'Get a spot', leitura: 'min read', por: 'By',
     atualizado: 'Updated', voltar: '← All posts', semPosts: 'The first posts are coming soon.',
     faq: ['frequently asked questions', 'faq'], rodape: 'Built with no-code, of course.',
     ctaTitulo: 'Want this working in your business?', ctaBotao: 'Get my free diagnosis',
@@ -43,7 +43,7 @@ const IDIOMAS = {
     base: '/es', html: 'es', og: 'es_ES', locale: 'es-ES',
     blog: 'Blog', blogTitulo: 'Blog de Nocodeia',
     blogDescricao: 'Automatización, agentes de IA, no-code y sitios que Google y la IA recomiendan — explicado sin jerga, con ejemplos reales de empresa.',
-    inicio: 'Inicio', servicos: 'Servicios', cta: 'Reservar lugar', leitura: 'min de lectura', por: 'Por',
+    inicio: 'Inicio', servicos: 'Servicios', casos: 'Casos', cta: 'Reservar lugar', leitura: 'min de lectura', por: 'Por',
     atualizado: 'Actualizado el', voltar: '← Todos los posts', semPosts: 'Los primeros posts llegan pronto.',
     faq: ['preguntas frecuentes', 'faq'], rodape: 'Hecho con no-code, claro.',
     ctaTitulo: '¿Quieres esto funcionando en tu empresa?', ctaBotao: 'Quiero mi diagnóstico gratis',
@@ -69,6 +69,7 @@ const slugify = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerC
 const semTags = s => String(s).replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/\s+/g, ' ').trim();
 const dataLonga = (iso, l) => new Date(iso + 'T12:00:00Z').toLocaleDateString(IDIOMAS[l].locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 const urlBlog = l => `${IDIOMAS[l].base}/blog/`;
+const urlCasos = l => ({ pt: '/casos/', en: '/en/cases/', es: '/es/casos/' })[l];
 const urlPost = (l, slug) => `${IDIOMAS[l].base}/blog/${slug}/`;
 
 // ---------- leitura e validação ----------
@@ -224,6 +225,7 @@ function cabecalho(l, alternativos, pagina) {
 <div class="menu">
 <a class="item" href="${L.base}/">${L.inicio}</a>
 <a class="item" href="${L.base}/#servicos">${L.servicos}</a>
+<a class="item" href="${urlCasos(l)}"${pagina === 'casos' ? ' aria-current="page"' : ''}>${L.casos}</a>
 <a class="item" href="${urlBlog(l)}"${pagina === 'blog' ? ' aria-current="page"' : ''}>${L.blog}</a>
 <div class="idiomas" role="group" aria-label="Idioma">${idiomas}</div>
 <a class="botao" href="${L.base}/#vaga">${L.cta}</a>
@@ -375,9 +377,13 @@ function sitemap(posts) {
   const urls = [['/', hoje], ['/en/', hoje], ['/es/', hoje], ['/privacidade/', '2026-10-10'], ['/en/privacy/', '2026-10-10'], ['/es/privacidad/', '2026-10-10']];
   // Páginas de case (geradas por _casos/build.mjs) também entram no sitemap.
   const CASOS = join(SITE, '_casos'), PASTA_CASO = { pt: 'casos', en: 'en/cases', es: 'es/casos' };
-  if (existsSync(CASOS)) for (const d of readdirSync(CASOS, { withFileTypes: true }).filter(d => d.isDirectory())) {
-    const m = JSON.parse(readFileSync(join(CASOS, d.name, 'meta.json'), 'utf8'));
-    for (const l of Object.keys(PASTA_CASO)) if (m[l]?.slug) urls.push([`/${PASTA_CASO[l]}/${m[l].slug}/`, m.updated || m.date]);
+  if (existsSync(CASOS)) {
+    const metas = readdirSync(CASOS, { withFileTypes: true }).filter(d => d.isDirectory()).map(d => JSON.parse(readFileSync(join(CASOS, d.name, 'meta.json'), 'utf8')));
+    for (const l of Object.keys(PASTA_CASO)) {
+      const doIdioma = metas.filter(m => m[l]?.slug);
+      if (doIdioma.length) urls.push([urlCasos(l), doIdioma.map(m => m.updated || m.date).sort().pop()]);
+      for (const m of doIdioma) urls.push([`/${PASTA_CASO[l]}/${m[l].slug}/`, m.updated || m.date]);
+    }
   }
   if (posts.length) for (const l of Object.keys(IDIOMAS)) if (posts.some(p => p.versoes[l])) urls.push([urlBlog(l), posts.find(p => p.versoes[l]).meta.updated || posts.find(p => p.versoes[l]).meta.date]);
   for (const p of posts) for (const l of Object.keys(p.versoes)) urls.push([urlPost(l, p.versoes[l].slug), p.meta.updated || p.meta.date]);

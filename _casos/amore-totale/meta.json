@@ -8,16 +8,28 @@
   "pt": {
     "slug": "amore-totale",
     "title": "Case Amore Totale: atendimento com IA 24h sem WhatsApp",
-    "description": "Como a Amore Totale trocou o WhatsApp por uma agente de IA no site: 80% das conversas resolvidas sem humano e investimento que se paga em 2 a 4 meses."
+    "description": "Como a Amore Totale trocou o WhatsApp por uma agente de IA no site: 80% das conversas resolvidas sem humano e investimento que se paga em 2 a 4 meses.",
+    "destaque": {
+      "numero": "80%",
+      "texto": "das conversas resolvidas sem humano"
+    }
   },
   "en": {
     "slug": "amore-totale",
     "title": "Amore Totale Case Study: 24/7 AI Chatbot, No WhatsApp",
-    "description": "How Amore Totale swapped WhatsApp for an AI agent on its website: 80% of conversations resolved with no human involved and payback in 2 to 4 months."
+    "description": "How Amore Totale swapped WhatsApp for an AI agent on its website: 80% of conversations resolved with no human involved and payback in 2 to 4 months.",
+    "destaque": {
+      "numero": "80%",
+      "texto": "of conversations resolved with no human"
+    }
   },
   "es": {
     "slug": "amore-totale",
     "title": "Caso Amore Totale: atención con IA 24 h sin WhatsApp",
-    "description": "Cómo Amore Totale cambió WhatsApp por una agente de IA en su sitio web: 80% de las conversaciones resueltas sin humano y retorno en 2 a 4 meses."
+    "description": "Cómo Amore Totale cambió WhatsApp por una agente de IA en su sitio web: 80% de las conversaciones resueltas sin humano y retorno en 2 a 4 meses.",
+    "destaque": {
+      "numero": "80%",
+      "texto": "de las conversaciones resueltas sin humano"
+    }
   }
 }
