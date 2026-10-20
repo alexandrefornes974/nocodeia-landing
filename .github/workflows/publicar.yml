@@ -1,0 +1,64 @@
+# Publica o site na Cloudflare Pages (projeto "nocodeia") a cada envio para o main.
+# Mesmo processo da publicação manual: cópia limpa com `git archive` (o .gitattributes
+# tira _blog/ e _casos/) e wrangler 4.40.0. Depois confere se todas as URLs do sitemap
+# respondem 200.
+#
+# Precisa do secret CLOUDFLARE_API_TOKEN no repositório (token com permissão
+# "Cloudflare Pages: Edit"). O ID da conta não é segredo.
+
+name: Publicar site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: publicar-site
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ca7654b9dfe54a7c9bade25464a44c56
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Cópia limpa do site
+        run: |
+          mkdir -p "$RUNNER_TEMP/site"
+          git archive HEAD | tar -x -C "$RUNNER_TEMP/site"
+          test ! -e "$RUNNER_TEMP/site/_blog" && test ! -e "$RUNNER_TEMP/site/_casos"
+          echo "Arquivos a publicar: $(find "$RUNNER_TEMP/site" -type f | wc -l)"
+
+      - name: Publicar na Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo "::error::Falta o secret CLOUDFLARE_API_TOKEN no repositório."; exit 1; }
+          npx --yes wrangler@4.40.0 pages deploy "$RUNNER_TEMP/site" \
+            --project-name=nocodeia --branch=main \
+            --commit-hash="$GITHUB_SHA" --commit-message="$(git log -1 --format=%s | head -c 300)"
+
+      - name: Conferir URLs do sitemap no ar
+        run: |
+          urls=$(grep -oE '<loc>[^<]+</loc>' sitemap.xml | sed -E 's#</?loc>##g')
+          falhas=0
+          for tentativa in 1 2 3 4 5 6; do
+            falhas=0
+            for u in $urls; do
+              c=$(curl -s -o /dev/null -w '%{http_code}' -H 'Cache-Control: no-cache' "$u" || echo 000)
+              [ "$c" = 200 ] || { falhas=$((falhas+1)); [ "$tentativa" = 6 ] && echo "::error::$c $u"; }
+            done
+            [ "$falhas" = 0 ] && break
+            sleep 20
+          done
+          total=$(echo "$urls" | wc -w)
+          echo "No ar: $((total-falhas)) de $total URLs respondendo 200."
+          [ "$falhas" = 0 ]
