@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-20",
+  "updated": "2026-10-20",
+  "cliente": "Consultoria multinacional de tecnologia",
+  "service": "sistemas",
+  "keyword": "sistema de okr",
+  "pt": {
+    "slug": "plataforma-okr",
+    "title": "Case Plataforma de OKR: do retrabalho em planilha a metas",
+    "description": "Como uma consultoria multinacional trocou a planilha de OKR refeita todo mês por uma plataforma com check-in mensal, aceite de metas e dashboard por papel.",
+    "destaque": {
+      "numero": "Zero",
+      "texto": "planilhas refeitas por mês"
+    }
+  },
+  "en": {
+    "slug": "okr-platform",
+    "title": "OKR Platform Case Study: from Spreadsheets to Clear Goals",
+    "description": "How a multinational consultancy replaced an OKR spreadsheet rebuilt every month with a platform for monthly check-ins, goal sign-off and role dashboards.",
+    "destaque": {
+      "numero": "Zero",
+      "texto": "spreadsheets rebuilt every month"
+    }
+  },
+  "es": {
+    "slug": "plataforma-okr",
+    "title": "Caso Plataforma de OKR: de la planilla a metas claras",
+    "description": "Cómo una consultora multinacional cambió la planilla de OKR rehecha cada mes por una plataforma con check-in mensual, aceptación de metas y panel por rol.",
+    "destaque": {
+      "numero": "Cero",
+      "texto": "planillas rehechas cada mes"
+    }
+  }
+}

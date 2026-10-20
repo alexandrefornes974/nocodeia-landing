@@ -33,6 +33,9 @@ const ESTILO = `<style>
 .fluxo span{padding:8px 12px;border:1px solid #343843;border-radius:10px;background:var(--sup)}
 .fluxo span.destaque{background:var(--grad);border-color:transparent;font-weight:600}
 .fluxo b{color:#6B7080;font-weight:400}
+.tela{margin:8px 0 32px;background:var(--sup);border:1px solid var(--borda);border-radius:14px;overflow:hidden}
+.tela img{display:block;width:100%;height:auto}
+.tela figcaption{padding:12px 16px;border-top:1px solid var(--borda);font-size:14px;line-height:1.5;color:var(--suave)}
 </style>`;
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
