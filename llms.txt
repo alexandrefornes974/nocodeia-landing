@@ -40,6 +40,7 @@ Base em Campinas (SP), com atendimento remoto em todo o Brasil e no exterior. At
 <!-- blog:inicio -->
 ## Blog
 
+- [Criar site com IA: o Google e o ChatGPT vão ler o seu site?](https://nocodeiaww.com/blog/criar-site-com-ia/): Criar site com IA no Wix, Hostinger ou Lovable é rápido. Veja por que o Google e o ChatGPT podem não ler o texto e o teste de 5 minutos para conferir.
 - [Quanto custa um agente de IA? O custo real por conversa](https://nocodeiaww.com/blog/quanto-custa-um-agente-de-ia/): Quanto custa um agente de IA de atendimento? Veja as partes do custo, como estimar o valor por conversa e quando pagar por resolução compensa na startup.
 - [Sua empresa usa métricas de marketing digital no site?](https://nocodeiaww.com/blog/metricas-de-marketing-digital/): Você quer retorno do site, das redes e dos anúncios, mas mede o que volta? Veja as métricas de marketing digital que importam e o método MTAM para medir.
 - [Como fazer minha empresa aparecer no ChatGPT: guia para PME](https://nocodeiaww.com/blog/como-fazer-minha-empresa-aparecer-no-chatgpt/): Sua empresa não aparece quando o cliente pergunta ao ChatGPT? Veja o que faz o site ser lido pela IA, o que um estudo mostrou e o que ninguém garante.

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-24",
+  "updated": "2026-10-24",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: RDNE Stock project / Pexels",
+  "service": "site-seo-geo",
+  "keyword": "criar site com ia",
+  "audience": "pme",
+  "pt": {
+    "slug": "criar-site-com-ia",
+    "title": "Criar site com IA: o Google e o ChatGPT vão ler o seu site?",
+    "description": "Criar site com IA no Wix, Hostinger ou Lovable é rápido. Veja por que o Google e o ChatGPT podem não ler o texto e o teste de 5 minutos para conferir.",
+    "image_alt": "Dona de pequena empresa sorrindo em frente ao notebook no escritório"
+  },
+  "en": {
+    "slug": "build-a-website-with-ai",
+    "title": "Build a Website With AI: Will Google and ChatGPT Read It?",
+    "description": "Building a website with AI on Wix, Hostinger or Lovable is fast. See why Google and ChatGPT may not read the text, plus a 5-minute test to check it.",
+    "image_alt": "Small business owner smiling in front of her laptop at the office"
+  },
+  "es": {
+    "slug": "crear-pagina-web-con-ia",
+    "title": "Crear página web con IA: ¿Google y ChatGPT la leerán?",
+    "description": "Crear una página web con IA en Wix, Hostinger o Lovable es rápido. Mira por qué Google y ChatGPT podrían no leer el texto y la prueba de 5 minutos.",
+    "image_alt": "Dueña de una pequeña empresa sonriendo frente a su laptop en la oficina"
+  }
+}
