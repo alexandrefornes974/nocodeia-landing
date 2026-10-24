@@ -43,7 +43,7 @@ Un sitio listo para la IA es, antes que nada, un sitio que el robot puede abrir 
 
 1. **Robots.txt sin bloquear a OAI-SearchBot ni al robot de Google.** OpenAI recomienda permitir su robot, y Google pide revisar el robots.txt y el hosting.
 2. **Sitio registrado en Google Search Console y en Bing Webmaster Tools.** Son paneles gratuitos para avisarle al buscador que el sitio existe y ver si las páginas fueron indexadas. Bing es recomendación nuestra, por la relación con Microsoft.
-3. **Texto importante escrito en la página, no solo en imágenes.** Google recomienda "Asegurarse de que el contenido importante esté disponible en forma de texto", y el estudio considera legible sin JavaScript el sitio que entrega al menos el 80% de las palabras ya en el código que envía el servidor.
+3. **Texto importante escrito en la página, no solo en imágenes.** Google recomienda "Asegurarse de que el contenido importante esté disponible en forma de texto", y el estudio considera legible sin JavaScript el sitio que entrega al menos el 80% de las palabras ya en el código que envía el servidor. Para revisarlo en tu sitio, mira la [prueba de 5 minutos para saber si Google y la IA pueden leer tu página web](/es/blog/crear-pagina-web-con-ia/).
 4. **Cada página con título y descripción.** Son dos de los criterios técnicos del estudio.
 5. **Sitemap publicado.** Es el mapa con la lista de páginas del sitio, otro criterio del estudio.
 6. **Páginas que respondan por escrito lo que pregunta el cliente:** qué haces, para quién, dónde atiendes, cómo contratarte y, cuando se pueda, un rango de precios. En nuestra evaluación, la IA solo puede citar lo que está escrito.

@@ -43,7 +43,7 @@ A website ready for AI is, first of all, one that crawlers can open and understa
 
 1. **A robots.txt that doesn't block OAI-SearchBot or Google's crawler.** OpenAI recommends allowing its crawler, and Google asks you to make sure crawling is allowed in robots.txt and by your hosting.
 2. **Your site registered in Google Search Console and Bing Webmaster Tools.** They're free dashboards for telling the search engine your site exists and checking whether your pages were indexed. Bing is our own recommendation, because of the Microsoft connection.
-3. **Important text written on the page, not just in images.** Google recommends "Making sure that important content is available in textual form," and the study counts a site as readable without JavaScript when it delivers at least 80% of its words already in the code sent by the server.
+3. **Important text written on the page, not just in images.** Google recommends "Making sure that important content is available in textual form," and the study counts a site as readable without JavaScript when it delivers at least 80% of its words already in the code sent by the server. To check this on your own site, see the [5-minute test to find out if Google and AI can read your website](/en/blog/build-a-website-with-ai/).
 4. **Every page with a title and a description.** Those are two of the study's technical criteria.
 5. **A published sitemap.** It's the map listing your site's pages, another of the study's criteria.
 6. **Pages that answer in writing what customers ask:** what you do, for whom, where you operate, how to hire you and, when possible, a price range. In our assessment, AI can only cite what's written.
