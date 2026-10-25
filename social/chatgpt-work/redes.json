@@ -1,0 +1,25 @@
+{
+  "slug": "chatgpt-work",
+  "pasta": "2026-10-25-chatgpt-work",
+  "url_post": "https://nocodeiaww.com/blog/chatgpt-work/",
+  "gerado_em": "2026-10-25T12:35:12.551Z",
+  "linkedin": {
+    "texto": "A Uber testou o ChatGPT Work com mil funcionários antes de liberar para cerca de 30 mil. A lição para gestores está na ordem dos passos.\n\nSe você é gestor de área, conhece a cena: o time pede IA, a TI pede tempo e, enquanto isso, cada um usa a conta pessoal que quiser.\n\nO ChatGPT Work é um agente da OpenAI: você dá um objetivo e ele entrega a planilha, o slide ou o documento pronto.\n\nO que a Uber fez, segundo o TechCrunch:\n→ piloto com mil pessoas de finanças, operações e produto\n→ cerca de 80% dos primeiros usuários não eram engenheiros\n→ tarefas reais: analisar dados da operação, adaptar treinamento para outros idiomas, criar painéis\n→ depois, liberação geral com a medição do uso já combinada\n\nO que ela não contou: quanto está gastando.\n\nE o custo pesa na decisão. O Work está em todos os planos, mas o uso é medido: tarefa complexa gasta mais da cota.\n\nQuanto o seu time vai consumir só aparece num piloto.\n\nAntes de liberar, eu levaria 4 perguntas para a TI:\n1. Quais áreas entram no piloto?\n2. Que dados pessoais de clientes o agente vai ler?\n3. Ele pode enviar e-mail ou só preparar o rascunho?\n4. Qual é o teto de gasto do piloto?\n\nO que eu não faria: liberar o acesso para todo mundo antes de saber onde o agente vai trabalhar.\n\nA Uber tinha 30 engenheiros de IA para emprestar às áreas. A sua empresa provavelmente não tem.\n\nPor isso, comece por um mapa: 1 ou 2 áreas, as tarefas repetitivas e as horas que cada uma consome por semana.\n\nQual tarefa da sua área você colocaria primeiro num piloto?\n\n#chatgpt #inteligenciaartificial #gestao",
+    "comentario": "Escrevi o guia completo: o que a Uber fez antes de liberar, como funciona a cobrança por uso e a tabela com os 7 controles para configurar com a TI antes do piloto: https://nocodeiaww.com/blog/chatgpt-work/"
+  },
+  "instagram": {
+    "legenda": "Seu time pede IA e a TI pede tempo? A Uber testou o ChatGPT Work com mil pessoas antes de liberar. 👇\nO ChatGPT Work é um agente da OpenAI: junta informações de apps e arquivos e entrega planilha, slide ou documento.\nA Uber começou com um piloto de mil funcionários (cerca de 80% dos primeiros usuários não eram engenheiros) e depois liberou para cerca de 30 mil. O custo não foi divulgado.\nAntes de liberar na sua empresa, defina quem acessa, que dados o agente lê, o que ele pode fazer e quando precisa pedir aprovação.\nComece por 1 ou 2 áreas, liste as tarefas e as horas, rode um piloto e meça antes de ampliar.\nSalva o checklist e manda PILOTO no WhatsApp 11 96788-6969 para o diagnóstico grátis. Post completo no link da bio.\n#chatgpt #agentesdeia #iaparaempresas #gestao #inteligenciaartificial",
+    "imagens": [
+      "https://nocodeiaww.com/social/chatgpt-work/slide-01.jpg",
+      "https://nocodeiaww.com/social/chatgpt-work/slide-02.jpg",
+      "https://nocodeiaww.com/social/chatgpt-work/slide-03.jpg",
+      "https://nocodeiaww.com/social/chatgpt-work/slide-04.jpg",
+      "https://nocodeiaww.com/social/chatgpt-work/slide-05.jpg",
+      "https://nocodeiaww.com/social/chatgpt-work/slide-06.jpg",
+      "https://nocodeiaww.com/social/chatgpt-work/slide-07.jpg",
+      "https://nocodeiaww.com/social/chatgpt-work/slide-08.jpg",
+      "https://nocodeiaww.com/social/chatgpt-work/slide-09.jpg",
+      "https://nocodeiaww.com/social/chatgpt-work/slide-10.jpg"
+    ]
+  }
+}
