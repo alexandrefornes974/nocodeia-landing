@@ -40,6 +40,7 @@ Base em Campinas (SP), com atendimento remoto em todo o Brasil e no exterior. At
 <!-- blog:inicio -->
 ## Blog
 
+- [ChatGPT Work na empresa: o que a Uber fez antes de liberar](https://nocodeiaww.com/blog/chatgpt-work/): ChatGPT Work é o agente da OpenAI que entrega tarefas prontas. Veja como a Uber testou com mil pessoas antes de liberar e o que configurar na empresa.
 - [Criar site com IA: o Google e o ChatGPT vão ler o seu site?](https://nocodeiaww.com/blog/criar-site-com-ia/): Criar site com IA no Wix, Hostinger ou Lovable é rápido. Veja por que o Google e o ChatGPT podem não ler o texto e o teste de 5 minutos para conferir.
 - [Quanto custa um agente de IA? O custo real por conversa](https://nocodeiaww.com/blog/quanto-custa-um-agente-de-ia/): Quanto custa um agente de IA de atendimento? Veja as partes do custo, como estimar o valor por conversa e quando pagar por resolução compensa na startup.
 - [Sua empresa usa métricas de marketing digital no site?](https://nocodeiaww.com/blog/metricas-de-marketing-digital/): Você quer retorno do site, das redes e dos anúncios, mas mede o que volta? Veja as métricas de marketing digital que importam e o método MTAM para medir.

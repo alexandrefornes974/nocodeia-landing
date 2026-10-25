@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-25",
+  "updated": "2026-10-25",
+  "draft": false,
+  "service": "raio-x",
+  "keyword": "chatgpt work",
+  "audience": "grande-empresa",
+  "pt": {
+    "slug": "chatgpt-work",
+    "title": "ChatGPT Work na empresa: o que a Uber fez antes de liberar",
+    "description": "ChatGPT Work é o agente da OpenAI que entrega tarefas prontas. Veja como a Uber testou com mil pessoas antes de liberar e o que configurar na empresa.",
+    "image_alt": "Duas pessoas no escritório analisando gráficos ao lado de um notebook"
+  },
+  "en": {
+    "slug": "chatgpt-work-enterprise-rollout",
+    "title": "ChatGPT Work for Enterprise: What Uber Did Before Rollout",
+    "description": "ChatGPT Work is OpenAI's agent that delivers finished tasks. See how Uber tested it with 1,000 people before rollout and what to set up in your company.",
+    "image_alt": "Two colleagues in an office reviewing charts next to a laptop"
+  },
+  "es": {
+    "slug": "chatgpt-work-para-empresas",
+    "title": "ChatGPT Work para empresas: qué hizo Uber antes de liberarlo",
+    "description": "ChatGPT Work es el agente de OpenAI que entrega tareas listas. Mira cómo Uber lo probó con mil personas antes de liberarlo y qué configurar en tu empresa.",
+    "image_alt": "Dos colegas en una oficina revisando gráficos junto a una laptop"
+  },
+  "image": "capa.jpg",
+  "image_credit": "Foto: Yan Krukau / Pexels"
+}

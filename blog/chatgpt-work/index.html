@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<!-- Aviso de cookies Nocodeia v1: precisa ser o PRIMEIRO item dentro do <head> -->
+<script>
+window.NOCODEIA_AVISO = {"namespace":"nocodeia","politica":"/privacidade/#site","cor":"#0047FF","corTexto":"#1a1a1a","fonte":"inherit","semMarketing":false,"textos":{"essenciais":"Necessários para o site funcionar e para lembrar a sua escolha de cookies. Não podem ser desligados.","estatisticas":"Contam visitas, mostram quais páginas interessam mais e medem a velocidade e os erros do site, para melhorarmos o site.","aviso":"Usamos cookies para o site funcionar e, se você permitir, para entender como ele é usado e medir anúncios.","marketing":"Permitem medir e personalizar anúncios no Meta (Instagram/Facebook) e no LinkedIn."}};
+(function(w,d){var ns=w.NOCODEIA_AVISO.namespace,FILAS=["dataLayer","dataLayerGa4"];
+function lido(id){try{return localStorage.getItem("stcm."+ns+".consent."+id)}catch(e){return null}}
+function args(){return arguments}
+function estado(a,m){return{analytics_storage:a?"granted":"denied",ad_storage:m?"granted":"denied",ad_user_data:m?"granted":"denied",ad_personalization:m?"granted":"denied"}}
+var a=lido("analytics")==="true",m=lido("marketing")==="true",ini=estado(a,m);ini.wait_for_update=500;
+var antes=[args("consent","default",ini),args("set","ads_data_redaction",!m)];
+/* Google: a decisão "padrão" entra na frente de tudo, mesmo se a plataforma recriar a fila depois */
+function prep(f){if(!f.__nc){for(var i=antes.length-1;i>=0;i--)f.unshift(antes[i]);f.__nc=1}return f}
+FILAS.forEach(function(n){var atual=prep(w[n]||[]);try{Object.defineProperty(w,n,{configurable:true,enumerable:true,get:function(){return atual},set:function(v){atual=prep(v||[])}})}catch(e){w[n]=atual}});
+w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n){w[n].push(args("consent","update",s))});w.dataLayer.push({event:"nc_consent_update",nc_analytics:a,nc_marketing:m})}};
+})(window,document);
+</script>
+<script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
+<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatGPT Work na empresa: o que a Uber fez antes de liberar | Nocodeia</title>
+<meta name="description" content="ChatGPT Work é o agente da OpenAI que entrega tarefas prontas. Veja como a Uber testou com mil pessoas antes de liberar e o que configurar na empresa.">
+<link rel="canonical" href="https://nocodeiaww.com/blog/chatgpt-work/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/blog/chatgpt-work/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/blog/chatgpt-work-enterprise-rollout/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/blog/chatgpt-work-para-empresas/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/blog/chatgpt-work/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="ChatGPT Work na empresa: o que a Uber fez antes de liberar | Nocodeia">
+<meta property="og:description" content="ChatGPT Work é o agente da OpenAI que entrega tarefas prontas. Veja como a Uber testou com mil pessoas antes de liberar e o que configurar na empresa.">
+<meta property="og:url" content="https://nocodeiaww.com/blog/chatgpt-work/">
+<meta property="og:image" content="https://nocodeiaww.com/blog/img/chatgpt-work.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://nocodeiaww.com/blog/chatgpt-work/#post",
+   "headline": "ChatGPT Work na empresa: o que a Uber fez antes de liberar",
+   "description": "ChatGPT Work é o agente da OpenAI que entrega tarefas prontas. Veja como a Uber testou com mil pessoas antes de liberar e o que configurar na empresa.",
+   "inLanguage": "pt-BR",
+   "datePublished": "2026-10-25",
+   "dateModified": "2026-10-25",
+   "image": "https://nocodeiaww.com/blog/img/chatgpt-work.jpg",
+   "url": "https://nocodeiaww.com/blog/chatgpt-work/",
+   "mainEntityOfPage": "https://nocodeiaww.com/blog/chatgpt-work/",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre Fornes",
+    "url": "https://nocodeiaww.com/#sobre",
+    "sameAs": [
+     "https://www.linkedin.com/in/alexandredefornes/"
+    ]
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "sameAs": [
+     "https://www.linkedin.com/company/nocodeiaww/",
+     "https://www.instagram.com/nocodeiaww/",
+     "https://www.facebook.com/profile.php?id=61595488161472"
+    ],
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://nocodeiaww.com/assets/icon.png"
+    }
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://nocodeiaww.com/blog/#blog",
+    "name": "Blog da Nocodeia"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Início",
+     "item": "https://nocodeiaww.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://nocodeiaww.com/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ChatGPT Work na empresa: o que a Uber fez antes de liberar",
+     "item": "https://nocodeiaww.com/blog/chatgpt-work/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/blog/chatgpt-work/#faq",
+   "inLanguage": "pt-BR",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "ChatGPT Work é gratuito?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Segundo a cobertura do lançamento, o ChatGPT Work está disponível em todos os planos, inclusive o gratuito, pelo app de computador. O uso consome a cota do plano, e tarefas longas gastam mais. Para uso na empresa, os controles de administrador ficam no plano Enterprise."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ChatGPT Work tem download?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. Segundo a TNW, há app de computador para Mac e Windows, disponível no mundo todo, além da versão na web e no celular."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Existe ChatGPT para empresas?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. A OpenAI tem planos para empresas, como Business e Enterprise, e o ChatGPT Work foi liberado para os dois no lançamento ou nos dias seguintes. Confira preços e condições na página oficial da OpenAI antes de decidir."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Como implementar IA na empresa?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Comece por um mapa das tarefas repetitivas e das horas que elas consomem. Rode um piloto pequeno, com controles de acesso e aprovação ligados. Meça o uso e os resultados antes de liberar para outras áreas."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/">Início</a>
+<a class="item" href="/#servicos">Serviços</a>
+<a class="item" href="/casos/">Casos</a>
+<a class="item" href="/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/blog/chatgpt-work/" hreflang="pt-BR" aria-current="page">PT</a><a href="/en/blog/chatgpt-work-enterprise-rollout/" hreflang="en">EN</a><a href="/es/blog/chatgpt-work-para-empresas/" hreflang="es">ES</a></div>
+<a class="botao" href="/#vaga">Garantir vaga</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/blog/">← Todos os posts</a>
+<h1>ChatGPT Work na empresa: o que a Uber fez antes de liberar</h1>
+<p class="resumo">ChatGPT Work é o agente da OpenAI que entrega tarefas prontas. Veja como a Uber testou com mil pessoas antes de liberar e o que configurar na empresa.</p>
+<div class="meta"><span>Por Alexandre</span><span>·</span><time datetime="2026-10-25">25 de outubro de 2026</time><span>·</span><span>7 min de leitura</span></div>
+<figure class="capa"><img src="/blog/img/chatgpt-work.jpg" alt="Duas pessoas no escritório analisando gráficos ao lado de um notebook" width="1200" height="630"><figcaption>Foto: Yan Krukau / Pexels</figcaption></figure>
+<div class="conteudo">
+<p>ChatGPT Work é um agente da OpenAI, lançado em julho de 2026, que executa tarefas de várias etapas dentro do ChatGPT: junta informações de apps e arquivos e entrega planilhas, slides e documentos. A Uber testou com mil funcionários antes de liberar para cerca de 30 mil. Esse caminho serve de roteiro para a sua empresa.</p>
+<p>Se você é gestor de área, a cena é conhecida: o time pede acesso à IA, a TI pede tempo para avaliar e, enquanto isso, cada um usa a conta pessoal que quiser, sem controle nenhum. A decisão da Uber, anunciada em 22 de outubro, mostra uma saída mais organizada.</p>
+<h2 id="o-que-e-o-chatgpt-work-e-como-funciona">O que é o ChatGPT Work e como funciona?</h2>
+<p>O ChatGPT Work é um agente: um assistente que executa tarefas, não só responde. Segundo a cobertura do lançamento feita pela <a href="https://thenextweb.com/news/openai-chatgpt-work-agent-launch" target="_blank" rel="noopener">TNW</a>, a OpenAI o descreve como um agente dentro do ChatGPT capaz de agir nos apps e arquivos do usuário.</p>
+<p>A diferença para o chat comum está no pedido. No chat, você faz uma pergunta e recebe um texto. No Work, você dá um objetivo, e o agente quebra o trabalho em etapas, executa cada uma e entrega o arquivo pronto. Na prática:</p>
+<ul>
+<li><strong>Junta contexto de várias fontes.</strong> Ele se conecta por plugins (conectores que ligam o ChatGPT a outro sistema) a Slack, Microsoft Teams, Google Drive, SharePoint, e-mail, calendário e CRM (o sistema onde a empresa registra clientes e vendas).</li>
+<li><strong>Entrega o resultado, não a resposta.</strong> Planilhas, slides, documentos e até pequenos apps web.</li>
+<li><strong>Fica no projeto.</strong> Pode trabalhar por horas na mesma tarefa e repetir ações agendadas.</li>
+</ul>
+<p>O produto saiu em 9 de julho com o GPT-5.6, segundo a <a href="https://www.foxbusiness.com/technology/openai-unveils-chatgpt-work-automate-workplace-tasks-ai-race-intensifies" target="_blank" rel="noopener">Fox Business</a>, em texto com contribuição da Reuters. A TNW acrescenta que ele usa tecnologia do Codex, a ferramenta de programação da OpenAI.</p>
+<h2 id="o-que-a-uber-fez-antes-de-liberar-o-chatgpt-work-para-cerca-de-30-mil-pessoas">O que a Uber fez antes de liberar o ChatGPT Work para cerca de 30 mil pessoas?</h2>
+<p>A Uber começou com um piloto de mil funcionários e só depois liberou para a empresa inteira. Os detalhes, publicados pelo <a href="https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/" target="_blank" rel="noopener">TechCrunch</a> em 22 de outubro, valem como roteiro:</p>
+<ol>
+<li><strong>Piloto pequeno e misturado.</strong> Mil pessoas de áreas como finanças, operações e produto.</li>
+<li><strong>Áreas de negócio na frente.</strong> Segundo Sumanth Sukumar, vice-presidente de engenharia da Uber, cerca de 80% dos primeiros usuários não eram engenheiros.</li>
+<li><strong>Usos concretos.</strong> Analisar dados da operação para achar tendências e montar recomendações, adaptar material de treinamento para outros mercados e idiomas e criar painéis interativos.</li>
+<li><strong>Experiência anterior.</strong> No mesmo ano, a Uber juntou 30 engenheiros de IA com equipes de outras áreas e deu duas semanas para automatizar partes do trabalho delas.</li>
+<li><strong>Medição depois da liberação.</strong> A empresa disse que vai acompanhar como os funcionários usam a ferramenta e se ela ajuda no trabalho.</li>
+</ol>
+<p>O que a Uber não contou: quanto está gastando. O TechCrunch registra que o custo não foi divulgado.</p>
+<p>Para um gestor, a lição é a ordem dos passos. Primeiro um grupo pequeno, com gente da operação, testando tarefas reais. Depois a liberação geral, com a medição do uso já combinada.</p>
+<h2 id="quanto-custa-o-chatgpt-work">Quanto custa o ChatGPT Work?</h2>
+<p>A OpenAI não divulgou um preço próprio para o ChatGPT Work nas fontes que conseguimos abrir. O que a cobertura do lançamento informa é a forma de cobrança, e ela muda a conta.</p>
+<ul>
+<li><strong>Está em todos os planos.</strong> A TNW e a Fox Business dizem que o Work está disponível em todos os planos do ChatGPT, inclusive o gratuito; segundo a Fox, pelo app do ChatGPT para computador.</li>
+<li><strong>O uso é medido, como no Codex.</strong> Segundo a TNW, cada tarefa não conta como uma pergunta comum de chat: tarefas mais complexas gastam mais da cota incluída no plano.</li>
+<li><strong>Há teto de gasto.</strong> Administradores dos planos Enterprise e Edu (este, para instituições de ensino) podem definir limites de gasto por grupo.</li>
+</ul>
+<p>Na prática, o custo depende de quantas tarefas longas o time vai rodar, e isso só aparece num piloto. Antes de liberar para todos, peça à TI uma estimativa de consumo baseada no uso real de um grupo pequeno. A mesma lógica vale para agentes feitos sob medida, como mostramos no post sobre <a href="/blog/quanto-custa-um-agente-de-ia/">quanto custa um agente de IA</a>.</p>
+<h2 id="que-controles-configurar-antes-de-liberar-um-agente-para-a-empresa-inteira">Que controles configurar antes de liberar um agente para a empresa inteira?</h2>
+<p>Defina quem acessa, o que o agente lê, o que ele pode fazer e quando precisa pedir aprovação. Segundo a <a href="https://thenextweb.com/news/openai-chatgpt-work-agent-launch" target="_blank" rel="noopener">cobertura da TNW sobre o lançamento</a>, estes são os controles que a OpenAI descreve:</p>
+<table>
+<thead>
+<tr>
+<th>Controle</th>
+<th>O que a OpenAI descreve</th>
+<th>Pergunta para a TI</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Acesso</td>
+<td>Admins definem quem usa o Work</td>
+<td>Quais áreas entram no piloto?</td>
+</tr>
+<tr>
+<td>Contexto da empresa</td>
+<td>Admins escolhem que informação o agente usa</td>
+<td>Que dados pessoais de clientes ele vai ler?</td>
+</tr>
+<tr>
+<td>Ferramentas conectadas</td>
+<td>Admins escolhem os conectores liberados</td>
+<td>Quais sistemas ficam fora no começo?</td>
+</tr>
+<tr>
+<td>Ações permitidas</td>
+<td>Admins limitam o que o agente pode executar</td>
+<td>Ele pode enviar e-mail ou só preparar o rascunho?</td>
+</tr>
+<tr>
+<td>Aprovação</td>
+<td>O usuário decide quando o agente precisa de aprovação antes de agir</td>
+<td>Quais ações sempre pedem aprovação?</td>
+</tr>
+<tr>
+<td>Supervisão</td>
+<td>Uma API de Compliance (porta para outro sistema puxar os registros) acompanha conversas e ações</td>
+<td>Quem olha esses registros e com que frequência?</td>
+</tr>
+<tr>
+<td>Gasto</td>
+<td>Limites por grupo no painel de administração</td>
+<td>Qual é o teto do piloto?</td>
+</tr>
+</tbody></table>
+<p>Os controles de administrador citados valem para os planos Enterprise e Edu. Para decidir quanta autonomia dar a cada tipo de tarefa, use os níveis do nosso guia de <a href="/blog/governanca-de-agentes-de-ia/">governança de agentes de IA</a>.</p>
+<h2 id="por-onde-comecar-se-a-sua-empresa-nao-e-a-uber">Por onde começar se a sua empresa não é a Uber?</h2>
+<p>Comece por um mapa de tarefas, não pela licença. A Uber tinha 30 engenheiros de IA para emprestar às áreas; a sua empresa provavelmente não tem. O caminho mais curto é escolher onde o agente vai trabalhar antes de liberar o acesso.</p>
+<ol>
+<li><strong>Escolha 1 ou 2 áreas</strong> com tarefa repetitiva de escritório: relatório semanal, consolidação de planilhas, material para outros idiomas.</li>
+<li><strong>Liste as tarefas e estime as horas</strong> que cada uma consome por semana.</li>
+<li><strong>Rode um piloto pequeno</strong> com os controles da tabela acima ligados.</li>
+<li><strong>Meça uso e horas</strong> antes de ampliar para outras áreas.</li>
+</ol>
+<p>Os passos 1 e 2 são o que fazemos no <a href="/#servicos">Raio-X de automação</a>: um mapa das tarefas que dá para automatizar, as horas economizadas estimadas por tarefa e um plano de ataque em ordem de retorno, em cerca de uma semana. Com esse mapa, o piloto começa pelas tarefas que mais devolvem tempo ao time.</p>
+<h2 id="quando-o-chatgpt-work-nao-basta">Quando o ChatGPT Work não basta?</h2>
+<p>O ChatGPT Work atende bem a tarefa de escritório de uma pessoa ou de uma equipe: resumo, planilha, slide, painel, inclusive com tarefas agendadas. Para o processo central da área, o cálculo muda.</p>
+<p>Na nossa avaliação, vale outro caminho quando o processo segue sempre a mesma regra e não pode variar de uma execução para outra, quando o sistema da área é antigo e não tem conector, ou quando a área precisa de uma ferramenta própria, com permissão por perfil e histórico de quem alterou o quê. Aí entram a automação de processos ou um sistema interno. O mapa de tarefas mostra qual caso é qual.</p>
+<h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+<h3 id="chatgpt-work-e-gratuito">ChatGPT Work é gratuito?</h3>
+<p>Segundo a cobertura do lançamento, o ChatGPT Work está disponível em todos os planos, inclusive o gratuito, pelo app de computador. O uso consome a cota do plano, e tarefas longas gastam mais. Para uso na empresa, os controles de administrador ficam no plano Enterprise.</p>
+<h3 id="chatgpt-work-tem-download">ChatGPT Work tem download?</h3>
+<p>Sim. Segundo a TNW, há app de computador para Mac e Windows, disponível no mundo todo, além da versão na web e no celular.</p>
+<h3 id="existe-chatgpt-para-empresas">Existe ChatGPT para empresas?</h3>
+<p>Sim. A OpenAI tem planos para empresas, como Business e Enterprise, e o ChatGPT Work foi liberado para os dois no lançamento ou nos dias seguintes. Confira preços e condições na página oficial da OpenAI antes de decidir.</p>
+<h3 id="como-implementar-ia-na-empresa">Como implementar IA na empresa?</h3>
+<p>Comece por um mapa das tarefas repetitivas e das horas que elas consomem. Rode um piloto pequeno, com controles de acesso e aprovação ligados. Meça o uso e os resultados antes de liberar para outras áreas.</p>
+<h2 id="por-onde-comecar-na-sua-area">Por onde começar na sua área?</h2>
+<p>Antes de pedir licença para todo mundo, descubra quais tarefas da sua área valem um piloto. Veja <a href="/#como">como funciona o diagnóstico de 45 minutos</a> e <a href="/#vaga">marque seu diagnóstico grátis</a>: você sai com preço e prazo fechados para o Raio-X.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">Raio-X de automação</p>
+<h2>Quer isso funcionando na sua empresa?</h2>
+<p>Diagnóstico grátis de 45 minutos. Você sai com preço e prazo fechados.</p>
+<a class="botao" href="/#vaga">Quero meu diagnóstico grátis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.webp" alt=""><p><strong>Alexandre, fundador da Nocodeia</strong><br>Mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch. Hoje coloca produtos no ar com no-code e IA em semanas.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.webp" alt=""><img src="/assets/wordmark.webp" alt="nocodeia worldwide"></div><div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia no LinkedIn" title="Nocodeia no LinkedIn" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia no Instagram" title="Nocodeia no Instagram" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me" aria-label="Nocodeia no Facebook" title="Nocodeia no Facebook" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+<p><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--></p><p>Campinas (SP) · atendimento remoto em todo o Brasil e no exterior</p><p>© 2026 Nocodeia. Feito com no-code, claro.</p></footer>
+</body>
+</html>
