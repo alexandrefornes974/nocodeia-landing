@@ -1,0 +1,25 @@
+{
+  "slug": "comercio-agentico",
+  "pasta": "2026-11-02-comercio-agentico",
+  "url_post": "https://nocodeiaww.com/blog/comercio-agentico/",
+  "gerado_em": "2026-11-02T18:09:14.968Z",
+  "linkedin": {
+    "texto": "Black Friday é dia 27. Se a sua loja se preparou só com banner e cupom, ficou uma parte de fora: o cliente que pede à IA para comparar.\n\nQuem pede ao ChatGPT \"um vestido midi azul até R$ 200\" recebe uma comparação montada com dados. A IA compara dados, não vitrine.\n\nUm relatório da PYMNTS com a Visa, somando EUA, Brasil e Emirados: 48% dos compradores online usaram IA para pesquisar a compra mais recente.\n\nNo mesmo relatório, só 15% dos 1.185 lojistas ouvidos tinham dados estruturados prontos para agentes de IA.\n\nO que eu arrumaria nos mais vendidos antes do dia 27:\n→ título com a variação: cor, tamanho, modelo\n→ descrição factual: medida e material\n→ preço igual na página, no feed e no checkout\n→ estoque atualizado, esgotado marcado como esgotado\n→ frete, prazo e link da troca na página\n→ marca e código de barras\n\nNa prática (loja fictícia):\nAntes: \"Vestido azul lindo, confira!\"\nDepois: \"Vestido midi azul-marinho, viscose, P a GG, R$ 189,90, entrega em 3 dias úteis para SP.\"\n\nO teste que fazemos no site da Nocodeia: abra o produto, aperte Ctrl+U e procure o preço e \"em estoque\" no código. Não achou? O dado pode estar só na imagem.\n\nNa Amora, agente que montamos para a Amore Totale, foi preciso conferir e completar dados do catálogo, como tamanhos, cores e frete, para ela responder certo.\nAgente só responde bem o que está cadastrado.\n\nO que eu não faria agora: correr para vender dentro do ChatGPT. Segundo a OpenAI, o envio de catálogo é só para parceiros aprovados e hoje mira os EUA.\n\nNa minha avaliação, a chance da pequena loja é o catálogo legível no site e no Google. A maioria dos lojistas ouvidos ainda não tinha esses dados prontos.\n\nQual dado do seu produto mais vendido hoje só aparece na foto ou no carrinho?\n\n#comercioagentico #ecommerce #blackfriday",
+    "comentario": "Escrevi o guia completo: a tabela do que o agente de IA lê em cada produto, os 4 passos para conferir o que ele enxerga na página e a lista do que arrumar antes da Black Friday: https://nocodeiaww.com/blog/comercio-agentico/"
+  },
+  "instagram": {
+    "legenda": "Quem pede ao ChatGPT “um vestido midi azul até R$ 200” recebe uma comparação. A sua loja entra nela? 👇\nComércio agêntico é a compra feita com ajuda de um agente de IA, que pesquisa, compara e, em alguns casos, fecha o pedido.\nPara escolher, ele lê os dados da loja: nome com a variação, descrição, preço, estoque, frete e troca. Título vago e estoque desatualizado atrapalham.\nNo relatório da PYMNTS Intelligence com a Visa (EUA, Brasil e Emirados Árabes, somados), 48% dos compradores online usaram IA para pesquisar a compra mais recente. Entre os lojistas ouvidos, só 15% tinham dados estruturados prontos para agentes.\nAntes da Black Friday (27/11), comece pelos produtos mais vendidos. Salva o checklist.\nMarque seu diagnóstico grátis de 45 minutos: olhamos uma página de produto da sua loja junto com você. Link na bio.\n#comercioagentico #lojavirtual #ecommerce #blackfriday #agentesdeia",
+    "imagens": [
+      "https://nocodeiaww.com/social/comercio-agentico/slide-01.jpg",
+      "https://nocodeiaww.com/social/comercio-agentico/slide-02.jpg",
+      "https://nocodeiaww.com/social/comercio-agentico/slide-03.jpg",
+      "https://nocodeiaww.com/social/comercio-agentico/slide-04.jpg",
+      "https://nocodeiaww.com/social/comercio-agentico/slide-05.jpg",
+      "https://nocodeiaww.com/social/comercio-agentico/slide-06.jpg",
+      "https://nocodeiaww.com/social/comercio-agentico/slide-07.jpg",
+      "https://nocodeiaww.com/social/comercio-agentico/slide-08.jpg",
+      "https://nocodeiaww.com/social/comercio-agentico/slide-09.jpg",
+      "https://nocodeiaww.com/social/comercio-agentico/slide-10.jpg"
+    ]
+  }
+}
