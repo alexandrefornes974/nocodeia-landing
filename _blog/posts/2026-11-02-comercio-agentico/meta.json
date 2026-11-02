@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-02",
+  "updated": "2026-11-02",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: Thirdman / Pexels",
+  "service": "site-seo-geo",
+  "keyword": "comércio agêntico",
+  "audience": "pme",
+  "pt": {
+    "slug": "comercio-agentico",
+    "title": "Comércio agêntico: o que a IA lê no catálogo da sua loja",
+    "description": "Comércio agêntico é a IA pesquisando, comparando e até comprando pelo cliente. Veja o que o agente lê no catálogo da sua loja antes da Black Friday.",
+    "image_alt": "Mulher de blusa amarela usando um notebook numa loja de roupas, com uma arara de roupas e outra mulher olhando as peças ao fundo"
+  },
+  "en": {
+    "slug": "agentic-commerce",
+    "title": "Agentic Commerce: What AI Reads in Your Store's Catalog",
+    "description": "Agentic commerce is AI researching, comparing and even buying for the customer. See what the agent reads in your store's catalog before Black Friday.",
+    "image_alt": "Woman in a yellow top using a laptop in a clothing store, with a clothing rack and another woman looking at the garments in the background"
+  },
+  "es": {
+    "slug": "que-es-el-comercio-agentico",
+    "title": "Comercio agéntico: qué lee la IA en el catálogo de tu tienda",
+    "description": "El comercio agéntico es la IA que investiga, compara y hasta compra por el cliente. Descubre qué lee el agente en tu catálogo antes del Black Friday.",
+    "image_alt": "Mujer con blusa amarilla usando una laptop en una tienda de ropa, con un perchero y otra mujer mirando las prendas al fondo"
+  }
+}

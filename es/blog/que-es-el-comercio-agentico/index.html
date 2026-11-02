@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Aviso de cookies Nocodeia v1: precisa ser o PRIMEIRO item dentro do <head> -->
+<script>
+window.NOCODEIA_AVISO = {"namespace":"nocodeia","politica":"/es/privacidad/#site","cor":"#0047FF","corTexto":"#1a1a1a","fonte":"inherit","semMarketing":false,"textos":{"essenciaisRotulo":"Esenciales","essenciais":"Necesarias para que el sitio funcione y para recordar tu elección de cookies. No se pueden desactivar.","estatisticasRotulo":"Estadísticas","estatisticas":"Cuentan visitas, muestran qué páginas interesan más y miden la velocidad y los errores del sitio, para mejorarlo.","aviso":"Usamos cookies para que el sitio funcione y, si lo permites, para entender cómo se usa y medir anuncios.","marketing":"Permiten medir y personalizar anuncios en Meta (Instagram/Facebook) y LinkedIn.","politica":"Política de privacidad","aceitar":"Aceptar todas","recusar":"Rechazar no esenciales","escolher":"Elegir","escolherAria":"Elegir qué cookies permitir","preferenciasTitulo":"Tus preferencias de cookies","preferencias":"Activa o desactiva cada tipo. Puedes cambiar de opinión en cualquier momento con el icono en la esquina de la pantalla.","salvar":"Guardar y cerrar","credito":"Aviso de cookies por Silktide"}};
+(function(w,d){var ns=w.NOCODEIA_AVISO.namespace,FILAS=["dataLayer","dataLayerGa4"];
+function lido(id){try{return localStorage.getItem("stcm."+ns+".consent."+id)}catch(e){return null}}
+function args(){return arguments}
+function estado(a,m){return{analytics_storage:a?"granted":"denied",ad_storage:m?"granted":"denied",ad_user_data:m?"granted":"denied",ad_personalization:m?"granted":"denied"}}
+var a=lido("analytics")==="true",m=lido("marketing")==="true",ini=estado(a,m);ini.wait_for_update=500;
+var antes=[args("consent","default",ini),args("set","ads_data_redaction",!m)];
+/* Google: a decisão "padrão" entra na frente de tudo, mesmo se a plataforma recriar a fila depois */
+function prep(f){if(!f.__nc){for(var i=antes.length-1;i>=0;i--)f.unshift(antes[i]);f.__nc=1}return f}
+FILAS.forEach(function(n){var atual=prep(w[n]||[]);try{Object.defineProperty(w,n,{configurable:true,enumerable:true,get:function(){return atual},set:function(v){atual=prep(v||[])}})}catch(e){w[n]=atual}});
+w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n){w[n].push(args("consent","update",s))});w.dataLayer.push({event:"nc_consent_update",nc_analytics:a,nc_marketing:m})}};
+})(window,document);
+</script>
+<script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
+<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comercio agéntico: qué lee la IA en el catálogo de tu tienda | Nocodeia</title>
+<meta name="description" content="El comercio agéntico es la IA que investiga, compara y hasta compra por el cliente. Descubre qué lee el agente en tu catálogo antes del Black Friday.">
+<link rel="canonical" href="https://nocodeiaww.com/es/blog/que-es-el-comercio-agentico/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/blog/comercio-agentico/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/blog/agentic-commerce/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/blog/que-es-el-comercio-agentico/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/blog/comercio-agentico/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Comercio agéntico: qué lee la IA en el catálogo de tu tienda | Nocodeia">
+<meta property="og:description" content="El comercio agéntico es la IA que investiga, compara y hasta compra por el cliente. Descubre qué lee el agente en tu catálogo antes del Black Friday.">
+<meta property="og:url" content="https://nocodeiaww.com/es/blog/que-es-el-comercio-agentico/">
+<meta property="og:image" content="https://nocodeiaww.com/blog/img/comercio-agentico.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://nocodeiaww.com/es/blog/que-es-el-comercio-agentico/#post",
+   "headline": "Comercio agéntico: qué lee la IA en el catálogo de tu tienda",
+   "description": "El comercio agéntico es la IA que investiga, compara y hasta compra por el cliente. Descubre qué lee el agente en tu catálogo antes del Black Friday.",
+   "inLanguage": "es",
+   "datePublished": "2026-11-02",
+   "dateModified": "2026-11-02",
+   "image": "https://nocodeiaww.com/blog/img/comercio-agentico.jpg",
+   "url": "https://nocodeiaww.com/es/blog/que-es-el-comercio-agentico/",
+   "mainEntityOfPage": "https://nocodeiaww.com/es/blog/que-es-el-comercio-agentico/",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre Fornes",
+    "url": "https://nocodeiaww.com/#sobre",
+    "sameAs": [
+     "https://www.linkedin.com/in/alexandredefornes/"
+    ]
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "sameAs": [
+     "https://www.linkedin.com/company/nocodeiaww/",
+     "https://www.instagram.com/nocodeiaww/",
+     "https://www.facebook.com/profile.php?id=61595488161472"
+    ],
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://nocodeiaww.com/assets/icon.png"
+    }
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://nocodeiaww.com/es/blog/#blog",
+    "name": "Blog de Nocodeia"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://nocodeiaww.com/es/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://nocodeiaww.com/es/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Comercio agéntico: qué lee la IA en el catálogo de tu tienda",
+     "item": "https://nocodeiaww.com/es/blog/que-es-el-comercio-agentico/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/es/blog/que-es-el-comercio-agentico/#faq",
+   "inLanguage": "es",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Qué significa comercio agéntico?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Es la compra hecha con ayuda de un agente de IA, que investiga, compara y puede cerrar el pedido. Según O Tempo, la diferencia con el chatbot común es la autonomía: el agente decide dentro de los límites que definió el cliente."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué es el comercio agéntico de Visa?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Es la plataforma Visa Intelligent Commerce, usada con Banco do Brasil en marzo de 2026 en una compra en nombre del consumidor, que O Tempo describe como la primera de ese tipo en el país, en un entorno controlado. En octubre de 2025, según el reportaje, Visa lanzó el Trusted Agent Protocol, que ayuda a la tienda a distinguir a los agentes legítimos de los robots maliciosos."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Se puede comprar con ChatGPT?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Según O Tempo, en Brasil ChatGPT ayuda a investigar y comparar modelos, pero no tiene acceso al checkout de las tiendas ni paga por el usuario. En la práctica, el cliente cierra el pedido en la tienda."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cómo funciona la investigación de compras de ChatGPT?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Según O Tempo, quien usa ChatGPT para investigar una compra describe lo que quiere, define un rango de precio y pide comparaciones entre modelos. La tienda entra en la comparación con los datos que publica."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Google Merchant Center: ¿para qué sirve?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Es el panel de Google donde la tienda sube su catálogo mediante un feed, incluso para las fichas gratuitas. Según Google, el feed y los datos estructurados en la página, juntos, aumentan al máximo las posibilidades de que los productos se muestren en la Búsqueda."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/es/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/es/">Inicio</a>
+<a class="item" href="/es/#servicos">Servicios</a>
+<a class="item" href="/es/casos/">Casos</a>
+<a class="item" href="/es/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/blog/comercio-agentico/" hreflang="pt-BR">PT</a><a href="/en/blog/agentic-commerce/" hreflang="en">EN</a><a href="/es/blog/que-es-el-comercio-agentico/" hreflang="es" aria-current="page">ES</a></div>
+<a class="botao" href="/es/#vaga">Reservar lugar</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/es/blog/">← Todos los posts</a>
+<h1>Comercio agéntico: qué lee la IA en el catálogo de tu tienda</h1>
+<p class="resumo">El comercio agéntico es la IA que investiga, compara y hasta compra por el cliente. Descubre qué lee el agente en tu catálogo antes del Black Friday.</p>
+<div class="meta"><span>Por Alexandre</span><span>·</span><time datetime="2026-11-02">2 de noviembre de 2026</time><span>·</span><span>9 min de lectura</span></div>
+<figure class="capa"><img src="/blog/img/comercio-agentico.jpg" alt="Mujer con blusa amarilla usando una laptop en una tienda de ropa, con un perchero y otra mujer mirando las prendas al fondo" width="1200" height="630"><figcaption>Foto: Thirdman / Pexels</figcaption></figure>
+<div class="conteudo">
+<p>El comercio agéntico es la compra hecha con ayuda de un agente de IA, que investiga, compara y, en algunos casos, cierra el pedido por el cliente. Para elegir, el agente consulta los datos de la tienda: producto, precio, inventario, envío y condiciones de venta. Si no entiende la oferta, difícilmente la elige.</p>
+<p>Un agente de IA es un asistente que ejecuta tareas, no solo responde. Preparar el Black Friday (27 de noviembre) solo con un banner y un cupón deja algo fuera. Quien le pide a ChatGPT &quot;un vestido midi azul de menos de US$ 200&quot; recibe una comparación armada con datos, y un título vago o un inventario desactualizado estorban.</p>
+<h2 id="que-es-el-comercio-agentico-y-que-ya-funciona-en-brasil">¿Qué es el comercio agéntico y qué ya funciona en Brasil?</h2>
+<p>El comercio agéntico es que el cliente le entregue la compra, o una parte de ella, a un programa que actúa por él. Según un <a href="https://www.otempo.com.br/economia/2026/10/29/agentes-de-ia-vao-fazer-compras-por-voce-o-que-ja-funciona-no-brasil" target="_blank" rel="noopener">reportaje del diario brasileño O Tempo</a> (en portugués), del 29 de octubre de 2026, el agente de compras funciona en cuatro etapas:</p>
+<ol>
+<li>El cliente describe lo que quiere, con presupuesto, marca preferida y plazo.</li>
+<li>El sistema recorre catálogos, revisa el inventario, compara precios y encuentra cupones.</li>
+<li>Filtra las opciones y presenta la mejor.</li>
+<li>Completa los datos de entrega, aplica el pago autorizado y concluye el pedido.</li>
+</ol>
+<p>La autonomía cambia según la compra: en artículos recurrentes, como comida para mascotas, el agente puede actuar con más independencia; en compras caras o de gusto personal, como ropa, la mayoría de los sistemas pide confirmación antes de pagar.</p>
+<p>En Brasil, según O Tempo, Visa y el banco brasileño Banco do Brasil concluyeron en marzo de 2026 una compra en nombre del consumidor, descrita como la primera de ese tipo en el país en un entorno de producción controlado. En septiembre, Amazon anunció Alexa para Compras en beta. ChatGPT y Gemini ayudan a investigar y comparar, pero no tienen acceso al checkout (el paso de pago) de las tiendas ni pagan por el usuario.</p>
+<p>El <a href="https://www.visaacceptance.com/content/dam/documents/campaign/shopping-index/2026-global-digital-shopping-index-agentic-edition.pdf" target="_blank" rel="noopener">informe de PYMNTS Intelligence con Visa Acceptance Solutions</a> (en inglés), de julio de 2026, encuestó a 5.241 consumidores de Estados Unidos, Brasil y Emiratos Árabes Unidos, en conjunto. Entre los compradores en línea, el 48% usó IA para investigar su compra más reciente: el 30% usó ChatGPT u otra herramienta de OpenAI, y el 19%, Gemini.</p>
+<p>En la práctica, hoy el agente investiga y compara más de lo que paga. En nuestra opinión, la tienda que queda fuera de la comparación pierde al cliente antes del clic.</p>
+<h2 id="que-lee-el-agente-de-ia-en-el-catalogo-de-tu-tienda">¿Qué lee el agente de IA en el catálogo de tu tienda?</h2>
+<p>El agente lee los datos de cada producto, del nombre a la política de cambios. La <a href="https://developers.openai.com/commerce/specs/file-upload/products" target="_blank" rel="noopener">especificación de catálogo de OpenAI</a>, el formato con el que las tiendas asociadas envían productos a ChatGPT, da el panorama: nueve campos obligatorios, como título, descripción, marca, imagen, disponibilidad y precio; el envío, las devoluciones, el código de barras y las reseñas son opcionales.</p>
+<table>
+<thead>
+<tr>
+<th>Dato</th>
+<th>Buen ejemplo (ilustrativo)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Nombre con la variante</td>
+<td>&quot;Vestido midi azul marino, M&quot;</td>
+</tr>
+<tr>
+<td>Descripción factual</td>
+<td>&quot;Viscosa, 110 cm, con forro&quot;</td>
+</tr>
+<tr>
+<td>Precio y promoción</td>
+<td>&quot;Antes US$ 229,90, ahora US$ 189,90&quot;</td>
+</tr>
+<tr>
+<td>Inventario</td>
+<td>&quot;S, M y L; XL agotado&quot;</td>
+</tr>
+<tr>
+<td>Envío y plazo</td>
+<td>&quot;3 días hábiles a Ciudad de México&quot;</td>
+</tr>
+<tr>
+<td>Cambios y devoluciones</td>
+<td>Enlace a la página de cambios</td>
+</tr>
+<tr>
+<td>Marca y código de barras</td>
+<td>GTIN en cada variante</td>
+</tr>
+</tbody></table>
+<p>El GTIN es el número que aparece debajo del código de barras. El SKU es el código interno de cada variante. El <a href="https://www.ecommercebrasil.com.br/artigos/comercio-agentico-como-se-adaptar-quando-o-cliente-e-a-ia" target="_blank" rel="noopener">artículo de E-Commerce Brasil sobre comercio agéntico</a> (en portugués) lo resume: el comercio minorista necesita &quot;estructurar catálogos, SKU, precios, inventario, envíos y condiciones comerciales&quot;.</p>
+<p>Una salvedad: OpenAI advierte que ese envío &quot;currently targets the US&quot; (por ahora apunta a Estados Unidos). La lista muestra lo que pide un agente; no quiere decir que una tienda fuera de Estados Unidos ya pueda enviar su catálogo.</p>
+<h2 id="por-que-un-catalogo-desordenado-puede-dejar-atras-a-tu-tienda">¿Por qué un catálogo desordenado puede dejar atrás a tu tienda?</h2>
+<p>Porque el agente compara datos, no vitrinas. En E-Commerce Brasil, Marcella Calfi, gerente de marketing de Zoop, escribe que las &quot;descripciones ambiguas, la información incompleta y los catálogos desactualizados&quot; pueden reducir la visibilidad de la tienda en las compras hechas por agentes.</p>
+<p>En el informe de PYMNTS, entre 1.185 comerciantes de los tres países encuestados en marzo de 2026, solo el 15% tenía datos estructurados listos para agentes de IA, y el 23% lograba separar el tráfico que llega desde la IA del tráfico humano.</p>
+<p>Los datos estructurados son etiquetas en el código de la página que le dicen al robot &quot;esto es el precio, esto es el inventario&quot;.</p>
+<p>Ejemplo ilustrativo (tienda ficticia):</p>
+<ul>
+<li><strong>Antes:</strong> &quot;¡Vestido azul precioso, míralo!&quot;</li>
+<li><strong>Después:</strong> &quot;Vestido midi azul marino, viscosa, tallas S a XL, busto de 88 a 104 cm, US$ 189,90, entrega en 3 días hábiles a Ciudad de México.&quot;</li>
+</ul>
+<p>En nuestra opinión, ahí está la oportunidad de la tienda pequeña, ya que la mayoría de los comerciantes encuestados todavía no tenía esos datos listos. El informe habla de una &quot;clear opportunity&quot; (oportunidad clara) para quien se adelante.</p>
+<h2 id="como-revisar-lo-que-ve-el-agente-en-la-pagina-del-producto">¿Cómo revisar lo que ve el agente en la página del producto?</h2>
+<p>Mira la página del producto como la miraría un robot:</p>
+<ol>
+<li><strong>Código fuente.</strong> Abre en Chrome un producto que se venda bien, presiona Ctrl+U y, en el código, Ctrl+F para buscar el precio, una talla y &quot;en stock&quot;. Es la <a href="/es/blog/crear-pagina-web-con-ia/">prueba del código fuente del artículo sobre crear una página web con IA</a>, que hacemos en el sitio de Nocodeia. ¿No lo encontraste? El dato puede estar armado en el navegador o solo en la imagen.</li>
+<li><strong>Prueba de resultados enriquecidos.</strong> Pega la dirección en esta herramienta gratuita de Google y mira si reconoce el precio y la disponibilidad. La <a href="https://developers.google.com/search/docs/appearance/structured-data/product?hl=es" target="_blank" rel="noopener">documentación de Google sobre datos estructurados de producto</a> separa los fragmentos de producto (páginas donde no se puede comprar) y las fichas de tienda (páginas de compra).</li>
+<li><strong>Merchant Center.</strong> Revisa que el precio y el inventario coincidan con los de Google Merchant Center, el panel donde la tienda registra sus productos para Google Shopping. Según Google, si das datos estructurados en la página y un feed (el archivo con la lista de productos) en Merchant Center, &quot;maximizarás las posibilidades de que tus resultados se muestren&quot;.</li>
+<li><strong>Pregúntale a la IA.</strong> Pídele a ChatGPT &quot;un vestido midi azul de menos de US$ 200 con entrega en Ciudad de México&quot; y mira si tu tienda aparece. Es una foto, no una medición: la respuesta cambia de una persona a otra.</li>
+</ol>
+<h2 id="que-arreglar-en-el-catalogo-antes-del-black-friday">¿Qué arreglar en el catálogo antes del Black Friday?</h2>
+<p>Empieza por los más vendidos, en este orden:</p>
+<ol>
+<li><strong>Título con la variante:</strong> color, talla o modelo.</li>
+<li><strong>Descripción factual:</strong> medidas, material y para quién sirve.</li>
+<li><strong>El mismo precio en la página, en el feed y en el checkout.</strong> En la especificación de OpenAI, un precio promocional mayor o igual al precio normal, o en otra moneda, no se usa.</li>
+<li><strong>Inventario actualizado,</strong> con lo agotado marcado como agotado. Como referencia, la <a href="https://developers.openai.com/commerce/guides/get-started" target="_blank" rel="noopener">guía de inicio de OpenAI</a> recomienda a las tiendas asociadas enviar el catálogo completo al menos una vez al día.</li>
+<li><strong>Envío y plazo visibles en la página,</strong> no solo en el carrito.</li>
+<li><strong>Política de cambios en una página propia,</strong> con enlace desde el producto. E-Commerce Brasil recomienda simplificar &quot;cancelaciones, cambios, devoluciones y reembolsos&quot;.</li>
+<li><strong>Marca y código de barras</strong> en cada variante.</li>
+<li><strong>Datos estructurados de producto</strong> en la página.</li>
+</ol>
+<p>Estas mismas correcciones ayudan a Google y al cliente que compra desde el celular. Si no quieres hacerlo solo, es el trabajo de nuestro servicio <a href="/es/#servicos">Un sitio que Google y la IA recomiendan</a>, que para tiendas en línea incluye datos estructurados de producto y la configuración de Google Merchant Center.</p>
+<h2 id="como-es-un-agente-que-consulta-el-catalogo-por-dentro">¿Cómo es un agente que consulta el catálogo por dentro?</h2>
+<p>Es un agente que solo responde bien lo que está registrado. Amora, que Nocodeia creó para Amore Totale, una tienda en línea de lencería y productos sensuales, busca productos en el catálogo, detalla tallas, colores y descripción, calcula el envío al código postal y llama a una persona cuando hace falta.</p>
+<p>Ella lleva al cliente hasta el producto en el sitio web, donde ocurre la compra. En los primeros meses, resolvió el 80% de las conversaciones sin humano, según la medición de Nocodeia. Mira <a href="/es/casos/amore-totale/">cómo Amora atiende a los clientes de Amore Totale</a>.</p>
+<p>En el montaje, hubo que revisar y completar los datos del catálogo, como tallas, colores y envío, para que Amora respondiera bien. En nuestra opinión, lo mismo vale para el agente de una plataforma de compras.</p>
+<h2 id="vale-la-pena-correr-para-vender-dentro-de-chatgpt-ahora">¿Vale la pena correr para vender dentro de ChatGPT ahora?</h2>
+<p>En nuestra opinión, todavía no es la prioridad de una tienda fuera de Estados Unidos. La <a href="https://developers.openai.com/commerce/guides/get-started" target="_blank" rel="noopener">guía de inicio de OpenAI</a> dice que el envío de catálogos está &quot;currently available to approved partners&quot; (solo para socios aprobados). La especificación agrega que &quot;Eligibility does not guarantee display&quot;: estar habilitado para la búsqueda no garantiza aparecer.</p>
+<p>La prioridad es un catálogo legible en el sitio y en Google, que ya le sirve al cliente de hoy. Desconfía de quien promete meter tu tienda dentro de ChatGPT; si se puede pagar para aparecer, lo respondemos en la guía sobre <a href="/es/blog/como-hacer-que-mi-empresa-aparezca-en-chatgpt/">cómo hacer que tu empresa aparezca en ChatGPT</a>.</p>
+<h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+<h3 id="que-significa-comercio-agentico">¿Qué significa comercio agéntico?</h3>
+<p>Es la compra hecha con ayuda de un agente de IA, que investiga, compara y puede cerrar el pedido. Según O Tempo, la diferencia con el chatbot común es la autonomía: el agente decide dentro de los límites que definió el cliente.</p>
+<h3 id="que-es-el-comercio-agentico-de-visa">¿Qué es el comercio agéntico de Visa?</h3>
+<p>Es la plataforma Visa Intelligent Commerce, usada con Banco do Brasil en marzo de 2026 en una compra en nombre del consumidor, que O Tempo describe como la primera de ese tipo en el país, en un entorno controlado. En octubre de 2025, según el reportaje, Visa lanzó el Trusted Agent Protocol, que ayuda a la tienda a distinguir a los agentes legítimos de los robots maliciosos.</p>
+<h3 id="se-puede-comprar-con-chatgpt">¿Se puede comprar con ChatGPT?</h3>
+<p>Según O Tempo, en Brasil ChatGPT ayuda a investigar y comparar modelos, pero no tiene acceso al checkout de las tiendas ni paga por el usuario. En la práctica, el cliente cierra el pedido en la tienda.</p>
+<h3 id="como-funciona-la-investigacion-de-compras-de-chatgpt">¿Cómo funciona la investigación de compras de ChatGPT?</h3>
+<p>Según O Tempo, quien usa ChatGPT para investigar una compra describe lo que quiere, define un rango de precio y pide comparaciones entre modelos. La tienda entra en la comparación con los datos que publica.</p>
+<h3 id="google-merchant-center-para-que-sirve">Google Merchant Center: ¿para qué sirve?</h3>
+<p>Es el panel de Google donde la tienda sube su catálogo mediante un feed, incluso para las fichas gratuitas. Según Google, el feed y los datos estructurados en la página, juntos, aumentan al máximo las posibilidades de que los productos se muestren en la Búsqueda.</p>
+<h2 id="por-donde-empezar">¿Por dónde empezar?</h2>
+<p>Haz hoy las cuatro revisiones en los productos más vendidos. Si quieres ayuda, <a href="/es/#vaga">agenda tu diagnóstico gratis</a> de 45 minutos: revisamos contigo una página de producto de tu tienda, y sales con precio y plazo cerrados.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">Un sitio que Google y la IA recomiendan</p>
+<h2>¿Quieres esto funcionando en tu empresa?</h2>
+<p>Diagnóstico gratis de 45 minutos. Sales con precio y plazo cerrados.</p>
+<a class="botao" href="/es/#vaga">Quiero mi diagnóstico gratis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.webp" alt=""><p><strong>Alexandre, fundador de Nocodeia</strong><br>Más de 25 años en tecnología, en empresas como IBM, Xerox, DHL y Bosch. Hoy lanza productos con no-code e IA en semanas.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.webp" alt=""><img src="/assets/wordmark.webp" alt="nocodeia worldwide"></div><div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia en LinkedIn" title="Nocodeia en LinkedIn" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia en Instagram" title="Nocodeia en Instagram" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me" aria-label="Nocodeia en Facebook" title="Nocodeia en Facebook" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+<p><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--></p><p>Campinas (Brasil) · atención remota en todo Brasil y el exterior</p><p>© 2026 Nocodeia. Hecho con no-code, claro.</p></footer>
+</body>
+</html>
