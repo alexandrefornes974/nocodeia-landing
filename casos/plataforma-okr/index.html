@@ -228,6 +228,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .tela{margin:8px 0 32px;background:var(--sup);border:1px solid var(--borda);border-radius:14px;overflow:hidden}
 .tela img{display:block;width:100%;height:auto}
 .tela figcaption{padding:12px 16px;border-top:1px solid var(--borda);font-size:14px;line-height:1.5;color:var(--suave)}
+.alerta{margin:8px 0 32px;padding:24px;border:1px solid #4A2A33;border-radius:16px;background:radial-gradient(500px 260px at 100% 0%,rgba(138,43,226,.35),transparent 70%),#0B0C0F}
+.alerta .rotulo{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#FF8A8C}
+.alerta .rotulo::before{content:"";width:9px;height:9px;border-radius:50%;background:#FF4D4F;box-shadow:0 0 0 4px rgba(255,77,79,.25)}
+.alerta .valor{display:block;margin:12px 0 10px;font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(34px,6vw,54px);line-height:1.04;letter-spacing:-.03em;color:#fff}
+.alerta .valor em{font-style:normal;white-space:nowrap;background:linear-gradient(45deg,#5B8CFF,#C084FC);-webkit-background-clip:text;background-clip:text;color:transparent}
+.alerta p{margin:0;color:var(--suave)}
 </style>
 <article>
 <a class="volta" href="/casos/">← Todos os casos</a>
