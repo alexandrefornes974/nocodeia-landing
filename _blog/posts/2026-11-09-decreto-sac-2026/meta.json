@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-09",
+  "updated": "2026-11-09",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: Yan Krukau / Pexels",
+  "service": "agentes",
+  "keyword": "decreto sac 2026",
+  "audience": "pme",
+  "pt": {
+    "slug": "decreto-sac-2026",
+    "title": "Decreto SAC 2026: atender com IA e opção de atendente humano",
+    "description": "O decreto do SAC 2026 permite atender com IA se o cliente puder falar com uma pessoa. Veja quem é alcançado e como montar um agente com humano a um toque.",
+    "image_alt": "Atendente sorrindo com headset durante um atendimento por telefone"
+  },
+  "en": {
+    "slug": "brazil-customer-service-decree-2026-ai-agents",
+    "title": "Brazil Customer Service Decree 2026: AI and a Human Option",
+    "description": "Brazil's 2026 SAC decree lets companies serve customers with AI if they can reach a human. See who it covers and how to build an agent with human backup.",
+    "image_alt": "Smiling customer service agent wearing a headset during a call"
+  },
+  "es": {
+    "slug": "decreto-atencion-al-cliente-brasil-2026-ia",
+    "title": "Decreto de atención al cliente en Brasil 2026: IA y humano",
+    "description": "El decreto del SAC de Brasil 2026 permite atender con IA si el cliente puede hablar con una persona. Mira a quién alcanza y cómo armar tu agente.",
+    "image_alt": "Agente de atención sonriendo con auriculares durante una llamada"
+  }
+}

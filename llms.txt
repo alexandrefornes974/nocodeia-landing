@@ -40,6 +40,7 @@ Base em Campinas (SP), com atendimento remoto em todo o Brasil e no exterior. At
 <!-- blog:inicio -->
 ## Blog
 
+- [Decreto SAC 2026: atender com IA e opção de atendente humano](https://nocodeiaww.com/blog/decreto-sac-2026/): O decreto do SAC 2026 permite atender com IA se o cliente puder falar com uma pessoa. Veja quem é alcançado e como montar um agente com humano a um toque.
 - [Comércio agêntico: o que a IA lê no catálogo da sua loja](https://nocodeiaww.com/blog/comercio-agentico/): Comércio agêntico é a IA pesquisando, comparando e até comprando pelo cliente. Veja o que o agente lê no catálogo da sua loja antes da Black Friday.
 - [ChatGPT Work na empresa: o que a Uber fez antes de liberar](https://nocodeiaww.com/blog/chatgpt-work/): ChatGPT Work é o agente da OpenAI que entrega tarefas prontas. Veja como a Uber testou com mil pessoas antes de liberar e o que configurar na empresa.
 - [Criar site com IA: o Google e o ChatGPT vão ler o seu site?](https://nocodeiaww.com/blog/criar-site-com-ia/): Criar site com IA no Wix, Hostinger ou Lovable é rápido. Veja por que o Google e o ChatGPT podem não ler o texto e o teste de 5 minutos para conferir.
