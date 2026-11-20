@@ -19,6 +19,12 @@ function resposta(corpo, status) {
   });
 }
 
+function nomeProvisorio(email) {
+  const n = email.split('@')[0].replace(/[._+-]+/g, ' ').replace(/\d+/g, ' ').trim()
+    .split(/\s+/).filter(Boolean).map(function (p) { return p.charAt(0).toUpperCase() + p.slice(1); }).join(' ');
+  return (n || 'Lead do site').slice(0, 80);
+}
+
 export async function onRequestPost({ request, env }) {
   const origem = request.headers.get('Origin');
   if (origem && !ORIGENS.includes(origem) && !/^https:\/\/[a-z0-9-]+\.nocodeia\.pages\.dev$/.test(origem)) {
@@ -54,7 +60,8 @@ export async function onRequestPost({ request, env }) {
       headers: { 'Content-Type': 'application/json', 'User-Agent': 'nocodeia-site/1.0' },
       body: JSON.stringify({
         slug: env.PROACTA_FORM_SLUG,
-        respostas: { email: email },
+        // O Proacta exige Nome em todo formulário e o site só pede e-mail: o nome provisório sai da parte antes do @.
+        respostas: { nome: nomeProvisorio(email), email: email },
         consent: true, // o aviso de privacidade fica ao lado do botão
         origem: origemLead,
       }),
