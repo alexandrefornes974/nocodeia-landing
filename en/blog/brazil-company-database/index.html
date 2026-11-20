@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Aviso de cookies Nocodeia v1: precisa ser o PRIMEIRO item dentro do <head> -->
+<script>
+window.NOCODEIA_AVISO = {"namespace":"nocodeia","politica":"/en/privacy/#site","cor":"#0047FF","corTexto":"#1a1a1a","fonte":"inherit","semMarketing":false,"textos":{"essenciaisRotulo":"Essential","essenciais":"Needed for the site to work and to remember your cookie choice. They cannot be turned off.","estatisticasRotulo":"Statistics","estatisticas":"Count visits, show which pages interest people most and measure the site speed and errors, so we can improve the site.","aviso":"We use cookies to make the site work and, if you allow it, to understand how it is used and measure ads.","marketing":"Allow us to measure and personalize ads on Meta (Instagram/Facebook) and LinkedIn.","politica":"Privacy policy","aceitar":"Accept all","recusar":"Reject non-essential","escolher":"Choose","escolherAria":"Choose which cookies to allow","preferenciasTitulo":"Your cookie preferences","preferencias":"Turn each type on or off. You can change your mind at any time using the icon in the corner of the screen.","salvar":"Save and close","credito":"Cookie banner by Silktide"}};
+(function(w,d){var ns=w.NOCODEIA_AVISO.namespace,FILAS=["dataLayer","dataLayerGa4"];
+function lido(id){try{return localStorage.getItem("stcm."+ns+".consent."+id)}catch(e){return null}}
+function args(){return arguments}
+function estado(a,m){return{analytics_storage:a?"granted":"denied",ad_storage:m?"granted":"denied",ad_user_data:m?"granted":"denied",ad_personalization:m?"granted":"denied"}}
+var a=lido("analytics")==="true",m=lido("marketing")==="true",ini=estado(a,m);ini.wait_for_update=500;
+var antes=[args("consent","default",ini),args("set","ads_data_redaction",!m)];
+/* Google: a decisão "padrão" entra na frente de tudo, mesmo se a plataforma recriar a fila depois */
+function prep(f){if(!f.__nc){for(var i=antes.length-1;i>=0;i--)f.unshift(antes[i]);f.__nc=1}return f}
+FILAS.forEach(function(n){var atual=prep(w[n]||[]);try{Object.defineProperty(w,n,{configurable:true,enumerable:true,get:function(){return atual},set:function(v){atual=prep(v||[])}})}catch(e){w[n]=atual}});
+w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n){w[n].push(args("consent","update",s))});w.dataLayer.push({event:"nc_consent_update",nc_analytics:a,nc_marketing:m})}};
+})(window,document);
+</script>
+<script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
+<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brazil Company Database: Find B2B Clients With AI | Nocodeia</title>
+<meta name="description" content="A Brazil company database built on open CNPJ data helps your team in Brazil find clients like your best ones. See the data, the LGPD rules and the tools.">
+<link rel="canonical" href="https://nocodeiaww.com/en/blog/brazil-company-database/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/blog/brazil-company-database/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/blog/prospeccion-b2b-con-ia-en-brasil/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Brazil Company Database: Find B2B Clients With AI | Nocodeia">
+<meta property="og:description" content="A Brazil company database built on open CNPJ data helps your team in Brazil find clients like your best ones. See the data, the LGPD rules and the tools.">
+<meta property="og:url" content="https://nocodeiaww.com/en/blog/brazil-company-database/">
+<meta property="og:image" content="https://nocodeiaww.com/blog/img/prospeccao-b2b-com-ia.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://nocodeiaww.com/en/blog/brazil-company-database/#post",
+   "headline": "Brazil Company Database: Find B2B Clients With AI",
+   "description": "A Brazil company database built on open CNPJ data helps your team in Brazil find clients like your best ones. See the data, the LGPD rules and the tools.",
+   "inLanguage": "en",
+   "datePublished": "2026-11-20",
+   "dateModified": "2026-11-20",
+   "image": "https://nocodeiaww.com/blog/img/prospeccao-b2b-com-ia.jpg",
+   "url": "https://nocodeiaww.com/en/blog/brazil-company-database/",
+   "mainEntityOfPage": "https://nocodeiaww.com/en/blog/brazil-company-database/",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre Fornes",
+    "url": "https://nocodeiaww.com/#sobre",
+    "sameAs": [
+     "https://www.linkedin.com/in/alexandredefornes/"
+    ]
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "sameAs": [
+     "https://www.linkedin.com/company/nocodeiaww/",
+     "https://www.instagram.com/nocodeiaww/",
+     "https://www.facebook.com/profile.php?id=61595488161472"
+    ],
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://nocodeiaww.com/assets/icon.png"
+    }
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://nocodeiaww.com/en/blog/#blog",
+    "name": "Nocodeia Blog"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://nocodeiaww.com/en/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://nocodeiaww.com/en/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Brazil Company Database: Find B2B Clients With AI",
+     "item": "https://nocodeiaww.com/en/blog/brazil-company-database/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/en/blog/brazil-company-database/#faq",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a CNPJ number in Brazil?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the registration number of every formal business in Brazil. Its record, published as open data by the Federal Revenue Service, shows the company's activity (CNAE), size, registered address and partners."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I get a list of Brazilian companies by industry?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Download the open CNPJ database from Brazil's Open Data Portal and filter by the CNAE code of the activity you want. Since the files are large, most companies use a tool that already does that filtering."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there a free Brazil company list I can download?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, the Federal Revenue database is free and open. The work lies in downloading, joining and cleaning huge files, and in keeping them updated every month. If you want the data already processed, Proacta CRM has a 14-day trial with no credit card, for companies with a Brazilian CNPJ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Brazil's LGPD apply to CNPJ data?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The LGPD protects data about people, not companies (art. 5, item I). Legal name and CNPJ fall outside it; a partner's name, or a person's email and phone, fall inside. For an MEI, the company name is often the owner's, so treat it as personal data."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many active companies are there in Brazil?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In Proacta CRM's November 20, 2026 load of the open CNPJ database, there are 28,654,371 active records, counting MEIs and branches. That is our own count over the open data, not an official figure published by the Federal Revenue Service."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/en/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/en/">Home</a>
+<a class="item" href="/en/#servicos">Services</a>
+<a class="item" href="/en/cases/">Cases</a>
+<a class="item" href="/en/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/blog/prospeccao-b2b-com-ia/" hreflang="pt-BR">PT</a><a href="/en/blog/brazil-company-database/" hreflang="en" aria-current="page">EN</a><a href="/es/blog/prospeccion-b2b-con-ia-en-brasil/" hreflang="es">ES</a></div>
+<a class="botao" href="/en/#vaga">Get a spot</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/en/blog/">← All posts</a>
+<h1>Brazil Company Database: Find B2B Clients With AI</h1>
+<p class="resumo">A Brazil company database built on open CNPJ data helps your team in Brazil find clients like your best ones. See the data, the LGPD rules and the tools.</p>
+<div class="meta"><span>By Alexandre</span><span>·</span><time datetime="2026-11-20">November 20, 2026</time><span>·</span><span>11 min read</span></div>
+<figure class="capa"><img src="/blog/img/prospeccao-b2b-com-ia.jpg" alt="Salesperson smiling at his office desk with an open laptop" width="1200" height="630"><figcaption>Foto: RDNE Stock project / Pexels</figcaption></figure>
+<div class="conteudo">
+<p>A Brazil company database is a searchable list of Brazilian businesses built from the CNPJ registry, the national company register that Brazil&#39;s federal tax authority publishes as open data every month. It shows each company&#39;s industry code, size, address and partners, so a sales team in Brazil can target firms that look like its best customers.</p>
+<p>This guide is for companies with a team, branch, partner or distributor in Brazil. With AI on top of that data, the team compares its customer base with the registry, gets companies similar to its best customers, sees who decides and improves with every suggestion it accepts or rejects.</p>
+<p>If your Brazil team is small, you know the scene: the morning goes into building lists in a spreadsheet, half the contacts have nothing to do with your business and the list runs out before the target. The question is always the same: who do we call tomorrow? This guide shows how AI answers it, where the data comes from and how to stay within the LGPD, Brazil&#39;s data protection law.</p>
+<h2 id="what-is-a-cnpj-and-why-does-it-matter-for-b2b-sales-in-brazil">What is a CNPJ, and why does it matter for B2B sales in Brazil?</h2>
+<p>The CNPJ (Cadastro Nacional da Pessoa Jurídica) is the registration number that every formal business in Brazil has. Think of it as the company&#39;s ID card. It plays a role similar to an EIN in the United States, although the two are not legally equivalent.</p>
+<p>For B2B sales, each CNPJ record says what the company does, how big it is and who its partners are. Two more Brazilian terms come up all the time:</p>
+<ul>
+<li><strong>CNAE:</strong> the activity code that says what the company does, such as bakery, trucking company or clinic.</li>
+<li><strong>MEI (microempreendedor individual):</strong> an individual micro-entrepreneur registered as a business. The company name often carries the owner&#39;s name, which matters for privacy (more on that below).</li>
+</ul>
+<h2 id="where-does-brazil-39-s-company-data-come-from">Where does Brazil&#39;s company data come from?</h2>
+<p>It comes from the open CNPJ database, which Brazil&#39;s Federal Revenue Service (Receita Federal) publishes on the <a href="https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj" target="_blank" rel="noopener">Open Data Portal</a> (in Portuguese), with monthly updates and a free license. Each record includes:</p>
+<ul>
+<li><strong>Main and secondary activities (CNAE):</strong> what the company does.</li>
+<li><strong>Size, share capital and legal nature:</strong> these separate a small shop from a manufacturer.</li>
+<li><strong>Opening date:</strong> shows whether the company is new or long established.</li>
+<li><strong>Registered address, phone and email.</strong></li>
+<li><strong>Partners:</strong> name and role of each person on the company&#39;s partner list.</li>
+</ul>
+<p>When someone looks for a &quot;Brazil company list&quot; or a list of companies by CNAE, they are asking for a slice of this database. The data is free, but it comes in huge compressed files, and both the portal and the files are in Portuguese. Teams without technical staff usually use a tool that downloads, organizes and updates everything.</p>
+<h2 id="how-does-ai-pick-the-right-companies-to-approach">How does AI pick the right companies to approach?</h2>
+<p>AI looks at what your best customers have in common, such as activity, size and state, and searches for companies with the same profile. That replaces the cold list, bought or mined by hand, with a short queue of companies that look like the ones already buying from you, with the reason behind each suggestion. Here is the difference:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Prospecting the old way</th>
+<th>Prospecting with AI</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Where the list comes from</td>
+<td>Bought list, Google searches, referrals</td>
+<td>Open CNPJ data matched against your customer base</td>
+</tr>
+<tr>
+<td>Who chooses</td>
+<td>The salesperson, on gut feeling</td>
+<td>AI suggests and explains; the salesperson decides</td>
+</tr>
+<tr>
+<td>How many at a time</td>
+<td>Hundreds of names at once</td>
+<td>A short queue, best matches first</td>
+</tr>
+<tr>
+<td>How it improves</td>
+<td>It doesn&#39;t improve on its own</td>
+<td>It learns from every accept and reject</td>
+</tr>
+<tr>
+<td>Who approves contact</td>
+<td>Nobody, it just goes out</td>
+<td>A person approves before any outreach</td>
+</tr>
+</tbody></table>
+<p>The search also covers activities related to yours. A packaging supplier that sells well to bakeries, for example, also gets pastry shops and cookie factories in the region. Step by step:</p>
+<ol>
+<li><strong>You share your customer base</strong> or the sector you want to serve.</li>
+<li><strong>AI matches it against the CNPJ database</strong> and separates the similar companies.</li>
+<li><strong>Each company gets a score</strong> and the reason for it: same activity, same size, same region.</li>
+<li><strong>AI shows who decides:</strong> partners, directors or managers.</li>
+<li><strong>You accept or reject</strong>, and the next batch comes in sharper.</li>
+</ol>
+<p>The salesperson stays in charge. The difference is that they stop searching and start choosing.</p>
+<h2 id="why-should-prospecting-in-brazil-happen-in-portuguese">Why should prospecting in Brazil happen in Portuguese?</h2>
+<p>Because the market you are approaching works in Portuguese: the CNPJ portal, the company records, the data protection law and the regulator&#39;s guidance cited here are all in Portuguese.</p>
+<p>The US government&#39;s commercial guide for Brazil, from the International Trade Administration, points the same way without mentioning language. Its <a href="https://www.trade.gov/country-commercial-guides/brazil-market-entry-strategy" target="_blank" rel="noopener">market entry strategy</a> lists, among the factors for success, &quot;developing a Brazil-oriented marketing strategy and a willingness to develop close relationships with key industry contacts and partners.&quot; Its <a href="https://www.trade.gov/knowledge-product/brazil-market-overview" target="_blank" rel="noopener">market overview</a> adds that &quot;having an in-depth knowledge of local market trends and regulations is critical to achieving export success in Brazil.&quot;</p>
+<p>In our view, the first contact with a Brazilian company should come from someone who speaks the language and knows the market: your local team or your partner. AI finds and ranks the companies; the person in Brazil makes the call.</p>
+<h2 id="who-should-run-prospecting-your-team-in-brazil-or-a-partner">Who should run prospecting: your team in Brazil or a partner?</h2>
+<p>Either can work, as long as someone on the ground owns the list. The same <a href="https://www.trade.gov/knowledge-product/brazil-market-overview" target="_blank" rel="noopener">market overview</a> describes Brazil as the country &quot;with the largest consumer market and GDP in South America&quot; and notes that &quot;the United States is Brazil&#39;s second largest trading partner.&quot; The <a href="https://www.trade.gov/country-commercial-guides/brazil-market-entry-strategy" target="_blank" rel="noopener">market entry guide</a> lists several strategies for US exporters, &quot;including agents, authorized distributors, and representatives.&quot;</p>
+<p>In prospecting terms:</p>
+<ul>
+<li><strong>Your own team or branch:</strong> you control the message, the CRM and the follow-up, and the prospecting tool sits with them.</li>
+<li><strong>A distributor, agent or representative:</strong> they bring the language and the contacts. Agree up front on who owns the list and the customer history.</li>
+</ul>
+<h2 id="which-b2b-prospecting-tool-fits-a-team-selling-in-brazil">Which B2B prospecting tool fits a team selling in Brazil?</h2>
+<p>It depends on where your customers are and who will work the list. To sell to Brazilian companies, it matters that the tool understands CNPJ and CNAE and puts the companies straight into your CRM (the system where you track each deal). The options on the market fall into four categories:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Knows CNPJ and CNAE?</th>
+<th>Shows who decides?</th>
+<th>Lives inside the CRM?</th>
+<th>Who does the work</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Brazilian CNPJ database</td>
+<td>Yes</td>
+<td>Usually, yes</td>
+<td>Sometimes, through an integration</td>
+<td>Your team</td>
+<td>Teams selling only in Brazil that already have a CRM</td>
+</tr>
+<tr>
+<td>Global contact database</td>
+<td>Partially</td>
+<td>Yes, stronger in large companies</td>
+<td>Sometimes</td>
+<td>Your team</td>
+<td>Teams selling to several countries</td>
+</tr>
+<tr>
+<td>Outsourced SDR agency</td>
+<td>Depends on the agency</td>
+<td>Yes</td>
+<td>In the agency&#39;s CRM or yours</td>
+<td>The agency</td>
+<td>Companies that want booked meetings without building a team</td>
+</tr>
+<tr>
+<td>Own system built on the open data</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes, it is the CRM itself</td>
+<td>Your team, with AI helping</td>
+<td>Teams that want list, pipeline and history in one place</td>
+</tr>
+</tbody></table>
+<p>An SDR (sales development representative) makes the first contact and books the meeting for the seller. Each category solves one case well. The common mistake is buying the tool before knowing who will use the list the next day.</p>
+<h2 id="what-tool-can-your-team-in-brazil-use">What tool can your team in Brazil use?</h2>
+<p><a href="https://proactacrm.com" target="_blank" rel="noopener">Proacta CRM</a> (in Portuguese) is the sales CRM that Nocodeia built around one simple idea, its tagline &quot;O CRM que sai procurando cliente por você&quot; (&quot;the CRM that goes looking for customers for you&quot;). Proacta CRM is in Portuguese, and sign-up requires a Brazilian CNPJ. It is a tool for the team, branch or partner you already have in Brazil, and for them, Portuguese is an advantage.</p>
+<p>It comes loaded with 28 million active companies from the open CNPJ database, including MEIs and branches, updated every month. In practice, it brings together everything this guide has covered:</p>
+<ul>
+<li><strong>Prospecting engine:</strong> suggests companies similar to your customer base, looking at state, size and related activities, scores each one and learns from your accepts and rejects.</li>
+<li><strong>Who decides:</strong> shows the partners, directors and managers of the suggested companies, within your plan&#39;s contact quota.</li>
+<li><strong>LinkedIn with a brake (an add-on):</strong> AI writes the connection request, but it only goes out with your approval and within a daily limit.</li>
+<li><strong>Full CRM:</strong> column-based pipeline, multiple pipelines, tasks, dashboards and role-based permissions (admin, salesperson and SDR).</li>
+</ul>
+<p>The trial lasts 14 days and requires no credit card. Building Proacta taught us a lesson that applies to any tool: AI suggests, a person approves. It is the same principle we defend when we talk about <a href="/en/blog/ai-agent-governance/">how much autonomy to give an AI agent</a>.</p>
+<h2 id="what-does-brazil-39-s-lgpd-require-when-you-prospect-companies">What does Brazil&#39;s LGPD require when you prospect companies?</h2>
+<p>You can prospect Brazilian companies and stay within the LGPD (Lei Geral de Proteção de Dados, Brazil&#39;s General Data Protection Law). Company data, such as legal name, CNPJ and activity, is not personal data. A partner&#39;s name or a director&#39;s email is, and it can be used under legitimate interest. That legal basis allows the use of data when it is necessary for a genuine interest of the company, as long as the person&#39;s rights are not harmed.</p>
+<p>That calls for transparency and a right to object. The <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">LGPD</a> (in Portuguese) sets out this basis in art. 7, item IX. The right way to do it:</p>
+<ol>
+<li><strong>Use only what you need</strong> for the outreach, as art. 10, paragraph 1 requires.</li>
+<li><strong>Run the balancing test</strong> described in the <a href="https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_legitimo_interesse.pdf" target="_blank" rel="noopener">ANPD guide on legitimate interest</a> (in Portuguese; the ANPD is Brazil&#39;s data protection authority), in three phases: purpose, necessity, and balancing with safeguards.</li>
+<li><strong>Say where the data came from and why</strong> in the first contact (art. 10, paragraph 2).</li>
+<li><strong>Offer an easy channel</strong> for the person to object, unsubscribe and ask for deletion, as the ANPD guide&#39;s checklist asks. The right to object is in art. 18, paragraph 2.</li>
+<li><strong>Keep a block list</strong> so that anyone who asked to leave never hears from you again.</li>
+</ol>
+<p>Be careful with MEIs: the company name often carries the owner&#39;s name, so that data is personal. In Proacta, the part that belongs to the tool comes ready: declared legal basis, right to object (including for partners), block list, deletion, and a published privacy policy, terms and data processing agreement.</p>
+<h2 id="when-is-a-custom-prospecting-agent-worth-it">When is a custom prospecting agent worth it?</h2>
+<p>When your sales process has its own steps that an off-the-shelf tool doesn&#39;t cover. Some examples:</p>
+<ul>
+<li>matching the list against your order system or ERP;</li>
+<li>qualifying companies by the rules of your sector, such as licenses, certifications or fleet;</li>
+<li>drafting the follow-up (the message after the first contact) for the salesperson to review and approve.</li>
+</ul>
+<p>In those cases, Nocodeia builds a <a href="/en/#servicos">custom AI prospecting and follow-up agent</a>: an assistant that carries out those tasks for you. If your case is finding similar companies and organizing the pipeline, a ready-made tool is enough, and it is better to start there. If you are still deciding where to bring AI into sales, read <a href="/en/blog/ai-for-small-business/">where to start with AI in a small business</a>.</p>
+<p>To plan the running cost of an agent, see <a href="/en/blog/how-much-does-an-ai-agent-cost/">how much an AI agent costs</a>.</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="what-is-a-cnpj-number-in-brazil">What is a CNPJ number in Brazil?</h3>
+<p>It is the registration number of every formal business in Brazil. Its record, published as open data by the Federal Revenue Service, shows the company&#39;s activity (CNAE), size, registered address and partners.</p>
+<h3 id="how-do-i-get-a-list-of-brazilian-companies-by-industry">How do I get a list of Brazilian companies by industry?</h3>
+<p>Download the open CNPJ database from Brazil&#39;s Open Data Portal and filter by the CNAE code of the activity you want. Since the files are large, most companies use a tool that already does that filtering.</p>
+<h3 id="is-there-a-free-brazil-company-list-i-can-download">Is there a free Brazil company list I can download?</h3>
+<p>Yes, the Federal Revenue database is free and open. The work lies in downloading, joining and cleaning huge files, and in keeping them updated every month. If you want the data already processed, Proacta CRM has a 14-day trial with no credit card, for companies with a Brazilian CNPJ.</p>
+<h3 id="does-brazil-39-s-lgpd-apply-to-cnpj-data">Does Brazil&#39;s LGPD apply to CNPJ data?</h3>
+<p>The LGPD protects data about people, not companies (art. 5, item I). Legal name and CNPJ fall outside it; a partner&#39;s name, or a person&#39;s email and phone, fall inside. For an MEI, the company name is often the owner&#39;s, so treat it as personal data.</p>
+<h3 id="how-many-active-companies-are-there-in-brazil">How many active companies are there in Brazil?</h3>
+<p>In Proacta CRM&#39;s November 20, 2026 load of the open CNPJ database, there are 28,654,371 active records, counting MEIs and branches. That is our own count over the open data, not an official figure published by the Federal Revenue Service.</p>
+<h2 id="where-to-start">Where to start?</h2>
+<p>Start with the right question: who are your three best customers in Brazil, and what do they have in common? With that answer, AI already knows what to look for. If you want to plan prospecting for your team in Brazil with us, or check whether your process calls for a custom agent, book the <a href="/en/#vaga">free 45-minute diagnostic</a>. Nocodeia works remotely with companies in Brazil and abroad. You leave with the path, the price and the timeline set.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">AI agents</p>
+<h2>Want this working in your business?</h2>
+<p>Free 45-minute diagnosis. You leave with a fixed price and deadline.</p>
+<a class="botao" href="/en/#vaga">Get my free diagnosis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.webp" alt=""><p><strong>Alexandre, founder of Nocodeia</strong><br>25+ years in tech at companies like IBM, Xerox, DHL and Bosch. Today he ships products with no-code and AI in weeks.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.webp" alt=""><img src="/assets/wordmark.webp" alt="nocodeia worldwide"></div><div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia on LinkedIn" title="Nocodeia on LinkedIn" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia on Instagram" title="Nocodeia on Instagram" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me" aria-label="Nocodeia on Facebook" title="Nocodeia on Facebook" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+<p><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--></p><p>Campinas, Brazil · remote service across Brazil and abroad</p><p>© 2026 Nocodeia. Built with no-code, of course.</p></footer>
+</body>
+</html>

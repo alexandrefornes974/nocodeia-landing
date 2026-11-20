@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<!-- Aviso de cookies Nocodeia v1: precisa ser o PRIMEIRO item dentro do <head> -->
+<script>
+window.NOCODEIA_AVISO = {"namespace":"nocodeia","politica":"/privacidade/#site","cor":"#0047FF","corTexto":"#1a1a1a","fonte":"inherit","semMarketing":false,"textos":{"essenciais":"Necessários para o site funcionar e para lembrar a sua escolha de cookies. Não podem ser desligados.","estatisticas":"Contam visitas, mostram quais páginas interessam mais e medem a velocidade e os erros do site, para melhorarmos o site.","aviso":"Usamos cookies para o site funcionar e, se você permitir, para entender como ele é usado e medir anúncios.","marketing":"Permitem medir e personalizar anúncios no Meta (Instagram/Facebook) e no LinkedIn."}};
+(function(w,d){var ns=w.NOCODEIA_AVISO.namespace,FILAS=["dataLayer","dataLayerGa4"];
+function lido(id){try{return localStorage.getItem("stcm."+ns+".consent."+id)}catch(e){return null}}
+function args(){return arguments}
+function estado(a,m){return{analytics_storage:a?"granted":"denied",ad_storage:m?"granted":"denied",ad_user_data:m?"granted":"denied",ad_personalization:m?"granted":"denied"}}
+var a=lido("analytics")==="true",m=lido("marketing")==="true",ini=estado(a,m);ini.wait_for_update=500;
+var antes=[args("consent","default",ini),args("set","ads_data_redaction",!m)];
+/* Google: a decisão "padrão" entra na frente de tudo, mesmo se a plataforma recriar a fila depois */
+function prep(f){if(!f.__nc){for(var i=antes.length-1;i>=0;i--)f.unshift(antes[i]);f.__nc=1}return f}
+FILAS.forEach(function(n){var atual=prep(w[n]||[]);try{Object.defineProperty(w,n,{configurable:true,enumerable:true,get:function(){return atual},set:function(v){atual=prep(v||[])}})}catch(e){w[n]=atual}});
+w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n){w[n].push(args("consent","update",s))});w.dataLayer.push({event:"nc_consent_update",nc_analytics:a,nc_marketing:m})}};
+})(window,document);
+</script>
+<script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
+<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prospecção B2B com IA: clientes entre 28 milhões de empresas | Nocodeia</title>
+<meta name="description" content="Prospecção B2B com IA usa a base aberta do CNPJ para achar empresas parecidas com seus clientes. Veja como fazer, que ferramenta usar e o que pede a LGPD.">
+<link rel="canonical" href="https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/blog/brazil-company-database/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/blog/prospeccion-b2b-con-ia-en-brasil/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Prospecção B2B com IA: clientes entre 28 milhões de empresas | Nocodeia">
+<meta property="og:description" content="Prospecção B2B com IA usa a base aberta do CNPJ para achar empresas parecidas com seus clientes. Veja como fazer, que ferramenta usar e o que pede a LGPD.">
+<meta property="og:url" content="https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/">
+<meta property="og:image" content="https://nocodeiaww.com/blog/img/prospeccao-b2b-com-ia.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/#post",
+   "headline": "Prospecção B2B com IA: clientes entre 28 milhões de empresas",
+   "description": "Prospecção B2B com IA usa a base aberta do CNPJ para achar empresas parecidas com seus clientes. Veja como fazer, que ferramenta usar e o que pede a LGPD.",
+   "inLanguage": "pt-BR",
+   "datePublished": "2026-11-20",
+   "dateModified": "2026-11-20",
+   "image": "https://nocodeiaww.com/blog/img/prospeccao-b2b-com-ia.jpg",
+   "url": "https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/",
+   "mainEntityOfPage": "https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre Fornes",
+    "url": "https://nocodeiaww.com/#sobre",
+    "sameAs": [
+     "https://www.linkedin.com/in/alexandredefornes/"
+    ]
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "sameAs": [
+     "https://www.linkedin.com/company/nocodeiaww/",
+     "https://www.instagram.com/nocodeiaww/",
+     "https://www.facebook.com/profile.php?id=61595488161472"
+    ],
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://nocodeiaww.com/assets/icon.png"
+    }
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://nocodeiaww.com/blog/#blog",
+    "name": "Blog da Nocodeia"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Início",
+     "item": "https://nocodeiaww.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://nocodeiaww.com/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Prospecção B2B com IA: clientes entre 28 milhões de empresas",
+     "item": "https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/blog/prospeccao-b2b-com-ia/#faq",
+   "inLanguage": "pt-BR",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Como consultar uma lista de empresas por CNAE?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Baixe a base aberta do CNPJ no Portal de Dados Abertos e filtre pelo código CNAE da atividade que você procura. Como os arquivos são grandes, a maioria das empresas usa uma ferramenta que já faz esse filtro."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Existe lista de empresas por CNAE grátis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim, a base da Receita Federal é gratuita e aberta. O trabalho está em baixar, juntar e tratar arquivos enormes, e em mantê-los atualizados todo mês."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "A LGPD vale para dados de CNPJ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A LGPD protege dados de pessoas, não de empresas (art. 5º, I). Razão social e CNPJ ficam fora; nome de sócio, e-mail e telefone de uma pessoa ficam dentro. No MEI, o nome da empresa costuma ser o do dono, então trate como dado pessoal."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quantas empresas ativas existem no Brasil?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Na carga de 20/11/2026 da base aberta do CNPJ feita pelo Proacta CRM, são 28.654.371 cadastros ativos, contando MEIs e filiais. É a nossa contagem sobre a base aberta, não um número oficial publicado pela Receita."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Existe ferramenta de prospecção de clientes grátis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A base aberta do CNPJ é gratuita, mas exige trabalho técnico para usar. O Proacta CRM tem teste de 14 dias sem cartão, com a base já tratada."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/">Início</a>
+<a class="item" href="/#servicos">Serviços</a>
+<a class="item" href="/casos/">Casos</a>
+<a class="item" href="/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/blog/prospeccao-b2b-com-ia/" hreflang="pt-BR" aria-current="page">PT</a><a href="/en/blog/brazil-company-database/" hreflang="en">EN</a><a href="/es/blog/prospeccion-b2b-con-ia-en-brasil/" hreflang="es">ES</a></div>
+<a class="botao" href="/#vaga">Garantir vaga</a>
+</div></nav></header>
+<main>
+<article>
+<a class="volta" href="/blog/">← Todos os posts</a>
+<h1>Prospecção B2B com IA: clientes entre 28 milhões de empresas</h1>
+<p class="resumo">Prospecção B2B com IA usa a base aberta do CNPJ para achar empresas parecidas com seus clientes. Veja como fazer, que ferramenta usar e o que pede a LGPD.</p>
+<div class="meta"><span>Por Alexandre</span><span>·</span><time datetime="2026-11-20">20 de novembro de 2026</time><span>·</span><span>8 min de leitura</span></div>
+<figure class="capa"><img src="/blog/img/prospeccao-b2b-com-ia.jpg" alt="Vendedor sorrindo à mesa do escritório com o notebook aberto" width="1200" height="630"><figcaption>Foto: RDNE Stock project / Pexels</figcaption></figure>
+<div class="conteudo">
+<p>Prospecção B2B com IA é usar inteligência artificial para escolher quais empresas abordar, a partir de dados públicos como o cadastro do CNPJ da Receita Federal. A IA compara a sua carteira com essa base, sugere empresas parecidas com os seus melhores clientes, mostra quem decide e aprende com cada sugestão aceita ou recusada.</p>
+<p>B2B quer dizer empresa que vende para empresa. Carteira é a lista dos seus clientes atuais. CNPJ é o número de registro de toda empresa formal no Brasil.</p>
+<p>Se você é o dono ou o único vendedor, conhece a cena: a manhã vai embora montando lista em planilha, metade dos contatos não tem nada a ver com o seu negócio e a lista acaba antes da meta. A pergunta que fica é sempre a mesma: para quem eu ligo amanhã? Este texto mostra como a IA responde isso, de onde vêm os dados e como fazer tudo dentro da LGPD (Lei Geral de Proteção de Dados).</p>
+<h2 id="o-que-muda-quando-a-ia-entra-na-prospeccao-b2b">O que muda quando a IA entra na prospecção B2B?</h2>
+<p>A IA troca a lista fria, comprada ou garimpada à mão, por uma fila curta de empresas parecidas com quem já compra de você, com o motivo de cada sugestão. Na prática:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Prospecção do jeito antigo</th>
+<th>Prospecção com IA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>De onde vem a lista</td>
+<td>Lista comprada, busca no Google, indicação</td>
+<td>Base aberta do CNPJ cruzada com a sua carteira</td>
+</tr>
+<tr>
+<td>Quem escolhe</td>
+<td>O vendedor, no feeling</td>
+<td>A IA sugere e explica; o vendedor decide</td>
+</tr>
+<tr>
+<td>Quantas por vez</td>
+<td>Centenas de nomes de uma vez</td>
+<td>Uma fila curta, com as melhores primeiro</td>
+</tr>
+<tr>
+<td>Como melhora</td>
+<td>Não melhora sozinha</td>
+<td>Aprende com cada aceite e recusa</td>
+</tr>
+<tr>
+<td>Quem aprova o contato</td>
+<td>Ninguém, sai disparado</td>
+<td>A pessoa aprova antes de qualquer abordagem</td>
+</tr>
+</tbody></table>
+<p>O vendedor continua no comando. A diferença é que ele para de procurar e passa a escolher.</p>
+<h2 id="de-onde-vem-os-dados-das-empresas-brasileiras">De onde vêm os dados das empresas brasileiras?</h2>
+<p>Os dados vêm da base aberta do CNPJ, que a Receita Federal publica no <a href="https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj" target="_blank" rel="noopener">Portal de Dados Abertos</a>, com atualização mensal e licença livre. CNPJ é o &quot;RG&quot; da empresa: todo negócio formal no Brasil tem um. Cada cadastro traz:</p>
+<ul>
+<li><strong>Atividade principal e secundárias (CNAE):</strong> o código que diz o que a empresa faz, como padaria, transportadora ou clínica.</li>
+<li><strong>Porte, capital social e natureza jurídica:</strong> ajudam a separar o pequeno comércio da indústria.</li>
+<li><strong>Data de abertura:</strong> mostra se a empresa é nova ou tem estrada.</li>
+<li><strong>Endereço, telefone e e-mail cadastrais.</strong></li>
+<li><strong>Sócios:</strong> nome e qualificação de quem está no quadro societário.</li>
+</ul>
+<p>Quando alguém procura &quot;lista de empresas por CNAE da Receita Federal&quot;, está pedindo exatamente um recorte dessa base. O dado é gratuito, mas vem em arquivos compactados enormes. Quem não é técnico costuma usar uma ferramenta que já baixa, organiza e atualiza tudo.</p>
+<h2 id="como-a-ia-escolhe-as-empresas-certas-para-abordar">Como a IA escolhe as empresas certas para abordar?</h2>
+<p>A IA olha o que os seus melhores clientes têm em comum, como atividade, porte e estado, e procura empresas com o mesmo perfil, inclusive em atividades parentes da sua. Um fornecedor de embalagens que vende bem para padarias, por exemplo, recebe também confeitarias e fábricas de biscoito da região. Passo a passo:</p>
+<ol>
+<li><strong>Você informa a carteira</strong> ou o setor que quer atender.</li>
+<li><strong>A IA cruza com a base do CNPJ</strong> e separa as empresas parecidas.</li>
+<li><strong>Cada empresa ganha uma nota</strong> e o motivo dela: mesma atividade, mesmo porte, mesma região.</li>
+<li><strong>A IA mostra quem decide:</strong> sócios, diretoria ou gerência.</li>
+<li><strong>Você aceita ou recusa</strong>, e a próxima leva já vem mais certeira.</li>
+</ol>
+<p>É aqui que a IA para prospecção de clientes B2B mais ajuda: ela procura a próxima empresa parecida com a que já paga você.</p>
+<h2 id="qual-ferramenta-de-prospeccao-b2b-combina-com-a-sua-empresa">Qual ferramenta de prospecção B2B combina com a sua empresa?</h2>
+<p>Depende de onde estão os seus clientes e de quem vai trabalhar a lista. Para vender a empresas brasileiras, pesa a ferramenta conhecer o CNPJ e o CNAE e já colocar as empresas dentro do seu CRM (o sistema onde você acompanha cada negociação). As opções do mercado cabem em quatro categorias:</p>
+<table>
+<thead>
+<tr>
+<th>Categoria</th>
+<th>Sabe CNPJ e CNAE?</th>
+<th>Traz quem decide?</th>
+<th>Fica dentro do CRM?</th>
+<th>Quem faz o trabalho</th>
+<th>Serve bem para</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Base brasileira de CNPJ</td>
+<td>Sim</td>
+<td>Em geral, sim</td>
+<td>Às vezes, por integração</td>
+<td>Seu time</td>
+<td>Quem vende só no Brasil e já tem CRM</td>
+</tr>
+<tr>
+<td>Base global de contatos</td>
+<td>Parcialmente</td>
+<td>Sim, mais forte em empresas grandes</td>
+<td>Às vezes</td>
+<td>Seu time</td>
+<td>Quem vende para vários países</td>
+</tr>
+<tr>
+<td>Agência de SDR terceirizada</td>
+<td>Depende da agência</td>
+<td>Sim</td>
+<td>No CRM da agência ou no seu</td>
+<td>A agência</td>
+<td>Quem quer reuniões marcadas sem montar time</td>
+</tr>
+<tr>
+<td>Sistema próprio sobre o dado aberto</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Sim, é o próprio CRM</td>
+<td>Seu time, com a IA ajudando</td>
+<td>Quem quer lista, funil e histórico num lugar só</td>
+</tr>
+</tbody></table>
+<p>SDR é a pessoa que faz o primeiro contato e marca a reunião para o vendedor. Cada categoria resolve bem um caso. O erro comum é comprar a ferramenta antes de saber quem vai usar a lista no dia seguinte.</p>
+<h2 id="como-a-nocodeia-construiu-o-proacta-crm-para-prospectar-sozinho">Como a Nocodeia construiu o Proacta CRM para prospectar sozinho?</h2>
+<p>O <a href="https://proactacrm.com" target="_blank" rel="noopener">Proacta CRM</a> é o CRM de vendas que a Nocodeia construiu com uma ideia simples: &quot;O CRM que sai procurando cliente por você.&quot; Ele já vem com 28 milhões de empresas ativas da base aberta do CNPJ, incluindo MEIs (microempreendedores individuais) e filiais, atualizada todo mês. Na prática, ele junta tudo o que este texto explicou:</p>
+<ul>
+<li><strong>Motor de prospecção:</strong> sugere empresas parecidas com a sua carteira, olhando estado, porte e atividades parentes, dá uma nota a cada uma e aprende com o seu aceite e a sua recusa.</li>
+<li><strong>Quem decide:</strong> mostra sócios, diretoria e gerência das empresas sugeridas, dentro da cota de contatos do seu plano.</li>
+<li><strong>LinkedIn com freio (um adicional):</strong> a IA escreve o convite de conexão, mas ele só sai com a sua aprovação e com limite diário.</li>
+<li><strong>CRM completo:</strong> funil em colunas, vários funis, tarefas, painéis e permissões por papel (administrador, vendedor e SDR).</li>
+</ul>
+<p>O teste dura 14 dias e não pede cartão. Construir o Proacta ensinou uma lição que vale para qualquer ferramenta: a IA sugere, a pessoa aprova. É o mesmo princípio que defendemos ao falar de <a href="/blog/governanca-de-agentes-de-ia/">quanta autonomia dar a um agente de IA</a>.</p>
+<h2 id="como-prospectar-empresas-seguindo-a-lgpd">Como prospectar empresas seguindo a LGPD?</h2>
+<p>Dá para prospectar empresas com a LGPD em dia. O dado da empresa, como razão social, CNPJ e atividade, não é dado pessoal. Já o nome de um sócio ou o e-mail de um diretor são, e podem ser usados com base no legítimo interesse. Essa regra da lei permite usar o dado quando é necessário para um interesse real da empresa, desde que os direitos da pessoa não sejam prejudicados.</p>
+<p>Isso pede transparência e direito de oposição. A <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">LGPD</a> prevê essa base no art. 7º, IX. O caminho certo:</p>
+<ol>
+<li><strong>Use só o necessário</strong> para a abordagem, como manda o art. 10, § 1º.</li>
+<li><strong>Faça o teste de balanceamento</strong> que o <a href="https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_legitimo_interesse.pdf" target="_blank" rel="noopener">guia da ANPD sobre legítimo interesse</a> orienta, em três fases: finalidade, necessidade, e balanceamento com salvaguardas.</li>
+<li><strong>Diga de onde veio o dado e para quê</strong> logo no primeiro contato (art. 10, § 2º).</li>
+<li><strong>Ofereça um canal fácil</strong> para a pessoa se opor, se descadastrar e pedir a exclusão dos dados, como pede o checklist do guia da ANPD. O direito de oposição está no art. 18, § 2º.</li>
+<li><strong>Mantenha uma lista de bloqueio</strong> para quem pediu para sair nunca mais receber contato.</li>
+</ol>
+<p>Cuidado com o MEI: o nome da empresa costuma levar o nome do dono, então esse dado é pessoal. No Proacta, a parte que cabe à ferramenta já vem pronta: base legal declarada, direito de oposição (inclusive de sócios), lista de bloqueio, exclusão, política de privacidade, termos e contrato de tratamento de dados publicados.</p>
+<h2 id="quando-vale-um-agente-de-prospeccao-sob-medida">Quando vale um agente de prospecção sob medida?</h2>
+<p>Vale quando o seu processo de vendas tem passos próprios que uma ferramenta pronta não cobre. Alguns exemplos:</p>
+<ul>
+<li>cruzar a lista com o seu sistema de pedidos ou com o ERP;</li>
+<li>qualificar empresas por regras do seu setor, como licença, certificação ou frota;</li>
+<li>preparar o follow-up (o retorno depois do primeiro contato) para o vendedor só revisar e aprovar.</li>
+</ul>
+<p>Nesses casos, a Nocodeia constrói um <a href="/#servicos">agente de prospecção e follow-up sob medida</a>: um assistente que executa essas tarefas por você. Se o seu caso é achar empresas parecidas e organizar o funil, uma ferramenta pronta basta, e é melhor começar por ela. Se você ainda está decidindo por onde levar a IA para vendas, vale ler <a href="/blog/ia-para-pequenas-empresas/">por onde começar a usar IA na pequena empresa</a>.</p>
+<h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+<h3 id="como-consultar-uma-lista-de-empresas-por-cnae">Como consultar uma lista de empresas por CNAE?</h3>
+<p>Baixe a base aberta do CNPJ no Portal de Dados Abertos e filtre pelo código CNAE da atividade que você procura. Como os arquivos são grandes, a maioria das empresas usa uma ferramenta que já faz esse filtro.</p>
+<h3 id="existe-lista-de-empresas-por-cnae-gratis">Existe lista de empresas por CNAE grátis?</h3>
+<p>Sim, a base da Receita Federal é gratuita e aberta. O trabalho está em baixar, juntar e tratar arquivos enormes, e em mantê-los atualizados todo mês.</p>
+<h3 id="a-lgpd-vale-para-dados-de-cnpj">A LGPD vale para dados de CNPJ?</h3>
+<p>A LGPD protege dados de pessoas, não de empresas (art. 5º, I). Razão social e CNPJ ficam fora; nome de sócio, e-mail e telefone de uma pessoa ficam dentro. No MEI, o nome da empresa costuma ser o do dono, então trate como dado pessoal.</p>
+<h3 id="quantas-empresas-ativas-existem-no-brasil">Quantas empresas ativas existem no Brasil?</h3>
+<p>Na carga de 20/11/2026 da base aberta do CNPJ feita pelo Proacta CRM, são 28.654.371 cadastros ativos, contando MEIs e filiais. É a nossa contagem sobre a base aberta, não um número oficial publicado pela Receita.</p>
+<h3 id="existe-ferramenta-de-prospeccao-de-clientes-gratis">Existe ferramenta de prospecção de clientes grátis?</h3>
+<p>A base aberta do CNPJ é gratuita, mas exige trabalho técnico para usar. O Proacta CRM tem teste de 14 dias sem cartão, com a base já tratada.</p>
+<h2 id="por-onde-comecar">Por onde começar?</h2>
+<p>Comece pela pergunta certa: quem são os seus três melhores clientes e o que eles têm em comum? Com essa resposta, a IA já sabe o que procurar. Se quiser montar a prospecção junto com a gente, ou avaliar se o seu processo pede um agente sob medida, marque o <a href="/#vaga">diagnóstico grátis de 45 minutos</a>. Você sai com o caminho, o preço e o prazo fechados.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">Agentes de IA</p>
+<h2>Quer isso funcionando na sua empresa?</h2>
+<p>Diagnóstico grátis de 45 minutos. Você sai com preço e prazo fechados.</p>
+<a class="botao" href="/#vaga">Quero meu diagnóstico grátis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.webp" alt=""><p><strong>Alexandre, fundador da Nocodeia</strong><br>Mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch. Hoje coloca produtos no ar com no-code e IA em semanas.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.webp" alt=""><img src="/assets/wordmark.webp" alt="nocodeia worldwide"></div><div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia no LinkedIn" title="Nocodeia no LinkedIn" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia no Instagram" title="Nocodeia no Instagram" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me" aria-label="Nocodeia no Facebook" title="Nocodeia no Facebook" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+<p><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--></p><p>Campinas (SP) · atendimento remoto em todo o Brasil e no exterior</p><p>© 2026 Nocodeia. Feito com no-code, claro.</p></footer>
+</body>
+</html>

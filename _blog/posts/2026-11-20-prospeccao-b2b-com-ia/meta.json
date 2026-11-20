@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-20",
+  "updated": "2026-11-20",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: RDNE Stock project / Pexels",
+  "service": "agentes",
+  "keyword": "prospecção b2b com ia",
+  "audience": "pme",
+  "pt": {
+    "slug": "prospeccao-b2b-com-ia",
+    "title": "Prospecção B2B com IA: clientes entre 28 milhões de empresas",
+    "description": "Prospecção B2B com IA usa a base aberta do CNPJ para achar empresas parecidas com seus clientes. Veja como fazer, que ferramenta usar e o que pede a LGPD.",
+    "image_alt": "Vendedor sorrindo à mesa do escritório com o notebook aberto"
+  },
+  "en": {
+    "slug": "brazil-company-database",
+    "title": "Brazil Company Database: Find B2B Clients With AI",
+    "description": "A Brazil company database built on open CNPJ data helps your team in Brazil find clients like your best ones. See the data, the LGPD rules and the tools.",
+    "image_alt": "Salesperson smiling at his office desk with an open laptop"
+  },
+  "es": {
+    "slug": "prospeccion-b2b-con-ia-en-brasil",
+    "title": "Prospección B2B con IA en Brasil: cómo hallar empresas",
+    "description": "Prospección B2B con IA en Brasil: usa la base abierta del CNPJ para hallar empresas parecidas a tus clientes. Qué datos trae, qué pide la LGPD y qué usar.",
+    "image_alt": "Vendedor sonriendo en su escritorio con la laptop abierta"
+  }
+}
