@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<!-- Aviso de cookies Nocodeia v1: precisa ser o PRIMEIRO item dentro do <head> -->
+<script>
+window.NOCODEIA_AVISO = {"namespace":"nocodeia","politica":"/privacidade/#site","cor":"#0047FF","corTexto":"#1a1a1a","fonte":"inherit","semMarketing":false,"textos":{"essenciais":"Necessários para o site funcionar e para lembrar a sua escolha de cookies. Não podem ser desligados.","estatisticas":"Contam visitas, mostram quais páginas interessam mais e medem a velocidade e os erros do site, para melhorarmos o site.","aviso":"Usamos cookies para o site funcionar e, se você permitir, para entender como ele é usado e medir anúncios.","marketing":"Permitem medir e personalizar anúncios no Meta (Instagram/Facebook) e no LinkedIn."}};
+(function(w,d){var ns=w.NOCODEIA_AVISO.namespace,FILAS=["dataLayer","dataLayerGa4"];
+function lido(id){try{return localStorage.getItem("stcm."+ns+".consent."+id)}catch(e){return null}}
+function args(){return arguments}
+function estado(a,m){return{analytics_storage:a?"granted":"denied",ad_storage:m?"granted":"denied",ad_user_data:m?"granted":"denied",ad_personalization:m?"granted":"denied"}}
+var a=lido("analytics")==="true",m=lido("marketing")==="true",ini=estado(a,m);ini.wait_for_update=500;
+var antes=[args("consent","default",ini),args("set","ads_data_redaction",!m)];
+/* Google: a decisão "padrão" entra na frente de tudo, mesmo se a plataforma recriar a fila depois */
+function prep(f){if(!f.__nc){for(var i=antes.length-1;i>=0;i--)f.unshift(antes[i]);f.__nc=1}return f}
+FILAS.forEach(function(n){var atual=prep(w[n]||[]);try{Object.defineProperty(w,n,{configurable:true,enumerable:true,get:function(){return atual},set:function(v){atual=prep(v||[])}})}catch(e){w[n]=atual}});
+w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n){w[n].push(args("consent","update",s))});w.dataLayer.push({event:"nc_consent_update",nc_analytics:a,nc_marketing:m})}};
+})(window,document);
+</script>
+<script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
+<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de mensagens do WhatsApp | Nocodeia</title>
+<meta name="description" content="Calcule quanto a Meta cobra por mensagem na API oficial do WhatsApp, com as tarifas do Brasil, e veja quanto o chat do site evita dessa tarifa.">
+<link rel="canonical" href="https://nocodeiaww.com/calculadora-whatsapp/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Calculadora de mensagens do WhatsApp | Nocodeia">
+<meta property="og:description" content="Calcule quanto a Meta cobra por mensagem na API oficial do WhatsApp, com as tarifas do Brasil, e veja quanto o chat do site evita dessa tarifa.">
+<meta property="og:url" content="https://nocodeiaww.com/calculadora-whatsapp/">
+<meta property="og:image" content="https://nocodeiaww.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--erro:#FF9B9B;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(32px,6vw,72px) clamp(16px,5vw,48px)}
+.volta{font-size:15px;text-decoration:none}
+h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(32px,5.4vw,56px);line-height:1.05;letter-spacing:-.03em;margin:18px 0 16px;max-width:20ch;overflow-wrap:break-word}
+.intro{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:62ch;margin:0 0 36px}
+.bloco h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(22px,2.6vw,28px);line-height:1.2;letter-spacing:-.015em;margin:0 0 18px}
+.bloco{max-width:760px;margin:clamp(40px,6vw,64px) 0 0}
+.bloco p,.bloco li{font-size:17px;color:#E4E6EB}
+.bloco p{margin:0 0 14px}.bloco ul,.bloco ol{padding-left:22px;margin:0 0 16px}.bloco li{margin-bottom:8px}
+.avisos{background:var(--sup);border:1px solid var(--borda);border-left:4px solid #5A39F0;border-radius:0 14px 14px 0;padding:clamp(16px,3vw,24px)}
+.avisos h2{margin-bottom:12px}
+.avisos p{font-size:16px}
+.avisos p:last-child{margin:0}
+.formula{font-size:16px}
+.tabela{overflow-x:auto;margin:0 0 16px}
+.tabela table{width:100%;border-collapse:collapse;font-size:16px}
+.tabela th,.tabela td{border:1px solid var(--borda);padding:9px 12px;text-align:left}.tabela th{background:var(--sup)}
+.chamada{margin:clamp(40px,6vw,64px) 0 0;padding:clamp(24px,5vw,44px);border-radius:20px;background:var(--grad);max-width:760px}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff}
+.chamada a.botao{background:#121316;min-height:48px;padding:6px 20px;line-height:1.25}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+<link rel="stylesheet" href="/calculadora-whatsapp/calculadora.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "@id": "https://nocodeiaww.com/calculadora-whatsapp/#app",
+   "name": "Calculadora de mensagens do WhatsApp (API oficial)",
+   "description": "Calcule quanto a Meta cobra por mensagem na API oficial do WhatsApp, com as tarifas do Brasil, e veja quanto o chat do site evita dessa tarifa.",
+   "url": "https://nocodeiaww.com/calculadora-whatsapp/",
+   "inLanguage": "pt-BR",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "Qualquer (navegador)",
+   "browserRequirements": "Requer JavaScript para recalcular",
+   "isAccessibleForFree": true,
+   "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"},
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://nocodeiaww.com/#empresa",
+    "name": "Nocodeia",
+    "logo": {"@type": "ImageObject", "url": "https://nocodeiaww.com/assets/icon.png"}
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Início", "item": "https://nocodeiaww.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Calculadora de mensagens do WhatsApp", "item": "https://nocodeiaww.com/calculadora-whatsapp/"}
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/">Início</a>
+<a class="item" href="/#servicos">Serviços</a>
+<a class="item" href="/casos/">Casos</a>
+<a class="item" href="/blog/">Blog</a>
+<a class="botao" href="/#vaga">Garantir vaga</a>
+</div></nav></header>
+<main>
+<a class="volta" href="/blog/como-criar-um-agente-de-ia-para-whatsapp/">← Voltar ao post: como criar um agente de IA para WhatsApp</a>
+<h1>Calculadora de mensagens do WhatsApp (API oficial)</h1>
+<p class="intro">Informe quantas conversas e mensagens você espera por mês e veja quanto a Meta cobra pela API oficial do WhatsApp, com as tarifas do Brasil. Os valores iniciais são o exemplo do post. Troque pelos seus números: o resultado muda enquanto você digita.</p>
+
+<!--nc-painel-->
+<div class="nc-calc nc-calc--pagina" data-nc-calc>
+<div class="nc-calc__cartao">
+<h2 class="nc-calc__titulo" id="t-form">Os seus números</h2>
+<div class="nc-calc__form" role="group" aria-labelledby="t-form">
+<div class="nc-calc__campo"><label for="nc-calc-conversas">Conversas por mês</label><span class="nc-calc__dica" id="nc-calc-d-conversas">Conversas em que o cliente escreve primeiro e o agente responde.</span><input id="nc-calc-conversas" data-campo="conversas" type="text" inputmode="numeric" autocomplete="off" value="3000" aria-describedby="nc-calc-d-conversas nc-calc-e-conversas"><p class="nc-calc__erro" id="nc-calc-e-conversas" data-erro="conversas"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-mensagens">Mensagens do agente por conversa</label><span class="nc-calc__dica" id="nc-calc-d-mensagens">Respostas livres dentro da janela de 24 horas (atendimento). O 6 do exemplo é suposição, não média de mercado.</span><input id="nc-calc-mensagens" data-campo="mensagens" type="text" inputmode="numeric" autocomplete="off" value="6" aria-describedby="nc-calc-d-mensagens nc-calc-e-mensagens"><p class="nc-calc__erro" id="nc-calc-e-mensagens" data-erro="mensagens"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-marketing">Mensagens de marketing por mês</label><span class="nc-calc__dica" id="nc-calc-d-marketing">Promoção, novidade, reativação.</span><input id="nc-calc-marketing" data-campo="marketing" type="text" inputmode="numeric" autocomplete="off" value="2000" aria-describedby="nc-calc-d-marketing nc-calc-e-marketing"><p class="nc-calc__erro" id="nc-calc-e-marketing" data-erro="marketing"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-utilidade">Mensagens de utilidade por mês</label><span class="nc-calc__dica" id="nc-calc-d-utilidade">Confirmação de pedido, aviso de entrega.</span><input id="nc-calc-utilidade" data-campo="utilidade" type="text" inputmode="numeric" autocomplete="off" value="0" aria-describedby="nc-calc-d-utilidade nc-calc-e-utilidade"><p class="nc-calc__erro" id="nc-calc-e-utilidade" data-erro="utilidade"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-autenticacao">Mensagens de autenticação por mês <span class="nc-calc__opc">(opcional)</span></label><span class="nc-calc__dica" id="nc-calc-d-autenticacao">Códigos de verificação. Pode deixar em 0.</span><input id="nc-calc-autenticacao" data-campo="autenticacao" type="text" inputmode="numeric" autocomplete="off" value="0" aria-describedby="nc-calc-d-autenticacao nc-calc-e-autenticacao"><p class="nc-calc__erro" id="nc-calc-e-autenticacao" data-erro="autenticacao"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-numeros">Telefones comerciais (números)</label><span class="nc-calc__dica" id="nc-calc-d-numeros">As 1.000 primeiras mensagens de atendimento do mês não são cobradas, para cada número.</span><input id="nc-calc-numeros" data-campo="numeros" type="text" inputmode="numeric" autocomplete="off" value="1" aria-describedby="nc-calc-d-numeros nc-calc-e-numeros"><p class="nc-calc__erro" id="nc-calc-e-numeros" data-erro="numeros"></p></div>
+</div>
+<noscript><p class="nc-calc__sem-js">O JavaScript está desligado, então a conta não recalcula. O resultado abaixo é o do exemplo (3.000 conversas, 6 mensagens por conversa e 2.000 de marketing).</p></noscript>
+</div>
+<section class="nc-calc__saida" aria-labelledby="t-res">
+<h2 class="nc-calc__titulo" id="t-res">Quanto a Meta cobra por mês</h2>
+<div class="nc-calc__resultado" data-resultado><!--nc-pre--><dl class="nc-calc__linhas"><div class="nc-calc__linha"><dt>Mensagens de atendimento no mês<small>3.000 conversas × 6 mensagens</small></dt><dd>18.000</dd></div><div class="nc-calc__linha"><dt>Dentro da franquia (não cobradas)<small>1.000 por número × 1 número</small></dt><dd>1.000</dd></div><div class="nc-calc__linha"><dt>Mensagens de atendimento cobradas</dt><dd>17.000</dd></div><div class="nc-calc__linha"><dt>Custo de atendimento<small>17.000 × R$ 0,035</small></dt><dd>R$ 595,00</dd></div><div class="nc-calc__linha"><dt>Marketing<small>2.000 × R$ 0,3217</small></dt><dd>R$ 643,40</dd></div><div class="nc-calc__linha"><dt>Utilidade<small>0 × R$ 0,035</small></dt><dd>R$ 0,00</dd></div><div class="nc-calc__linha"><dt>Autenticação<small>0 × R$ 0,035</small></dt><dd>R$ 0,00</dd></div></dl><div class="nc-calc__total"><p class="nc-calc__total-rot">Total por mês na API oficial</p><p class="nc-calc__total-valor">R$ 1.238,40</p><p class="nc-calc__total-ano">Total por ano (× 12): <span>R$ 14.860,80</span></p></div><p class="nc-calc__chat">No chat do site, a tarifa de mensagem do WhatsApp é <strong>R$ 0,00</strong> (o modelo de IA e a hospedagem existem nos dois canais).</p><!--/nc-pre--></div>
+<p class="nc-calc__so-leitor" data-resumo aria-live="polite" aria-atomic="true"></p>
+</section>
+</div>
+<!--/nc-painel-->
+
+<section class="bloco avisos" aria-labelledby="t-avisos">
+<h2 id="t-avisos">Antes de decidir</h2>
+<p><strong>Estimativa.</strong> Não inclui modelo de IA, hospedagem, montagem do agente nem a mensalidade do provedor (varia por provedor, consulte). Acima de 250 mil mensagens de utilidade ou de 500 mil de autenticação por mês, a Meta aplica desconto por volume, que esta calculadora não considera.</p>
+<p>Tarifas do Brasil em reais, vigentes desde 1º de outubro de 2026, consultadas em 20 de novembro de 2026. A Meta só pode reajustar no primeiro dia de um trimestre: confira a tabela oficial antes de decidir. Fontes: <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">documentação oficial de preços da Meta</a> (seção "Rate cards and volume tiers") e <a href="https://whatsappbusiness.com/pt-br/products/platform-pricing/#rates" target="_blank" rel="noopener">calculadora oficial do WhatsApp Business</a>.</p>
+<p>Pressupõe que nenhuma conversa veio de anúncio com janela gratuita e que todas as mensagens são entregues.</p>
+</section>
+
+<section class="bloco" aria-labelledby="t-conta">
+<h2 id="t-conta">Como a conta é feita</h2>
+<div class="tabela"><table>
+<thead><tr><th scope="col">Tipo de mensagem</th><th scope="col">Valor por mensagem</th></tr></thead>
+<tbody>
+<tr><th scope="row">Marketing</th><td>R$ 0,3217</td></tr>
+<tr><th scope="row">Utilidade</th><td>R$ 0,035</td></tr>
+<tr><th scope="row">Autenticação</th><td>R$ 0,035</td></tr>
+<tr><th scope="row">Atendimento (a partir da 1.001ª do mês, por número)</th><td>R$ 0,035</td></tr>
+<tr><th scope="row">Mensagem do cliente para a empresa</th><td>sem cobrança</td></tr>
+</tbody></table></div>
+<ul class="formula">
+<li>Mensagens de atendimento = conversas × mensagens do agente por conversa.</li>
+<li>Mensagens cobradas = atendimento − (1.000 × número de telefones), sem passar de zero.</li>
+<li>Custo de atendimento = mensagens cobradas × R$ 0,035.</li>
+<li>Marketing = mensagens de marketing × R$ 0,3217. Utilidade e autenticação = quantidade × R$ 0,035.</li>
+<li>Total por mês = atendimento + marketing + utilidade + autenticação. Total por ano = total por mês × 12.</li>
+</ul>
+<p>Cada linha é arredondada para o centavo e o total é a soma das linhas. No exemplo: 17.000 × R$ 0,035 = R$ 595,00 e 2.000 × R$ 0,3217 = R$ 643,40, que somam R$ 1.238,40. A calculadora roda no seu navegador e não guarda nem envia os números que você digita.</p>
+</section>
+
+<aside class="chamada" aria-labelledby="t-cta">
+<h2 id="t-cta">Quer desenhar esse caminho com apoio?</h2>
+<p>Em 45 minutos a gente olha o seu atendimento junto com você e diz com franqueza se vale ter um agente.</p>
+<a class="botao" href="/#vaga">Marque seu diagnóstico grátis de 45 minutos</a>
+</aside>
+</main>
+<footer><div class="marca"><img src="/assets/icon.webp" alt=""><img src="/assets/wordmark.webp" alt="nocodeia worldwide"></div><div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia no LinkedIn" title="Nocodeia no LinkedIn" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia no Instagram" title="Nocodeia no Instagram" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me" aria-label="Nocodeia no Facebook" title="Nocodeia no Facebook" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+<p><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--></p><p>Campinas (SP) · atendimento remoto em todo o Brasil e no exterior</p><p>© 2026 Nocodeia. Feito com no-code, claro.</p></footer>
+<script src="/calculadora-whatsapp/calculadora.js" defer></script>
+</body>
+</html>

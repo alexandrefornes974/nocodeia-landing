@@ -372,9 +372,14 @@ ${meus.length ? `<div class="grade">\n${cartoes}\n</div>` : `<p class="sub-blog"
 }
 
 // ---------- sitemap e llms.txt ----------
+// Páginas estáticas escritas à mão: [caminho, data da última alteração]. Atualize a data quando a página mudar.
+const PAGINAS_ESTATICAS = [['/calculadora-whatsapp/', '2026-11-20']];
+
 function sitemap(posts) {
   const hoje = new Date().toISOString().slice(0, 10);
   const urls = [['/', hoje], ['/en/', hoje], ['/es/', hoje], ['/privacidade/', '2026-10-10'], ['/en/privacy/', '2026-10-10'], ['/es/privacidad/', '2026-10-10']];
+  // Páginas estáticas fora do blog e dos cases (ferramentas): escritas à mão em site/<pasta>/index.html.
+  for (const [u, d] of PAGINAS_ESTATICAS) urls.push([u, d]);
   // Páginas de case (geradas por _casos/build.mjs) também entram no sitemap.
   const CASOS = join(SITE, '_casos'), PASTA_CASO = { pt: 'casos', en: 'en/cases', es: 'es/casos' };
   if (existsSync(CASOS)) {

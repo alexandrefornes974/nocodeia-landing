@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-20",
+  "updated": "2026-11-20",
+  "draft": false,
+  "image": "capa.jpg",
+  "image_credit": "Foto: Tim Witzdam / Pexels",
+  "service": "agentes",
+  "keyword": "como criar um agente de ia para whatsapp",
+  "audience": "startup",
+  "pt": {
+    "slug": "como-criar-um-agente-de-ia-para-whatsapp",
+    "title": "Como criar um agente de IA para WhatsApp: comece pelo site",
+    "description": "Comece pelo chat do seu site, treine o agente com conversas reais e só depois ligue a API do WhatsApp. Veja os valores oficiais da Meta e o passo a passo.",
+    "image_alt": "Celular mostrando uma conversa com um assistente de IA"
+  },
+  "en": {
+    "slug": "how-to-create-an-ai-agent-for-whatsapp",
+    "title": "How to Create an AI Agent for WhatsApp: Start on Your Site",
+    "description": "Start with your website chat, train the agent on real conversations, then connect the WhatsApp API. See Meta's official Brazil prices and the 5 steps.",
+    "image_alt": "Smartphone showing a conversation with an AI assistant"
+  },
+  "es": {
+    "slug": "crear-agente-de-ia-para-whatsapp",
+    "title": "Crear un agente de IA para WhatsApp: empieza por tu web",
+    "description": "Empieza por el chat de tu sitio web, entrena al agente con conversaciones reales y después conecta la API de WhatsApp. Precios de Meta en Brasil y 5 pasos.",
+    "image_alt": "Celular mostrando una conversación con un asistente de IA"
+  }
+}

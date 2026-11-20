@@ -1,0 +1,25 @@
+{
+  "slug": "como-criar-um-agente-de-ia-para-whatsapp",
+  "pasta": "2026-11-20-como-criar-um-agente-de-ia-para-whatsapp",
+  "url_post": "https://nocodeiaww.com/blog/como-criar-um-agente-de-ia-para-whatsapp/",
+  "gerado_em": "2026-11-20T18:55:30.593Z",
+  "linkedin": {
+    "texto": "Agente de IA no WhatsApp: treine primeiro no chat do site, onde ele erra sem expor o cliente e sem tarifa de mensagem.\n\nNa Nocodeia seguimos esta ordem: chat do site, treino e só depois a API oficial do WhatsApp. O agente é o mesmo. Muda só o canal.\n\nAs tarifas oficiais da Meta no Brasil, em vigor desde 1º de outubro de 2026 (consultadas em 20 de novembro):\n→ atendimento: R$ 0,035 por mensagem, a partir da 1.001ª do mês, por número\n→ marketing: R$ 0,3217 por mensagem\n→ mensagem que o cliente manda para a empresa: sem cobrança\n\nA mensagem de atendimento custa pouco. O que pesa é o volume e o marketing.\n\nUm exemplo hipotético, para você trocar pelos seus números: 3.000 conversas por mês, 6 mensagens do agente em cada uma e 2.000 de marketing dão R$ 1.238,40 por mês só de tarifa da Meta, fora modelo de IA, hospedagem e provedor.\n\nEntão por que começar pelo chat do site?\n→ o agente erra, você ajusta, e o cliente do WhatsApp não precisa passar pelo erro\n→ você descobre as perguntas reais antes de abrir o canal\n→ a API entra quando ele já responde certo pelo seu critério\n\nTem nicho em que a API oficial nem é opção. Na Amore Totale, o WhatsApp ficou fora das vendas por causa da política do WhatsApp Business. A Amora, agente que a Nocodeia montou para a loja, atende no site 24 horas.\n\nNos primeiros meses, 80% das conversas foram resolvidas sem humano. Medição da Nocodeia, número autorizado pelo cliente.\n\nO que eu faria: listar as 10 perguntas que mais chegam, treinar com conversas reais, definir o que é \"pronto\" e só então ligar a API.\n\nQual é a pergunta que mais chega no seu atendimento e poderia ser a primeira tarefa do seu agente?\n\n#agentesdeia #whatsapp",
+    "comentario": "Escrevi o guia completo, com a tabela das tarifas oficiais da Meta e a ordem chat do site, treino e API: https://nocodeiaww.com/blog/como-criar-um-agente-de-ia-para-whatsapp/ . A calculadora gratuita, para você colocar os seus números: https://nocodeiaww.com/calculadora-whatsapp/"
+  },
+  "instagram": {
+    "legenda": "Quer um agente de IA no WhatsApp? Comece pelo chat do seu site. 👇\nO chat do site deixa o agente errar, aprender e ser ajustado antes de você abrir o WhatsApp para clientes. Depois você liga a API oficial: o agente é o mesmo, muda só o canal.\nNa tabela da Meta no Brasil, a mensagem de atendimento custa R$ 0,035 a partir da 1.001ª do mês, por número, e a de marketing R$ 0,3217. No blog tem uma calculadora gratuita para estimar com os seus números.\nSe o seu nicho não puder usar a API oficial, o chat do site vira o canal principal, como na Amora, da Amore Totale.\nSalva o checklist e manda AGENTE no WhatsApp 11 96788-6969 para o diagnóstico grátis de 45 minutos. Post completo no link da bio.\n#agentesdeia #whatsappbusiness #atendimentoaocliente #chatbot #nocode",
+    "imagens": [
+      "https://nocodeiaww.com/social/como-criar-um-agente-de-ia-para-whatsapp/slide-01.jpg",
+      "https://nocodeiaww.com/social/como-criar-um-agente-de-ia-para-whatsapp/slide-02.jpg",
+      "https://nocodeiaww.com/social/como-criar-um-agente-de-ia-para-whatsapp/slide-03.jpg",
+      "https://nocodeiaww.com/social/como-criar-um-agente-de-ia-para-whatsapp/slide-04.jpg",
+      "https://nocodeiaww.com/social/como-criar-um-agente-de-ia-para-whatsapp/slide-05.jpg",
+      "https://nocodeiaww.com/social/como-criar-um-agente-de-ia-para-whatsapp/slide-06.jpg",
+      "https://nocodeiaww.com/social/como-criar-um-agente-de-ia-para-whatsapp/slide-07.jpg",
+      "https://nocodeiaww.com/social/como-criar-um-agente-de-ia-para-whatsapp/slide-08.jpg",
+      "https://nocodeiaww.com/social/como-criar-um-agente-de-ia-para-whatsapp/slide-09.jpg",
+      "https://nocodeiaww.com/social/como-criar-um-agente-de-ia-para-whatsapp/slide-10.jpg"
+    ]
+  }
+}
