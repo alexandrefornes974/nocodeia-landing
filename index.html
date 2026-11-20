@@ -254,6 +254,8 @@ body{margin:0;background:#121316;color:#FFFFFF;font-family:Inter,system-ui,sans-
 a{color:#FFFFFF}a:hover{color:#C9CCD4}
 *:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
 input::placeholder{color:#7C818D}
+/* Antes do JS montar a página, os moldes de erro/sucesso/falha do formulário não aparecem. Depois de montar, os <sc-if> somem do DOM. */
+sc-if[value="{{erro}}"],sc-if[value="{{inscrito}}"],sc-if[value="{{falhou}}"]{display:none}
 details summary{list-style:none;cursor:pointer}
 details summary::-webkit-details-marker{display:none}
 @keyframes ncGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
@@ -323,18 +325,21 @@ details summary::-webkit-details-marker{display:none}
       <sc-if value="{{naoInscrito}}" hint-placeholder-val="{{ true }}">
         <div style="display: flex; flex-direction: column; gap: 10px; max-width: 560px">
           <label for="email-topo" style="font-size: 15px; font-weight: 500; color: #C9CCD4">Seu melhor e-mail</label>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap">
-            <input id="email-topo" type="email" autocomplete="email" placeholder="voce@empresa.com" value="{{email}}" onChange="{{onEmail}}" style="flex: 1 1 260px; min-height: 56px; box-sizing: border-box; padding: 0 18px; font-size: 17px; font-family: Inter, sans-serif; color: #FFFFFF; background: #1B1D22; border: 1px solid #343843; border-radius: 12px">
-            <button type="button" onClick="{{entrar}}" style="flex: 0 0 auto; min-height: 56px; padding: 0 26px; font-size: 17px; font-weight: 600; font-family: Inter, sans-serif; color: #FFFFFF; background: linear-gradient(45deg, #0047FF, #8A2BE2); border: 0; border-radius: 12px; cursor: pointer">Quero minha vaga</button>
-          </div>
+          <form data-origem="topo" novalidate onSubmit="{{entrar}}" style="display: flex; gap: 10px; flex-wrap: wrap">
+            <input id="email-topo" type="email" autocomplete="email" placeholder="voce@empresa.com" name="email" required onChange="{{onEmail}}" style="flex: 1 1 260px; min-height: 56px; box-sizing: border-box; padding: 0 18px; font-size: 17px; font-family: Inter, sans-serif; color: #FFFFFF; background: #1B1D22; border: 1px solid #343843; border-radius: 12px">
+            <button type="submit" style="flex: 0 0 auto; min-height: 56px; padding: 0 26px; font-size: 17px; font-weight: 600; font-family: Inter, sans-serif; color: #FFFFFF; background: linear-gradient(45deg, #0047FF, #8A2BE2); border: 0; border-radius: 12px; cursor: pointer">Quero minha vaga</button>
+          </form>
           <sc-if value="{{erro}}" hint-placeholder-val="{{ false }}">
             <p role="alert" style="margin: 0; font-size: 15px; color: #FF9AA8">Digite um e-mail válido, tipo <!--email_off-->voce@empresa.com<!--/email_off--></p>
           </sc-if>
-          <p style="margin: 0; font-size: 14px; color: #A7ABB6">Primeira conversa grátis, 45 minutos. Sem spam, sem pitch enrolado.</p>
+          <sc-if value="{{falhou}}" hint-placeholder-val="{{ false }}">
+            <p role="alert" style="margin: 0; font-size: 15px; color: #FF9AA8">Não consegui registrar seu e-mail agora. Sem problema: fale comigo direto no <a href="{{linkWhatsDireto}}" target="_blank" rel="noopener" style="font-weight: 600">WhatsApp</a>.</p>
+          </sc-if>
+          <p style="margin: 0; font-size: 14px; color: #A7ABB6">Primeira conversa grátis, 45 minutos. Sem spam, sem pitch enrolado. Ao enviar, você concorda com a <a href="/privacidade/" style="color: inherit">Política de Privacidade</a>.</p>
         </div>
       </sc-if>
       <sc-if value="{{inscrito}}" hint-placeholder-val="{{ false }}">
-        <div style="max-width: 560px; padding: 20px 22px; background: #1B1D22; border: 1px solid #343843; border-radius: 14px; font-size: 17px; line-height: 1.5">Pronto, você está na fila de {{mes}}. Eu respondo em até 24 horas com um horário. <a href="#vaga" style="font-weight: 600">Quer passar na frente?</a></div>
+        <div style="max-width: 560px; padding: 20px 22px; background: #1B1D22; border: 1px solid #343843; border-radius: 14px; font-size: 17px; line-height: 1.5">Pronto, você está na fila de {{mes}}. Eu respondo em até 24 horas com um horário. <a href="#vaga" style="font-weight: 600">Quer passar na frente?</a> <a href="{{linkWhatsDireto}}" target="_blank" rel="noopener" style="font-weight: 600">Quer adiantar? Falar no WhatsApp agora</a></div>
       </sc-if>
     </section>
 
@@ -1094,19 +1099,24 @@ details summary::-webkit-details-marker{display:none}
           <div style="display: flex; flex-direction: column; gap: 10px; max-width: 600px">
             <p style="margin: 0 0 8px; font-size: 19px; line-height: 1.5">3 vagas de build abertas nesse mês. Deixe seu e-mail e eu respondo em até 24 horas com um horário.</p>
             <label for="email-final" style="font-size: 15px; font-weight: 500">Seu melhor e-mail</label>
-            <div style="display: flex; gap: 10px; flex-wrap: wrap">
-              <input id="email-final" type="email" autocomplete="email" placeholder="voce@empresa.com" value="{{email}}" onChange="{{onEmail}}" style="flex: 1 1 260px; min-height: 56px; box-sizing: border-box; padding: 0 18px; font-size: 17px; font-family: Inter, sans-serif; color: #121316; background: #FFFFFF; border: 0; border-radius: 12px">
-              <button type="button" onClick="{{entrar}}" style="flex: 0 0 auto; min-height: 56px; padding: 0 26px; font-size: 17px; font-weight: 600; font-family: Inter, sans-serif; color: #FFFFFF; background: #121316; border: 0; border-radius: 12px; cursor: pointer">Quero minha vaga</button>
-            </div>
+            <form data-origem="final" novalidate onSubmit="{{entrar}}" style="display: flex; gap: 10px; flex-wrap: wrap">
+              <input id="email-final" type="email" autocomplete="email" placeholder="voce@empresa.com" name="email" required onChange="{{onEmail}}" style="flex: 1 1 260px; min-height: 56px; box-sizing: border-box; padding: 0 18px; font-size: 17px; font-family: Inter, sans-serif; color: #121316; background: #FFFFFF; border: 0; border-radius: 12px">
+              <button type="submit" style="flex: 0 0 auto; min-height: 56px; padding: 0 26px; font-size: 17px; font-weight: 600; font-family: Inter, sans-serif; color: #FFFFFF; background: #121316; border: 0; border-radius: 12px; cursor: pointer">Quero minha vaga</button>
+            </form>
             <sc-if value="{{erro}}" hint-placeholder-val="{{ false }}">
               <p role="alert" style="margin: 0; font-size: 15px; font-weight: 600; color: #FFFFFF">Digite um e-mail válido, tipo <!--email_off-->voce@empresa.com<!--/email_off--></p>
             </sc-if>
+            <sc-if value="{{falhou}}" hint-placeholder-val="{{ false }}">
+              <p role="alert" style="margin: 0; font-size: 15px; font-weight: 600; color: #FFFFFF">Não consegui registrar seu e-mail agora. Sem problema: fale comigo direto no <a href="{{linkWhatsDireto}}" target="_blank" rel="noopener" style="font-weight: 600">WhatsApp</a>.</p>
+            </sc-if>
+            <p style="margin: 0; font-size: 14px">Ao enviar, você concorda com a <a href="/privacidade/" style="color: inherit">Política de Privacidade</a>.</p>
           </div>
         </sc-if>
 
         <sc-if value="{{inscrito}}" hint-placeholder-val="{{ false }}">
           <div style="display: flex; flex-direction: column; gap: 18px; max-width: 640px">
             <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 28px; line-height: 1.2">Você está na fila de {{mes}}.</p>
+            <p style="margin: 0; font-size: 18px; line-height: 1.55">Quer adiantar? <a href="{{linkWhatsDireto}}" target="_blank" rel="noopener" style="font-weight: 600">Fale comigo no WhatsApp agora</a>.</p>
             <p style="margin: 0; font-size: 18px; line-height: 1.55">Quer passar na frente? Mande para alguém que também tem uma ideia parada. Se a indicação virar projeto, você ganha prioridade na próxima vaga.</p>
             <div style="display: flex; gap: 12px; flex-wrap: wrap">
               <a href="{{linkWhats}}" target="_blank" rel="noopener" style="min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 22px; font-size: 16px; font-weight: 600; text-decoration: none; color: #121316; background: #FFFFFF; border-radius: 12px">Enviar no WhatsApp</a>
@@ -1137,7 +1147,7 @@ details summary::-webkit-details-marker{display:none}
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { email: '', erro: false, inscrito: false, receita: 20000, meses: 8, okrTela: 0, demoT: 0, bagAng: 0, catT: 0 };
+    this.state = { email: '', erro: false, falhou: false, inscrito: false, receita: 20000, meses: 8, okrTela: 0, demoT: 0, bagAng: 0, catT: 0 };
   }
   demoMsg() { return 'Oi João, vi seu post sobre roteirização com dados. Estamos ajudando transportadoras a cortar atraso de entrega com IA. Topa trocar 15 minutos esta semana?'; }
   demoFim() { return 4500 + this.demoMsg().length * 35 + 1500; }
@@ -1204,18 +1214,27 @@ class Component extends DCLogic {
       this.catObs.observe(el);
     } catch (e) {}
   }
-  enviarLead(email) {
-    // Cole aqui a URL do webhook (n8n, Formspree, etc.). Vazio = não envia.
-    // Abre o WhatsApp da Nocodeia com o e-mail já escrito na mensagem.
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'generate_lead', lead_source: 'form_vaga' });
-    try { window.open('https://wa.me/5511967886969?text=' + encodeURIComponent('Olá! Quero minha vaga na Nocodeia. Meu e-mail: ' + email), '_blank', 'noopener'); } catch (e) {}
-    const ENDPOINT = '';
-    if (!ENDPOINT) return;
-    try {
-      fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email, idioma: document.documentElement.lang, pagina: location.href, data: new Date().toISOString() }) }).catch(function () {});
-    } catch (e) {}
+  // Função do próprio site (functions/api/lead.js) que entrega o lead ao Proacta CRM. Se falhar, mostra o erro
+  // com o WhatsApp e NÃO dispara generate_lead.
+  enviarLead(email, origem) {
+    const ENDPOINT = '/api/lead';
+    if (!ENDPOINT) return Promise.resolve(false);
+    const q = new URLSearchParams(location.search);
+    const utm = {};
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(function (k) { if (q.get(k)) utm[k] = q.get(k); });
+    const ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    const timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 10000);
+    return fetch(ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      signal: ctrl ? ctrl.signal : undefined,
+      body: JSON.stringify({ email: email, lead_source: 'form_vaga', origem_form: origem || 'topo', idioma: document.documentElement.lang, pagina: location.href, referrer: document.referrer || '', utm: utm, data: new Date().toISOString() })
+    }).then(function (r) { clearTimeout(timer); return r.ok; }).catch(function () { clearTimeout(timer); return false; });
+  }
+  linkWhatsDireto() {
+    const email = String(this.state.email || '').trim();
+    const texto = email ? "Olá! Quero minha vaga na Nocodeia. Meu e-mail: " + email : "Olá! Quero minha vaga na Nocodeia.";
+    return 'https://wa.me/5511967886969?text=' + encodeURIComponent(texto);
   }
   componentWillUnmount() { clearInterval(this.catTimer); if (this.catObs) this.catObs.disconnect(); clearInterval(this.bagTimer); clearInterval(this.demoTimer); if (this.demoObs) this.demoObs.disconnect(); }
   renderVals() {
@@ -1277,12 +1296,14 @@ class Component extends DCLogic {
       email: this.state.email,
       erro: this.state.erro,
       inscrito: this.state.inscrito,
+      falhou: this.state.falhou,
       naoInscrito: !this.state.inscrito,
       receita: this.state.receita,
       meses,
       perdido: brl(perdido),
       recuperado: brl(recuperado),
       linkWhats: 'https://wa.me/?text=' + encodeURIComponent(texto),
+      linkWhatsDireto: this.linkWhatsDireto(),
       linkLinkedin: 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(site),
       linkX: 'https://x.com/intent/tweet?text=' + encodeURIComponent(texto),
       bagAng: (Number(this.state.bagAng) || 0).toFixed(1),
@@ -1332,10 +1353,28 @@ class Component extends DCLogic {
       onEmail: (e) => this.setState({ email: e.target.value, erro: false }),
       onReceita: (e) => this.setState({ receita: e.target.value }),
       onMeses: (e) => this.setState({ meses: e.target.value }),
-      entrar: () => {
-        const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(this.state.email).trim());
-        if (ok) this.enviarLead(String(this.state.email).trim());
-        this.setState(ok ? { inscrito: true, erro: false } : { erro: true });
+      entrar: (ev) => {
+        if (ev && ev.preventDefault) ev.preventDefault();
+        if (this.enviandoLead) return;
+        const form = ev && ev.target && ev.target.elements ? ev.target : null;
+        const campo = form && form.elements.email ? form.elements.email : null;
+        const email = String(campo ? campo.value : this.state.email).trim();
+        const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        if (!ok) { this.setState({ email: email, erro: true, falhou: false }); return; }
+        this.enviandoLead = true;
+        this.setState({ email: email, erro: false, falhou: false });
+        const origem = form ? form.getAttribute('data-origem') : 'topo';
+        this.enviarLead(email, origem).then((salvo) => {
+          this.enviandoLead = false;
+          if (salvo) {
+            // generate_lead só depois que o webhook confirmou (2xx). Sem e-mail/telefone/nome no dataLayer (LGPD).
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: 'generate_lead', lead_source: 'form_vaga' });
+            this.setState({ inscrito: true, erro: false, falhou: false });
+          } else {
+            this.setState({ falhou: true });
+          }
+        });
       }
     };
   }
