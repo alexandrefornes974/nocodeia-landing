@@ -37,6 +37,16 @@ jobs:
           test ! -e "$RUNNER_TEMP/site/_blog" && test ! -e "$RUNNER_TEMP/site/_casos"
           echo "Arquivos a publicar: $(find "$RUNNER_TEMP/site" -type f | wc -l)"
 
+      - name: Navegador para pré-renderizar
+        run: |
+          npm install --no-save --prefix "$RUNNER_TEMP/pw" playwright@1.63.0
+          "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
+
+      - name: Pré-renderizar as páginas iniciais (SEO e GEO)
+        env:
+          PLAYWRIGHT_ENTRY: file://${{ runner.temp }}/pw/node_modules/playwright/index.mjs
+        run: node .github/scripts/prerender.mjs "$RUNNER_TEMP/site"
+
       - name: Publicar na Cloudflare Pages
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -45,6 +55,22 @@ jobs:
           npx --yes wrangler@4.40.0 pages deploy "$RUNNER_TEMP/site" \
             --project-name=nocodeia --branch=main \
             --commit-hash="$GITHUB_SHA" --commit-message="$(git log -1 --format=%s | head -c 300)"
+
+      - name: Conferir que robôs sem JavaScript leem a página pronta
+        run: |
+          for u in https://nocodeiaww.com/ https://nocodeiaww.com/en/ https://nocodeiaww.com/es/; do
+            ok=0
+            for tentativa in 1 2 3 4 5 6; do
+              curl -s -H 'Cache-Control: no-cache' "$u" -o pagina.html
+              if node -e "
+                const s=require('fs').readFileSync('pagina.html','utf8').replace(/<script[\s\S]*?<\/script>/g,'').replace(/<style[\s\S]*?<\/style>/g,'');
+                const t=s.replace(/<[^>]*>/g,' ');
+                process.exit(/\{\{/.test(t)||/<sc-if/.test(s)||!/<h1[\s>]/.test(s)?1:0)"; then ok=1; break; fi
+              sleep 20
+            done
+            [ "$ok" = 1 ] || { echo "::error::$u ainda serve molde cru ou sem H1"; exit 1; }
+            echo "Pré-renderizado: $u"
+          done
 
       - name: Conferir URLs do sitemap no ar
         run: |
