@@ -116,12 +116,12 @@ casos:
 
 para_quem:
   titulo: Feito para pequenas e médias empresas
-  subtitulo: Cada segmento tem um gargalo diferente. Este é o primeiro passo que costuma dar mais retorno em cada um.
+  subtitulo: Cada setor tem um gargalo diferente. Este é o primeiro passo que costuma dar mais retorno em cada um.
   itens:
     - nome: Lojas e e-commerce
       problema: Muita pergunta repetida e venda perdida fora do horário.
       solucao: IA no atendimento e site que aparece no Google.
-    - nome: Clínicas e serviços
+    - nome: Clínicas e consultórios
       problema: Agenda feita à mão e paciente sem resposta à noite.
       solucao: Agendamento automático e atendimento 24 horas.
     - nome: Imobiliárias
@@ -133,6 +133,31 @@ para_quem:
     - nome: Restaurantes e delivery
       problema: Pedido confuso no WhatsApp e cardápio desatualizado.
       solucao: Site com pedido que chega completo no WhatsApp.
+    - nome: Contabilidade e advocacia
+      problema: Cliente pedindo o mesmo documento toda semana e prazos controlados em planilha.
+      solucao: Portal do cliente e alertas automáticos de prazo.
+    - nome: Escolas e cursos
+      problema: Interessado que esfria sem resposta e dúvidas repetidas sobre turmas e valores.
+      solucao: Agente que tira dúvidas e acompanha a matrícula até o fim.
+    - nome: Academias, salões e estética
+      problema: Horário vago por falta e cliente que some depois da primeira visita.
+      solucao: Agendamento com lembrete automático e mensagens para trazer o cliente de volta.
+    - nome: Oficinas e prestadores de serviço
+      problema: Orçamento que demora dias e agenda da equipe controlada no papel.
+      solucao: Orçamento pelo site e agenda da equipe em um sistema simples.
+    - nome: Distribuidoras e atacado
+      problema: Pedido de revendedor digitado à mão e tabela de preço desatualizada.
+      solucao: Catálogo para revendedores com pedido que entra direto no sistema.
+    - nome: Hotéis e pousadas
+      problema: Reserva perdida fora do horário e a mesma pergunta sobre preço e disponibilidade.
+      solucao: Atendimento 24 horas que consulta disponibilidade e encaminha a reserva.
+    - nome: Agências e consultorias
+      problema: Relatório de cliente montado à mão todo mês e proposta que demora a sair.
+      solucao: Relatórios automáticos e CRM com propostas padronizadas.
+  nota: Seu setor não está na lista? O diagnóstico funciona para qualquer empresa.
+  nota_link: Agendar diagnóstico grátis
+  ver_mais: Ver mais {n} setores
+  ver_menos: Ver menos setores
 
 como_funciona:
   titulo: Como funciona

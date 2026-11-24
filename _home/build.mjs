@@ -243,9 +243,11 @@ ${depoimentos}
 <div class="wrap">
 <h2>${txt(c.para_quem.titulo)}</h2>
 <p class="lead" style="margin-top:1rem">${txt(c.para_quem.subtitulo)}</p>
-<div class="who-grid">
+<div class="who-grid" id="setores">
 ${paraQuem}
 </div>
+${c.para_quem.itens.length > 6 && c.para_quem.ver_mais ? `<button type="button" class="who-mais" aria-controls="setores" aria-expanded="false" data-mais="${esc(c.para_quem.ver_mais.replace('{n}', c.para_quem.itens.length - 6))}" data-menos="${esc(c.para_quem.ver_menos)}">${esc(c.para_quem.ver_mais.replace('{n}', c.para_quem.itens.length - 6))}</button>` : ''}
+${c.para_quem.nota ? `<p class="who-nota">${txt(c.para_quem.nota)} <a href="#diagnostico">${esc(c.para_quem.nota_link || c.menu.botao)} →</a></p>` : ''}
 </div>
 </section>
 
@@ -327,6 +329,8 @@ t.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='A
 });
 function porEndereco(suave){var id=decodeURIComponent(location.hash.slice(1));var t=id&&document.getElementById('aba-'+id);if(t){pick(t);document.getElementById('o-que-fazemos').scrollIntoView({behavior:suave?'smooth':'instant'});}}
 porEndereco(false);window.addEventListener('hashchange',function(){porEndereco(true);});
+/* setores: no celular mostra 6 e abre o resto */
+var bm=document.querySelector('.who-mais');if(bm)bm.addEventListener('click',function(){var g=document.getElementById('setores'),ab=g.classList.toggle('aberto');bm.setAttribute('aria-expanded',ab);bm.textContent=ab?bm.dataset.menos:bm.dataset.mais;});
 /* WhatsApp: mensagem montada com o que o cliente marcou */
 var f=document.getElementById('montar'),out=document.getElementById('resumo'),link=document.getElementById('enviar');
 function itens(){return [].slice.call(f.querySelectorAll('input:checked')).map(function(i){return i.value});}
