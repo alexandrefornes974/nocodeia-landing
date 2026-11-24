@@ -164,7 +164,7 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
 (function(w,d){var foi=0;function gtm(){if(foi)return;foi=1;w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});var j=d.createElement('script');j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=${GTM}';d.head.appendChild(j);}
 function depois(){setTimeout(gtm,5000);}
 if(d.readyState==='complete')depois();else w.addEventListener('load',depois);
-['scroll','pointerdown','pointermove','keydown','touchstart'].forEach(function(e){w.addEventListener(e,gtm,{once:true,passive:true});});
+['scroll','pointerdown','keydown','touchstart'].forEach(function(e){w.addEventListener(e,gtm,{once:true,passive:true});});
 })(window,document);
 </script>
 <meta charset="utf-8">
