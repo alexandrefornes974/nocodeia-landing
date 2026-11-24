@@ -135,7 +135,7 @@ ${ex.nome ? `<div class="case"><small>${esc(c.servicos.rotulo_exemplo)}</small><
     '@context': 'https://schema.org',
     '@graph': [
       empresaLd,
-      { '@type': 'Person', '@id': `${BASE_URL}/#fundador`, name: emp.fundador.nome, sameAs: [emp.fundador.linkedin], jobTitle: l === 'pt' ? 'Fundador da Nocodeia' : l === 'en' ? 'Founder of Nocodeia' : 'Fundador de Nocodeia', worksFor: { '@id': `${BASE_URL}/#empresa` } },
+      { '@type': 'Person', '@id': `${BASE_URL}/#fundador`, name: emp.fundador.nome, jobTitle: l === 'pt' ? 'Fundador da Nocodeia' : l === 'en' ? 'Founder of Nocodeia' : 'Fundador de Nocodeia', worksFor: { '@id': `${BASE_URL}/#empresa` } },
       { '@type': 'WebSite', '@id': `${BASE_URL}/#site`, url: `${BASE_URL}/`, name: emp.nome, inLanguage: ['pt-BR', 'en', 'es'], publisher: { '@id': `${BASE_URL}/#empresa` } },
       { '@type': 'WebPage', '@id': `${BASE_URL}${inicio}#pagina`, url: `${BASE_URL}${inicio}`, name: c.meta.titulo, description: c.meta.descricao, inLanguage: L.html, isPartOf: { '@id': `${BASE_URL}/#site` }, about: { '@id': `${BASE_URL}/#empresa` } },
       { '@type': 'FAQPage', '@id': `${BASE_URL}${inicio}#faq`, inLanguage: L.html, mainEntity: c.duvidas.itens.map(q => ({ '@type': 'Question', name: q.pergunta, acceptedAnswer: { '@type': 'Answer', text: q.resposta } })) },
