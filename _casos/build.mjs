@@ -100,7 +100,7 @@ for (const nomeCaso of readdirSync(AQUI, { withFileTypes: true }).filter(d => d.
         {
           '@type': 'Article', '@id': `${url(l)}#case`, headline: m.title, description: m.description, inLanguage: cfg.lang,
           datePublished: meta.date, dateModified: meta.updated, url: url(l), mainEntityOfPage: url(l), image: `${BASE}/assets/og-image.png`,
-          author: { '@type': 'Person', '@id': `${BASE}/#fundador`, name: 'Alexandre Fornes', url: `${BASE}/#sobre`, sameAs: ['https://www.linkedin.com/in/alexandredefornes/'] },
+          author: { '@type': 'Person', '@id': `${BASE}/#fundador`, name: 'Alexandre Fornes', url: `${BASE}/#sobre` },
           publisher: { '@id': `${BASE}/#empresa` },
           about: { '@type': 'Organization', name: meta.cliente, url: meta.cliente_url },
         },
