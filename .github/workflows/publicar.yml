@@ -65,7 +65,8 @@ jobs:
 
       - name: Endereço da prévia
         if: github.ref_name != 'main'
-        run: echo "Prévia: https://${GITHUB_REF_NAME}.nocodeia.pages.dev/" >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          echo "Prévia: https://${GITHUB_REF_NAME}.nocodeia.pages.dev/" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Conferir que robôs sem JavaScript leem a página pronta
         if: github.ref_name == 'main'
