@@ -1,0 +1,215 @@
+# Página inicial em português (nocodeiaww.com/).
+# Edite os textos aqui. Na publicação, o site gera o index.html a partir deste arquivo.
+# {artigos} vira o número de artigos do blog na hora da publicação.
+
+meta:
+  titulo: Sites, agentes de IA, automações e sistemas para PMEs | Nocodeia
+  descricao: A Nocodeia cria sites, agentes de IA, automações e sistemas sob medida para pequenas e médias empresas, no ar em poucas semanas. Diagnóstico grátis de 45 minutos.
+
+menu:
+  o_que_fazemos: O que fazemos
+  casos: Casos
+  para_quem: Para quem
+  como_funciona: Como funciona
+  duvidas: Dúvidas
+  blog: Blog
+  botao: Agendar diagnóstico
+  abrir_menu: Menu
+  idioma: Idioma
+
+hero:
+  titulo: Sites, agentes de IA, automações e sistemas para pequenas e médias empresas, no ar em poucas semanas.
+  subtitulo: Você começa pelo que a empresa precisa hoje, como um site que aparece no Google e no ChatGPT, e evolui com a mesma equipe para IA no atendimento, processos automáticos e sistemas próprios.
+  botao_principal: Agendar diagnóstico grátis de 45 min
+  botao_whatsapp: Falar no WhatsApp
+  mensagem_whatsapp: Olá, vim pelo site da Nocodeia.
+  rotulo_provas: Resultados reais
+  provas:
+    - numero: 80%
+      texto: das conversas resolvidas pela IA na Amore Totale
+    - numero: 2 semanas
+      texto: da primeira conversa ao MVP do Proacta CRM
+    - numero: 210+
+      texto: colaboradores usando a Plataforma de OKR
+
+servicos:
+  titulo: O que a Nocodeia faz pela sua empresa
+  subtitulo: Quatro serviços que funcionam sozinhos ou em sequência. Toque em cada um.
+  rotulo_exemplo: Exemplo real
+  itens:
+    # o "id" é o endereço da aba: nocodeiaww.com/#automacao abre a aba Automação. Não mude depois de publicar.
+    - id: site
+      nome: Site
+      titulo: Um site que o Google e o ChatGPT recomendam
+      entregas:
+        - Site novo ou reformulado, rápido no celular e com o seu WhatsApp a um toque.
+        - SEO para o Google e GEO para ser citado por ChatGPT, Gemini e Perplexity.
+        - Blog que um agente de IA escreve toda semana, com a sua aprovação.
+        - Medição de cada contato, para você saber de onde veio cada cliente.
+      prazo: No ar em 2 a 4 semanas.
+      exemplo:
+        nome: Site do Proacta CRM
+        texto: Página do produto com o texto pronto no código, que o Google e as IAs leem na primeira visita, e cadastro para teste de 14 dias sem cartão.
+        link: https://proactacrm.com/
+        link_texto: Ver o site
+    - id: ia-no-atendimento
+      nome: IA no atendimento
+      titulo: IA que atende seus clientes no site, WhatsApp, Instagram ou Telegram
+      entregas:
+        - Responde dúvidas, consulta catálogo e preço, calcula frete e agenda horários.
+        - Capta nome e WhatsApp e passa o cliente pronto para a sua equipe.
+        - Atende 24 horas, inclusive à noite e no fim de semana.
+      prazo: No ar em 2 a 4 semanas.
+      exemplo:
+        nome: Amora, da Amore Totale
+        texto: Resolve 80% das conversas sem humano no site, Instagram e Facebook, com alerta no Telegram quando precisa da equipe.
+        link: /casos/amore-totale/
+    - id: automacao
+      nome: Automação
+      titulo: Processos que rodam sozinhos, sem planilha e sem retrabalho
+      entregas:
+        - Integra CRM, e-mail, planilhas, ERP e os sistemas que você já usa.
+        - Relatórios e alertas automáticos no seu e-mail ou WhatsApp.
+        - Conteúdo produzido por agentes de IA, com a sua aprovação antes de publicar.
+      prazo: No ar em 1 a 3 semanas.
+      exemplo:
+        nome: Blog e carrossel automáticos da Nocodeia
+        texto: "Agentes de IA pesquisam a pauta, escrevem o artigo em português, inglês e espanhol e preparam o post do LinkedIn e o carrossel do Instagram. A equipe só revisa e aprova: {artigos} artigos publicados desde setembro de 2026."
+        link: /blog/
+        link_texto: Ver o blog
+    - id: sistemas-e-produtos
+      nome: Sistemas e produtos
+      titulo: "Sistemas e produtos sob medida: CRM, ERP, portais e apps"
+      entregas:
+        - Sistema interno que substitui planilhas, com acesso por perfil.
+        - Produto próprio para vender, com login e pagamentos.
+        - Contas, código e dados no nome da sua empresa desde o primeiro dia.
+      prazo: MVP em 2 a 6 semanas; sistemas maiores em 1 a 3 meses.
+      exemplo:
+        nome: Proacta CRM
+        texto: CRM em SaaS com 28 milhões de empresas e agente de prospecção. Da primeira conversa ao MVP, 2 semanas.
+        link: ""   # vira /casos/proacta-crm/ quando o case for publicado
+
+casos:
+  titulo: Projetos de clientes que já estão no ar
+  ver_case: Ver o case
+  itens:
+    - cliente: Amore Totale
+      segmento: E-commerce
+      texto: Agente de IA de atendimento no site, Instagram e Facebook, sem depender do WhatsApp. Consulta catálogo, calcula frete e avisa a equipe pelo Telegram.
+      resultado: 80% das conversas resolvidas sem humano
+      link: /casos/amore-totale/
+    - cliente: Proacta CRM
+      segmento: Software B2B
+      texto: CRM inteligente em SaaS com base de 28 milhões de empresas e agente de prospecção no LinkedIn.
+      resultado: MVP no ar em 2 semanas
+      link: ""   # vira /casos/proacta-crm/ quando o case for publicado
+    - cliente: Plataforma de OKR
+      segmento: Consultoria multinacional de tecnologia
+      texto: "Sistema que substituiu a planilha refeita todo mês: check-in mensal, aceite formal de metas e painel por perfil."
+      resultado: 210+ colaboradores com metas no sistema
+      link: /casos/plataforma-okr/
+  depoimentos:
+    - texto: Queríamos criar um CRM inteligente em SaaS com 28 milhões de empresas ativas dentro dele, então o produto precisava ser robusto. Da primeira conversa com a Nocodeia até o MVP lançado foram 2 semanas.
+      nome: Luiz Almeida
+      cargo: Diretor de Vendas do Proacta CRM
+
+para_quem:
+  titulo: Feito para pequenas e médias empresas
+  subtitulo: Cada segmento tem um gargalo diferente. Este é o primeiro passo que costuma dar mais retorno em cada um.
+  itens:
+    - nome: Lojas e e-commerce
+      problema: Muita pergunta repetida e venda perdida fora do horário.
+      solucao: IA no atendimento e site que aparece no Google.
+    - nome: Clínicas e serviços
+      problema: Agenda feita à mão e paciente sem resposta à noite.
+      solucao: Agendamento automático e atendimento 24 horas.
+    - nome: Imobiliárias
+      problema: Lead que chega e esfria antes de o corretor responder.
+      solucao: Agente que qualifica e distribui os leads na hora.
+    - nome: Indústria e B2B
+      problema: Prospecção lenta e informação espalhada em planilhas.
+      solucao: CRM sob medida e automação comercial.
+    - nome: Restaurantes e delivery
+      problema: Pedido confuso no WhatsApp e cardápio desatualizado.
+      solucao: Site com pedido que chega completo no WhatsApp.
+
+como_funciona:
+  titulo: Como funciona
+  passos:
+    - titulo: Diagnóstico grátis
+      texto: Em 45 minutos, mapeamos o gargalo e o primeiro passo com retorno.
+    - titulo: Protótipo em 48 horas
+      texto: Você clica no fluxo antes de assinar qualquer contrato.
+    - titulo: No ar em semanas
+      texto: Prazo fechado. Contas e dados no nome da sua empresa.
+    - titulo: Evolução contínua
+      texto: Novas funções, conteúdo, ajustes de SEO e monitoramento da IA, mês a mês.
+
+sobre:
+  titulo: Você fala direto com quem constrói
+  texto: Sou o Alexandre, fundador da Nocodeia. Passei mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL, Bosch, Rocket.Chat e Neoway. Junto o rigor de projeto de multinacional com a velocidade do no-code e da IA.
+  fatos:
+    - destaque: 25+ anos
+      texto: em tecnologia
+    - destaque: Mestrado
+      texto: em Business Analytics pela Hult International Business School (EUA)
+    - destaque: Atendimento
+      texto: em português, inglês e espanhol, de Campinas (SP) para todo o Brasil
+
+duvidas:
+  titulo: Dúvidas frequentes
+  itens:
+    - pergunta: Preciso começar pelo site?
+      resposta: Não. Você começa pelo que mais trava a empresa hoje. O diagnóstico de 45 minutos indica o primeiro passo.
+    - pergunta: Quanto tempo leva?
+      resposta: De 1 a 6 semanas para sites, agentes de IA, automações e MVPs. Sistemas internos maiores levam de 1 a 3 meses.
+    - pergunta: A IA funciona no WhatsApp?
+      resposta: Sim, pelo WhatsApp oficial. Também no site, Instagram, Facebook e Telegram. Para produtos que o WhatsApp não permite, usamos os outros canais.
+    - pergunta: As contas ficam no meu nome?
+      resposta: Sim. Domínio, contas, dados e acessos ficam no nome da sua empresa desde o primeiro dia.
+    - pergunta: No-code aguenta crescer?
+      resposta: Sim. Usamos plataformas maduras e APIs padrão de mercado. Se o produto pedir código próprio, esse caminho fica desenhado desde o começo.
+
+diagnostico:
+  titulo: Agende o seu diagnóstico grátis
+  subtitulo: Marque o que você precisa e envie pelo WhatsApp. Respondemos no mesmo dia útil.
+  pergunta: O que a sua empresa precisa?
+  opcoes:
+    - rotulo: Site
+      frase: um site que apareça no Google e no ChatGPT
+    - rotulo: IA no atendimento
+      frase: IA para atender clientes
+    - rotulo: Automação
+      frase: automatizar processos
+    - rotulo: Sistema ou produto
+      frase: um sistema ou produto sob medida
+    - rotulo: Ainda não sei
+      frase: ajuda para decidir por onde começar
+  botao: Enviar pelo WhatsApp
+  mensagem_inicio: Olá! Vim pelo site da Nocodeia
+  mensagem_precisa: e preciso de
+  mensagem_fim: Quero agendar o diagnóstico grátis.
+  sem_itens: "Nenhum item marcado: você também pode só dizer olá."
+  previa: "Mensagem:"
+  email:
+    titulo: Prefere e-mail?
+    texto: Deixe o seu e-mail e respondemos no mesmo dia útil.
+    rotulo: Seu e-mail
+    exemplo: voce@empresa.com.br
+    botao: Enviar
+    enviando: Enviando…
+    ok: Recebido! Respondemos no seu e-mail no mesmo dia útil.
+    invalido: Confira o e-mail digitado.
+    falhou: "Não conseguimos registrar agora. Fale com a gente pelo WhatsApp:"
+    privacidade: Usamos o seu e-mail só para responder. Veja a
+    privacidade_link: política de privacidade
+
+rodape:
+  local: Campinas (SP) · atendimento em todo o Brasil e no exterior
+  cnpj: CNPJ
+  privacidade: Privacidade
+  privacidade_url: /privacidade/
+  blog_url: /blog/
+  casos_url: /casos/
+  direitos: Todos os direitos reservados.

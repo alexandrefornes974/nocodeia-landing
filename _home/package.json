@@ -1,0 +1,12 @@
+{
+  "name": "nocodeia-home-builder",
+  "private": true,
+  "type": "module",
+  "description": "Gera a página inicial estática (PT/EN/ES) a partir de _home/conteudo/*.yml",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "yaml": "2.6.1"
+  }
+}

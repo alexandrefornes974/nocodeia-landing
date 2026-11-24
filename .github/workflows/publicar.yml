@@ -1,4 +1,6 @@
 # Publica o site na Cloudflare Pages (projeto "nocodeia") a cada envio para o main.
+# Envio para o ramo novo-site gera só uma prévia (https://novo-site.nocodeia.pages.dev, sem indexação)
+# e não roda as conferências de produção.
 # Mesmo processo da publicação manual: cópia limpa com `git archive` (o .gitattributes
 # tira _blog/ e _casos/) e wrangler 4.40.0. Depois confere se todas as URLs do sitemap
 # respondem 200.
@@ -10,11 +12,11 @@ name: Publicar site
 
 on:
   push:
-    branches: [main]
+    branches: [main, novo-site]
   workflow_dispatch:
 
 concurrency:
-  group: publicar-site
+  group: publicar-site-${{ github.ref_name }}
   cancel-in-progress: false
 
 jobs:
@@ -37,6 +39,11 @@ jobs:
           test ! -e "$RUNNER_TEMP/site/_blog" && test ! -e "$RUNNER_TEMP/site/_casos"
           echo "Arquivos a publicar: $(find "$RUNNER_TEMP/site" -type f | wc -l)"
 
+      - name: Gerar a página inicial a partir de _home/conteudo (textos em YAML)
+        run: |
+          npm ci --prefix _home --no-audit --no-fund
+          node _home/build.mjs --saida "$RUNNER_TEMP/site"
+
       - name: Navegador para pré-renderizar
         run: |
           npm install --no-save --prefix "$RUNNER_TEMP/pw" playwright@1.63.0
@@ -53,10 +60,15 @@ jobs:
         run: |
           test -n "$CLOUDFLARE_API_TOKEN" || { echo "::error::Falta o secret CLOUDFLARE_API_TOKEN no repositório."; exit 1; }
           npx --yes wrangler@4.40.0 pages deploy "$RUNNER_TEMP/site" \
-            --project-name=nocodeia --branch=main \
+            --project-name=nocodeia --branch="$GITHUB_REF_NAME" \
             --commit-hash="$GITHUB_SHA" --commit-message="$(git log -1 --format=%s | head -c 300)"
 
+      - name: Endereço da prévia
+        if: github.ref_name != 'main'
+        run: echo "Prévia: https://${GITHUB_REF_NAME}.nocodeia.pages.dev/" >> "$GITHUB_STEP_SUMMARY"
+
       - name: Conferir que robôs sem JavaScript leem a página pronta
+        if: github.ref_name == 'main'
         run: |
           for u in https://nocodeiaww.com/ https://nocodeiaww.com/en/ https://nocodeiaww.com/es/; do
             ok=0
@@ -73,6 +85,7 @@ jobs:
           done
 
       - name: Conferir URLs do sitemap no ar
+        if: github.ref_name == 'main'
         run: |
           urls=$(grep -oE '<loc>[^<]+</loc>' sitemap.xml | sed -E 's#</?loc>##g')
           falhas=0

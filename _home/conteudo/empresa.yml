@@ -1,0 +1,22 @@
+# Dados da empresa usados em todas as versões da página inicial (rodapé e dados estruturados).
+# Campo vazio não aparece no site. Depois de preencher o CNPJ, ele entra no rodapé e no schema (taxID).
+
+nome: Nocodeia
+razao_social: ""        # pendente: o Alexandre vai informar
+cnpj: ""                # pendente: formato 00.000.000/0000-00
+email: contato@nocodeiaww.com
+telefone: "+55-11-96788-6969"
+whatsapp: "5511967886969"   # só números, com país e DDD
+cidade: Campinas
+estado: SP
+regiao_atendida: Região Metropolitana de Campinas
+fundador:
+  nome: Alexandre Fornes
+  linkedin: https://www.linkedin.com/in/alexandredefornes/
+redes:
+  - nome: LinkedIn
+    url: https://www.linkedin.com/company/nocodeiaww/
+  - nome: Instagram
+    url: https://www.instagram.com/nocodeiaww/
+  - nome: Facebook
+    url: https://www.facebook.com/profile.php?id=61595488161472

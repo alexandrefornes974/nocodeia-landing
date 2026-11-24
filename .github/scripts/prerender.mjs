@@ -62,6 +62,8 @@ for (const rel of PAGINAS) {
   const src = fonte.replace(/\r\n/g, '\n');
   const a = src.indexOf('<x-dc>');
   const b = src.indexOf('</x-dc>');
+  // Página já gerada como HTML final (nova home, _home/build.mjs): não há molde para pré-renderizar.
+  if (a < 0 && !src.includes('/support.js') && /<h1[\s>]/i.test(src)) { console.log(`${rel}: já é HTML estático, pulada`); continue; }
   if (a < 0 || b < a) { console.error(`${rel}: <x-dc> não encontrado (já pré-renderizado?)`); erros++; continue; }
   const molde = src.slice(a + '<x-dc>'.length, b);
   if (/<\/script/i.test(molde)) { console.error(`${rel}: o molde contém </script`); erros++; continue; }
