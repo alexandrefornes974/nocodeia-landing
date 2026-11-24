@@ -1109,7 +1109,7 @@ class SilktideConsentManager {
 
       // Focus the close button
       const modalCloseButton = this.preferences.querySelector('.stcm-modal-close');
-      modalCloseButton.focus();
+      modalCloseButton.focus({ preventScroll: true }); // Nocodeia 24/11/2026: foco sem rolar a página
 
       // Trigger optional onPreferencesOpen callback
       if (typeof this.config.onPreferencesOpen === 'function') {
@@ -1283,7 +1283,7 @@ class SilktideConsentManager {
 
       // Set initial focus
       if (this.config.mode !== 'wizard') {
-        acceptButton?.focus();
+        acceptButton?.focus({ preventScroll: true }); // Nocodeia 24/11/2026: foco sem rolar a página
       }
     }
 
@@ -1385,7 +1385,9 @@ class SilktideConsentManager {
         }
       });
 
-      closeButton?.focus();
+      // Nocodeia 24/11/2026: só foca o botão de fechar se a janela de preferências estiver aberta. Antes ele focava
+      // na montagem, com a janela escondida; se o CSS do kit ainda não tinha carregado, a página rolava sozinha.
+      if (this.preferences.style.display === 'flex') closeButton?.focus({ preventScroll: true });
 
       // Note: Checkboxes no longer trigger immediate consent updates
       // Users can toggle them freely, and consent is only updated when clicking "Save and Close"
