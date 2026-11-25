@@ -17,1376 +17,247 @@ w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n)
 })(window,document);
 </script>
 <script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
-<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<!-- Google Tag Manager carregado depois da página (não trava a tela). A fila de dados existe desde o início. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(w,d){var foi=0;function gtm(){if(foi)return;foi=1;w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});var j=d.createElement('script');j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-W3GSX8NZ';d.head.appendChild(j);}
+function depois(){setTimeout(gtm,5000);}
+if(d.readyState==='complete')depois();else w.addEventListener('load',depois);
+['scroll','pointerdown','keydown','touchstart'].forEach(function(e){w.addEventListener(e,gtm,{once:true,passive:true});});
+})(window,document);
 </script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
-<!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Automation, AI agents, MVPs and internal tools built with no-code and AI. Free 45-minute diagnosis, fixed price and deadline.">
+<title>Websites, AI agents, automation and custom software for small and mid-sized businesses | Nocodeia</title>
+<meta name="description" content="Nocodeia builds websites, AI agents, automation and custom software for small and mid-sized businesses, live in a few weeks. Free 45-minute diagnosis.">
 <link rel="canonical" href="https://nocodeiaww.com/en/">
 <link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/">
 <link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/">
 <link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/">
 <link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" href="/assets/icon.png">
-<meta name="theme-color" content="#121316">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0E0F14">
 <meta property="og:type" content="website">
-<meta property="og:title" content="MVPs, Automation and AI Agents with No-Code | Nocodeia">
-<meta property="og:description" content="Automation, AI agents, MVPs and internal tools built with no-code and AI. Free 45-minute diagnosis, fixed price and deadline.">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Websites, AI agents, automation and custom software for small and mid-sized businesses | Nocodeia">
+<meta property="og:description" content="Nocodeia builds websites, AI agents, automation and custom software for small and mid-sized businesses, live in a few weeks. Free 45-minute diagnosis.">
 <meta property="og:url" content="https://nocodeiaww.com/en/">
 <meta property="og:image" content="https://nocodeiaww.com/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-
-<title>MVPs, Automation and AI Agents with No-Code | Nocodeia</title>
+<link rel="preload" href="/assets/fontes/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Space Grotesk";font-style:normal;font-weight:300 700;font-display:swap;src:url(/assets/fontes/space-grotesk.woff2) format("woff2")}:root{--bg:#0E0F14;--surface:#161821;--raise:#1D2030;--line:#2A2D3A;--text:#F2F3F7;--muted:#A6ABBC;--blue:#2B4BFF;--violet:#8A2BE2;--zap:#25D366;--grad:linear-gradient(100deg,var(--blue),var(--violet));--display:"Space Grotesk",system-ui,sans-serif;--body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--wrap:min(1160px,100% - 2.5rem);}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:5rem}body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}a{color:inherit}img{display:block;max-width:100%;height:auto}:focus-visible{outline:3px solid #8FA2FF;outline-offset:3px;border-radius:6px}.wrap{width:var(--wrap);margin-inline:auto}.pular{position:absolute;left:-999px;top:0;background:var(--text);color:var(--bg);padding:.6rem 1rem;z-index:30}.pular:focus{left:1rem}h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;margin:0}h2{font-size:clamp(1.75rem,3.4vw,2.6rem);line-height:1.12;max-width:22ch}h3{font-size:1.2rem;line-height:1.25}p{margin:0}.lead{color:var(--muted);max-width:60ch}section{padding-block:clamp(4rem,9vw,7rem)}.adiada{content-visibility:auto;contain-intrinsic-size:auto 900px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:.75rem 1.35rem;border-radius:12px;font:600 1rem/1.2 var(--body);text-decoration:none;border:0;cursor:pointer}.btn-main{background:var(--grad);color:#fff}.btn-zap{background:transparent;color:var(--text);border:1px solid var(--line)}.btn-zap svg{width:1.15rem;height:1.15rem;fill:var(--zap)}.topo{position:sticky;top:0;z-index:10;background:rgba(14,15,20,.97);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:4.25rem}.nav .logo img{width:120px;height:44px}.menu{display:flex;align-items:center;gap:1.4rem}.menu ul{display:flex;gap:1.3rem;list-style:none;margin:0;padding:0;font-size:.95rem;color:var(--muted)}.menu ul a{text-decoration:none}.menu ul a:hover{color:var(--text)}.idiomas{display:flex;gap:.15rem;font-size:.8rem;font-weight:600}.idiomas a{min-width:2.2rem;min-height:2.2rem;display:inline-flex;align-items:center;justify-content:center;border-radius:7px;text-decoration:none;color:var(--muted)}.idiomas a[aria-current]{color:var(--text);background:var(--line)}.nav .btn{min-height:2.6rem;padding:.55rem 1rem;font-size:.92rem}.burger{display:none;position:relative}.burger summary{list-style:none;cursor:pointer;min-width:2.75rem;min-height:2.75rem;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px}.burger summary::-webkit-details-marker{display:none}.burger summary svg{width:1.3rem;height:1.3rem;stroke:var(--text)}.burger .painel{position:absolute;right:0;top:calc(100% + .5rem);width:min(18rem,calc(100vw - 2rem));background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.6rem;display:grid;gap:.1rem;box-shadow:0 12px 30px rgba(0,0,0,.45)}.burger .painel a{padding:.7rem .8rem;border-radius:8px;text-decoration:none}.burger .painel a:hover{background:var(--raise)}.burger .idiomas{padding:.4rem .5rem 0;border-top:1px solid var(--line);margin-top:.3rem}@media (max-width:1060px){.menu ul{display:none}}@media (max-width:760px){.menu>.idiomas,.menu>.btn-cta{display:none}.burger{display:block}}.hero{padding-block:clamp(3rem,7vw,5.5rem) 0}.hero h1{font-size:clamp(2.15rem,5.6vw,4.4rem);line-height:1.04;max-width:17ch}.hero .lead{margin-top:1.4rem;font-size:clamp(1.05rem,1.6vw,1.25rem)}.hero-cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}.proof{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin-top:1.6rem;color:var(--muted);font-size:.92rem;list-style:none;padding:0}.proof b{color:var(--text);font-weight:600}.trail{margin-top:clamp(3rem,6vw,4.5rem);border:1px solid var(--line);border-radius:20px;background:var(--surface);overflow:hidden}.trail-head{padding:1.4rem 1.5rem 0}.trail-head h2{font-size:clamp(1.3rem,2.4vw,1.7rem);max-width:none}.trail-head p{color:var(--muted);font-size:.95rem;margin-top:.35rem}.steps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:1.25rem;border-top:1px solid var(--line)}.step{all:unset;cursor:pointer;padding:1.1rem 1.25rem 1.2rem;border-right:1px solid var(--line);position:relative;display:grid;gap:.25rem}.step:last-child{border-right:0}.step .n{font:700 .85rem var(--display);color:var(--muted)}.step .t{font:700 1.05rem/1.25 var(--display)}.step::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}.step[aria-selected="true"]{background:var(--raise)}.step[aria-selected="true"] .n{color:#AFA0FF}.step[aria-selected="true"]::after{transform:scaleX(1)}.step:focus-visible{outline:3px solid #8FA2FF;outline-offset:-3px}.panel{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;padding:1.75rem 1.5rem 2rem;border-top:1px solid var(--line)}.panel[hidden]{display:none}.panel h3{font-size:clamp(1.35rem,2.4vw,1.75rem)}.panel ul{margin:1rem 0 0;padding-left:1.15rem;color:var(--muted)}.panel li{margin:.3rem 0}.case{border-left:3px solid var(--violet);padding:.2rem 0 .2rem 1rem;align-self:start}.case small{display:block;color:var(--muted);font-size:.85rem}.case strong{display:block;font:700 1.1rem/1.3 var(--display);margin:.3rem 0 .4rem}.case p{color:var(--muted);font-size:.95rem}.case a{display:inline-block;margin-top:.6rem;font-size:.92rem;color:#B9A6FF}.panel .time{margin-top:1rem;font-size:.92rem;color:var(--text)}@media (max-width:760px){.steps{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line)}.panel{grid-template-columns:1fr}}.cases{display:grid;margin-top:2.5rem;border-top:1px solid var(--line)}.row{display:grid;grid-template-columns:14rem 1fr 15rem;gap:1.5rem;padding:1.6rem 0;border-bottom:1px solid var(--line);align-items:start}.row .who{font:700 1.1rem var(--display)}.row .who small{display:block;font:400 .88rem var(--body);color:var(--muted);margin-top:.2rem}.row .what{color:var(--muted)}.row .res{font:700 1.05rem/1.35 var(--display)}.row .res a{display:block;margin-top:.5rem;font:500 .92rem var(--body);color:#B9A6FF}@media (max-width:820px){.row{grid-template-columns:1fr;gap:.5rem}}blockquote{margin:2.5rem 0 0;padding:1.5rem 1.6rem;border-radius:16px;background:var(--surface);border:1px solid var(--line);max-width:62rem}blockquote p{font-size:1.1rem}blockquote footer{margin-top:.9rem;color:var(--muted);font-size:.92rem}.who-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:2.5rem}.who-grid div{background:var(--bg);padding:1.4rem}.who-grid h3{font-size:1.08rem}.who-grid p{color:var(--muted);font-size:.95rem;margin-top:.5rem}.who-grid p+p{color:var(--text)}.who-nota{margin-top:1.5rem;color:var(--muted)}.who-nota a{color:#B9A6FF;white-space:nowrap}.who-mais{display:none}@media (max-width:560px){.who-grid div{padding:1.1rem 1.2rem}.who-grid p{font-size:.92rem;margin-top:.35rem}.who-grid:not(.aberto)>div:nth-child(n+7){display:none}.who-mais{display:flex;width:100%;align-items:center;justify-content:center;margin-top:.75rem;min-height:2.9rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);font:600 .95rem var(--body);cursor:pointer}}.process{counter-reset:p;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.5rem;list-style:none;padding:0}.process li{counter-increment:p;border-top:2px solid var(--line);padding-top:1rem}.process li::before{content:counter(p);font:700 2rem var(--display);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.process h3{margin-top:.4rem}.process p{color:var(--muted);font-size:.95rem;margin-top:.45rem}@media (max-width:820px){.process{grid-template-columns:1fr 1fr}}@media (max-width:480px){.process{grid-template-columns:1fr}}.about{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}.about .lead{margin-top:1.2rem}.facts{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}.facts li{padding:1rem 1.2rem;border:1px solid var(--line);border-radius:12px;color:var(--muted)}.facts b{color:var(--text);font-family:var(--display)}@media (max-width:820px){.about{grid-template-columns:1fr;gap:2rem}}.faq{margin-top:2rem;max-width:52rem}details.q{border-bottom:1px solid var(--line);padding:1.1rem 0}details.q summary{cursor:pointer;font:600 1.08rem var(--display);list-style:none;display:flex;justify-content:space-between;gap:1rem}details.q summary::-webkit-details-marker{display:none}details.q summary::after{content:"+";color:var(--muted);font-size:1.4rem;line-height:1}details.q[open] summary::after{content:"–"}details.q p{color:var(--muted);margin-top:.7rem;max-width:65ch}.build{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:clamp(1.5rem,4vw,3rem)}.build .lead{margin-top:.8rem}fieldset{border:0;margin:1.75rem 0 0;padding:0;min-width:0}legend{font-weight:600;margin-bottom:.8rem;padding:0}.chips{display:flex;flex-wrap:wrap;gap:.6rem}.chips label{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:.6rem .95rem;border:1px solid var(--line);border-radius:999px;cursor:pointer;font-size:.95rem;user-select:none}.chips input{accent-color:var(--violet);width:1rem;height:1rem}.chips label.marcado{border-color:var(--violet);background:rgba(138,43,226,.14)}.build .btn-main{margin-top:1.75rem}.build output{display:block;margin-top:.9rem;color:var(--muted);font-size:.92rem}.por-email{margin-top:2rem;padding-top:1.75rem;border-top:1px solid var(--line);max-width:36rem}.por-email h3{font-size:1.1rem}.por-email>p{color:var(--muted);font-size:.95rem;margin-top:.35rem}.linha-email{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}.linha-email input[type=email]{flex:1 1 14rem;min-height:3rem;padding:.7rem .9rem;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit}.linha-email input[type=email]::placeholder{color:#7D8294}.linha-email .btn{margin:0}.por-email .aviso{font-size:.85rem;color:var(--muted);margin-top:.7rem}.por-email .retorno{margin-top:.7rem;font-size:.95rem}.por-email .retorno[data-tipo=erro]{color:#FFB4B4}.por-email .retorno[data-tipo=ok]{color:#9BE7B5}.armadilha{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}footer.site{border-top:1px solid var(--line);padding:2.5rem 0 5.5rem;color:var(--muted);font-size:.92rem}footer.site .cols{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem}footer.site a{text-decoration:none}footer.site a:hover{color:var(--text)}footer.site nav{display:flex;flex-wrap:wrap;gap:.4rem 1rem}.float-zap{position:fixed;right:1rem;bottom:1rem;width:3.4rem;height:3.4rem;border-radius:50%;background:var(--zap);display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.35);z-index:20}.float-zap svg{width:1.7rem;height:1.7rem;fill:#fff}@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}</style>
 <script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "ProfessionalService",
-   "@id": "https://nocodeiaww.com/#empresa",
-   "name": "Nocodeia",
-   "sameAs": [
-    "https://www.linkedin.com/company/nocodeiaww/",
-    "https://www.instagram.com/nocodeiaww/",
-    "https://www.facebook.com/profile.php?id=61595488161472"
-   ],
-   "alternateName": "Nocodeia Worldwide",
-   "url": "https://nocodeiaww.com/",
-   "logo": "https://nocodeiaww.com/assets/icon.png",
-   "image": "https://nocodeiaww.com/assets/og-image.png",
-   "description": "Digital products built with no-code and AI, live in 15 days: process automation, AI agents, MVPs, internal systems, SEO, GEO and automated blogs.",
-   "email": "contato@nocodeiaww.com",
-   "telephone": "+55-11-96788-6969",
-   "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Campinas",
-    "addressRegion": "SP",
-    "addressCountry": "BR"
-   },
-   "areaServed": [
-    "BR",
-    "Worldwide"
-   ],
-   "knowsLanguage": [
-    "pt-BR",
-    "en",
-    "es"
-   ],
-   "founder": {
-    "@id": "https://nocodeiaww.com/#fundador"
-   },
-   "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Serviços Nocodeia",
-    "itemListElement": [
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Automation X-ray",
-       "description": "Map of automatable tasks, estimated hours saved and an action plan ranked by return. Typical timeline: 1 week.",
-       "provider": {
-        "@id": "https://nocodeiaww.com/#empresa"
-       }
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Process automation",
-       "description": "Flows between CRM, email, spreadsheets and systems, with automatic alerts and reports. Typical timeline: 1 to 3 weeks.",
-       "provider": {
-        "@id": "https://nocodeiaww.com/#empresa"
-       }
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "AI agents",
-       "description": "Customer service agents on WhatsApp or your site, prospecting and follow-up agents, and content agents. Typical timeline: 2 to 4 weeks.",
-       "provider": {
-        "@id": "https://nocodeiaww.com/#empresa"
-       }
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "A website Google and AI recommend (SEO, GEO, website rebuild and automated blog)",
-       "description": "Fast rebuilt website, optimized for Google (SEO) and ready to be found and cited by ChatGPT, Gemini and Perplexity (GEO), with a blog published weekly by an AI agent. Typical timeline: 2 to 4 weeks + monthly blog and report.",
-       "provider": {
-        "@id": "https://nocodeiaww.com/#empresa"
-       }
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Product MVP",
-       "description": "Working app or platform with login and payments, ready for real users and investors. Typical timeline: 2 to 6 weeks.",
-       "provider": {
-        "@id": "https://nocodeiaww.com/#empresa"
-       }
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Internal system",
-       "description": "Portal, management dashboard or operations app that replaces spreadsheets, with role-based access and audit trail. Typical timeline: 1 to 3 months.",
-       "provider": {
-        "@id": "https://nocodeiaww.com/#empresa"
-       }
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Nocodeia ongoing",
-       "description": "Monthly plan with new features, blog posts, SEO tuning, agent monitoring and priority support.",
-       "provider": {
-        "@id": "https://nocodeiaww.com/#empresa"
-       }
-      }
-     }
-    ]
-   }
-  },
-  {
-   "@type": "Person",
-   "@id": "https://nocodeiaww.com/#fundador",
-   "name": "Alexandre Fornes",
-   "jobTitle": "Founder of Nocodeia",
-   "description": "Founder of Nocodeia, with 25+ years in tech at companies like IBM, Xerox, DHL, Bosch, Rocket.Chat and Neoway.",
-   "worksFor": {
-    "@id": "https://nocodeiaww.com/#empresa"
-   }
-  },
-  {
-   "@type": "WebSite",
-   "@id": "https://nocodeiaww.com/#site",
-   "url": "https://nocodeiaww.com/",
-   "name": "Nocodeia",
-   "inLanguage": [
-    "pt-BR",
-    "en",
-    "es"
-   ],
-   "publisher": {
-    "@id": "https://nocodeiaww.com/#empresa"
-   }
-  },
-  {
-   "@type": "FAQPage",
-   "@id": "https://nocodeiaww.com/en/#faq",
-   "inLanguage": "en",
-   "mainEntity": [
-    {
-     "@type": "Question",
-     "name": "Can no-code scale?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes. I use mature platforms and industry-standard APIs. If the product ever needs custom code, that path is mapped out from day one."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "What about data security?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Access control, encrypted data and LGPD/GDPR compliance from day one. Not an extra. Standard."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Do I own the product?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes. Accounts, data and flows in your name. You understand and control every screen."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "How much does it cost?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "It depends on scope. You leave the diagnosis with a fixed price and a fixed deadline."
-     }
-    }
-   ]
-  }
- ]
-}
+{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://nocodeiaww.com/#empresa","name":"Nocodeia","alternateName":"Nocodeia Worldwide","url":"https://nocodeiaww.com/","logo":"https://nocodeiaww.com/assets/icon.png","image":"https://nocodeiaww.com/assets/og-image.png","description":"Nocodeia builds websites, AI agents, automation and custom software for small and mid-sized businesses, live in a few weeks. Free 45-minute diagnosis.","email":"contato@nocodeiaww.com","telephone":"+55-11-96788-6969","address":{"@type":"PostalAddress","addressLocality":"Campinas","addressRegion":"SP","addressCountry":"BR"},"areaServed":[{"@type":"City","name":"Campinas"},{"@type":"AdministrativeArea","name":"Região Metropolitana de Campinas"},{"@type":"Country","name":"Brasil"}],"knowsLanguage":["pt-BR","en","es"],"founder":{"@id":"https://nocodeiaww.com/#fundador"},"sameAs":["https://www.linkedin.com/company/nocodeiaww/","https://www.instagram.com/nocodeiaww/","https://www.facebook.com/profile.php?id=61595488161472"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"What Nocodeia does for your business","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"A website that Google and ChatGPT recommend","url":"https://nocodeiaww.com/en/#website","description":"New or redesigned website, fast on mobile, with your WhatsApp one tap away. SEO for Google and GEO to be cited by ChatGPT, Gemini and Perplexity. A blog written every week by an AI agent, with your approval. Tracking for every contact, so you know where each customer came from. Live in 2 to 4 weeks.","provider":{"@id":"https://nocodeiaww.com/#empresa"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI that serves your customers on your website, WhatsApp, Instagram or Telegram","url":"https://nocodeiaww.com/en/#ai-customer-service","description":"Answers questions, checks catalog and prices, calculates shipping and books appointments. Captures name and phone number and hands a ready customer to your team. Works 24 hours a day, including nights and weekends. Live in 2 to 4 weeks.","provider":{"@id":"https://nocodeiaww.com/#empresa"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Processes that run on their own, with no spreadsheets and no rework","url":"https://nocodeiaww.com/en/#automation","description":"Connects your CRM, email, spreadsheets, ERP and the systems you already use. Automatic reports and alerts in your email or WhatsApp. Content produced by AI agents, with your approval before publishing. Live in 1 to 3 weeks.","provider":{"@id":"https://nocodeiaww.com/#empresa"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Custom software and products: CRM, ERP, portals and apps","url":"https://nocodeiaww.com/en/#systems-and-products","description":"Internal system that replaces spreadsheets, with role-based access. Your own product to sell, with login and payments. Accounts, code and data in your company's name from day one. MVP in 2 to 6 weeks; larger systems in 1 to 3 months.","provider":{"@id":"https://nocodeiaww.com/#empresa"}}}]}},{"@type":"Person","@id":"https://nocodeiaww.com/#fundador","name":"Alexandre Fornes","jobTitle":"Founder of Nocodeia","worksFor":{"@id":"https://nocodeiaww.com/#empresa"}},{"@type":"WebSite","@id":"https://nocodeiaww.com/#site","url":"https://nocodeiaww.com/","name":"Nocodeia","inLanguage":["pt-BR","en","es"],"publisher":{"@id":"https://nocodeiaww.com/#empresa"}},{"@type":"WebPage","@id":"https://nocodeiaww.com/en/#pagina","url":"https://nocodeiaww.com/en/","name":"Websites, AI agents, automation and custom software for small and mid-sized businesses | Nocodeia","description":"Nocodeia builds websites, AI agents, automation and custom software for small and mid-sized businesses, live in a few weeks. Free 45-minute diagnosis.","inLanguage":"en","isPartOf":{"@id":"https://nocodeiaww.com/#site"},"about":{"@id":"https://nocodeiaww.com/#empresa"}},{"@type":"FAQPage","@id":"https://nocodeiaww.com/en/#faq","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Do I need to start with a website?","acceptedAnswer":{"@type":"Answer","text":"No. You start with whatever is holding your business back the most today. The 45-minute diagnosis points to the first step."}},{"@type":"Question","name":"How long does it take?","acceptedAnswer":{"@type":"Answer","text":"1 to 6 weeks for websites, AI agents, automation and MVPs. Larger internal systems take 1 to 3 months."}},{"@type":"Question","name":"Does the AI work on WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Yes, through the official WhatsApp API. It also works on your website, Instagram, Facebook and Telegram. For products WhatsApp doesn't allow, we use the other channels."}},{"@type":"Question","name":"Are the accounts in my name?","acceptedAnswer":{"@type":"Answer","text":"Yes. Domain, accounts, data and access stay in your company's name from day one."}},{"@type":"Question","name":"Can no-code scale?","acceptedAnswer":{"@type":"Answer","text":"Yes. We use mature platforms and industry-standard APIs. If the product needs custom code, that path is designed from the start."}}]}]}
 </script>
-<script src="/support.js"></script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<x-dc>
-<helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#121316;color:#FFFFFF;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:#FFFFFF}a:hover{color:#C9CCD4}
-*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
-input::placeholder{color:#7C818D}
-/* Antes do JS montar a página, os moldes de erro/sucesso/falha do formulário não aparecem. Depois de montar, esses blocos condicionais somem do DOM. */
-sc-if[value="{{erro}}"],sc-if[value="{{inscrito}}"],sc-if[value="{{falhou}}"]{display:none}
-details summary{list-style:none;cursor:pointer}
-details summary::-webkit-details-marker{display:none}
-@keyframes ncGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-@keyframes ncEntra{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-@keyframes ncPisca{50%{opacity:0}}
-@keyframes ncScan{from{top:26px}to{top:334px}}
-@keyframes ncPulso{0%,100%{box-shadow:0 0 0 0 rgba(90,57,240,.55)}50%{box-shadow:0 0 0 6px rgba(90,57,240,0)}}
-@media (max-width: 760px){
-.nc-navlink{display:none !important}
-.nc-lang{display:none !important}
-.nc-burger{display:block !important}
-.nc-logo-full{display:none !important}
-.nc-logo-icon{display:block !important}
-.nc-hide-sm{display:none !important}
-.nc-stats{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
-.nc-stats > div{border-right:0 !important;border-bottom:1px solid #2A2D35}
-.nc-tag{font-size:11px !important;padding:5px 9px !important}
-.nc-sobrepos{position:static !important;width:100% !important;margin-top:12px}
-.nc-sobrepos-wrap{padding-bottom:0 !important}
-.nc-sobrepos-main{width:100% !important}
-}
-[id]{scroll-margin-top:88px}
-@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
-</style>
-</helmet>
-
-<div style="width: 100%; min-height: 9400px; background: #121316; display: flex; flex-direction: column">
-
-  <!-- NAV -->
-  <header style="position: sticky; top: 0; z-index: 10; background: rgba(18,19,22,0.92); border-bottom: 1px solid #23262D; backdrop-filter: blur(10px)">
-    <nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 14px clamp(20px, 5vw, 48px); display: flex; align-items: center; justify-content: space-between; gap: 24px">
-      <a href="#topo" aria-label="Nocodeia, back to top" style="display: flex">
-        <img width="240" height="88" class="nc-logo-full" src="/assets/logo_h.webp" alt="nocodeia worldwide" style="height: 44px; width: auto; display: block">
-        <img width="200" height="211" class="nc-logo-icon" src="/assets/icon.webp" alt="nocodeia" style="height: 40px; width: auto; display: none">
-      </a>
-      <div style="display: flex; align-items: center; gap: clamp(16px, 3vw, 32px); flex-wrap: wrap; justify-content: flex-end">
-        <a class="nc-navlink" href="#servicos" style="font-size: 15px; text-decoration: none; color: #C9CCD4">Services</a>
-        <a class="nc-navlink" href="#projetos" style="font-size: 15px; text-decoration: none; color: #C9CCD4">Projects</a>
-        <a class="nc-navlink" href="#sobre" style="font-size: 15px; text-decoration: none; color: #C9CCD4">About</a>
-        <a class="nc-navlink" href="#como" style="font-size: 15px; text-decoration: none; color: #C9CCD4">How it works</a>
-        <a class="nc-navlink" href="/en/cases/" style="font-size: 15px; text-decoration: none; color: #C9CCD4">Cases</a>
-        <a class="nc-navlink" href="/en/blog/" style="font-size: 15px; text-decoration: none; color: #C9CCD4">Blog</a>
-        <div class="nc-lang" role="group" aria-label="Language" style="display: flex; gap: 2px; padding: 3px; border: 1px solid #343843; border-radius: 10px"><a href="/" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; text-decoration: none; color: #A7ABB6; border-radius: 7px">PT</a><a href="/en/" aria-current="page" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; text-decoration: none; color: #FFFFFF; background: #2A2D35; border-radius: 7px">EN</a><a href="/es/" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; text-decoration: none; color: #A7ABB6; border-radius: 7px">ES</a></div>
-        <a href="#vaga" style="font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; background: linear-gradient(45deg, #0047FF, #8A2BE2); padding: 12px 18px; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Get a spot</a>
-        <details class="nc-burger" style="display: none">
-          <summary aria-label="Open menu" style="min-width: 44px; min-height: 44px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid #343843; border-radius: 10px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></summary>
-          <div class="nc-burger-painel" style="position: absolute; left: 0; right: 0; top: 100%; background: #121316; border-bottom: 1px solid #23262D; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55); padding: 4px clamp(20px, 5vw, 48px) 22px; display: flex; flex-direction: column"><a href="#servicos" style="display: block; padding: 14px 0; font-size: 18px; font-weight: 500; text-decoration: none; color: #FFFFFF; border-bottom: 1px solid #23262D">Services</a><a href="#projetos" style="display: block; padding: 14px 0; font-size: 18px; font-weight: 500; text-decoration: none; color: #FFFFFF; border-bottom: 1px solid #23262D">Projects</a><a href="#sobre" style="display: block; padding: 14px 0; font-size: 18px; font-weight: 500; text-decoration: none; color: #FFFFFF; border-bottom: 1px solid #23262D">About</a><a href="#como" style="display: block; padding: 14px 0; font-size: 18px; font-weight: 500; text-decoration: none; color: #FFFFFF; border-bottom: 1px solid #23262D">How it works</a><a href="/en/cases/" style="display: block; padding: 14px 0; font-size: 18px; font-weight: 500; text-decoration: none; color: #FFFFFF; border-bottom: 1px solid #23262D">Cases</a><a href="/en/blog/" style="display: block; padding: 14px 0; font-size: 18px; font-weight: 500; text-decoration: none; color: #FFFFFF; border-bottom: 1px solid #23262D">Blog</a><div role="group" aria-label="Language" style="align-self: flex-start; margin-top: 18px; display: flex; gap: 2px; padding: 3px; border: 1px solid #343843; border-radius: 10px"><a href="/" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; text-decoration: none; color: #A7ABB6; border-radius: 7px">PT</a><a href="/en/" aria-current="page" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; text-decoration: none; color: #FFFFFF; background: #2A2D35; border-radius: 7px">EN</a><a href="/es/" style="min-width: 40px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; text-decoration: none; color: #A7ABB6; border-radius: 7px">ES</a></div></div>
-        </details>
-      </div>
-    </nav>
-  </header>
-
-  
-
-  <!-- RODAPÉ COM LOGO EM TOTEM -->
-  <main id="topo" style="display: flex; flex-direction: column">
-
-    <!-- HERO -->
-    <section style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: clamp(56px, 9vw, 120px) clamp(20px, 5vw, 48px) 48px; display: flex; flex-direction: column; gap: 32px">
-      <p style="margin: 0; font-size: 16px; color: #A7ABB6; display: flex; align-items: center; gap: 10px">
-        <span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #8A2BE2; box-shadow: 0 0 12px #8A2BE2; display: inline-block"></span>
-        3 build spots open this month.
-      </p>
-      <h1 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(46px, 8vw, 112px); line-height: 0.95; letter-spacing: -0.035em; max-width: 12ch">Ideas in a drawer don't make money.</h1>
-      <p style="margin: 0; font-size: clamp(18px, 2vw, 22px); line-height: 1.5; color: #C9CCD4; max-width: 38ch">I build your website, your product or your AI agent with no-code and AI and ship it in weeks, not months. You test with real customers while the competition is still arguing about scope.</p>
-
-      <sc-if value="{{naoInscrito}}" hint-placeholder-val="{{ true }}">
-        <div style="display: flex; flex-direction: column; gap: 10px; max-width: 560px">
-          <label for="email-topo" style="font-size: 15px; font-weight: 500; color: #C9CCD4">Your best email</label>
-          <form data-origem="topo" novalidate onSubmit="{{entrar}}" style="display: flex; gap: 10px; flex-wrap: wrap">
-            <input id="email-topo" type="email" autocomplete="email" placeholder="you@company.com" name="email" required onChange="{{onEmail}}" style="flex: 1 1 260px; min-height: 56px; box-sizing: border-box; padding: 0 18px; font-size: 17px; font-family: Inter, sans-serif; color: #FFFFFF; background: #1B1D22; border: 1px solid #343843; border-radius: 12px">
-            <button type="submit" style="flex: 0 0 auto; min-height: 56px; padding: 0 26px; font-size: 17px; font-weight: 600; font-family: Inter, sans-serif; color: #FFFFFF; background: linear-gradient(45deg, #0047FF, #8A2BE2); border: 0; border-radius: 12px; cursor: pointer">I want my spot</button>
-          </form>
-          <sc-if value="{{erro}}" hint-placeholder-val="{{ false }}">
-            <p role="alert" style="margin: 0; font-size: 15px; color: #FF9AA8">Enter a valid email, like <!--email_off-->you@company.com<!--/email_off--></p>
-          </sc-if>
-          <sc-if value="{{falhou}}" hint-placeholder-val="{{ false }}">
-            <p role="alert" style="margin: 0; font-size: 15px; color: #FF9AA8">I couldn't save your email just now. No problem: message me directly on <a href="{{linkWhatsDireto}}" target="_blank" rel="noopener" style="font-weight: 600">WhatsApp</a>.</p>
-          </sc-if>
-          <p style="margin: 0; font-size: 14px; color: #A7ABB6">First call is free, 45 minutes. No spam, no sales fluff. By submitting, you agree to the <a href="/privacidade/" style="color: inherit">Privacy Policy</a>.</p>
-        </div>
-      </sc-if>
-      <sc-if value="{{inscrito}}" hint-placeholder-val="{{ false }}">
-        <div style="max-width: 560px; padding: 20px 22px; background: #1B1D22; border: 1px solid #343843; border-radius: 14px; font-size: 17px; line-height: 1.5">Done, you're in the {{mes}} queue. I'll reply within 24 hours with a time slot. <a href="#vaga" style="font-weight: 600">Want to skip the line?</a> <a href="{{linkWhatsDireto}}" target="_blank" rel="noopener" style="font-weight: 600">Want to move faster? Message me on WhatsApp now</a></div>
-      </sc-if>
-    </section>
-
-    <!-- A RÉGUA DO TEMPO -->
-    <section aria-labelledby="regua-titulo" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 24px clamp(20px, 5vw, 48px) clamp(64px, 9vw, 120px)">
-      <div style="border-top: 1px solid #23262D; padding-top: 40px; display: flex; flex-direction: column; gap: 28px">
-        <h2 id="regua-titulo" style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(22px, 2.6vw, 30px); letter-spacing: -0.01em">Same idea, two clocks.</h2>
-
-        <div style="display: flex; flex-direction: column; gap: 10px">
-          <div style="display: flex; justify-content: space-between; gap: 16px; font-size: 16px; color: #A7ABB6">
-            <span>Traditional dev shop</span>
-            <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; color: #C9CCD4">8 months</span>
-          </div>
-          <div style="height: 44px; width: 100%; background: repeating-linear-gradient(90deg, #2A2D35 0 calc(12.5% - 3px), #121316 calc(12.5% - 3px) 12.5%); border-radius: 8px; transform-origin: left; animation: ncGrow 1.4s cubic-bezier(.2,.7,.2,1) both"></div>
-        </div>
-
-        <div style="display: flex; flex-direction: column; gap: 10px">
-          <div style="display: flex; justify-content: space-between; gap: 16px; font-size: 16px; color: #FFFFFF">
-            <span style="font-weight: 600">Nocodeia</span>
-            <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700">15 days</span>
-          </div>
-          <div style="height: 44px; width: 100%; display: flex; align-items: center; gap: 16px">
-            <div style="height: 44px; width: {{barra}}; min-width: 28px; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 8px; box-shadow: 0 0 24px rgba(138,43,226,0.55); transform-origin: left; animation: ncGrow 0.5s 1.5s cubic-bezier(.2,.7,.2,1) both"></div>
-            <span style="font-size: 16px; color: #C9CCD4">Live, selling and collecting data.</span>
-          </div>
-        </div>
-
-        <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(26px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.02em; max-width: 22ch">Your product reaches customers 16 times faster.</p>
-      </div>
-    </section>
-
-    <!-- CALCULADORA -->
-    <section aria-labelledby="calc-titulo" style="background: #17181C; border-top: 1px solid #23262D; border-bottom: 1px solid #23262D">
-      <div style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 9vw, 112px) clamp(20px, 5vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: clamp(40px, 6vw, 80px); align-items: center">
-        <div style="display: flex; flex-direction: column; gap: 28px">
-          <h2 id="calc-titulo" style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(34px, 4.5vw, 56px); line-height: 1; letter-spacing: -0.03em">What does waiting cost you?</h2>
-          <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #C9CCD4; max-width: 40ch">Play with the numbers. See how much money you leave on the table while your product doesn't exist.</p>
-
-          <div style="display: flex; flex-direction: column; gap: 10px">
-            <label for="receita" style="font-size: 15px; font-weight: 500; color: #C9CCD4">Expected monthly revenue (US$)</label>
-            <input id="receita" type="number" min="0" step="1000" inputmode="numeric" value="{{receita}}" onChange="{{onReceita}}" style="min-height: 56px; box-sizing: border-box; padding: 0 18px; font-size: 20px; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; color: #FFFFFF; background: #121316; border: 1px solid #343843; border-radius: 12px; max-width: 320px">
-          </div>
-
-          <div style="display: flex; flex-direction: column; gap: 10px">
-            <label for="meses" style="font-size: 15px; font-weight: 500; color: #C9CCD4; display: flex; justify-content: space-between; max-width: 420px">
-              <span>Months to launch the traditional way</span>
-              <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; color: #FFFFFF">{{meses}}</span>
-            </label>
-            <input id="meses" type="range" min="1" max="12" step="1" value="{{meses}}" onChange="{{onMeses}}" style="width: 100%; max-width: 420px; min-height: 44px; accent-color: #0047FF">
-          </div>
-        </div>
-
-        <div aria-live="polite" style="padding: clamp(28px, 4vw, 48px); background: #121316; border: 1px solid #2A2D35; border-radius: 20px; display: flex; flex-direction: column; gap: 18px">
-          <p style="margin: 0; font-size: 17px; color: #A7ABB6">Waiting {{meses}} months, you miss out on</p>
-          <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 76px); line-height: 1; letter-spacing: -0.03em">{{perdido}}</p>
-          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #C9CCD4">Live in 15 days, you get back <strong style="color: #FFFFFF">{{recuperado}}</strong> of that.</p>
-          <a href="#vaga" style="margin-top: 8px; align-self: flex-start; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; font-size: 17px; font-weight: 600; text-decoration: none; color: #FFFFFF; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 12px">Get that money back</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVIÇOS -->
-    <section id="servicos" aria-labelledby="serv-titulo" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 9vw, 120px) clamp(20px, 5vw, 48px) 0; display: flex; flex-direction: column; gap: 40px">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px; align-items: end">
-        <h2 id="serv-titulo" style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(34px, 4.5vw, 56px); line-height: 1; letter-spacing: -0.03em; max-width: 14ch">What I build for you.</h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #C9CCD4; max-width: 44ch">Pick by the size of the problem. Every project starts with a free 45-minute diagnosis and ends with a fixed price and deadline.</p>
-      </div>
-      <div style="display: flex; flex-direction: column">
-        <article style="border-top: 1px solid #2A2D35; padding: 32px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px 40px; align-items: start">
-          <div style="display: flex; flex-direction: column; gap: 10px">
-            <span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; background: #0047FF; color: #FFFFFF">Start here</span>
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.02em">Automation X-ray</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #A7ABB6">For teams wasting time who don't know where to start.</p>
-          </div>
-          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Map of the tasks you can automate</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Estimated hours saved per task</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Action plan ranked by return</span></li></ul>
-          <div style="display: flex; flex-direction: column; gap: 14px">
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Typical timeline</p>
-              <p style="margin: 2px 0 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 20px">1 week</p>
-            </div>
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Proof</p>
-              <a href="#projetos" style="font-size: 15px; line-height: 1.4; color: #E4E6EB">Clickable prototype in 48 hours, before you sign anything</a>
-            </div>
-            <a href="#vaga" style="align-self: flex-start; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 18px; font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; border: 0; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 10px">I want this</a>
-          </div>
-        </article>
-        <article style="border-top: 1px solid #2A2D35; padding: 32px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px 40px; align-items: start">
-          <div style="display: flex; flex-direction: column; gap: 10px">
-            
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.02em">Process automation</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #A7ABB6">For SMBs stuck in spreadsheets, rework and copy-paste.</p>
-          </div>
-          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Flows between CRM, email, spreadsheets and systems</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Alerts and reports that arrive on their own</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Docs so your team can understand and tweak it</span></li></ul>
-          <div style="display: flex; flex-direction: column; gap: 14px">
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Typical timeline</p>
-              <p style="margin: 2px 0 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 20px">1 to 3 weeks</p>
-            </div>
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Proof</p>
-              <a href="#projetos" style="font-size: 15px; line-height: 1.4; color: #E4E6EB">AI-powered B2B prospecting engine</a>
-            </div>
-            <a href="#vaga" style="align-self: flex-start; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 18px; font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; border: 0; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 10px">I want this</a>
-          </div>
-        </article>
-        <article style="border-top: 1px solid #2A2D35; padding: 32px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px 40px; align-items: start">
-          <div style="display: flex; flex-direction: column; gap: 10px">
-            
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.02em">AI agents</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #A7ABB6">For those who want AI doing real work, not just answering questions.</p>
-          </div>
-          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Customer service agent on WhatsApp or your site</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Prospecting and follow-up agent</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Content agent with compliance review</span></li></ul>
-          <div style="display: flex; flex-direction: column; gap: 14px">
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Typical timeline</p>
-              <p style="margin: 2px 0 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 20px">2 to 4 weeks</p>
-            </div>
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Proof</p>
-              <a href="/en/cases/amore-totale/" style="font-size: 15px; line-height: 1.4; color: #E4E6EB">Amora, Amore Totale’s AI customer service</a>
-            </div>
-            <a href="#vaga" style="align-self: flex-start; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 18px; font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; border: 0; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 10px">I want this</a>
-          </div>
-        </article>
-        <article style="border-top: 1px solid #2A2D35; padding: 32px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px 40px; align-items: start">
-          <div style="display: flex; flex-direction: column; gap: 10px">
-            <span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; background: #8A2BE2; color: #FFFFFF">New</span>
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.02em">A website Google and AI recommend</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #A7ABB6">For businesses with a great-looking site nobody finds. Not on Google, not on ChatGPT.</p>
-          </div>
-          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Rebuilt website: fast, flawless on mobile and built to turn visits into leads</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>SEO + GEO: show up on Google and be ready to be found and cited by ChatGPT, Gemini and Perplexity</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Blog on autopilot: an AI agent researches, writes and publishes every week, with your approval</span></li></ul>
-          <div style="display: flex; flex-direction: column; gap: 14px">
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Typical timeline</p>
-              <p style="margin: 2px 0 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 20px">2 to 4 weeks + monthly blog and report</p>
-            </div>
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Proof</p>
-              <a href="#projetos" style="font-size: 15px; line-height: 1.4; color: #E4E6EB">Amore Totale blog agent</a>
-            </div>
-            <a href="#vaga" style="align-self: flex-start; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 18px; font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; border: 0; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 10px">I want this</a>
-          </div>
-        </article>
-        <article style="border-top: 1px solid #2A2D35; padding: 32px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px 40px; align-items: start">
-          <div style="display: flex; flex-direction: column; gap: 10px">
-            
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.02em">Product MVP</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #A7ABB6">For startups and new ventures that need to validate before burning cash.</p>
-          </div>
-          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Working app or platform, with login and payments</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Ready for real users and investors</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Accounts and data in your name from day 1</span></li></ul>
-          <div style="display: flex; flex-direction: column; gap: 14px">
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Typical timeline</p>
-              <p style="margin: 2px 0 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 20px">2 to 6 weeks</p>
-            </div>
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Proof</p>
-              <a href="#projetos" style="font-size: 15px; line-height: 1.4; color: #E4E6EB">Espelho, Brazilian company search</a>
-            </div>
-            <a href="#vaga" style="align-self: flex-start; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 18px; font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; border: 0; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 10px">I want this</a>
-          </div>
-        </article>
-        <article style="border-top: 1px solid #2A2D35; padding: 32px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px 40px; align-items: start">
-          <div style="display: flex; flex-direction: column; gap: 10px">
-            
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.02em">Internal system</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #A7ABB6">For companies that need their own tool without waiting in the IT queue.</p>
-          </div>
-          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Portal, management dashboard or operations app</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Replaces spreadsheets and patched-up systems</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Role-based access and audit trail</span></li></ul>
-          <div style="display: flex; flex-direction: column; gap: 14px">
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Typical timeline</p>
-              <p style="margin: 2px 0 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 20px">1 to 3 months</p>
-            </div>
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Proof</p>
-              <a href="#projetos" style="font-size: 15px; line-height: 1.4; color: #E4E6EB">Proacta CRM and OKR platform</a>
-            </div>
-            <a href="#vaga" style="align-self: flex-start; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 18px; font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; border: 0; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 10px">I want this</a>
-          </div>
-        </article>
-        <article style="border-top: 1px solid #2A2D35; border-bottom: 1px solid #2A2D35; padding: 32px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 24px 40px; align-items: start">
-          <div style="display: flex; flex-direction: column; gap: 10px">
-            <span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; border: 1px solid #4A4F5C; color: #C9CCD4">Recurring</span>
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.02em">Nocodeia ongoing</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #A7ABB6">For those whose system is live and needs to keep evolving.</p>
-          </div>
-          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px"><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>New features, blog posts and SEO tuning every month</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Agent monitoring and prompt tuning</span></li><li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.45; color: #E4E6EB"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M20 6 9 17l-5-5"></path></svg><span>Priority support</span></li></ul>
-          <div style="display: flex; flex-direction: column; gap: 14px">
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Typical timeline</p>
-              <p style="margin: 2px 0 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 20px">Monthly, no long lock-in</p>
-            </div>
-            <div>
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Proof</p>
-              <a href="#projetos" style="font-size: 15px; line-height: 1.4; color: #E4E6EB">After any delivery above</a>
-            </div>
-            <a href="#vaga" style="align-self: flex-start; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 18px; font-size: 15px; font-weight: 600; text-decoration: none; color: #FFFFFF; border: 0; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 10px">I want this</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- PROJETOS -->
-    <section id="projetos" aria-labelledby="proj-titulo" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 9vw, 120px) clamp(20px, 5vw, 48px); display: flex; flex-direction: column; gap: clamp(48px, 7vw, 88px)">
-      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 680px">
-        <h2 id="proj-titulo" style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(34px, 4.5vw, 56px); line-height: 1; letter-spacing: -0.03em">Projects that left the drawing board.</h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #C9CCD4">See inside what I built, the result and the honest status: live, in validation or in progress.</p>
-      </div>
-
-      <!-- 1. MOTOR DE PROSPECÇÃO -->
-      <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center">
-        <div ref="{{demoRef}}" style="background: #1A1C21; border: 1px solid #2A2D35; border-radius: 18px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 71, 255, 0.18)">
-          <div style="padding: 12px 18px; border-bottom: 1px solid #2A2D35; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 13px">
-            <span style="color: #A7ABB6">Prospecting flow</span>
-            <span aria-live="polite" style="color: {{demoCorStatus}}; font-weight: 600">{{demoStatus}}</span>
-          </div>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); min-height: 380px">
-            <ol style="margin: 0; padding: 18px; list-style: none; display: flex; flex-direction: column; gap: 8px; border-right: 1px solid #2A2D35; background-color: #15161A; background-image: radial-gradient(#2A2D35 1px, transparent 1px); background-size: 18px 18px">
-              <sc-for list="{{demoPassos}}" as="p" hint-placeholder-count="5">
-                <li style="display: flex; align-items: center; gap: 10px; padding: 11px 12px; border-radius: 12px; font-size: 14px; background: {{p.fundo}}; border: 1px solid {{p.borda}}; color: {{p.cor}}; animation: {{p.anim}}; transition: background .3s, border-color .3s, color .3s">
-                  <span aria-hidden="true" style="width: 22px; height: 22px; flex-shrink: 0; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: {{p.bolaFundo}}; color: #FFFFFF">{{p.marca}}</span>
-                  <span>{{p.nome}}</span>
-                </li>
-              </sc-for>
-            </ol>
-            <div style="padding: 18px; display: flex; flex-direction: column; gap: 12px">
-              <sc-if value="{{demoOcioso}}" hint-placeholder-val="{{ true }}">
-                <div style="flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; color: #A7ABB6; font-size: 15px">
-                  <p style="margin: 0">Watch the flow work on its own.</p>
-                </div>
-              </sc-if>
-              <sc-if value="{{demoV1}}" hint-placeholder-val="{{ false }}">
-                <div style="padding: 10px 12px; background: #121316; border: 1px solid #2A2D35; border-radius: 10px; font-size: 13px; color: #C9CCD4; animation: ncEntra .4s ease both"><span style="color: #7FA3FF; font-weight: 600">Row read:</span> Example Logistics, IT Director</div>
-              </sc-if>
-              <sc-if value="{{demoV2}}" hint-placeholder-val="{{ false }}">
-                <div style="padding: 12px; background: #121316; border: 1px solid #2A2D35; border-radius: 10px; display: flex; gap: 12px; align-items: center; animation: ncEntra .4s ease both">
-                  <span aria-hidden="true" style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%; background: linear-gradient(45deg, #0047FF, #8A2BE2); display: inline-flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700">JS</span>
-                  <div style="min-width: 0">
-                    <p style="margin: 0; font-size: 14px; font-weight: 600">John Smith</p>
-                    <p style="margin: 2px 0 0; font-size: 12px; color: #A7ABB6">IT Director at Example Logistics</p>
-                  </div>
-                </div>
-              </sc-if>
-              <sc-if value="{{demoV3}}" hint-placeholder-val="{{ false }}">
-                <div style="display: flex; gap: 6px; flex-wrap: wrap; font-size: 12px; animation: ncEntra .4s ease both">
-                  <span style="padding: 5px 10px; border: 1px solid #3D7BFF; border-radius: 999px; color: #E4E6EB">Bio read</span>
-                  <span style="padding: 5px 10px; border: 1px solid #3D7BFF; border-radius: 999px; color: #E4E6EB">3 recent posts</span>
-                  <span style="padding: 5px 10px; border: 1px solid #3D7BFF; border-radius: 999px; color: #E4E6EB">Size and industry</span>
-                </div>
-              </sc-if>
-              <sc-if value="{{demoV4}}" hint-placeholder-val="{{ false }}">
-                <div style="padding: 12px 14px; background: #121316; border: 1px solid #5A39F0; border-radius: 12px; animation: ncEntra .4s ease both">
-                  <p style="margin: 0 0 6px; font-size: 11px; color: #C39BFF; font-weight: 600">AI writing the 1st message</p>
-                  <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #E4E6EB; min-height: 84px">{{demoTexto}}<span aria-hidden="true" style="display: inline-block; width: 2px; height: 16px; margin-left: 2px; vertical-align: -3px; background: #C39BFF; animation: ncPisca 1s steps(1) infinite"></span></p>
-                </div>
-              </sc-if>
-              <sc-if value="{{demoV5}}" hint-placeholder-val="{{ false }}">
-                <div style="padding: 10px 12px; background: #0F1A33; border: 1px solid #3D7BFF; border-radius: 10px; font-size: 13px; display: flex; flex-direction: column; gap: 8px; animation: ncEntra .4s ease both">
-                  <span style="font-weight: 600">Saved to the sheet, ready to send</span>
-                  <div style="display: flex; gap: 6px; flex-wrap: wrap; font-size: 12px; color: #C9CCD4">
-                    <span style="padding: 4px 8px; border: 1px solid #343843; border-radius: 6px">Connection ✓</span>
-                    <span style="padding: 4px 8px; border: 1px solid #343843; border-radius: 6px">1st message ✓</span>
-                    <span style="padding: 4px 8px; border: 1px solid #343843; border-radius: 6px">Follow-up 1 ✓</span>
-                    <span style="padding: 4px 8px; border: 1px solid #343843; border-radius: 6px">Follow-up 2 ✓</span>
-                  </div>
-                </div>
-              </sc-if>
-            </div>
-          </div>
-          <div style="height: 4px; background: #23262D" aria-hidden="true"><div style="height: 4px; width: {{demoPct}}; background: linear-gradient(90deg, #0047FF, #8A2BE2); transition: width .1s linear"></div></div>
-          <div style="padding: 12px 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
-            <button type="button" onClick="{{demoRodar}}" style="min-height: 44px; padding: 0 18px; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; font-family: Inter, sans-serif; color: #FFFFFF; background: #0047FF; border: 0; border-radius: 10px; cursor: pointer">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4v16l13-8z"></path></svg>{{demoBotao}}
-            </button>
-            <span style="font-size: 12px; color: #A7ABB6">Simulation of the real flow with fictional data</span>
-          </div>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 16px">
-          <p style="margin: 0; font-size: 14px; color: #C9CCD4; display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #3D7BFF; display: inline-block"></span>Live</p>
-          <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(28px, 3vw, 38px); line-height: 1.05; letter-spacing: -0.02em">AI-powered B2B prospecting engine</h3>
-          <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9CCD4">Prospecting ate hours: find the decision-maker, study the profile, write message after message. Now I fill in company and role, and the flow does the rest.</p>
-          <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(22px, 2.4vw, 28px); letter-spacing: -0.02em">1 spreadsheet row becomes 4 personalized messages.</p>
-          <p style="margin: 0; font-size: 14px; color: #A7ABB6">Built with n8n, Claude and Google Sheets</p>
-        </div>
-      </article>
-
-      <!-- 2. ESPELHO -->
-      <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center">
-        <div style="display: flex; flex-direction: column; gap: 16px">
-          <p style="margin: 0; font-size: 14px; color: #C9CCD4; display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #3D7BFF; display: inline-block"></span>Working prototype</p>
-          <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(28px, 3vw, 38px); line-height: 1.05; letter-spacing: -0.02em">Espelho: Brazilian company search</h3>
-          <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9CCD4">Searches Brazil's public company registry by name, trade name or tax ID (CNPJ). Looks up a whole spreadsheet at once, compares companies side by side and finds prospects similar to your best customers.</p>
-          <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(22px, 2.4vw, 28px); letter-spacing: -0.02em">4 tools in a single file, no server.</p>
-          <p style="margin: 0; font-size: 14px; color: #A7ABB6">Built with HTML, JavaScript and a public company-data API</p>
-        </div>
-        <div style="background: #1A1C21; border: 1px solid #2A2D35; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
-          <div style="padding: 12px 18px; border-bottom: 1px solid #2A2D35; font-size: 13px; color: #A7ABB6">Espelho</div>
-          <div style="display: flex; min-height: 300px">
-            <div class="nc-hide-sm" style="width: 140px; flex-shrink: 0; border-right: 1px solid #2A2D35; padding: 14px 10px; display: flex; flex-direction: column; gap: 6px; font-size: 13px">
-              <span style="padding: 9px 10px; background: #0047FF; border-radius: 8px; font-weight: 600">Search</span>
-              <span style="padding: 9px 10px; color: #C9CCD4">Batch</span>
-              <span style="padding: 9px 10px; color: #C9CCD4">Lookalike clients</span>
-              <span style="padding: 9px 10px; color: #C9CCD4">Compare</span>
-            </div>
-            <div style="flex-grow: 1; min-width: 0; padding: 16px; display: flex; flex-direction: column; gap: 12px">
-              <div style="padding: 11px 14px; background: #121316; border: 1px solid #3D7BFF; border-radius: 10px; font-size: 14px; color: #E4E6EB">Example Logistics</div>
-              <div style="display: flex; gap: 6px; flex-wrap: wrap; font-size: 12px; color: #C9CCD4">
-                <span style="padding: 5px 10px; border: 1px solid #343843; border-radius: 999px">UF: SP</span>
-                <span style="padding: 5px 10px; border: 1px solid #343843; border-radius: 999px">Industry: transport</span>
-                <span style="padding: 5px 10px; border: 1px solid #343843; border-radius: 999px">Active only</span>
-              </div>
-              <div style="border: 1px solid #2A2D35; border-radius: 10px; overflow: hidden; font-size: 12px">
-                <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding: 9px 12px; background: #121316; color: #A7ABB6"><span>Legal name</span><span>CNPJ</span><span>Status</span></div>
-                <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding: 9px 12px; border-top: 1px solid #2A2D35"><span>Exemplo Log. Ltda</span><span style="color: #C9CCD4">00.000.000/0001-00</span><span style="color: #7FA3FF">Active</span></div>
-                <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding: 9px 12px; border-top: 1px solid #2A2D35"><span>Exemplo Cargas S.A.</span><span style="color: #C9CCD4">11.111.111/0001-11</span><span style="color: #7FA3FF">Active</span></div>
-                <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding: 9px 12px; border-top: 1px solid #2A2D35"><span>Exemplo Frete ME</span><span style="color: #C9CCD4">22.222.222/0001-22</span><span style="color: #7FA3FF">Active</span></div>
-              </div>
-              <div style="display: flex; gap: 10px; align-items: flex-end; height: 64px; padding: 0 4px" aria-hidden="true">
-                <div style="flex: 1; height: 90%; background: #3D7BFF; border-radius: 4px 4px 0 0"></div>
-                <div style="flex: 1; height: 55%; background: #8A2BE2; border-radius: 4px 4px 0 0"></div>
-                <div style="flex: 1; height: 70%; background: #3D7BFF; border-radius: 4px 4px 0 0"></div>
-                <div style="flex: 1; height: 40%; background: #8A2BE2; border-radius: 4px 4px 0 0"></div>
-                <div style="flex: 3; font-size: 12px; color: #A7ABB6; align-self: center; padding-left: 6px">Side-by-side comparison</div>
-              </div>
-            </div>
-          </div>
-          <p style="margin: 0; padding: 10px 18px; border-top: 1px solid #2A2D35; font-size: 12px; color: #A7ABB6">Interface mockup with fictional data.</p>
-        </div>
-      </article>
-
-      <!-- 3. TRADING -->
-      <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center">
-        <div style="background: #1A1C21; border: 1px solid #2A2D35; border-radius: 18px; overflow: hidden">
-          <div style="padding: 12px 18px; border-bottom: 1px solid #2A2D35; display: flex; justify-content: space-between; font-size: 13px; color: #A7ABB6">
-            <span>Backtest BTC, 2020–2026</span><span>US$ 100 per trade</span>
-          </div>
-          <div style="padding: 18px 18px 8px">
-            <svg viewBox="0 0 560 200" role="img" aria-label="Cumulative backtest result: from 0 in 2020 to 2,188 dollars in 2026, with a drop only in 2022" style="width: 100%; height: auto; display: block; font-family: Inter, sans-serif">
-              <defs><linearGradient id="gArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A39F0" stop-opacity="0.45"></stop><stop offset="1" stop-color="#5A39F0" stop-opacity="0"></stop></linearGradient></defs>
-              <line x1="40" y1="170" x2="540" y2="170" stroke="#343843"></line>
-              <line x1="40" y1="95" x2="540" y2="95" stroke="#23262D" stroke-dasharray="4 4"></line>
-              <line x1="40" y1="20" x2="540" y2="20" stroke="#23262D" stroke-dasharray="4 4"></line>
-              <text x="34" y="174" fill="#A7ABB6" font-size="11" text-anchor="end">0</text>
-              <text x="34" y="99" fill="#A7ABB6" font-size="11" text-anchor="end">1,100</text>
-              <text x="34" y="24" fill="#A7ABB6" font-size="11" text-anchor="end">2,200</text>
-              <path d="M40 170 L111 134 L183 120 L254 132 L326 86 L397 74 L469 58 L540 21 L540 170 Z" fill="url(#gArea)"></path>
-              <path d="M40 170 L111 134 L183 120 L254 132 L326 86 L397 74 L469 58 L540 21" stroke="#7FA3FF" stroke-width="3" fill="none" stroke-linejoin="round"></path>
-              <circle cx="540" cy="21" r="5" fill="#FFFFFF"></circle>
-              <text x="530" y="40" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="end">+US$ 2,188</text>
-              <text x="254" y="150" fill="#A7ABB6" font-size="11" text-anchor="middle">2022</text>
-              <text x="111" y="192" fill="#A7ABB6" font-size="11" text-anchor="middle">2020</text>
-              <text x="326" y="192" fill="#A7ABB6" font-size="11" text-anchor="middle">2023</text>
-              <text x="540" y="192" fill="#A7ABB6" font-size="11" text-anchor="end">2026</text>
-            </svg>
-          </div>
-          <div class="nc-stats" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid #2A2D35">
-            <div style="padding: 14px; border-right: 1px solid #2A2D35"><p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: 22px">175</p><p style="margin: 2px 0 0; font-size: 12px; color: #A7ABB6">trades</p></div>
-            <div style="padding: 14px; border-right: 1px solid #2A2D35"><p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: 22px">1.54</p><p style="margin: 2px 0 0; font-size: 12px; color: #A7ABB6">profit factor</p></div>
-            <div style="padding: 14px; border-right: 1px solid #2A2D35"><p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: 22px">37.7%</p><p style="margin: 2px 0 0; font-size: 12px; color: #A7ABB6">win rate</p></div>
-            <div style="padding: 14px"><p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: 22px">94 / 37</p><p style="margin: 2px 0 0; font-size: 12px; color: #A7ABB6">avg. win / loss</p></div>
-          </div>
-          <div style="padding: 14px 18px; border-top: 1px solid #2A2D35; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 12px">
-            <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Collector</span>
-            <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Buyer</span>
-            <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Seller</span>
-            <span style="padding: 6px 10px; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 8px; font-weight: 600">Orchestrator</span>
-            <span style="padding: 6px 10px; border: 1px dashed #6B7080; border-radius: 8px">Reviewer</span>
-          </div>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 16px">
-          <p style="margin: 0; font-size: 14px; color: #C9CCD4; display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; border: 2px solid #8A2BE2; box-sizing: border-box; display: inline-block"></span>In validation</p>
-          <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(28px, 3vw, 38px); line-height: 1.05; letter-spacing: -0.02em">Multi-agent trading system</h3>
-          <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9CCD4">Five agents work together: one collects data, two argue for buying and selling, an orchestrator decides and a reviewer tunes the strategy without ever crossing the risk limit locked in code.</p>
-          <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(22px, 2.4vw, 28px); letter-spacing: -0.02em">6 of 7 years positive across 6.1 years of backtest.</p>
-          <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #A7ABB6">Real backtest data with out-of-sample validation. Not investment advice or a promise of returns.</p>
-        </div>
-      </article>
-
-      <!-- 4. PROACTA (TELA REAL) -->
-      <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center">
-        <div style="display: flex; flex-direction: column; gap: 16px">
-          <p style="margin: 0; font-size: 14px; color: #C9CCD4; display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #3D7BFF; display: inline-block"></span>Live</p>
-          <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(28px, 3vw, 38px); line-height: 1.05; letter-spacing: -0.02em">Proacta CRM</h3>
-          <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9CCD4">CRM for small and mid-sized businesses with a database of 28 million Brazilian companies. Type the tax ID and it fills in the rest. Every morning, the My day screen shows priorities and suggests companies similar to your portfolio, ready to prospect.</p>
-          <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(22px, 2.4vw, 28px); letter-spacing: -0.02em">Company setup from 15–20 min down to 2 min.</p>
-          <p style="margin: 0; font-size: 14px; color: #A7ABB6">MVP built by Nocodeia in 2 weeks</p>
-          <a href="https://proactacrm.com" target="_blank" rel="noopener" style="align-self: flex-start; min-height: 48px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 20px; font-size: 16px; font-weight: 600; text-decoration: none; color: #FFFFFF; border: 1px solid #4A4F5C; border-radius: 12px">See the live site</a>
-        </div>
-        <div class="nc-sobrepos-wrap" style="position: relative; padding-bottom: 24%">
-          <div class="nc-sobrepos-main" style="width: 92%; background: #1A1C21; border: 1px solid #2A2D35; border-radius: 18px; overflow: hidden; box-shadow: 0 24px 60px rgba(0, 71, 255, 0.18)">
-            <div style="padding: 10px 14px; border-bottom: 1px solid #2A2D35; display: flex; justify-content: space-between; align-items: center; gap: 10px">
-              <span style="padding: 5px 12px; background: #121316; border: 1px solid #2A2D35; border-radius: 999px; font-size: 12px; color: #C9CCD4">Proacta CRM · Meu dia</span>
-              <span style="font-size: 12px; color: #7FA3FF">Real system screen</span>
-            </div>
-            <img width="966" height="343" src="/assets/proacta-app.webp" alt="Proacta CRM My day screen: today's priorities and suggested lookalike companies to prospect" style="width: 100%; height: auto; display: block">
-          </div>
-          <a class="nc-sobrepos" href="https://proactacrm.com" target="_blank" rel="noopener" aria-label="Open the Proacta CRM site" style="position: absolute; right: 0; bottom: 0; width: 52%; display: block; text-decoration: none; background: #1A1C21; border: 1px solid #343843; border-radius: 14px; overflow: hidden; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55)">
-            <div style="padding: 7px 10px; border-bottom: 1px solid #2A2D35; display: flex; justify-content: space-between; align-items: center; gap: 8px">
-              <span style="font-size: 11px; color: #C9CCD4">proactacrm.com</span>
-              <span style="font-size: 11px; color: #7FA3FF">Site</span>
-            </div>
-            <img width="700" height="428" src="/assets/proacta-site.webp" alt="Proacta CRM homepage" style="width: 100%; height: auto; display: block">
-          </a>
-        </div>
-      </article>
-
-      <!-- 5. PLATAFORMA DE OKR (TELAS REAIS, GALERIA) -->
-      <article style="display: flex; flex-direction: column; gap: 28px">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px 56px; align-items: end">
-          <div style="display: flex; flex-direction: column; gap: 16px">
-            <p style="margin: 0; font-size: 14px; color: #C9CCD4; display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #3D7BFF; display: inline-block"></span>Live</p>
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(28px, 3vw, 38px); line-height: 1.05; letter-spacing: -0.02em">OKR platform</h3>
-            <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9CCD4">The client ran its goals in a spreadsheet: no alerts, no record of who accepted what, no history. I replaced it with a platform with monthly check-ins, formal sign-off on every goal and a dashboard that shows where to act.</p>
-            <a href="/en/cases/okr-platform/" style="align-self: flex-start; font-size: 16px; font-weight: 600">See the full case</a>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 14px">
-            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; font-size: 14px; line-height: 1.4">
-              <div style="padding: 12px 14px; border: 1px dashed #4A4F5C; border-radius: 12px; color: #A7ABB6"><strong style="display: block; color: #C9CCD4; margin-bottom: 4px">Before</strong>Loose spreadsheet, no intelligence or compliance</div>
-              <div style="padding: 12px 14px; border: 1px solid #3D7BFF; border-radius: 12px; color: #E4E6EB"><strong style="display: block; margin-bottom: 4px">After</strong>Automatic status, sign-off trail and cycles</div>
-            </div>
-            <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(22px, 2.4vw, 28px); letter-spacing: -0.02em">27 company goals in one place, each with an owner and check-ins.</p>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 8px; flex-wrap: wrap" role="group" aria-label="OKR platform screens">
-          <sc-for list="{{okrAbas}}" as="aba" hint-placeholder-count="4">
-            <sc-if value="{{aba.ativo}}" hint-placeholder-val="{{ false }}">
-              <button type="button" onClick="{{aba.escolher}}" aria-pressed="true" style="min-height: 44px; padding: 0 18px; font-size: 15px; font-weight: 600; font-family: Inter, sans-serif; border-radius: 999px; cursor: pointer; color: #FFFFFF; background: #0047FF; border: 1px solid #0047FF">{{aba.nome}}</button>
-            </sc-if>
-            <sc-if value="{{aba.inativo}}" hint-placeholder-val="{{ true }}">
-              <button type="button" onClick="{{aba.escolher}}" aria-pressed="false" style="min-height: 44px; padding: 0 18px; font-size: 15px; font-weight: 600; font-family: Inter, sans-serif; border-radius: 999px; cursor: pointer; color: #C9CCD4; background: transparent; border: 1px solid #4A4F5C">{{aba.nome}}</button>
-            </sc-if>
-          </sc-for>
-        </div>
-
-        <figure style="margin: 0; background: #1A1C21; border: 1px solid #2A2D35; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 71, 255, 0.2)">
-          <div style="padding: 10px 16px; border-bottom: 1px solid #2A2D35; display: flex; justify-content: space-between; align-items: center; gap: 10px">
-            <span style="padding: 5px 12px; background: #121316; border: 1px solid #2A2D35; border-radius: 999px; font-size: 12px; color: #C9CCD4">OKR Plataforma</span>
-            <span style="font-size: 12px; color: #7FA3FF">Real system screen</span>
-          </div>
-          <img src="{{okrImg}}" alt="{{okrAlt}}" style="width: 100%; height: auto; display: block">
-          <figcaption style="padding: 14px 18px; border-top: 1px solid #2A2D35; font-size: 15px; line-height: 1.5; color: #C9CCD4">{{okrLegenda}}</figcaption>
-        </figure>
-      </article>
-
-      <!-- 6. CATÁLOGO AUTOMÁTICO (DEMO COM FOTO REAL) -->
-      <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center">
-        <div style="display: flex; flex-direction: column; gap: 16px">
-          <p style="margin: 0; font-size: 14px; color: #C9CCD4; display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; border: 2px dashed #A7ABB6; box-sizing: border-box; display: inline-block"></span>In progress</p>
-          <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(28px, 3vw, 38px); line-height: 1.05; letter-spacing: -0.02em">Automatic resale catalog</h3>
-          <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9CCD4">Four agents prep every item for sale on their own: Vision recognizes what it is, Image cleans up the photo, Price compares it with similar items and Copy writes the listing.</p>
-          <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(22px, 2.4vw, 28px); letter-spacing: -0.02em">200 items, zero manual listing.</p>
-        </div>
-        <div ref="{{catRef}}" style="background: #1A1C21; border: 1px solid #2A2D35; border-radius: 18px; overflow: hidden; box-shadow: 0 30px 80px rgba(138, 43, 226, 0.16)">
-          <div style="padding: 12px 18px; border-bottom: 1px solid #2A2D35; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 13px">
-            <span style="color: #A7ABB6">Automatic catalog</span>
-            <span aria-live="polite" style="color: {{catCorStatus}}; font-weight: 600">{{catStatus}}</span>
-          </div>
-          <div style="padding: 12px 18px; border-bottom: 1px solid #2A2D35; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px">
-            <sc-for list="{{catAgentes}}" as="g" hint-placeholder-count="4">
-              <span style="padding: 8px 6px; border-radius: 10px; text-align: center; font-size: 13px; font-weight: 600; background: {{g.fundo}}; border: 1px solid {{g.borda}}; color: {{g.cor}}; animation: {{g.anim}}; transition: background .3s, border-color .3s, color .3s">{{g.nome}}</span>
-            </sc-for>
-          </div>
-          <div role="img" aria-label="Simulation of the agents preparing a handbag listing" style="position: relative; height: 380px; overflow: hidden; background: #FFFFFF">
-            <div aria-hidden="true" style="position: absolute; left: 50%; top: 322px; width: 220px; height: 18px; margin-left: -110px; border-radius: 50%; background: radial-gradient(closest-side, rgba(0,0,0,0.12), transparent)"></div>
-            <img width="346" height="424" src="/assets/bolsa-real.webp" alt="Caramel leather handbag with double handles and a perforated front pocket" style="position: absolute; left: 50%; top: 30px; height: 310px; width: auto; transform: translateX(-50%) scale({{catEscala}}); transition: transform .9s ease">
-            <sc-if value="{{catScan}}" hint-placeholder-val="{{ false }}">
-              <div aria-hidden="true" style="position: absolute; left: 50%; width: 320px; margin-left: -160px; height: 3px; background: linear-gradient(90deg, transparent, #7FA3FF, #C39BFF, transparent); box-shadow: 0 0 18px #7FA3FF; animation: ncScan 1.3s ease-in-out infinite alternate"></div>
-            </sc-if>
-                <sc-if value="{{catL0}}" hint-placeholder-val="{{ false }}">
-                  <span class="nc-tag" style="position: absolute; left: 5%; top: 12%; padding: 7px 12px; background: rgba(15,26,51,0.92); border: 1px solid #3D7BFF; border-radius: 999px; font-size: 13px; font-weight: 600; color: #FFFFFF; animation: ncEntra .35s ease both; white-space: nowrap">Handbag</span>
-                </sc-if>
-                <sc-if value="{{catL1}}" hint-placeholder-val="{{ false }}">
-                  <span class="nc-tag" style="position: absolute; right: 5%; top: 24%; padding: 7px 12px; background: rgba(15,26,51,0.92); border: 1px solid #3D7BFF; border-radius: 999px; font-size: 13px; font-weight: 600; color: #FFFFFF; animation: ncEntra .35s ease both; white-space: nowrap">Caramel leather</span>
-                </sc-if>
-                <sc-if value="{{catL2}}" hint-placeholder-val="{{ false }}">
-                  <span class="nc-tag" style="position: absolute; left: 3%; top: 50%; padding: 7px 12px; background: rgba(15,26,51,0.92); border: 1px solid #3D7BFF; border-radius: 999px; font-size: 13px; font-weight: 600; color: #FFFFFF; animation: ncEntra .35s ease both; white-space: nowrap">Double handles</span>
-                </sc-if>
-                <sc-if value="{{catL3}}" hint-placeholder-val="{{ false }}">
-                  <span class="nc-tag" style="position: absolute; right: 3%; top: 64%; padding: 7px 12px; background: rgba(15,26,51,0.92); border: 1px solid #3D7BFF; border-radius: 999px; font-size: 13px; font-weight: 600; color: #FFFFFF; animation: ncEntra .35s ease both; white-space: nowrap">Perforated pocket</span>
-                </sc-if>
-                      <sc-if value="{{catImgOk}}" hint-placeholder-val="{{ false }}">
-              <span class="nc-tag" style="position: absolute; right: 3%; bottom: 14px; padding: 7px 12px; background: rgba(15,26,51,0.92); border: 1px solid #8A2BE2; border-radius: 999px; font-size: 13px; font-weight: 600; color: #FFFFFF; animation: ncEntra .35s ease both; white-space: nowrap">Photo standardized ✓</span>
-            </sc-if>
-          </div>
-          <div style="padding: 16px 18px; border-top: 1px solid #2A2D35; display: flex; flex-direction: column; gap: 10px; min-height: 150px; box-sizing: border-box">
-            <p style="margin: 0; font-size: 12px; font-weight: 600; color: #A7ABB6">Generated listing</p>
-            <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 18px; line-height: 1.3; min-height: 24px">{{catTitulo}}<sc-if value="{{catDigitando}}" hint-placeholder-val="{{ false }}"><span aria-hidden="true" style="display: inline-block; width: 2px; height: 18px; margin-left: 2px; vertical-align: -3px; background: #C39BFF; animation: ncPisca 1s steps(1) infinite"></span></sc-if></p>
-            <sc-if value="{{catDescOn}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; font-size: 14px; line-height: 1.5; color: #C9CCD4; animation: ncEntra .4s ease both">{{catDesc}}</p></sc-if>
-            <p style="margin: 0; font-size: 13px; color: #C9CCD4"><span style="color: #A7ABB6">Price:</span> {{catPreco}}</p>
-          </div>
-          <div style="height: 4px; background: #23262D" aria-hidden="true"><div style="height: 4px; width: {{catPct}}; background: linear-gradient(90deg, #0047FF, #8A2BE2)"></div></div>
-          <div style="padding: 12px 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
-            <button type="button" onClick="{{catRodar}}" style="min-height: 44px; padding: 0 18px; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; font-family: Inter, sans-serif; color: #FFFFFF; background: #0047FF; border: 0; border-radius: 10px; cursor: pointer"><svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M7 4v16l13-8z"></path></svg>{{catBotao}}</button>
-            <span style="font-size: 12px; color: #A7ABB6">Pipeline simulation with a real product photo.</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- 7. AMORA: ATENDIMENTO COM IA DA AMORE TOTALE (CASE) -->
-      <article style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center">
-        <div style="display: flex; flex-direction: column; gap: 16px">
-          <p style="margin: 0; font-size: 14px; color: #C9CCD4; display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #3D7BFF; display: inline-block"></span>Live</p>
-          <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(28px, 3vw, 38px); line-height: 1.05; letter-spacing: -0.02em">Amora: Amore Totale’s AI customer service</h3>
-          <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9CCD4">Amore Totale couldn’t sell through WhatsApp, and one employee spent the whole day answering messages. We built Amora, an AI agent on the website, Instagram and Facebook that checks the catalog, calculates shipping and calls the team when needed.</p>
-          <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(22px, 2.4vw, 28px); letter-spacing: -0.02em">80% of conversations resolved without a human.</p>
-          <p style="margin: 0; font-size: 14px; color: #A7ABB6">Built with n8n, Chatwoot, Grok and Telegram</p>
-          <a href="/en/cases/amore-totale/" style="align-self: flex-start; font-size: 16px; font-weight: 600">See the full case</a>
-        </div>
-        <div role="img" aria-label="Simulation of a conversation with Amora" style="background: #1A1C21; border: 1px solid #2A2D35; border-radius: 18px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 71, 255, 0.18)">
-          <div style="padding: 12px 18px; border-bottom: 1px solid #2A2D35; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 13px">
-            <span style="color: #A7ABB6">Support inbox</span>
-            <span style="color: #7FA3FF; font-weight: 600">Website · 24/7</span>
-          </div>
-          <div style="padding: 18px; display: flex; flex-direction: column; gap: 12px">
-            <p style="margin: 0; align-self: flex-end; max-width: 85%; padding: 10px 14px; background: #2A2D35; border-radius: 14px 14px 4px 14px; font-size: 14px; line-height: 1.45">Do you ship to Campinas? How much is shipping?</p>
-            <span style="align-self: flex-start; padding: 5px 10px; border: 1px solid #3D7BFF; border-radius: 999px; font-size: 12px; color: #C9CCD4">Calculate shipping ✓</span>
-            <div style="display: flex; gap: 10px; align-items: flex-end">
-              <span aria-hidden="true" style="flex: none; width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(45deg, #0047FF, #8A2BE2); display: inline-flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: 14px">A</span>
-              <p style="margin: 0; max-width: 85%; padding: 10px 14px; background: #121316; border: 1px solid #343843; border-radius: 14px 14px 14px 4px; font-size: 14px; line-height: 1.45">Yes, we do! For your ZIP code, shipping is R$19.90 and arrives in 3 business days. Want me to show you the sizes for the item you viewed?</p>
-            </div>
-          </div>
-          <div style="padding: 14px 18px; border-top: 1px solid #2A2D35; display: flex; flex-direction: column; gap: 10px">
-            <p style="margin: 0; font-size: 12px; font-weight: 600; color: #A7ABB6">If a person is needed:</p>
-            <div style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 12px">
-              <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Telegram alert</span>
-              <span aria-hidden="true" style="color: #6B7080">›</span>
-              <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Note with summary</span>
-              <span aria-hidden="true" style="color: #6B7080">›</span>
-              <span style="padding: 6px 10px; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 8px; font-weight: 600">Conversation opened for the team</span>
-            </div>
-            <span style="font-size: 12px; color: #A7ABB6">Simulation with fictitious data.</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- GRADE: SEO, PANDA, BLOG -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 24px">
-
-        <!-- SEO -->
-        <article style="background: #17181C; border: 1px solid #2A2D35; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
-          <div style="padding: 22px; background: #1F2127; border-bottom: 1px solid #2A2D35; display: flex; flex-direction: column; gap: 12px">
-            <div style="background: #121316; border: 1px solid #343843; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
-              <p style="margin: 0; font-size: 13px; color: #A7ABB6">Google Rich Results Test</p>
-              <div style="display: flex; align-items: center; gap: 10px">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7FA3FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
-                <p style="margin: 0; font-size: 16px; font-weight: 600">Page eligible for rich results</p>
-              </div>
-              <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-                <div style="padding: 12px; border: 1px solid #2A2D35; border-radius: 10px"><p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: 28px">36</p><p style="margin: 2px 0 0; font-size: 12px; color: #A7ABB6">valid items</p></div>
-                <div style="padding: 12px; border: 1px solid #2A2D35; border-radius: 10px"><p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: 28px">0</p><p style="margin: 2px 0 0; font-size: 12px; color: #A7ABB6">errors</p></div>
-              </div>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; font-size: 12px">
-              <div style="padding: 10px 12px; border: 1px dashed #4A4F5C; border-radius: 10px; color: #A7ABB6">Before: duplicate markup in conflict</div>
-              <div style="padding: 10px 12px; border: 1px solid #3D7BFF; border-radius: 10px; color: #E4E6EB">After: one clean markup, via Tag Manager</div>
-            </div>
-          </div>
-          <div style="padding: 24px; display: flex; flex-direction: column; gap: 12px; flex-grow: 1">
-            <p style="margin: 0; font-size: 14px; color: #C9CCD4; display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #3D7BFF; display: inline-block"></span>Live</p>
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 24px">Technical SEO for e-commerce</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C9CCD4">I fixed the structured-data conflict without touching the theme, rewrote the main categories and matched inventory against real search demand to decide what to restock.</p>
-            <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 18px">Zero errors in Google's test.</p>
-          </div>
-        </article>
-
-        <!-- PANDA -->
-        <article style="background: #17181C; border: 1px solid #2A2D35; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
-          <div style="padding: 22px; background: #1F2127; border-bottom: 1px solid #2A2D35">
-            <div style="background: #0F1013; border: 1px solid #343843; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
-              <div style="display: flex; justify-content: space-between; font-size: 12px; color: #A7ABB6"><span>Smart Hold calculator</span><span>BTC</span></div>
-              <svg viewBox="0 0 320 120" role="img" aria-label="Illustrative chart comparing three investing strategies" style="width: 100%; height: auto; display: block">
-                <line x1="0" y1="110" x2="320" y2="110" stroke="#343843"></line>
-                <path d="M0 100 C60 95 110 85 160 80 S260 70 320 62" stroke="#6B7080" stroke-width="2" fill="none" stroke-dasharray="5 4"></path>
-                <path d="M0 100 C60 92 110 78 160 66 S260 46 320 36" stroke="#3D7BFF" stroke-width="2.5" fill="none"></path>
-                <path d="M0 100 C60 90 110 70 160 52 S260 24 320 10" stroke="#C39BFF" stroke-width="2.5" fill="none"></path>
-              </svg>
-              <div style="display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: #C9CCD4">
-                <span style="display: flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 14px; border-top: 2px dashed #6B7080"></span>Hold Normal</span>
-                <span style="display: flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 14px; border-top: 2px solid #3D7BFF"></span>Smart Hold</span>
-                <span style="display: flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 14px; border-top: 2px solid #C39BFF"></span>Power 1× 2× 4×</span>
-              </div>
-            </div>
-            <div style="display: flex; gap: 8px; margin-top: 12px; font-size: 12px; color: #C9CCD4; flex-wrap: wrap">
-              <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">E-book</span>
-              <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Calculator</span>
-              <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Protected spreadsheet</span>
-            </div>
-            <p style="margin: 10px 0 0; font-size: 12px; color: #A7ABB6">Illustrative curves.</p>
-          </div>
-          <div style="padding: 24px; display: flex; flex-direction: column; gap: 12px; flex-grow: 1">
-            <p style="margin: 0; font-size: 14px; color: #C9CCD4; display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #3D7BFF; display: inline-block"></span>Ready</p>
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 24px">Panda Invest 9</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C9CCD4">A personal-finance education brand from scratch: e-book, a calculator comparing three investing strategies and a protected spreadsheet with a dashboard.</p>
-            <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 18px">3 digital products, one identity.</p>
-          </div>
-        </article>
-
-        <!-- AGENTE DE BLOG AMORE TOTALE -->
-        <article style="background: #17181C; border: 1px solid #2A2D35; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column">
-          <div style="padding: 22px; background: #1F2127; border-bottom: 1px solid #2A2D35; display: flex; flex-direction: column; gap: 12px">
-            <div style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-size: 12px" aria-label="Agent steps">
-              <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Topic</span>
-              <span aria-hidden="true" style="color: #6B7080">›</span>
-              <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Research</span>
-              <span aria-hidden="true" style="color: #6B7080">›</span>
-              <span style="padding: 6px 10px; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 8px; font-weight: 600">Writing</span>
-              <span aria-hidden="true" style="color: #6B7080">›</span>
-              <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Review</span>
-              <span aria-hidden="true" style="color: #6B7080">›</span>
-              <span style="padding: 6px 10px; border: 1px solid #343843; border-radius: 8px">Publish</span>
-            </div>
-            <div style="background: #121316; border: 1px solid #343843; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
-              <p style="margin: 0; font-size: 12px; color: #A7ABB6">Blog Amore Totale</p>
-              <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 17px; font-weight: 600; line-height: 1.3"><a href="https://blog.amoretotale.com.br/como-escolher-lingerie/" target="_blank" rel="noopener" style="color: #FFFFFF; text-decoration: none">Lingerie: how to choose one you’ll actually wear</a></p>
-              <img width="544" height="306" src="/assets/post-lingerie.webp" alt="Pink bra on a hanger, the post’s cover image" style="width: 100%; height: auto; display: block; border-radius: 10px">
-              <div style="display: flex; gap: 6px; flex-wrap: wrap; font-size: 11px; color: #C9CCD4">
-                <span style="padding: 4px 8px; border: 1px solid #3D7BFF; border-radius: 999px">No made-up content</span>
-                <span style="padding: 4px 8px; border: 1px solid #3D7BFF; border-radius: 999px">Checked against Brazilian consumer and health rules</span>
-              </div>
-            </div>
-          </div>
-          <div style="padding: 24px; display: flex; flex-direction: column; gap: 12px; flex-grow: 1">
-            <p style="margin: 0; font-size: 14px; color: #C9CCD4; display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #3D7BFF; display: inline-block"></span>Live</p>
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 24px">Amore Totale blog agent</h3>
-            <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C9CCD4">An agent that researches the topic, writes the post and reviews it before publishing. No fake testimonials or unfounded health claims: every text is checked against Brazilian consumer and health regulations.</p>
-            <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 18px">+15% traffic and a climb from #20 to #17 on Google.</p>
-            <a href="https://blog.amoretotale.com.br/como-escolher-lingerie/" target="_blank" rel="noopener" style="margin-top: auto; font-size: 16px; font-weight: 600">Read the published post (Portuguese)</a>
-          </div>
-        </article>
-      </div>
-
-      <figure style="margin: 0; padding: clamp(28px, 4vw, 48px); background: #121316; border: 1px solid #2A2D35; border-left: 4px solid #5A39F0; border-radius: 16px; display: flex; flex-direction: column; gap: 20px">
-        <blockquote style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 500; font-size: clamp(20px, 2.2vw, 26px); line-height: 1.35; max-width: 50ch">“We wanted to build a smart SaaS CRM with 28 million active companies inside it, so the product had to be robust. From our first conversation with Nocodeia to the MVP launch took 2 weeks. An outstanding result! Now we’re in the improvement phase. I recommend Nocodeia!”</blockquote>
-        <figcaption style="font-size: 15px; color: #A7ABB6">Luiz Almeida, Sales Director at Proacta CRM</figcaption>
-      </figure>
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" aria-labelledby="sobre-titulo" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 0 clamp(20px, 5vw, 48px) clamp(64px, 9vw, 120px)">
-      <div style="border-top: 1px solid #23262D; padding-top: clamp(56px, 8vw, 96px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: clamp(32px, 5vw, 72px); align-items: start">
-        <div style="display: flex; flex-direction: column; gap: 18px; max-width: 420px">
-          <div style="border-radius: 20px; background: linear-gradient(160deg, #1F2127 0%, #17181C 100%); border: 1px solid #2A2D35; padding: 40px 28px; display: flex; flex-direction: column; align-items: center; gap: 18px; position: relative; overflow: hidden">
-            <div aria-hidden="true" style="position: absolute; inset: auto -30% -40% -30%; height: 70%; background: radial-gradient(closest-side, rgba(0,71,255,0.30), rgba(138,43,226,0.16), transparent)"></div>
-            <img width="200" height="211" src="/assets/icon.webp" alt="" style="position: relative; width: 96px; height: auto; display: block">
-            <img width="400" height="106" src="/assets/wordmark.webp" alt="nocodeia worldwide" style="position: relative; width: 200px; max-width: 100%; height: auto; display: block">
-          </div>
-          <div>
-            <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: 26px">Alexandre</p>
-            <p style="margin: 4px 0 0; font-size: 15px; color: #A7ABB6">Founder of Nocodeia</p>
-          </div>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 28px">
-          <h2 id="sobre-titulo" style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(34px, 4.5vw, 56px); line-height: 1; letter-spacing: -0.03em; max-width: 16ch">The person behind Nocodeia.</h2>
-          <div style="display: flex; flex-direction: column; gap: 14px; max-width: 58ch">
-            <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #E4E6EB">I've spent 25+ years inside the tech industry, at companies like IBM, Xerox, DHL, Bosch, Rocket.Chat and Neoway. I know from the inside how big tech projects work, and why they usually take so long.</p>
-            <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C9CCD4">Nocodeia brings those two worlds together: the rigor of someone who worked at multinationals, with the speed of no-code and AI. You talk directly to me, from diagnosis to delivery.</p>
-          </div>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr)); gap: 12px">
-            <div style="padding: 18px; border: 1px solid #2A2D35; border-radius: 14px; background: #17181C">
-              <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(32px, 3.4vw, 44px); line-height: 1; letter-spacing: -0.02em">25+</p>
-              <p style="margin: 8px 0 0; font-size: 14px; line-height: 1.4; color: #A7ABB6">years in tech</p>
-            </div>
-            <div style="padding: 18px; border: 1px solid #2A2D35; border-radius: 14px; background: #17181C">
-              <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(32px, 3.4vw, 44px); line-height: 1; letter-spacing: -0.02em">300+</p>
-              <p style="margin: 8px 0 0; font-size: 14px; line-height: 1.4; color: #A7ABB6">hours building with no-code</p>
-            </div>
-            <div style="padding: 18px; border: 1px solid #2A2D35; border-radius: 14px; background: #17181C">
-              <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(32px, 3.4vw, 44px); line-height: 1; letter-spacing: -0.02em">2</p>
-              <p style="margin: 8px 0 0; font-size: 14px; line-height: 1.4; color: #A7ABB6">countries in my education: Brazil and the USA</p>
-            </div>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 12px">
-            <p style="margin: 0; font-size: 13px; font-weight: 600; color: #A7ABB6">Where I've worked</p>
-            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 10px 32px"><li style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(18px, 1.8vw, 22px); color: #C9CCD4">IBM</li><li style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(18px, 1.8vw, 22px); color: #C9CCD4">Xerox</li><li style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(18px, 1.8vw, 22px); color: #C9CCD4">DHL</li><li style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(18px, 1.8vw, 22px); color: #C9CCD4">Bosch</li><li style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(18px, 1.8vw, 22px); color: #C9CCD4">Rocket.Chat</li><li style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: clamp(18px, 1.8vw, 22px); color: #C9CCD4">Neoway</li></ul>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 4px">
-            <p style="margin: 0 0 6px; font-size: 13px; font-weight: 600; color: #A7ABB6">Education</p>
-            <ul style="margin: 0; padding: 0; list-style: none; border-bottom: 1px solid #23262D">
-              <li style="display: flex; flex-direction: column; gap: 2px; padding: 12px 0; border-top: 1px solid #23262D">
-                <span style="font-size: 16px; font-weight: 600; color: #FFFFFF">Master in Business Administration and Business Analytics</span>
-                <span style="font-size: 14px; color: #A7ABB6">Hult International Business School, USA</span>
-              </li>
-              <li style="display: flex; flex-direction: column; gap: 2px; padding: 12px 0; border-top: 1px solid #23262D">
-                <span style="font-size: 16px; font-weight: 600; color: #FFFFFF">Postgraduate degree in Business Management</span>
-                <span style="font-size: 14px; color: #A7ABB6">FGV, Brazil</span>
-              </li>
-              <li style="display: flex; flex-direction: column; gap: 2px; padding: 12px 0; border-top: 1px solid #23262D">
-                <span style="font-size: 16px; font-weight: 600; color: #FFFFFF">Bachelor in Business Administration</span>
-              </li>
-              <li style="display: flex; flex-direction: column; gap: 2px; padding: 12px 0; border-top: 1px solid #23262D">
-                <span style="font-size: 16px; font-weight: 600; color: #FFFFFF">Claude Code certification</span>
-                <span style="font-size: 14px; color: #A7ABB6">Anthropic</span>
-              </li>
-            </ul>
-          </div>
-          <a href="#vaga" style="align-self: flex-start; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 24px; font-size: 17px; font-weight: 600; text-decoration: none; color: #FFFFFF; background: linear-gradient(45deg, #0047FF, #8A2BE2); border-radius: 12px">Talk to me</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMO FUNCIONA -->
-    <section id="como" aria-labelledby="como-titulo" style="background: #17181C; border-top: 1px solid #23262D; border-bottom: 1px solid #23262D">
-      <div style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 9vw, 120px) clamp(20px, 5vw, 48px); display: flex; flex-direction: column; gap: 48px">
-        <h2 id="como-titulo" style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(34px, 4.5vw, 56px); line-height: 1; letter-spacing: -0.03em; max-width: 16ch">From first call to live product.</h2>
-        <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 32px">
-          <li style="display: flex; flex-direction: column; gap: 14px; padding-top: 24px; border-top: 2px solid #0047FF">
-            <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 15px; color: #A7ABB6">Day 1</span>
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 24px">45-minute diagnosis</h3>
-            <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9CCD4">We open up your bottleneck and define the minimum that needs to exist for you to sell.</p>
-          </li>
-          <li style="display: flex; flex-direction: column; gap: 14px; padding-top: 24px; border-top: 2px solid #5A39F0">
-            <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 15px; color: #A7ABB6">In 48 hours</span>
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 24px">Clickable prototype</h3>
-            <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9CCD4">You click through the product flow before signing any contract.</p>
-          </li>
-          <li style="display: flex; flex-direction: column; gap: 14px; padding-top: 24px; border-top: 2px solid #8A2BE2">
-            <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 15px; color: #A7ABB6">In 15 days</span>
-            <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 24px">Product live</h3>
-            <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #C9CCD4">Working, integrated and ready to charge. Accounts and data stay in your name.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- PERGUNTAS -->
-    <section aria-labelledby="faq-titulo" style="max-width: 1200px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: clamp(64px, 9vw, 120px) clamp(20px, 5vw, 48px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: clamp(32px, 6vw, 80px)">
-      <h2 id="faq-titulo" style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(34px, 4.5vw, 56px); line-height: 1; letter-spacing: -0.03em">No fluff.</h2>
-      <div style="display: flex; flex-direction: column">
-        <details style="border-top: 1px solid #2A2D35; padding: 22px 0">
-          <summary style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 21px; min-height: 44px; display: flex; align-items: center">Can no-code scale?</summary>
-          <p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #C9CCD4">Yes. I use mature platforms and industry-standard APIs. If the product ever needs custom code, that path is mapped out from day one.</p>
-        </details>
-        <details style="border-top: 1px solid #2A2D35; padding: 22px 0">
-          <summary style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 21px; min-height: 44px; display: flex; align-items: center">What about data security?</summary>
-          <p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #C9CCD4">Access control, encrypted data and LGPD/GDPR compliance from day one. Not an extra. Standard.</p>
-        </details>
-        <details style="border-top: 1px solid #2A2D35; padding: 22px 0">
-          <summary style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 21px; min-height: 44px; display: flex; align-items: center">Do I own the product?</summary>
-          <p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #C9CCD4">Yes. Accounts, data and flows in your name. You understand and control every screen.</p>
-        </details>
-        <details style="border-top: 1px solid #2A2D35; border-bottom: 1px solid #2A2D35; padding: 22px 0">
-          <summary style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 21px; min-height: 44px; display: flex; align-items: center">How much does it cost?</summary>
-          <p style="margin: 12px 0 0; font-size: 17px; line-height: 1.6; color: #C9CCD4">It depends on scope. You leave the diagnosis with a fixed price and a fixed deadline.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- CTA FINAL + LOOP DE INDICAÇÃO -->
-    <section id="vaga" aria-labelledby="vaga-titulo" style="padding: 0 clamp(20px, 5vw, 48px) clamp(64px, 9vw, 120px)">
-      <div style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: clamp(40px, 7vw, 96px) clamp(24px, 6vw, 88px); border-radius: 28px; background: radial-gradient(120% 140% at 0% 0%, #0047FF 0%, #3A2FE8 38%, #8A2BE2 100%); display: flex; flex-direction: column; gap: 24px">
-        <h2 id="vaga-titulo" style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: clamp(40px, 6.5vw, 88px); line-height: 0.95; letter-spacing: -0.035em; max-width: 12ch">Stop planning. Ship.</h2>
-
-        <sc-if value="{{naoInscrito}}" hint-placeholder-val="{{ true }}">
-          <div style="display: flex; flex-direction: column; gap: 10px; max-width: 600px">
-            <p style="margin: 0 0 8px; font-size: 19px; line-height: 1.5">3 build spots open this month. Leave your email and I'll reply within 24 hours with a time slot.</p>
-            <label for="email-final" style="font-size: 15px; font-weight: 500">Your best email</label>
-            <form data-origem="final" novalidate onSubmit="{{entrar}}" style="display: flex; gap: 10px; flex-wrap: wrap">
-              <input id="email-final" type="email" autocomplete="email" placeholder="you@company.com" name="email" required onChange="{{onEmail}}" style="flex: 1 1 260px; min-height: 56px; box-sizing: border-box; padding: 0 18px; font-size: 17px; font-family: Inter, sans-serif; color: #121316; background: #FFFFFF; border: 0; border-radius: 12px">
-              <button type="submit" style="flex: 0 0 auto; min-height: 56px; padding: 0 26px; font-size: 17px; font-weight: 600; font-family: Inter, sans-serif; color: #FFFFFF; background: #121316; border: 0; border-radius: 12px; cursor: pointer">I want my spot</button>
-            </form>
-            <sc-if value="{{erro}}" hint-placeholder-val="{{ false }}">
-              <p role="alert" style="margin: 0; font-size: 15px; font-weight: 600; color: #FFFFFF">Enter a valid email, like <!--email_off-->you@company.com<!--/email_off--></p>
-            </sc-if>
-            <sc-if value="{{falhou}}" hint-placeholder-val="{{ false }}">
-              <p role="alert" style="margin: 0; font-size: 15px; font-weight: 600; color: #FFFFFF">I couldn't save your email just now. No problem: message me directly on <a href="{{linkWhatsDireto}}" target="_blank" rel="noopener" style="font-weight: 600">WhatsApp</a>.</p>
-            </sc-if>
-            <p style="margin: 0; font-size: 14px">By submitting, you agree to the <a href="/privacidade/" style="color: inherit">Privacy Policy</a>.</p>
-          </div>
-        </sc-if>
-
-        <sc-if value="{{inscrito}}" hint-placeholder-val="{{ false }}">
-          <div style="display: flex; flex-direction: column; gap: 18px; max-width: 640px">
-            <p style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 600; font-size: 28px; line-height: 1.2">You're in the {{mes}} queue.</p>
-            <p style="margin: 0; font-size: 18px; line-height: 1.55">Want to move faster? <a href="{{linkWhatsDireto}}" target="_blank" rel="noopener" style="font-weight: 600">Message me on WhatsApp now</a>.</p>
-            <p style="margin: 0; font-size: 18px; line-height: 1.55">Want to skip the line? Send this to someone who also has an idea stuck in a drawer. If your referral becomes a project, you get priority for the next spot.</p>
-            <div style="display: flex; gap: 12px; flex-wrap: wrap">
-              <a href="{{linkWhats}}" target="_blank" rel="noopener" style="min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 22px; font-size: 16px; font-weight: 600; text-decoration: none; color: #121316; background: #FFFFFF; border-radius: 12px">Send on WhatsApp</a>
-              <a href="{{linkLinkedin}}" target="_blank" rel="noopener" style="min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 22px; font-size: 16px; font-weight: 600; text-decoration: none; color: #FFFFFF; background: #121316; border-radius: 12px">Post on LinkedIn</a>
-              <a href="{{linkX}}" target="_blank" rel="noopener" style="min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; padding: 0 22px; font-size: 16px; font-weight: 600; text-decoration: none; color: #FFFFFF; border: 2px solid #FFFFFF; border-radius: 12px">Post on X</a>
-            </div>
-          </div>
-        </sc-if>
-      </div>
-    </section>
-  </main><footer style="border-top: 1px solid #23262D; padding: 64px clamp(20px, 5vw, 48px) 48px; display: flex; flex-direction: column; align-items: center; gap: 28px">
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 14px">
-      <img width="200" height="211" src="/assets/icon.webp" alt="" style="width: 88px; height: auto; display: block">
-      <img width="400" height="106" src="/assets/wordmark.webp" alt="nocodeia worldwide" style="width: 180px; height: auto; display: block">
-    </div>
-    <div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia on LinkedIn" title="Nocodeia on LinkedIn" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia on Instagram" title="Nocodeia on Instagram" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me" aria-label="Nocodeia on Facebook" title="Nocodeia on Facebook" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
-    <div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; font-size: 15px">
-      
-      <!--email_off--><a href="mailto:contato@nocodeiaww.com" style="color: #C9CCD4">contato@nocodeiaww.com</a><!--/email_off-->
-      <a href="/en/privacy/" style="color: #C9CCD4">Privacy Policy</a>
-    </div>
-    <p style="margin: 0; font-size: 14px; color: #A7ABB6">Campinas, Brazil · remote service across Brazil and abroad</p>
-    <p style="margin: 0; font-size: 14px; color: #A7ABB6">© 2026 Nocodeia. Built with no-code, of course.</p>
-  </footer>
-  <a href="https://wa.me/5511967886969?text=Hi!%20I%20came%20from%20the%20Nocodeia%20website%20and%20I'd%20like%20to%20talk%20about%20my%20project." data-wa="flutuante" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp" style="position: fixed; right: 20px; bottom: 20px; z-index: 40; width: 58px; height: 58px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(0,0,0,.4)">
-    <svg width="30" height="30" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true" focusable="false"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
-  </a>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="pular" href="#conteudo">Skip to content</a>
+<header class="topo">
+<div class="wrap nav">
+<a class="logo" href="/en/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="Nocodeia" width="120" height="44"></a>
+<div class="menu">
+<nav aria-label="Main"><ul><li><a href="#o-que-fazemos">What we do</a></li><li><a href="#casos">Cases</a></li><li><a href="#para-quem">Who it's for</a></li><li><a href="#como-funciona">How it works</a></li><li><a href="#duvidas">FAQ</a></li><li><a href="/en/blog/">Blog</a></li></ul></nav>
+<div class="idiomas" role="group" aria-label="Language"><a href="/" hreflang="pt-BR" lang="pt-BR" title="Português">PT</a><a href="/en/" hreflang="en" lang="en" aria-current="page" title="English">EN</a><a href="/es/" hreflang="es" lang="es" title="Español">ES</a></div>
+<a class="btn btn-main btn-cta" href="#diagnostico">Book a diagnosis</a>
+<details class="burger"><summary aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+<div class="painel"><a href="#o-que-fazemos">What we do</a><a href="#casos">Cases</a><a href="#para-quem">Who it's for</a><a href="#como-funciona">How it works</a><a href="#duvidas">FAQ</a><a href="/en/blog/">Blog</a><a href="#diagnostico">Book a diagnosis</a><div class="idiomas" role="group" aria-label="Language"><a href="/" hreflang="pt-BR" lang="pt-BR" title="Português">PT</a><a href="/en/" hreflang="en" lang="en" aria-current="page" title="English">EN</a><a href="/es/" hreflang="es" lang="es" title="Español">ES</a></div></div>
+</details>
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"vagas":{"editor":"int","default":3,"min":1,"max":10,"section":"Oferta"},"dias":{"editor":"int","default":15,"min":5,"max":60,"section":"Oferta"},"$preview":{"width":1440,"height":9400}}'>
-class Component extends DCLogic {
-  constructor(props) {
-    super(props);
-    this.state = { email: '', erro: false, falhou: false, inscrito: false, receita: 5000, meses: 8, okrTela: 0, demoT: 0, bagAng: 0, catT: 0 };
-  }
-  demoMsg() { return 'Hi John, saw your post about data-driven routing. We\'re helping logistics companies cut late deliveries with AI. Open to a 15-minute chat this week?'; }
-  demoFim() { return 4500 + this.demoMsg().length * 35 + 1500; }
-  rodarDemo() {
-    clearInterval(this.demoTimer);
-    const fim = this.demoFim();
-    let t = 0;
-    this.setState({ demoT: 1 });
-    this.demoTimer = setInterval(() => {
-      t += 50;
-      if (t >= fim) { clearInterval(this.demoTimer); this.setState({ demoT: fim }); }
-      else { this.setState({ demoT: t }); }
-    }, 50);
-  }
-  observarDemo(el) {
-    if (!el || this.demoObs || this.demoJaRodou) return;
-    try {
-      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { this.demoJaRodou = true; this.setState({ demoT: this.demoFim() }); return; }
-      if (!('IntersectionObserver' in window)) return;
-      this.demoObs = new IntersectionObserver((entradas) => {
-        if (entradas[0] && entradas[0].isIntersecting && !this.demoJaRodou) {
-          this.demoJaRodou = true;
-          this.rodarDemo();
-          this.demoObs.disconnect();
-        }
-      }, { threshold: 0.45 });
-      this.demoObs.observe(el);
-    } catch (e) {}
-  }
-  bagIniciar(el) {
-    if (!el || this.bagTimer) return;
-    this.bagEl = el;
-    let reduz = false;
-    try { reduz = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
-    if (reduz) return;
-    this.bagFase = 0;
-    this.bagTimer = setInterval(() => {
-      if (this.bagArrastando || Date.now() < (this.bagPausa || 0)) return;
-      this.bagFase += 0.025;
-      this.setState({ bagAng: 32 * Math.sin(this.bagFase) });
-    }, 40);
-  }
-  catTit() { return 'Linea Bella caramel leather handbag with double handles and perforated front pocket'; }
-  catFim() { return 6400 + this.catTit().length * 30 + 1800; }
-  rodarCat() {
-    clearInterval(this.catTimer);
-    const fim = this.catFim();
-    let t = 0;
-    this.setState({ catT: 1 });
-    this.catTimer = setInterval(() => {
-      t += 50;
-      if (t >= fim) { clearInterval(this.catTimer); this.setState({ catT: fim }); }
-      else { this.setState({ catT: t }); }
-    }, 50);
-  }
-  observarCat(el) {
-    if (!el || this.catObs || this.catJaRodou) return;
-    try {
-      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { this.catJaRodou = true; this.setState({ catT: this.catFim() }); return; }
-      if (!('IntersectionObserver' in window)) return;
-      this.catObs = new IntersectionObserver((es) => {
-        if (es[0] && es[0].isIntersecting && !this.catJaRodou) { this.catJaRodou = true; this.rodarCat(); this.catObs.disconnect(); }
-      }, { threshold: 0.45 });
-      this.catObs.observe(el);
-    } catch (e) {}
-  }
-  // Função do próprio site (functions/api/lead.js) que entrega o lead ao Proacta CRM. Se falhar, mostra o erro
-  // com o WhatsApp e NÃO dispara generate_lead.
-  enviarLead(email, origem) {
-    const ENDPOINT = '/api/lead';
-    if (!ENDPOINT) return Promise.resolve(false);
-    const q = new URLSearchParams(location.search);
-    const utm = {};
-    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(function (k) { if (q.get(k)) utm[k] = q.get(k); });
-    const ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
-    const timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 10000);
-    return fetch(ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      signal: ctrl ? ctrl.signal : undefined,
-      body: JSON.stringify({ email: email, lead_source: 'form_vaga', origem_form: origem || 'topo', idioma: document.documentElement.lang, pagina: location.href, referrer: document.referrer || '', utm: utm, data: new Date().toISOString() })
-    }).then(function (r) { clearTimeout(timer); return r.ok; }).catch(function () { clearTimeout(timer); return false; });
-  }
-  linkWhatsDireto() {
-    const email = String(this.state.email || '').trim();
-    const texto = email ? "Hi! I want my spot at Nocodeia. My email: " + email : "Hi! I want my spot at Nocodeia.";
-    return 'https://wa.me/5511967886969?text=' + encodeURIComponent(texto);
-  }
-  componentWillUnmount() { clearInterval(this.catTimer); if (this.catObs) this.catObs.disconnect(); clearInterval(this.bagTimer); clearInterval(this.demoTimer); if (this.demoObs) this.demoObs.disconnect(); }
-  renderVals() {
-    const vagas = this.props.vagas ?? 3;
-    const dias = this.props.dias ?? 15;
-    const meses = Number(this.state.meses) || 1;
-    const receita = Math.max(0, Number(this.state.receita) || 0);
-    const brl = (n) => n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
-    const perdido = receita * meses;
-    const recuperado = Math.max(0, receita * (meses - dias / 30));
-    const nomesMes = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-    const mes = nomesMes[new Date().getMonth()];
-    const barraPct = Math.max(2, Math.min(100, (dias / 240) * 100));
-    const site = 'https://nocodeiaww.com';
-    const texto = 'Got an idea stuck in a drawer? Nocodeia ships products in ' + dias + ' days. Check this out: ' + site;
-    const telasOkr = [
-      { nome: 'My dashboard', img: '/assets/okr-painel.webp', alt: 'Personal OKR dashboard with goals, status and this month\'s to-dos', legenda: 'Everyone sees their own goals, the status (on track, at risk) and what\'s left to do this month.' },
-      { nome: 'Dashboard', img: '/assets/okr-dashboard.webp', alt: 'Company dashboard with overdue and at-risk goals, pending check-ins and process discipline', legenda: 'Leadership opens it and sees where to act: overdue goals, at-risk goals, goals with no owner and check-in discipline.' },
-      { nome: 'Cycles', img: '/assets/okr-ciclos.webp', alt: 'Quarterly cycles screen with drafts and structure copy', legenda: 'Quarterly cycles start as drafts and copy the previous structure. No more rebuilding spreadsheets.' },
-      { nome: 'Areas', img: '/assets/okr-areas.webp', alt: 'Area view with company objectives and progress', legenda: 'Each area sees company objectives and its own, with progress on each.' }
-    ];
-    const dT = Number(this.state.demoT) || 0;
-    const dMsg = this.demoMsg();
-    const dFimTexto = 4500 + dMsg.length * 35;
-    const dFim = this.demoFim();
-    const dPasso = dT <= 0 ? 0 : dT < 1500 ? 1 : dT < 3000 ? 2 : dT < 4500 ? 3 : dT < dFimTexto + 400 ? 4 : 5;
-    const nomesPassos = ['Target list', 'Finds the decision-maker on LinkedIn', 'Reads profile and posts', 'AI writes the messages', 'Saves to the sheet'];
-    const demoPassos = nomesPassos.map((nome, i) => {
-      const n = i + 1;
-      const feito = dPasso > n || (dPasso === 5 && n === 5);
-      const ativo = dPasso === n && n !== 5;
-      return {
-        nome,
-        marca: feito ? '✓' : String(n),
-        fundo: feito ? '#0F1A33' : ativo ? '#1C1840' : 'transparent',
-        borda: feito ? '#3D7BFF' : ativo ? '#7A5CFF' : '#343843',
-        cor: feito || ativo ? '#FFFFFF' : '#8A8F9C',
-        bolaFundo: feito ? '#0047FF' : ativo ? '#5A39F0' : '#2A2D35',
-        anim: ativo ? 'ncPulso 1.2s ease-in-out infinite' : 'none'
-      };
-    });
-    const dChars = Math.max(0, Math.min(dMsg.length, Math.floor((dT - 4500) / 35)));
-    const cT = Number(this.state.catT) || 0;
-    const cTit = this.catTit();
-    const cFimTxt = 6400 + cTit.length * 30;
-    const cPasso = cT <= 0 ? 0 : cT < 3200 ? 1 : cT < 4800 ? 2 : cT < 6400 ? 3 : cT < cFimTxt + 500 ? 4 : 5;
-    const cNomes = ['Vision','Image','Price','Copy'];
-    const catAgentes = cNomes.map((nome, i) => {
-      const n = i + 1; const feito = cPasso > n; const ativo = cPasso === n;
-      return { nome, fundo: feito ? '#0F1A33' : ativo ? '#1C1840' : 'transparent', borda: feito ? '#3D7BFF' : ativo ? '#7A5CFF' : '#343843', cor: feito || ativo ? '#FFFFFF' : '#8A8F9C', anim: ativo ? 'ncPulso 1.2s ease-in-out infinite' : 'none' };
-    });
-    const cChars = Math.max(0, Math.min(cTit.length, Math.floor((cT - 6400) / 30)));
-    const iOkr = Number(this.state.okrTela) || 0;
-    return {
-      vagas, dias, mes,
-      vagasTexto: vagas + (vagas === 1 ? ' build spot open this month.' : ' build spots open this month.'),
-      barra: barraPct.toFixed(1) + '%',
-      vezes: Math.max(1, Math.round(240 / dias)),
-      email: this.state.email,
-      erro: this.state.erro,
-      inscrito: this.state.inscrito,
-      falhou: this.state.falhou,
-      naoInscrito: !this.state.inscrito,
-      receita: this.state.receita,
-      meses,
-      perdido: brl(perdido),
-      recuperado: brl(recuperado),
-      linkWhats: 'https://wa.me/?text=' + encodeURIComponent(texto),
-      linkWhatsDireto: this.linkWhatsDireto(),
-      linkLinkedin: 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(site),
-      linkX: 'https://x.com/intent/tweet?text=' + encodeURIComponent(texto),
-      bagAng: (Number(this.state.bagAng) || 0).toFixed(1),
-      bagY: (-4 * Math.abs(Math.sin(((Number(this.state.bagAng) || 0) / 32) * 1.2))).toFixed(1),
-      bagLuz: (1 + (Number(this.state.bagAng) || 0) / 400).toFixed(3),
-      bagRef: (el) => this.bagIniciar(el),
-      bagDown: (e) => { this.bagArrastando = true; this.bagX = e.clientX; try { e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {} },
-      bagMove: (e) => { if (!this.bagArrastando) return; const dx = e.clientX - this.bagX; this.bagX = e.clientX; this.setState({ bagAng: Math.max(-45, Math.min(45, (Number(this.state.bagAng) || 0) + dx * 0.5)) }); },
-      bagUp: () => { if (!this.bagArrastando) return; this.bagArrastando = false; this.bagPausa = Date.now() + 1500; this.bagFase = Math.asin(Math.max(-1, Math.min(1, (Number(this.state.bagAng) || 0) / 32))); },
-      bagEsq: () => { this.bagPausa = Date.now() + 2500; this.setState({ bagAng: Math.max(-45, (Number(this.state.bagAng) || 0) - 20) }); this.bagFase = Math.asin(Math.max(-1, Math.min(1, Math.max(-45, (Number(this.state.bagAng) || 0) - 20) / 32))); },
-      bagDir: () => { this.bagPausa = Date.now() + 2500; this.setState({ bagAng: Math.min(45, (Number(this.state.bagAng) || 0) + 20) }); this.bagFase = Math.asin(Math.max(-1, Math.min(1, Math.min(45, (Number(this.state.bagAng) || 0) + 20) / 32))); },
-      catRef: (el) => this.observarCat(el),
-      catAgentes,
-      catStatus: cPasso === 0 ? 'Ready to run' : cPasso === 5 ? 'Listing ready to publish' : 'Agent at work: ' + cNomes[cPasso - 1],
-      catCorStatus: cPasso === 5 ? '#7FA3FF' : cPasso === 0 ? '#A7ABB6' : '#C39BFF',
-      catFundo: '1',
-      catSombra: '0', catImgOk: cT >= 3600,
-      catEscala: cPasso >= 2 && cT >= 3400 ? '1.04' : '1',
-      catScan: cPasso === 1,
-      catL0: cT >= 700, catL1: cT >= 1300, catL2: cT >= 1900, catL3: cT >= 2500,
-      catTitulo: cTit.slice(0, cChars),
-      catDigitando: cPasso === 4,
-      catDescOn: cPasso === 5,
-      catDesc: 'Structured design, with a crossbody strap and gold hardware.',
-      catPreco: cPasso < 3 ? '—' : cT < 5800 ? 'Comparing similar items for sale…' : 'Price range calculated ✓',
-      catPct: (Math.min(1, cT / this.catFim()) * 100).toFixed(1) + '%',
-      catBotao: cPasso === 0 ? 'Run the agents' : 'Run again',
-      catRodar: () => this.rodarCat(),
-      demoRef: (el) => this.observarDemo(el),
-      demoPassos,
-      demoOcioso: dPasso === 0,
-      demoV1: dPasso >= 1,
-      demoV2: dPasso >= 2,
-      demoV3: dPasso >= 3,
-      demoV4: dPasso >= 4,
-      demoV5: dPasso >= 5,
-      demoTexto: dMsg.slice(0, dChars),
-      demoPct: (Math.min(1, dT / dFim) * 100).toFixed(1) + '%',
-      demoStatus: dPasso === 0 ? 'Ready to run' : dPasso === 5 ? 'Done' : 'Running step ' + dPasso + ' of 5',
-      demoCorStatus: dPasso === 5 ? '#7FA3FF' : dPasso === 0 ? '#A7ABB6' : '#C39BFF',
-      demoBotao: dPasso === 0 ? 'Run the flow' : 'Run again',
-      demoRodar: () => this.rodarDemo(),
-      okrAbas: telasOkr.map((t, i) => ({ nome: t.nome, ativo: i === iOkr, inativo: i !== iOkr, escolher: () => this.setState({ okrTela: i }) })),
-      okrImg: telasOkr[iOkr].img,
-      okrAlt: telasOkr[iOkr].alt,
-      okrLegenda: telasOkr[iOkr].legenda,
-      onEmail: (e) => this.setState({ email: e.target.value, erro: false }),
-      onReceita: (e) => this.setState({ receita: e.target.value }),
-      onMeses: (e) => this.setState({ meses: e.target.value }),
-      entrar: (ev) => {
-        if (ev && ev.preventDefault) ev.preventDefault();
-        if (this.enviandoLead) return;
-        const form = ev && ev.target && ev.target.elements ? ev.target : null;
-        const campo = form && form.elements.email ? form.elements.email : null;
-        const email = String(campo ? campo.value : this.state.email).trim();
-        const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-        if (!ok) { this.setState({ email: email, erro: true, falhou: false }); return; }
-        this.enviandoLead = true;
-        this.setState({ email: email, erro: false, falhou: false });
-        const origem = form ? form.getAttribute('data-origem') : 'topo';
-        this.enviarLead(email, origem).then((salvo) => {
-          this.enviandoLead = false;
-          if (salvo) {
-            // generate_lead só depois que o webhook confirmou (2xx). Sem e-mail/telefone/nome no dataLayer (LGPD).
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ event: 'generate_lead', lead_source: 'form_vaga' });
-            this.setState({ inscrito: true, erro: false, falhou: false });
-          } else {
-            this.setState({ falhou: true });
-          }
-        });
-      }
-    };
-  }
-}
-</script>
+</div>
+</header>
+
+<main id="conteudo">
+<section class="hero">
+<div class="wrap">
+<h1>Websites, AI agents, automation and custom software for small and mid-sized businesses, live in a few weeks.</h1>
+<p class="lead">Start with what your business needs today, like a website that shows up on Google and ChatGPT, and grow with the same team into AI customer service, automated processes and your own software.</p>
+<div class="hero-cta">
+<a class="btn btn-main" href="#diagnostico">Book a free 45-min diagnosis</a>
+<a class="btn btn-zap" href="https://wa.me/5511967886969?text=Hi%2C%20I%20found%20Nocodeia%20through%20the%20website." data-wa="hero" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z"/></svg>Chat on WhatsApp</a>
+</div>
+<ul class="proof" aria-label="Real results"><li><b>80%</b> of conversations resolved by AI at Amore Totale</li><li><b>2 weeks</b> from the first call to the Proacta CRM MVP</li><li><b>210+</b> employees using the OKR Platform</li></ul>
+
+<div class="trail" id="o-que-fazemos"><span id="servicos"></span>
+<div class="trail-head"><h2>What Nocodeia does for your business</h2><p>Four services that work on their own or one after another. Tap each one.</p></div>
+<div class="steps" role="tablist" aria-label="What we do">
+<button class="step" role="tab" id="aba-website" aria-controls="painel-website" aria-selected="true"><span class="n">1</span><span class="t">Website</span></button>
+<button class="step" role="tab" id="aba-ai-customer-service" aria-controls="painel-ai-customer-service" aria-selected="false" tabindex="-1"><span class="n">2</span><span class="t">AI customer service</span></button>
+<button class="step" role="tab" id="aba-automation" aria-controls="painel-automation" aria-selected="false" tabindex="-1"><span class="n">3</span><span class="t">Automation</span></button>
+<button class="step" role="tab" id="aba-systems-and-products" aria-controls="painel-systems-and-products" aria-selected="false" tabindex="-1"><span class="n">4</span><span class="t">Software and products</span></button>
+</div>
+<div class="panel" role="tabpanel" id="painel-website" aria-labelledby="aba-website" tabindex="0">
+<div><h3>A website that Google and ChatGPT recommend</h3><ul><li>New or redesigned website, fast on mobile, with your WhatsApp one tap away.</li><li>SEO for Google and GEO to be cited by ChatGPT, Gemini and Perplexity.</li><li>A blog written every week by an AI agent, with your approval.</li><li>Tracking for every contact, so you know where each customer came from.</li></ul><p class="time">Live in 2 to 4 weeks.</p></div>
+<div class="case"><small>Real example</small><strong>Proacta CRM website</strong><p>Product page with the text ready in the code, so Google and AI tools read it on the first visit, plus a 14-day free trial sign-up with no credit card.</p><a href="https://proactacrm.com/" target="_blank" rel="noopener">See the website →</a></div>
+</div>
+<div class="panel" role="tabpanel" id="painel-ai-customer-service" aria-labelledby="aba-ai-customer-service" tabindex="0" hidden>
+<div><h3>AI that serves your customers on your website, WhatsApp, Instagram or Telegram</h3><ul><li>Answers questions, checks catalog and prices, calculates shipping and books appointments.</li><li>Captures name and phone number and hands a ready customer to your team.</li><li>Works 24 hours a day, including nights and weekends.</li></ul><p class="time">Live in 2 to 4 weeks.</p></div>
+<div class="case"><small>Real example</small><strong>Amora, from Amore Totale</strong><p>Resolves 80% of conversations without a human on the website, Instagram and Facebook, with a Telegram alert when the team is needed.</p><a href="/en/cases/amore-totale/">See the case →</a></div>
+</div>
+<div class="panel" role="tabpanel" id="painel-automation" aria-labelledby="aba-automation" tabindex="0" hidden>
+<div><h3>Processes that run on their own, with no spreadsheets and no rework</h3><ul><li>Connects your CRM, email, spreadsheets, ERP and the systems you already use.</li><li>Automatic reports and alerts in your email or WhatsApp.</li><li>Content produced by AI agents, with your approval before publishing.</li></ul><p class="time">Live in 1 to 3 weeks.</p></div>
+<div class="case"><small>Real example</small><strong>Nocodeia's automated blog and carousel</strong><p>AI agents research the topic, write the article in Portuguese, English and Spanish, and prepare the LinkedIn post and the Instagram carousel. The team only reviews and approves: 13 articles published since September 2026.</p><a href="/en/blog/">See the blog →</a></div>
+</div>
+<div class="panel" role="tabpanel" id="painel-systems-and-products" aria-labelledby="aba-systems-and-products" tabindex="0" hidden>
+<div><h3>Custom software and products: CRM, ERP, portals and apps</h3><ul><li>Internal system that replaces spreadsheets, with role-based access.</li><li>Your own product to sell, with login and payments.</li><li>Accounts, code and data in your company's name from day one.</li></ul><p class="time">MVP in 2 to 6 weeks; larger systems in 1 to 3 months.</p></div>
+<div class="case"><small>Real example</small><strong>Proacta CRM</strong><p>SaaS CRM with 28 million companies and a prospecting agent. From the first call to the MVP, 2 weeks.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="casos" class="adiada">
+<div class="wrap">
+<h2>Client projects already live</h2>
+<div class="cases">
+<div class="row"><div class="who">Amore Totale<small>E-commerce</small></div><div class="what">AI customer service agent on the website, Instagram and Facebook, without depending on WhatsApp. Checks the catalog, calculates shipping and alerts the team on Telegram.</div><div class="res">80% of conversations resolved without a human<a href="/en/cases/amore-totale/" aria-label="See the case: Amore Totale">See the case →</a></div></div>
+<div class="row"><div class="who">Proacta CRM<small>B2B software</small></div><div class="what">Smart SaaS CRM with a database of 28 million companies and a LinkedIn prospecting agent.</div><div class="res">MVP live in 2 weeks</div></div>
+<div class="row"><div class="who">OKR Platform<small>Multinational technology consultancy</small></div><div class="what">System that replaced a spreadsheet rebuilt every month: monthly check-ins, formal goal sign-off and role-based dashboards.</div><div class="res">210+ employees with goals in the system<a href="/en/cases/okr-platform/" aria-label="See the case: OKR Platform">See the case →</a></div></div>
+</div>
+<blockquote><p>“We wanted to build a smart SaaS CRM with 28 million active companies inside it, so the product had to be robust. From the first conversation with Nocodeia to the MVP launch, it took 2 weeks.”</p><footer>Luiz Almeida, Sales Director at Proacta CRM</footer></blockquote>
+</div>
+</section>
+
+<section id="para-quem" class="adiada">
+<div class="wrap">
+<h2>Built for small and mid-sized businesses</h2>
+<p class="lead" style="margin-top:1rem">Every industry has a different bottleneck. This is the first step that usually pays off most in each one.</p>
+<div class="who-grid" id="setores">
+<div><h3>Retail and e-commerce</h3><p>Lots of repeated questions and sales lost after hours.</p><p>AI customer service and a website that shows up on Google.</p></div>
+<div><h3>Clinics and medical offices</h3><p>Appointments booked by hand and patients left unanswered at night.</p><p>Automatic scheduling and 24-hour service.</p></div>
+<div><h3>Real estate</h3><p>Leads that go cold before an agent replies.</p><p>An agent that qualifies and routes leads instantly.</p></div>
+<div><h3>Manufacturing and B2B</h3><p>Slow prospecting and information scattered across spreadsheets.</p><p>Custom CRM and sales automation.</p></div>
+<div><h3>Restaurants and delivery</h3><p>Messy orders on WhatsApp and an outdated menu.</p><p>A website where orders arrive complete on WhatsApp.</p></div>
+<div><h3>Accounting and law firms</h3><p>Clients asking for the same document every week and deadlines tracked in spreadsheets.</p><p>Client portal and automatic deadline alerts.</p></div>
+<div><h3>Schools and courses</h3><p>Prospects who go cold without a reply and repeated questions about classes and fees.</p><p>An agent that answers questions and follows enrollment through to the end.</p></div>
+<div><h3>Gyms, salons and beauty</h3><p>Empty slots from no-shows and customers who disappear after the first visit.</p><p>Booking with automatic reminders and messages that bring customers back.</p></div>
+<div><h3>Repair shops and service providers</h3><p>Quotes that take days and the team's schedule kept on paper.</p><p>Quotes through the website and the team's schedule in a simple system.</p></div>
+<div><h3>Distributors and wholesale</h3><p>Reseller orders typed by hand and an outdated price list.</p><p>A reseller catalog with orders that go straight into the system.</p></div>
+<div><h3>Hotels and guesthouses</h3><p>Bookings lost after hours and the same question about price and availability.</p><p>24-hour service that checks availability and forwards the booking.</p></div>
+<div><h3>Agencies and consultancies</h3><p>Client reports put together by hand every month and proposals that take too long.</p><p>Automatic reports and a CRM with standardized proposals.</p></div>
+</div>
+<button type="button" class="who-mais" aria-controls="setores" aria-expanded="false" data-mais="Show 6 more industries" data-menos="Show fewer industries">Show 6 more industries</button>
+<p class="who-nota">Don't see your industry? The diagnosis works for any business. <a href="#diagnostico">Book a free diagnosis →</a></p>
+</div>
+</section>
+
+<section id="como-funciona" class="adiada">
+<div class="wrap">
+<h2>How it works</h2>
+<ol class="process">
+<li><h3>Free diagnosis</h3><p>In 45 minutes, we map the bottleneck and the first step with a return.</p></li>
+<li><h3>Prototype in 48 hours</h3><p>You click through the flow before signing any contract.</p></li>
+<li><h3>Live in weeks</h3><p>Fixed deadline. Accounts and data in your company's name.</p></li>
+<li><h3>Continuous improvement</h3><p>New features, content, SEO tweaks and AI monitoring, month after month.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="sobre" class="adiada">
+<div class="wrap about">
+<div><h2>You talk directly to the person who builds it</h2><p class="lead">I'm Alexandre, founder of Nocodeia. I've spent more than 25 years in technology, at companies like IBM, Xerox, DHL, Bosch, Rocket.Chat and Neoway. I combine multinational-grade project discipline with the speed of no-code and AI.</p></div>
+<ul class="facts">
+<li><b>25+ years</b> in technology</li>
+<li><b>Master's</b> in Business Analytics from Hult International Business School (USA)</li>
+<li><b>Service</b> in English, Spanish and Portuguese</li>
+</ul>
+</div>
+</section>
+
+<section id="duvidas" class="adiada">
+<div class="wrap">
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details class="q"><summary>Do I need to start with a website?</summary><p>No. You start with whatever is holding your business back the most today. The 45-minute diagnosis points to the first step.</p></details>
+<details class="q"><summary>How long does it take?</summary><p>1 to 6 weeks for websites, AI agents, automation and MVPs. Larger internal systems take 1 to 3 months.</p></details>
+<details class="q"><summary>Does the AI work on WhatsApp?</summary><p>Yes, through the official WhatsApp API. It also works on your website, Instagram, Facebook and Telegram. For products WhatsApp doesn't allow, we use the other channels.</p></details>
+<details class="q"><summary>Are the accounts in my name?</summary><p>Yes. Domain, accounts, data and access stay in your company's name from day one.</p></details>
+<details class="q"><summary>Can no-code scale?</summary><p>Yes. We use mature platforms and industry-standard APIs. If the product needs custom code, that path is designed from the start.</p></details>
+</div>
+</div>
+</section>
+
+<section id="diagnostico" style="padding-top:0"><span id="vaga"></span>
+<div class="wrap build">
+<h2>Book your free diagnosis</h2>
+<p class="lead">Select what you need and send it on WhatsApp. We reply the same business day.</p>
+<form id="montar">
+<fieldset>
+<legend>What does your business need?</legend>
+<div class="chips">
+<label><input type="checkbox" name="precisa" value="a website that shows up on Google and ChatGPT"> Website</label>
+<label><input type="checkbox" name="precisa" value="AI to serve customers"> AI customer service</label>
+<label><input type="checkbox" name="precisa" value="to automate processes"> Automation</label>
+<label><input type="checkbox" name="precisa" value="custom software or a product"> Software or product</label>
+<label><input type="checkbox" name="precisa" value="help deciding where to start"> Not sure yet</label>
+</div>
+</fieldset>
+<a class="btn btn-main" id="enviar" href="https://wa.me/5511967886969?text=Hi!%20I%20found%20Nocodeia%20through%20the%20website.%20I'd%20like%20to%20book%20the%20free%20diagnosis." data-wa="diagnostico" target="_blank" rel="noopener">Send on WhatsApp</a>
+<output id="resumo" aria-live="polite">Nothing selected: you can also just say hello.</output>
+</form>
+<form class="por-email" id="por-email" novalidate>
+<h3>Prefer email?</h3>
+<p>Leave your email and we'll reply the same business day.</p>
+<div class="linha-email">
+<label class="armadilha" aria-hidden="true">Website<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label>
+<label for="email-lead" class="armadilha">Your email</label>
+<input id="email-lead" type="email" name="email" autocomplete="email" inputmode="email" required placeholder="you@company.com" aria-label="Your email">
+<button class="btn btn-main" type="submit">Send</button>
+</div>
+<p class="retorno" id="retorno-email" role="status" aria-live="polite"></p>
+<p class="aviso">We only use your email to reply. See our <a href="/en/privacy/">privacy policy</a>.</p>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="site">
+<div class="wrap cols">
+<div>Nocodeia · Campinas, Brazil<br><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--><br>© 2026 Nocodeia. All rights reserved.</div>
+<nav aria-label="Footer"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me">LinkedIn</a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me">Instagram</a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me">Facebook</a><a href="/en/cases/">Cases</a><a href="/en/blog/">Blog</a><a href="/en/privacy/">Privacy</a></nav>
+</div>
+</footer>
+
+<a class="float-zap" href="https://wa.me/5511967886969?text=Hi%2C%20I%20found%20Nocodeia%20through%20the%20website." data-wa="flutuante" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z"/></svg></a>
+
 <script>
-document.addEventListener('click', function (e) {
-  var wa = e.target.closest && e.target.closest('a[data-wa]');
-  if (wa) { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: 'whatsapp_click', wa_origem: wa.getAttribute('data-wa') }); }
-  var m = document.querySelector('.nc-burger[open]');
-  if (m && (!m.contains(e.target) || e.target.closest('.nc-burger-painel a'))) m.removeAttribute('open');
+(function(){
+var T={"wa":"5511967886969","inicio":"Hi! I found Nocodeia through the website","precisa":"and I need","fim":"I'd like to book the free diagnosis.","semItens":"Nothing selected: you can also just say hello.","previa":"Message:","enviando":"Sending…","botao":"Send","ok":"Got it! We'll reply to your email the same business day.","invalido":"Please check the email address.","falhou":"We couldn't save it right now. Reach us on WhatsApp:"},dl=function(o){window.dataLayer=window.dataLayer||[];window.dataLayer.push(o);};
+/* abas dos serviços: clique, setas do teclado e endereço (#automacao abre a aba Automação) */
+var tabs=[].slice.call(document.querySelectorAll('.step'));
+function pick(t,foco){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});if(foco)t.focus();}
+tabs.forEach(function(t,i){
+t.addEventListener('click',function(){pick(t);var id=t.id.slice(4);dl({event:'servico_aba',servico:id});if(history.replaceState)history.replaceState(null,'','#'+id);});
+t.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(d){e.preventDefault();pick(tabs[(i+d+tabs.length)%tabs.length],true);}});
 });
+function porEndereco(suave){var id=decodeURIComponent(location.hash.slice(1));var t=id&&document.getElementById('aba-'+id);if(t){pick(t);document.getElementById('o-que-fazemos').scrollIntoView({behavior:suave?'smooth':'instant'});}}
+porEndereco(false);window.addEventListener('hashchange',function(){porEndereco(true);});
+/* setores: no celular mostra 6 e abre o resto */
+var bm=document.querySelector('.who-mais');if(bm)bm.addEventListener('click',function(){var g=document.getElementById('setores'),ab=g.classList.toggle('aberto');bm.setAttribute('aria-expanded',ab);bm.textContent=ab?bm.dataset.menos:bm.dataset.mais;});
+/* WhatsApp: mensagem montada com o que o cliente marcou */
+var f=document.getElementById('montar'),out=document.getElementById('resumo'),link=document.getElementById('enviar');
+function itens(){return [].slice.call(f.querySelectorAll('input:checked')).map(function(i){return i.value});}
+f.addEventListener('change',function(e){if(e.target.type==='checkbox')e.target.parentNode.classList.toggle('marcado',e.target.checked);var v=itens();var msg=T.inicio+(v.length?' '+T.precisa+' '+v.join(', '):'')+'. '+T.fim;link.href='https://wa.me/'+T.wa+'?text='+encodeURIComponent(msg);out.textContent=v.length?T.previa+' "'+msg+'"':T.semItens;});
+f.addEventListener('submit',function(e){e.preventDefault();});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-wa]');if(a)dl({event:'whatsapp_click',wa_origem:a.getAttribute('data-wa'),wa_itens:a.id==='enviar'?itens().length:undefined});
+var m=document.querySelector('.burger[open]');if(m&&(!m.contains(e.target)||e.target.closest('.painel a')))m.removeAttribute('open');});
+/* e-mail: grava no Proacta CRM pela função /api/lead; generate_lead só depois da confirmação */
+var fe=document.getElementById('por-email'),ret=document.getElementById('retorno-email'),bt=fe.querySelector('button'),ocupado=0;
+fe.addEventListener('submit',function(e){e.preventDefault();if(ocupado)return;
+var email=String(fe.elements.email.value||'').trim();
+if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ret.dataset.tipo='erro';ret.textContent=T.invalido;fe.elements.email.focus();return;}
+ocupado=1;bt.disabled=true;bt.textContent=T.enviando;ret.textContent='';
+var q=new URLSearchParams(location.search),utm={};['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){if(q.get(k))utm[k]=q.get(k);});
+var ctrl=window.AbortController?new AbortController():null,tm=setTimeout(function(){if(ctrl)ctrl.abort();},10000);
+fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},signal:ctrl?ctrl.signal:undefined,body:JSON.stringify({email:email,website_url:fe.elements.website_url.value,lead_source:'form_diagnostico',origem_form:'diagnostico',interesses:itens(),idioma:document.documentElement.lang,pagina:location.href,referrer:document.referrer||'',utm:utm})})
+.then(function(r){return r.ok;}).catch(function(){return false;}).then(function(ok){clearTimeout(tm);ocupado=0;bt.disabled=false;bt.textContent=T.botao;
+if(ok){dl({event:'generate_lead',lead_source:'form_diagnostico'});ret.dataset.tipo='ok';ret.textContent=T.ok;fe.reset();}
+else{ret.dataset.tipo='erro';ret.textContent=T.falhou+' ';var a=document.createElement('a');a.href='https://wa.me/'+T.wa+'?text='+encodeURIComponent(T.inicio+'. '+T.fim+' '+email);a.textContent='WhatsApp';a.target='_blank';a.rel='noopener';a.setAttribute('data-wa','email-falhou');ret.appendChild(a);}});
+});
+})();
 </script>
 </body>
 </html>

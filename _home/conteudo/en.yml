@@ -1,0 +1,241 @@
+# Página inicial em inglês (nocodeiaww.com/en/).
+# Mesma estrutura do pt.yml. Tom neutro: sem restringir o atendimento a um país.
+# {artigos} vira o número de artigos do blog na hora da publicação.
+
+meta:
+  titulo: Websites, AI agents, automation and custom software for small and mid-sized businesses | Nocodeia
+  descricao: Nocodeia builds websites, AI agents, automation and custom software for small and mid-sized businesses, live in a few weeks. Free 45-minute diagnosis.
+
+menu:
+  o_que_fazemos: What we do
+  casos: Cases
+  para_quem: Who it's for
+  como_funciona: How it works
+  duvidas: FAQ
+  blog: Blog
+  botao: Book a diagnosis
+  abrir_menu: Menu
+  idioma: Language
+  navegacao: Main
+
+hero:
+  titulo: Websites, AI agents, automation and custom software for small and mid-sized businesses, live in a few weeks.
+  subtitulo: Start with what your business needs today, like a website that shows up on Google and ChatGPT, and grow with the same team into AI customer service, automated processes and your own software.
+  botao_principal: Book a free 45-min diagnosis
+  botao_whatsapp: Chat on WhatsApp
+  mensagem_whatsapp: Hi, I found Nocodeia through the website.
+  rotulo_provas: Real results
+  provas:
+    - numero: 80%
+      texto: of conversations resolved by AI at Amore Totale
+    - numero: 2 weeks
+      texto: from the first call to the Proacta CRM MVP
+    - numero: 210+
+      texto: employees using the OKR Platform
+
+servicos:
+  titulo: What Nocodeia does for your business
+  subtitulo: Four services that work on their own or one after another. Tap each one.
+  rotulo_exemplo: Real example
+  itens:
+    # o "id" é o endereço da aba: nocodeiaww.com/en/#automation abre a aba Automation. Não mude depois de publicar.
+    - id: website
+      nome: Website
+      titulo: A website that Google and ChatGPT recommend
+      entregas:
+        - New or redesigned website, fast on mobile, with your WhatsApp one tap away.
+        - SEO for Google and GEO to be cited by ChatGPT, Gemini and Perplexity.
+        - A blog written every week by an AI agent, with your approval.
+        - Tracking for every contact, so you know where each customer came from.
+      prazo: Live in 2 to 4 weeks.
+      exemplo:
+        nome: Proacta CRM website
+        texto: Product page with the text ready in the code, so Google and AI tools read it on the first visit, plus a 14-day free trial sign-up with no credit card.
+        link: https://proactacrm.com/
+        link_texto: See the website
+    - id: ai-customer-service
+      nome: AI customer service
+      titulo: AI that serves your customers on your website, WhatsApp, Instagram or Telegram
+      entregas:
+        - Answers questions, checks catalog and prices, calculates shipping and books appointments.
+        - Captures name and phone number and hands a ready customer to your team.
+        - Works 24 hours a day, including nights and weekends.
+      prazo: Live in 2 to 4 weeks.
+      exemplo:
+        nome: Amora, from Amore Totale
+        texto: Resolves 80% of conversations without a human on the website, Instagram and Facebook, with a Telegram alert when the team is needed.
+        link: /en/cases/amore-totale/
+    - id: automation
+      nome: Automation
+      titulo: Processes that run on their own, with no spreadsheets and no rework
+      entregas:
+        - Connects your CRM, email, spreadsheets, ERP and the systems you already use.
+        - Automatic reports and alerts in your email or WhatsApp.
+        - Content produced by AI agents, with your approval before publishing.
+      prazo: Live in 1 to 3 weeks.
+      exemplo:
+        nome: Nocodeia's automated blog and carousel
+        texto: "AI agents research the topic, write the article in Portuguese, English and Spanish, and prepare the LinkedIn post and the Instagram carousel. The team only reviews and approves: {artigos} articles published since September 2026."
+        link: /en/blog/
+        link_texto: See the blog
+    - id: systems-and-products
+      nome: Software and products
+      titulo: "Custom software and products: CRM, ERP, portals and apps"
+      entregas:
+        - Internal system that replaces spreadsheets, with role-based access.
+        - Your own product to sell, with login and payments.
+        - Accounts, code and data in your company's name from day one.
+      prazo: MVP in 2 to 6 weeks; larger systems in 1 to 3 months.
+      exemplo:
+        nome: Proacta CRM
+        texto: SaaS CRM with 28 million companies and a prospecting agent. From the first call to the MVP, 2 weeks.
+        link: ""   # vira /en/cases/proacta-crm/ quando o case for publicado
+
+casos:
+  titulo: Client projects already live
+  ver_case: See the case
+  itens:
+    - cliente: Amore Totale
+      segmento: E-commerce
+      texto: AI customer service agent on the website, Instagram and Facebook, without depending on WhatsApp. Checks the catalog, calculates shipping and alerts the team on Telegram.
+      resultado: 80% of conversations resolved without a human
+      link: /en/cases/amore-totale/
+    - cliente: Proacta CRM
+      segmento: B2B software
+      texto: Smart SaaS CRM with a database of 28 million companies and a LinkedIn prospecting agent.
+      resultado: MVP live in 2 weeks
+      link: ""   # vira /en/cases/proacta-crm/ quando o case for publicado
+    - cliente: OKR Platform
+      segmento: Multinational technology consultancy
+      texto: "System that replaced a spreadsheet rebuilt every month: monthly check-ins, formal goal sign-off and role-based dashboards."
+      resultado: 210+ employees with goals in the system
+      link: /en/cases/okr-platform/
+  depoimentos:
+    - texto: We wanted to build a smart SaaS CRM with 28 million active companies inside it, so the product had to be robust. From the first conversation with Nocodeia to the MVP launch, it took 2 weeks.
+      nome: Luiz Almeida
+      cargo: Sales Director at Proacta CRM
+
+para_quem:
+  titulo: Built for small and mid-sized businesses
+  subtitulo: Every industry has a different bottleneck. This is the first step that usually pays off most in each one.
+  itens:
+    - nome: Retail and e-commerce
+      problema: Lots of repeated questions and sales lost after hours.
+      solucao: AI customer service and a website that shows up on Google.
+    - nome: Clinics and medical offices
+      problema: Appointments booked by hand and patients left unanswered at night.
+      solucao: Automatic scheduling and 24-hour service.
+    - nome: Real estate
+      problema: Leads that go cold before an agent replies.
+      solucao: An agent that qualifies and routes leads instantly.
+    - nome: Manufacturing and B2B
+      problema: Slow prospecting and information scattered across spreadsheets.
+      solucao: Custom CRM and sales automation.
+    - nome: Restaurants and delivery
+      problema: Messy orders on WhatsApp and an outdated menu.
+      solucao: A website where orders arrive complete on WhatsApp.
+    - nome: Accounting and law firms
+      problema: Clients asking for the same document every week and deadlines tracked in spreadsheets.
+      solucao: Client portal and automatic deadline alerts.
+    - nome: Schools and courses
+      problema: Prospects who go cold without a reply and repeated questions about classes and fees.
+      solucao: An agent that answers questions and follows enrollment through to the end.
+    - nome: Gyms, salons and beauty
+      problema: Empty slots from no-shows and customers who disappear after the first visit.
+      solucao: Booking with automatic reminders and messages that bring customers back.
+    - nome: Repair shops and service providers
+      problema: Quotes that take days and the team's schedule kept on paper.
+      solucao: Quotes through the website and the team's schedule in a simple system.
+    - nome: Distributors and wholesale
+      problema: Reseller orders typed by hand and an outdated price list.
+      solucao: A reseller catalog with orders that go straight into the system.
+    - nome: Hotels and guesthouses
+      problema: Bookings lost after hours and the same question about price and availability.
+      solucao: 24-hour service that checks availability and forwards the booking.
+    - nome: Agencies and consultancies
+      problema: Client reports put together by hand every month and proposals that take too long.
+      solucao: Automatic reports and a CRM with standardized proposals.
+  nota: Don't see your industry? The diagnosis works for any business.
+  nota_link: Book a free diagnosis
+  ver_mais: Show {n} more industries
+  ver_menos: Show fewer industries
+
+como_funciona:
+  titulo: How it works
+  passos:
+    - titulo: Free diagnosis
+      texto: In 45 minutes, we map the bottleneck and the first step with a return.
+    - titulo: Prototype in 48 hours
+      texto: You click through the flow before signing any contract.
+    - titulo: Live in weeks
+      texto: Fixed deadline. Accounts and data in your company's name.
+    - titulo: Continuous improvement
+      texto: New features, content, SEO tweaks and AI monitoring, month after month.
+
+sobre:
+  titulo: You talk directly to the person who builds it
+  texto: I'm Alexandre, founder of Nocodeia. I've spent more than 25 years in technology, at companies like IBM, Xerox, DHL, Bosch, Rocket.Chat and Neoway. I combine multinational-grade project discipline with the speed of no-code and AI.
+  fatos:
+    - destaque: 25+ years
+      texto: in technology
+    - destaque: Master's
+      texto: in Business Analytics from Hult International Business School (USA)
+    - destaque: Service
+      texto: in English, Spanish and Portuguese
+
+duvidas:
+  titulo: Frequently asked questions
+  itens:
+    - pergunta: Do I need to start with a website?
+      resposta: No. You start with whatever is holding your business back the most today. The 45-minute diagnosis points to the first step.
+    - pergunta: How long does it take?
+      resposta: 1 to 6 weeks for websites, AI agents, automation and MVPs. Larger internal systems take 1 to 3 months.
+    - pergunta: Does the AI work on WhatsApp?
+      resposta: Yes, through the official WhatsApp API. It also works on your website, Instagram, Facebook and Telegram. For products WhatsApp doesn't allow, we use the other channels.
+    - pergunta: Are the accounts in my name?
+      resposta: Yes. Domain, accounts, data and access stay in your company's name from day one.
+    - pergunta: Can no-code scale?
+      resposta: Yes. We use mature platforms and industry-standard APIs. If the product needs custom code, that path is designed from the start.
+
+diagnostico:
+  titulo: Book your free diagnosis
+  subtitulo: Select what you need and send it on WhatsApp. We reply the same business day.
+  pergunta: What does your business need?
+  opcoes:
+    - rotulo: Website
+      frase: a website that shows up on Google and ChatGPT
+    - rotulo: AI customer service
+      frase: AI to serve customers
+    - rotulo: Automation
+      frase: to automate processes
+    - rotulo: Software or product
+      frase: custom software or a product
+    - rotulo: Not sure yet
+      frase: help deciding where to start
+  botao: Send on WhatsApp
+  mensagem_inicio: Hi! I found Nocodeia through the website
+  mensagem_precisa: and I need
+  mensagem_fim: I'd like to book the free diagnosis.
+  sem_itens: "Nothing selected: you can also just say hello."
+  previa: "Message:"
+  email:
+    titulo: Prefer email?
+    texto: Leave your email and we'll reply the same business day.
+    rotulo: Your email
+    exemplo: you@company.com
+    botao: Send
+    enviando: Sending…
+    ok: Got it! We'll reply to your email the same business day.
+    invalido: Please check the email address.
+    falhou: "We couldn't save it right now. Reach us on WhatsApp:"
+    privacidade: We only use your email to reply. See our
+    privacidade_link: privacy policy
+
+rodape:
+  local: Campinas, Brazil
+  cnpj: Tax ID (CNPJ)
+  privacidade: Privacy
+  privacidade_url: /en/privacy/
+  blog_url: /en/blog/
+  casos_url: /en/cases/
+  direitos: All rights reserved.

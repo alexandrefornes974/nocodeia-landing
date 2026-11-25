@@ -66,7 +66,7 @@ function pagina(l, c, emp, disponiveis) {
   const wa = msg => `https://wa.me/${emp.whatsapp}?text=${encodeURIComponent(msg)}`;
   const linkExterno = u => /^https?:/.test(u) ? ' target="_blank" rel="noopener"' : '';
 
-  // troca de idioma: aponta para a home de cada idioma (as versões antigas de en/es seguem no ar até serem refeitas)
+  // troca de idioma: aponta para a home de cada idioma
   const idiomas = Object.entries(IDIOMAS).map(([k, I]) =>
     `<a href="${I.base}/" hreflang="${I.html}" lang="${I.html}"${k === l ? ' aria-current="page"' : ''} title="${I.rotulo}">${k.toUpperCase()}</a>`).join('');
   const itensMenu = [
@@ -198,7 +198,7 @@ ${JSON.stringify(ld)}
 <div class="wrap nav">
 <a class="logo" href="${inicio}" aria-label="${esc(emp.nome)}"><img src="/assets/logo_h.webp" alt="${esc(emp.nome)}" width="120" height="44"></a>
 <div class="menu">
-<nav aria-label="Principal"><ul>${menuLista}</ul></nav>
+<nav aria-label="${esc(c.menu.navegacao || 'Principal')}"><ul>${menuLista}</ul></nav>
 <div class="idiomas" role="group" aria-label="${esc(c.menu.idioma)}">${idiomas}</div>
 <a class="btn btn-main btn-cta" href="#diagnostico">${esc(c.menu.botao)}</a>
 <details class="burger"><summary aria-label="${esc(c.menu.abrir_menu)}">${ICONE_MENU}</summary>
