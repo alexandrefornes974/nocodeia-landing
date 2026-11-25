@@ -192,10 +192,10 @@ ${chamada(l, m.service, 'blog')}
   };
 }
 
-// Filtro por serviço no índice: sem JavaScript todos os posts aparecem; com JavaScript os botões filtram
+// Filtro por serviço no índice: aparece desde o início (escondê-lo e mostrar depois empurrava a página: CLS 0,9); os botões filtram
 // e o endereço guarda a escolha (/blog/?servico=automacao), para a home e os posts poderem linkar direto.
 const SCRIPT_FILTRO = `<script>
-(function(){var f=document.querySelector('.filtro');if(!f)return;f.hidden=false;
+(function(){var f=document.querySelector('.filtro');if(!f)return;
 var bs=[].slice.call(f.querySelectorAll('button')),cs=[].slice.call(document.querySelectorAll('.cartao[data-cat]'));
 function escolher(cat,registrar){bs.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.cat===cat));});
 cs.forEach(function(c){c.hidden=!!cat&&c.dataset.cat!==cat;});
@@ -226,7 +226,7 @@ function paginaIndice(posts, l) {
   };
   const corpo = `<div class="wrap">
 <div class="cabeca"><h1>${L.blogTitulo}</h1><p>${L.blogDescricao}</p></div>
-${meus.length ? `<div class="filtro" role="group" aria-label="${L.filtrar}" hidden>${botoes}</div>
+${meus.length ? `<div class="filtro" role="group" aria-label="${L.filtrar}">${botoes}</div>
 <div class="grade">
 ${cartoes}
 </div>` : `<p class="cabeca">${L.semPosts}</p>`}
