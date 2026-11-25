@@ -94,3 +94,32 @@ article h1{font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.06;margin:1.1rem 0 1
 .autor p{margin:0;font-size:.95rem;color:var(--muted)}
 .autor strong{color:var(--text)}
 @media (max-width:560px){.conteudo{font-size:1.04rem}.chamada .acoes .btn{width:100%}}
+
+/* calculadora de WhatsApp: as variáveis antigas que calculadora.css usa passam a vir das cores novas (vale na página e no post) */
+.nc-calc{--sup:var(--surface);--borda:var(--line);--texto:var(--text);--suave:#D3D6E0;--apagado:var(--muted)}
+.pagina-larga h1{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.06;margin:1.1rem 0 1rem;max-width:22ch}
+.pagina-larga .intro{color:var(--muted);font-size:clamp(1.05rem,1.6vw,1.2rem);max-width:62ch;margin:0 0 2.25rem}
+.pagina-larga .bloco{max-width:46rem;margin:clamp(2.5rem,5vw,4rem) 0 0}
+.pagina-larga .bloco h2{font-size:clamp(1.4rem,2.6vw,1.75rem);line-height:1.2;margin:0 0 1rem;max-width:none}
+.pagina-larga .bloco p,.pagina-larga .bloco li{color:#E2E4EC}
+.pagina-larga .bloco p{margin:0 0 .9rem}
+.pagina-larga .bloco ul{padding-left:1.4rem;margin:0 0 1rem}
+.pagina-larga .bloco li{margin-bottom:.5rem}
+.pagina-larga .bloco a{color:#B9A6FF}
+.pagina-larga .avisos{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--violet);border-radius:0 14px 14px 0;padding:clamp(1rem,3vw,1.5rem)}
+.pagina-larga .avisos p{font-size:.98rem}
+.pagina-larga .avisos p:last-child{margin:0}
+.pagina-larga .tabela{overflow-x:auto;margin:0 0 1rem}
+.pagina-larga .tabela table{width:100%;border-collapse:collapse;font-size:.98rem}
+.pagina-larga .tabela th,.pagina-larga .tabela td{border:1px solid var(--line);padding:.55rem .75rem;text-align:left}
+.pagina-larga .tabela thead th,.pagina-larga .tabela tbody th{background:var(--surface)}
+.pagina-larga .chamada{max-width:46rem}
+
+/* página 404 */
+.erro404{max-width:40rem;padding-block:clamp(1rem,5vw,3rem)}
+.erro404 .codigo{font:700 clamp(4rem,12vw,7rem)/1 var(--display);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin:0}
+.erro404 h1{font-size:clamp(2rem,5vw,3rem);line-height:1.08;margin:.6rem 0 .8rem}
+.erro404 p{color:var(--muted);margin:0}
+.erro404 .acoes{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.75rem}
+.erro404 .contato{margin-top:2rem;font-size:.92rem}
+.erro404 .contato a{color:var(--text)}

@@ -160,9 +160,10 @@ var m=document.querySelector('.burger[open]');if(m&&(!m.contains(e.target)||e.ta
  * alternativos: { pt, en, es } só com os idiomas em que a página existe (vira hreflang);
  * idiomas: { pt, en, es } para o seletor (idioma sem versão aponta para outra página, como o índice).
  */
-export function pagina({ l, titulo, descricao, canonico, alternativos, idiomas, imagem, tipoOg, ld, corpo, atual, cssExtra = '', scriptExtra = '', preload = '' }) {
+export function pagina({ l, titulo, descricao, canonico, alternativos, idiomas, imagem, tipoOg, ld, corpo, atual, cssExtra = '', scriptExtra = '', preload = '', noindex = false }) {
   const I = IDIOMAS[l], emp = empresa();
-  const hreflang = Object.entries(alternativos).map(([k, u]) => `<link rel="alternate" hreflang="${IDIOMAS[k].html}" href="${BASE_URL}${u}">`).join('\n')
+  // noindex (página 404): sem canonical nem hreflang, porque ela responde em qualquer endereço
+  const hreflang = noindex ? '<meta name="robots" content="noindex">' : `<link rel="canonical" href="${BASE_URL}${canonico}">\n` + Object.entries(alternativos).map(([k, u]) => `<link rel="alternate" hreflang="${IDIOMAS[k].html}" href="${BASE_URL}${u}">`).join('\n')
     + `\n<link rel="alternate" hreflang="x-default" href="${BASE_URL}${alternativos.pt || alternativos[l]}">`;
   const css = cssArquivo('casca.css') + cssArquivo('paginas.css') + cssExtra;
   return `<!doctype html>
@@ -174,7 +175,6 @@ ${gtmAdiado()}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(titulo)}</title>
 <meta name="description" content="${esc(descricao)}">
-<link rel="canonical" href="${BASE_URL}${canonico}">
 ${hreflang}
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" href="/assets/icon.png">
@@ -185,14 +185,11 @@ ${hreflang}
 <meta property="og:locale" content="${I.og}">
 <meta property="og:title" content="${esc(titulo)}">
 <meta property="og:description" content="${esc(descricao)}">
-<meta property="og:url" content="${BASE_URL}${canonico}">
-<meta property="og:image" content="${BASE_URL}${imagem}">
+${noindex ? '' : `<meta property="og:url" content="${BASE_URL}${canonico}">\n`}<meta property="og:image" content="${BASE_URL}${imagem}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="/assets/fontes/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
 ${preload}<style>${css}</style>
-<script type="application/ld+json">
-${JSON.stringify(ld)}
-</script>
+${ld ? `<script type="application/ld+json">\n${JSON.stringify(ld)}\n</script>` : ''}
 </head>
 <body>
 ${gtmNoscript()}

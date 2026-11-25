@@ -237,7 +237,8 @@ ${cartoes}
 
 // ---------- sitemap e llms.txt ----------
 // Páginas estáticas escritas à mão: [caminho, data da última alteração]. Atualize a data quando a página mudar.
-const PAGINAS_ESTATICAS = [['/calculadora-whatsapp/', '2026-11-20']];
+// A calculadora e a 404 são geradas por _paginas/build.mjs (a 404 não entra no sitemap).
+const PAGINAS_ESTATICAS = [['/calculadora-whatsapp/', '2026-11-25'], ['/en/whatsapp-cost-calculator/', '2026-11-25'], ['/es/calculadora-whatsapp/', '2026-11-25']];
 
 function sitemap(posts) {
   const hoje = new Date().toISOString().slice(0, 10);

@@ -49,7 +49,7 @@ Este total no incluye el modelo de IA, el hosting, el armado ni la mensualidad d
 
 Lo que muestra la cuenta: el mensaje de atención es barato, y lo que pesa es el volumen y el marketing. Por eso vale la pena descubrir tu volumen real antes de contratar proveedor y número.
 
-¿Quieres calcular con tus números? Usa nuestra [calculadora de costos de WhatsApp](/calculadora-whatsapp/) (en portugués; trabaja en reales brasileños, no en dólares). Usa las mismas tarifas de Brasil, vigentes desde el 1 de octubre de 2026 y consultadas el 20 de noviembre de 2026. Meta solo puede reajustar los precios el primer día de un trimestre, así que revisa la tabla oficial antes de decidir.
+¿Quieres calcular con tus números? Usa nuestra [calculadora de costos de WhatsApp](/es/calculadora-whatsapp/) (trabaja en reales brasileños, no en dólares). Usa las mismas tarifas de Brasil, vigentes desde el 1 de octubre de 2026 y consultadas el 20 de noviembre de 2026. Meta solo puede reajustar los precios el primer día de un trimestre, así que revisa la tabla oficial antes de decidir.
 
 ## ¿Cómo armar el agente en el chat de tu sitio web?
 

@@ -1,0 +1,51 @@
+<p class="intro">Indica cuántas conversaciones y mensajes esperas por mes y mira cuánto cobra Meta por la API oficial de WhatsApp, con las tarifas de Meta para Brasil, en reales (R$). Los valores iniciales son el ejemplo del artículo. Cámbialos por tus números: el resultado se actualiza mientras escribes.</p>
+
+<!--nc-painel-->
+<div class="nc-calc nc-calc--pagina" data-nc-calc>
+<div class="nc-calc__cartao">
+<h2 class="nc-calc__titulo" id="t-form">Tus números</h2>
+<div class="nc-calc__form" role="group" aria-labelledby="t-form">
+<div class="nc-calc__campo"><label for="nc-calc-conversas">Conversaciones por mes</label><span class="nc-calc__dica" id="nc-calc-d-conversas">Conversaciones en las que el cliente escribe primero y el agente responde.</span><input id="nc-calc-conversas" data-campo="conversas" type="text" inputmode="numeric" autocomplete="off" value="3000" aria-describedby="nc-calc-d-conversas nc-calc-e-conversas"><p class="nc-calc__erro" id="nc-calc-e-conversas" data-erro="conversas"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-mensagens">Mensajes del agente por conversación</label><span class="nc-calc__dica" id="nc-calc-d-mensagens">Respuestas libres dentro de la ventana de 24 horas (atención). El 6 del ejemplo es una suposición, no un promedio de mercado.</span><input id="nc-calc-mensagens" data-campo="mensagens" type="text" inputmode="numeric" autocomplete="off" value="6" aria-describedby="nc-calc-d-mensagens nc-calc-e-mensagens"><p class="nc-calc__erro" id="nc-calc-e-mensagens" data-erro="mensagens"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-marketing">Mensajes de marketing por mes</label><span class="nc-calc__dica" id="nc-calc-d-marketing">Promociones, novedades, reactivación.</span><input id="nc-calc-marketing" data-campo="marketing" type="text" inputmode="numeric" autocomplete="off" value="2000" aria-describedby="nc-calc-d-marketing nc-calc-e-marketing"><p class="nc-calc__erro" id="nc-calc-e-marketing" data-erro="marketing"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-utilidade">Mensajes de utilidad por mes</label><span class="nc-calc__dica" id="nc-calc-d-utilidade">Confirmación de pedido, aviso de entrega.</span><input id="nc-calc-utilidade" data-campo="utilidade" type="text" inputmode="numeric" autocomplete="off" value="0" aria-describedby="nc-calc-d-utilidade nc-calc-e-utilidade"><p class="nc-calc__erro" id="nc-calc-e-utilidade" data-erro="utilidade"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-autenticacao">Mensajes de autenticación por mes <span class="nc-calc__opc">(opcional)</span></label><span class="nc-calc__dica" id="nc-calc-d-autenticacao">Códigos de verificación. Puedes dejarlo en 0.</span><input id="nc-calc-autenticacao" data-campo="autenticacao" type="text" inputmode="numeric" autocomplete="off" value="0" aria-describedby="nc-calc-d-autenticacao nc-calc-e-autenticacao"><p class="nc-calc__erro" id="nc-calc-e-autenticacao" data-erro="autenticacao"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-numeros">Teléfonos comerciales (números)</label><span class="nc-calc__dica" id="nc-calc-d-numeros">Los primeros 1.000 mensajes de atención del mes no se cobran, para cada número.</span><input id="nc-calc-numeros" data-campo="numeros" type="text" inputmode="numeric" autocomplete="off" value="1" aria-describedby="nc-calc-d-numeros nc-calc-e-numeros"><p class="nc-calc__erro" id="nc-calc-e-numeros" data-erro="numeros"></p></div>
+</div>
+<noscript><p class="nc-calc__sem-js">JavaScript está desactivado, así que la cuenta no se actualiza. El resultado de abajo es el del ejemplo (3.000 conversaciones, 6 mensajes por conversación y 2.000 de marketing).</p></noscript>
+</div>
+<section class="nc-calc__saida" aria-labelledby="t-res">
+<h2 class="nc-calc__titulo" id="t-res">Cuánto cobra Meta por mes</h2>
+<div class="nc-calc__resultado" data-resultado><!--nc-pre--><!--/nc-pre--></div>
+<p class="nc-calc__so-leitor" data-resumo aria-live="polite" aria-atomic="true"></p>
+</section>
+</div>
+<!--/nc-painel-->
+
+<section class="bloco avisos" aria-labelledby="t-avisos">
+<h2 id="t-avisos">Antes de decidir</h2>
+<p><strong>Estimación.</strong> No incluye el modelo de IA, el hosting, el armado del agente ni la mensualidad del proveedor (varía según el proveedor, consulta). Por encima de 250 mil mensajes de utilidad o 500 mil de autenticación por mes, Meta aplica descuentos por volumen que esta calculadora no considera.</p>
+<p>Tarifas de Brasil en reales, vigentes desde el 1 de octubre de 2026, consultadas el 20 de noviembre de 2026. Meta solo puede cambiarlas el primer día de un trimestre: revisa la tabla oficial antes de decidir. Otros países tienen sus propias tarifas. Fuentes: <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">documentación oficial de precios de Meta</a> (sección "Rate cards and volume tiers") y la <a href="https://whatsappbusiness.com/pt-br/products/platform-pricing/#rates" target="_blank" rel="noopener">calculadora oficial de WhatsApp Business</a>.</p>
+<p>Supone que ninguna conversación vino de un anuncio con ventana gratuita y que todos los mensajes se entregan.</p>
+</section>
+
+<section class="bloco" aria-labelledby="t-conta">
+<h2 id="t-conta">Cómo se hace la cuenta</h2>
+<div class="tabela"><table>
+<thead><tr><th scope="col">Tipo de mensaje</th><th scope="col">Valor por mensaje</th></tr></thead>
+<tbody>
+<tr><th scope="row">Marketing</th><td>R$ 0,3217</td></tr>
+<tr><th scope="row">Utilidad</th><td>R$ 0,035</td></tr>
+<tr><th scope="row">Autenticación</th><td>R$ 0,035</td></tr>
+<tr><th scope="row">Atención (desde el mensaje 1.001 del mes, por número)</th><td>R$ 0,035</td></tr>
+<tr><th scope="row">Mensaje del cliente a la empresa</th><td>sin cobro</td></tr>
+</tbody></table></div>
+<ul class="formula">
+<li>Mensajes de atención = conversaciones × mensajes del agente por conversación.</li>
+<li>Mensajes cobrados = atención − (1.000 × cantidad de teléfonos), sin bajar de cero.</li>
+<li>Costo de atención = mensajes cobrados × R$ 0,035.</li>
+<li>Marketing = mensajes de marketing × R$ 0,3217. Utilidad y autenticación = cantidad × R$ 0,035.</li>
+<li>Total por mes = atención + marketing + utilidad + autenticación. Total por año = total por mes × 12.</li>
+</ul>
+<p>Cada línea se redondea al centavo y el total es la suma de las líneas. En el ejemplo: 17.000 × R$ 0,035 = R$ 595,00 y 2.000 × R$ 0,3217 = R$ 643,40, que suman R$ 1.238,40. La calculadora funciona en tu navegador y no guarda ni envía los números que escribes.</p>
+</section>

@@ -49,7 +49,7 @@ This total does not include the AI model, hosting, the build or the provider's m
 
 What the math shows: the service message is cheap, and what weighs on the bill is volume and marketing. That is why it pays to find out your real volume before you sign up with a provider and a number.
 
-Want to run your own numbers? Use our [WhatsApp cost calculator](/calculadora-whatsapp/) (in Portuguese; it works in Brazilian reais, not dollars). It uses the same Brazil rates, in force since October 1, 2026 and checked on November 20, 2026. Meta can only adjust prices on the first day of a quarter, so check the official table before you decide.
+Want to run your own numbers? Use our [WhatsApp cost calculator](/en/whatsapp-cost-calculator/) (it works in Brazilian reais, not dollars). It uses the same Brazil rates, in force since October 1, 2026 and checked on November 20, 2026. Meta can only adjust prices on the first day of a quarter, so check the official table before you decide.
 
 ## How do you build the agent in your website chat?
 

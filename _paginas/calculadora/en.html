@@ -1,0 +1,51 @@
+<p class="intro">Enter how many conversations and messages you expect per month and see what Meta charges for the official WhatsApp API, using Meta's rates for Brazil, in Brazilian reais (R$). The starting values are the example from the article. Swap in your own numbers: the result updates as you type.</p>
+
+<!--nc-painel-->
+<div class="nc-calc nc-calc--pagina" data-nc-calc>
+<div class="nc-calc__cartao">
+<h2 class="nc-calc__titulo" id="t-form">Your numbers</h2>
+<div class="nc-calc__form" role="group" aria-labelledby="t-form">
+<div class="nc-calc__campo"><label for="nc-calc-conversas">Conversations per month</label><span class="nc-calc__dica" id="nc-calc-d-conversas">Conversations where the customer writes first and the agent replies.</span><input id="nc-calc-conversas" data-campo="conversas" type="text" inputmode="numeric" autocomplete="off" value="3000" aria-describedby="nc-calc-d-conversas nc-calc-e-conversas"><p class="nc-calc__erro" id="nc-calc-e-conversas" data-erro="conversas"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-mensagens">Agent messages per conversation</label><span class="nc-calc__dica" id="nc-calc-d-mensagens">Free-form replies inside the 24-hour window (customer service). The example's 6 is an assumption, not a market average.</span><input id="nc-calc-mensagens" data-campo="mensagens" type="text" inputmode="numeric" autocomplete="off" value="6" aria-describedby="nc-calc-d-mensagens nc-calc-e-mensagens"><p class="nc-calc__erro" id="nc-calc-e-mensagens" data-erro="mensagens"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-marketing">Marketing messages per month</label><span class="nc-calc__dica" id="nc-calc-d-marketing">Promotions, news, win-back campaigns.</span><input id="nc-calc-marketing" data-campo="marketing" type="text" inputmode="numeric" autocomplete="off" value="2000" aria-describedby="nc-calc-d-marketing nc-calc-e-marketing"><p class="nc-calc__erro" id="nc-calc-e-marketing" data-erro="marketing"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-utilidade">Utility messages per month</label><span class="nc-calc__dica" id="nc-calc-d-utilidade">Order confirmations, delivery notices.</span><input id="nc-calc-utilidade" data-campo="utilidade" type="text" inputmode="numeric" autocomplete="off" value="0" aria-describedby="nc-calc-d-utilidade nc-calc-e-utilidade"><p class="nc-calc__erro" id="nc-calc-e-utilidade" data-erro="utilidade"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-autenticacao">Authentication messages per month <span class="nc-calc__opc">(optional)</span></label><span class="nc-calc__dica" id="nc-calc-d-autenticacao">Verification codes. You can leave it at 0.</span><input id="nc-calc-autenticacao" data-campo="autenticacao" type="text" inputmode="numeric" autocomplete="off" value="0" aria-describedby="nc-calc-d-autenticacao nc-calc-e-autenticacao"><p class="nc-calc__erro" id="nc-calc-e-autenticacao" data-erro="autenticacao"></p></div>
+<div class="nc-calc__campo"><label for="nc-calc-numeros">Business phone numbers</label><span class="nc-calc__dica" id="nc-calc-d-numeros">The first 1,000 service messages each month are free, for each number.</span><input id="nc-calc-numeros" data-campo="numeros" type="text" inputmode="numeric" autocomplete="off" value="1" aria-describedby="nc-calc-d-numeros nc-calc-e-numeros"><p class="nc-calc__erro" id="nc-calc-e-numeros" data-erro="numeros"></p></div>
+</div>
+<noscript><p class="nc-calc__sem-js">JavaScript is turned off, so the calculation doesn't update. The result below is the example (3,000 conversations, 6 messages per conversation and 2,000 marketing messages).</p></noscript>
+</div>
+<section class="nc-calc__saida" aria-labelledby="t-res">
+<h2 class="nc-calc__titulo" id="t-res">What Meta charges per month</h2>
+<div class="nc-calc__resultado" data-resultado><!--nc-pre--><!--/nc-pre--></div>
+<p class="nc-calc__so-leitor" data-resumo aria-live="polite" aria-atomic="true"></p>
+</section>
+</div>
+<!--/nc-painel-->
+
+<section class="bloco avisos" aria-labelledby="t-avisos">
+<h2 id="t-avisos">Before you decide</h2>
+<p><strong>Estimate.</strong> It doesn't include the AI model, hosting, building the agent or the provider's monthly fee (it varies by provider, so check). Above 250,000 utility messages or 500,000 authentication messages per month, Meta applies volume discounts that this calculator doesn't consider.</p>
+<p>Rates for Brazil in Brazilian reais, in effect since October 1, 2026, checked on November 20, 2026. Meta can only change them on the first day of a quarter: check the official table before deciding. Other countries have their own rates. Sources: <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">Meta's official pricing documentation</a> (section "Rate cards and volume tiers") and the <a href="https://whatsappbusiness.com/pt-br/products/platform-pricing/#rates" target="_blank" rel="noopener">official WhatsApp Business pricing calculator</a>.</p>
+<p>It assumes no conversation came from an ad with a free window and that every message is delivered.</p>
+</section>
+
+<section class="bloco" aria-labelledby="t-conta">
+<h2 id="t-conta">How the math works</h2>
+<div class="tabela"><table>
+<thead><tr><th scope="col">Message type</th><th scope="col">Price per message</th></tr></thead>
+<tbody>
+<tr><th scope="row">Marketing</th><td>R$ 0.3217</td></tr>
+<tr><th scope="row">Utility</th><td>R$ 0.035</td></tr>
+<tr><th scope="row">Authentication</th><td>R$ 0.035</td></tr>
+<tr><th scope="row">Service (from the 1,001st of the month, per number)</th><td>R$ 0.035</td></tr>
+<tr><th scope="row">Customer message to the business</th><td>free</td></tr>
+</tbody></table></div>
+<ul class="formula">
+<li>Service messages = conversations × agent messages per conversation.</li>
+<li>Charged messages = service messages − (1,000 × number of phone numbers), never below zero.</li>
+<li>Service cost = charged messages × R$ 0.035.</li>
+<li>Marketing = marketing messages × R$ 0.3217. Utility and authentication = quantity × R$ 0.035.</li>
+<li>Monthly total = service + marketing + utility + authentication. Yearly total = monthly total × 12.</li>
+</ul>
+<p>Each line is rounded to the cent and the total is the sum of the lines. In the example: 17,000 × R$ 0.035 = R$ 595.00 and 2,000 × R$ 0.3217 = R$ 643.40, which add up to R$ 1,238.40. The calculator runs in your browser and doesn't store or send the numbers you type.</p>
+</section>
