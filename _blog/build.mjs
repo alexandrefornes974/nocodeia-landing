@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, rmSync
 import { join, dirname, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
-import { avisoCookies } from './aviso-cookies.mjs';
+import { pagina, servico, servicosDaHome, servicosConhecidos, chamada, empresa, IDIOMAS as CASCA_IDIOMAS } from '../_home/casca.mjs';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const SITE = join(AQUI, '..');
@@ -17,52 +17,39 @@ const IDIOMAS = {
     base: '', html: 'pt-BR', og: 'pt_BR', locale: 'pt-BR',
     blog: 'Blog', blogTitulo: 'Blog da Nocodeia',
     blogDescricao: 'Automação, agentes de IA, no-code e sites que o Google e a IA recomendam — explicado sem jargão, com exemplos do dia a dia de empresa.',
-    inicio: 'Início', servicos: 'Serviços', casos: 'Casos', cta: 'Garantir vaga', leitura: 'min de leitura', por: 'Por',
+    inicio: 'Início', casos: 'Casos', leitura: 'min de leitura', por: 'Por',
     atualizado: 'Atualizado em', voltar: '← Todos os posts', semPosts: 'Os primeiros posts chegam em breve.',
-    faq: ['perguntas frequentes', 'faq'], rodape: 'Feito com no-code, claro.',
-    ctaTitulo: 'Quer isso funcionando na sua empresa?', ctaBotao: 'Quero meu diagnóstico grátis',
-    ctaNota: 'Diagnóstico grátis de 45 minutos. Você sai com preço e prazo fechados.',
+    faq: ['perguntas frequentes', 'faq'],
     autor: 'Alexandre, fundador da Nocodeia',
     autorBio: 'Mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch. Hoje coloca produtos no ar com no-code e IA em semanas.',
-    lerPost: 'Ler post'
+    lerPost: 'Ler post', todos: 'Todos', filtrar: 'Filtrar por serviço'
   },
   en: {
     base: '/en', html: 'en', og: 'en_US', locale: 'en-US',
     blog: 'Blog', blogTitulo: 'Nocodeia Blog',
     blogDescricao: 'Automation, AI agents, no-code and websites Google and AI recommend — explained without jargon, with real business examples.',
-    inicio: 'Home', servicos: 'Services', casos: 'Cases', cta: 'Get a spot', leitura: 'min read', por: 'By',
+    inicio: 'Home', casos: 'Cases', leitura: 'min read', por: 'By',
     atualizado: 'Updated', voltar: '← All posts', semPosts: 'The first posts are coming soon.',
-    faq: ['frequently asked questions', 'faq'], rodape: 'Built with no-code, of course.',
-    ctaTitulo: 'Want this working in your business?', ctaBotao: 'Get my free diagnosis',
-    ctaNota: 'Free 45-minute diagnosis. You leave with a fixed price and deadline.',
+    faq: ['frequently asked questions', 'faq'],
     autor: 'Alexandre, founder of Nocodeia',
     autorBio: '25+ years in tech at companies like IBM, Xerox, DHL and Bosch. Today he ships products with no-code and AI in weeks.',
-    lerPost: 'Read post'
+    lerPost: 'Read post', todos: 'All', filtrar: 'Filter by service'
   },
   es: {
     base: '/es', html: 'es', og: 'es_ES', locale: 'es-ES',
     blog: 'Blog', blogTitulo: 'Blog de Nocodeia',
     blogDescricao: 'Automatización, agentes de IA, no-code y sitios que Google y la IA recomiendan — explicado sin jerga, con ejemplos reales de empresa.',
-    inicio: 'Inicio', servicos: 'Servicios', casos: 'Casos', cta: 'Reservar lugar', leitura: 'min de lectura', por: 'Por',
+    inicio: 'Inicio', casos: 'Casos', leitura: 'min de lectura', por: 'Por',
     atualizado: 'Actualizado el', voltar: '← Todos los posts', semPosts: 'Los primeros posts llegan pronto.',
-    faq: ['preguntas frecuentes', 'faq'], rodape: 'Hecho con no-code, claro.',
-    ctaTitulo: '¿Quieres esto funcionando en tu empresa?', ctaBotao: 'Quiero mi diagnóstico gratis',
-    ctaNota: 'Diagnóstico gratis de 45 minutos. Sales con precio y plazo cerrados.',
+    faq: ['preguntas frecuentes', 'faq'],
     autor: 'Alexandre, fundador de Nocodeia',
     autorBio: 'Más de 25 años en tecnología, en empresas como IBM, Xerox, DHL y Bosch. Hoy lanza productos con no-code e IA en semanas.',
-    lerPost: 'Leer post'
+    lerPost: 'Leer post', todos: 'Todos', filtrar: 'Filtrar por servicio'
   }
 };
 
-const SERVICOS = {
-  'raio-x': { pt: 'Raio-X de automação', en: 'Automation X-ray', es: 'Radiografía de automatización' },
-  'automacao': { pt: 'Automação de processos', en: 'Process automation', es: 'Automatización de procesos' },
-  'agentes': { pt: 'Agentes de IA', en: 'AI agents', es: 'Agentes de IA' },
-  'site-seo-geo': { pt: 'Site que o Google e a IA recomendam', en: 'A website Google and AI recommend', es: 'Un sitio que Google y la IA recomiendan' },
-  'mvp': { pt: 'MVP de produto', en: 'Product MVP', es: 'MVP de producto' },
-  'sistema-interno': { pt: 'Sistema interno', en: 'Internal system', es: 'Sistema interno' },
-  'continuo': { pt: 'Nocodeia contínuo', en: 'Nocodeia ongoing', es: 'Nocodeia continuo' }
-};
+// Categoria do post = uma das 4 abas da home (ver _home/casca.mjs). Valores aceitos em "service":
+const SERVICOS_ACEITOS = servicosConhecidos;
 
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const slugify = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/<[^>]+>/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -70,6 +57,7 @@ const semTags = s => String(s).replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').re
 const dataLonga = (iso, l) => new Date(iso + 'T12:00:00Z').toLocaleDateString(IDIOMAS[l].locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 const urlBlog = l => `${IDIOMAS[l].base}/blog/`;
 const urlCasos = l => ({ pt: '/casos/', en: '/en/cases/', es: '/es/casos/' })[l];
+const capaDe = (p, v) => p.meta.image ? `/blog/img/${p.versoes.pt?.slug || v.slug}${extname(p.meta.image).toLowerCase()}` : '/assets/og-image.png';
 const urlPost = (l, slug) => `${IDIOMAS[l].base}/blog/${slug}/`;
 
 // ---------- leitura e validação ----------
@@ -87,7 +75,7 @@ function lerPosts() {
     if (meta.draft) { avisos.push(`${pasta}: rascunho (draft), não publicado`); continue; }
     if (!/^\d{4}-\d{2}-\d{2}$/.test(meta.date || '')) erros.push(`${pasta}: "date" deve ser AAAA-MM-DD`);
     if (meta.updated && !/^\d{4}-\d{2}-\d{2}$/.test(meta.updated)) erros.push(`${pasta}: "updated" deve ser AAAA-MM-DD`);
-    if (meta.service && !SERVICOS[meta.service]) erros.push(`${pasta}: "service" desconhecido: ${meta.service}`);
+    if (meta.service && !SERVICOS_ACEITOS.includes(meta.service)) erros.push(`${pasta}: "service" desconhecido: ${meta.service}`);
     if (meta.image && !existsSync(join(dir, meta.image))) erros.push(`${pasta}: imagem ${meta.image} não encontrada`);
     if (!meta.image) avisos.push(`${pasta}: post sem imagem destacada`);
     const versoes = {};
@@ -151,165 +139,19 @@ function renderizar(md, l) {
   return { html, faqLd, minutos: Math.max(1, Math.round(palavras / 200)), palavras };
 }
 
-// ---------- layout ----------
-const CSS = `
-:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
-*{box-sizing:border-box}html{scroll-padding-top:90px}
-body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
-a{color:var(--link)}a:hover{color:#A9C1FF}
-*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
-.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
-.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
-.topo .logo img{height:40px;display:block}
-.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
-.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
-.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
-.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
-.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
-.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
-.botao:hover{color:#fff;filter:brightness(1.08)}
-main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
-.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
-.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
-.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
-.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
-.cartao:hover{border-color:#4A4F5C;color:inherit}
-.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
-.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
-.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
-.cartao p{margin:0;color:var(--suave);font-size:15px}
-.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
-.data{font-size:13px;color:var(--apagado)}
-article{max-width:760px;margin:0 auto}
-.volta{font-size:15px;text-decoration:none}
-article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
-.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
-.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
-.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
-.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
-.conteudo{font-size:18px;color:#E4E6EB}
-.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
-.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
-.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
-.conteudo strong{color:#fff}
-.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
-.conteudo blockquote p:last-child{margin:0}
-.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
-.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
-.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
-.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
-.conteudo img{max-width:100%;height:auto;border-radius:12px}
-.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
-.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
-.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
-.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
-.chamada a.botao{background:#121316}
-.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
-.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
-.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
-footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
-footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
-footer p{margin:0;font-size:14px;color:var(--apagado)}
-@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-`;
-
-function cabecalho(l, alternativos, pagina) {
-  const L = IDIOMAS[l];
-  const idiomas = Object.keys(IDIOMAS).map(k => {
-    const href = alternativos[k] || urlBlog(k);
-    return `<a href="${href}" hreflang="${IDIOMAS[k].html}"${k === l ? ' aria-current="page"' : ''}>${k.toUpperCase()}</a>`;
-  }).join('');
-  return `<header class="topo"><nav aria-label="Principal">
-<a class="logo" href="${L.base}/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="nocodeia worldwide"></a>
-<div class="menu">
-<a class="item" href="${L.base}/">${L.inicio}</a>
-<a class="item" href="${L.base}/#servicos">${L.servicos}</a>
-<a class="item" href="${urlCasos(l)}"${pagina === 'casos' ? ' aria-current="page"' : ''}>${L.casos}</a>
-<a class="item" href="${urlBlog(l)}"${pagina === 'blog' ? ' aria-current="page"' : ''}>${L.blog}</a>
-<div class="idiomas" role="group" aria-label="Idioma">${idiomas}</div>
-<a class="botao" href="${L.base}/#vaga">${L.cta}</a>
-</div></nav></header>`;
-}
-
-// Perfis da Nocodeia: ícones no rodapé e sameAs da empresa nos dados estruturados (mesma lista das páginas fixas).
-const REDES = [
-  ['LinkedIn', 'https://www.linkedin.com/company/nocodeiaww/', '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>'],
-  ['Instagram', 'https://www.instagram.com/nocodeiaww/', '<rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>'],
-  ['Facebook', 'https://www.facebook.com/profile.php?id=61595488161472', '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>'],
-];
-const PREP = { pt: 'no', en: 'on', es: 'en' };
-const redes = l => `<div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center">${REDES.map(([nome, url, svg]) =>
-  `<a href="${url.replace(/&/g, '&amp;')}" target="_blank" rel="noopener me" aria-label="Nocodeia ${PREP[l]} ${nome}" title="Nocodeia ${PREP[l]} ${nome}" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${svg}</svg></a>`).join('')}</div>`;
-
-const LOCAL_RODAPE = {"pt":"Campinas (SP) · atendimento remoto em todo o Brasil e no exterior","en":"Campinas, Brazil · remote service across Brazil and abroad","es":"Campinas (Brasil) · atención remota en todo Brasil y el exterior"};
-const rodape = l => `<footer><div class="marca"><img src="/assets/icon.webp" alt=""><img src="/assets/wordmark.webp" alt="nocodeia worldwide"></div>${redes(l)}
-<p><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--></p><p>${LOCAL_RODAPE[l]}</p><p>© ${new Date().getFullYear()} Nocodeia. ${IDIOMAS[l].rodape}</p></footer>`;
-
-function documento({ l, titulo, descricao, canonico, alternativos, imagem, tipoOg, ld, corpo, pagina }) {
-  const hreflang = Object.entries(alternativos).map(([k, u]) => `<link rel="alternate" hreflang="${IDIOMAS[k].html}" href="${BASE_URL}${u}">`).join('\n')
-    + (alternativos.pt ? `\n<link rel="alternate" hreflang="x-default" href="${BASE_URL}${alternativos.pt}">` : '');
-  return `<!doctype html>
-<html lang="${IDIOMAS[l].html}">
-<head>
-${avisoCookies(l)}
-<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
-<!-- End Google Tag Manager -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(titulo)}</title>
-<meta name="description" content="${esc(descricao)}">
-<link rel="canonical" href="${BASE_URL}${canonico}">
-${hreflang}
-<link rel="icon" type="image/png" href="/assets/icon.png">
-<meta property="og:type" content="${tipoOg}">
-<meta property="og:site_name" content="Nocodeia">
-<meta property="og:locale" content="${IDIOMAS[l].og}">
-<meta property="og:title" content="${esc(titulo)}">
-<meta property="og:description" content="${esc(descricao)}">
-<meta property="og:url" content="${BASE_URL}${canonico}">
-<meta property="og:image" content="${BASE_URL}${imagem}">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>${CSS}</style>
-<script type="application/ld+json">
-${JSON.stringify(ld, null, 1)}
-</script>
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-${cabecalho(l, alternativos, pagina)}
-<main>
-${corpo}
-</main>
-${rodape(l)}
-</body>
-</html>
-`;
-}
+// ---------- páginas ----------
+// Topo, rodapé, fontes e cores vêm do casco comum (_home/casca.mjs), o mesmo da home.
+// O seletor de idioma leva à versão do post em cada idioma; se faltar, ao índice do blog daquele idioma.
+const seletorIdiomas = alternativos => Object.fromEntries(Object.keys(IDIOMAS).map(k => [k, alternativos[k] || urlBlog(k)]));
 
 function paginaPost(p, l) {
   const L = IDIOMAS[l], v = p.versoes[l], m = p.meta;
   const { html, faqLd, minutos } = renderizar(v.md, l);
   const alternativos = Object.fromEntries(Object.keys(p.versoes).map(k => [k, urlPost(k, p.versoes[k].slug)]));
   const canonico = alternativos[l];
-  const imagem = m.image ? `/blog/img/${p.versoes.pt?.slug || v.slug}${extname(m.image).toLowerCase()}` : '/assets/og-image.png';
+  const imagem = capaDe(p, v);
   const atualizado = m.updated && m.updated !== m.date;
-  const servico = m.service ? SERVICOS[m.service][l] : null;
+  const s = m.service ? servico(l, m.service) : null;
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -317,8 +159,9 @@ function paginaPost(p, l) {
         '@type': 'BlogPosting', '@id': `${BASE_URL}${canonico}#post`, headline: v.title, description: v.description,
         inLanguage: L.html, datePublished: m.date, dateModified: m.updated || m.date,
         image: `${BASE_URL}${imagem}`, url: `${BASE_URL}${canonico}`, mainEntityOfPage: `${BASE_URL}${canonico}`,
+        ...(s ? { articleSection: s.nome } : {}),
         author: { '@type': 'Person', '@id': `${BASE_URL}/#fundador`, name: 'Alexandre Fornes', url: `${BASE_URL}/#sobre` },
-        publisher: { '@type': 'Organization', '@id': `${BASE_URL}/#empresa`, name: 'Nocodeia', sameAs: REDES.map(r => r[1]), logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/icon.png` } },
+        publisher: { '@type': 'Organization', '@id': `${BASE_URL}/#empresa`, name: 'Nocodeia', sameAs: empresa().redes.map(r => r.url), logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/icon.png` } },
         isPartOf: { '@type': 'Blog', '@id': `${BASE_URL}${urlBlog(l)}#blog`, name: L.blogTitulo }
       },
       {
@@ -331,44 +174,65 @@ function paginaPost(p, l) {
       ...(faqLd.length ? [{ '@type': 'FAQPage', '@id': `${BASE_URL}${canonico}#faq`, inLanguage: L.html, mainEntity: faqLd }] : [])
     ]
   };
-  const corpo = `<article>
-<a class="volta" href="${urlBlog(l)}">${L.voltar}</a>
+  const corpo = `<div class="wrap"><article>
+<div class="trilha"><a class="volta" href="${urlBlog(l)}">${L.voltar}</a>${s ? `<a class="tag" href="${urlBlog(l)}?servico=${s.id}">${esc(s.nome)}</a>` : ''}</div>
 <h1>${esc(v.title)}</h1>
 <p class="resumo">${esc(v.description)}</p>
-<div class="meta"><span>${L.por} Alexandre</span><span>·</span><time datetime="${m.date}">${dataLonga(m.date, l)}</time>${atualizado ? `<span>·</span><span>${L.atualizado} <time datetime="${m.updated}">${dataLonga(m.updated, l)}</time></span>` : ''}<span>·</span><span>${minutos} ${L.leitura}</span></div>
-${m.image ? `<figure class="capa"><img src="${imagem}" alt="${esc(v.image_alt || '')}" width="1200" height="630">${m.image_credit ? `<figcaption>${esc(m.image_credit)}</figcaption>` : ''}</figure>` : ''}
+<div class="meta"><span>${L.por} Alexandre</span><span aria-hidden="true">·</span><time datetime="${m.date}">${dataLonga(m.date, l)}</time>${atualizado ? `<span aria-hidden="true">·</span><span>${L.atualizado} <time datetime="${m.updated}">${dataLonga(m.updated, l)}</time></span>` : ''}<span aria-hidden="true">·</span><span>${minutos} ${L.leitura}</span></div>
+${m.image ? `<figure class="capa"><img src="${imagem}" alt="${esc(v.image_alt || '')}" width="1200" height="630" fetchpriority="high">${m.image_credit ? `<figcaption>${esc(m.image_credit)}</figcaption>` : ''}</figure>` : ''}
 <div class="conteudo">
 ${html}
 </div>
-<aside class="chamada">
-${servico ? `<p class="servico">${esc(servico)}</p>` : ''}
-<h2>${L.ctaTitulo}</h2>
-<p>${L.ctaNota}</p>
-<a class="botao" href="${L.base}/#vaga">${L.ctaBotao}</a>
-</aside>
-<div class="autor"><img src="/assets/icon.webp" alt=""><p><strong>${L.autor}</strong><br>${L.autorBio}</p></div>
-</article>`;
-  return { html: documento({ l, titulo: `${v.title} | Nocodeia`, descricao: v.description, canonico, alternativos, imagem, tipoOg: 'article', ld, corpo, pagina: 'post' }), canonico, imagem };
+${chamada(l, m.service, 'blog')}
+<div class="autor"><img src="/assets/icon.webp" alt="" width="48" height="48"><p><strong>${L.autor}</strong><br>${L.autorBio}</p></div>
+</article></div>`;
+  return {
+    html: pagina({ l, titulo: `${v.title} | Nocodeia`, descricao: v.description, canonico, alternativos, idiomas: seletorIdiomas(alternativos), imagem, tipoOg: 'article', ld, corpo, atual: 'blog' }),
+    canonico, imagem
+  };
 }
+
+// Filtro por serviço no índice: sem JavaScript todos os posts aparecem; com JavaScript os botões filtram
+// e o endereço guarda a escolha (/blog/?servico=automacao), para a home e os posts poderem linkar direto.
+const SCRIPT_FILTRO = `<script>
+(function(){var f=document.querySelector('.filtro');if(!f)return;f.hidden=false;
+var bs=[].slice.call(f.querySelectorAll('button')),cs=[].slice.call(document.querySelectorAll('.cartao[data-cat]'));
+function escolher(cat,registrar){bs.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.cat===cat));});
+cs.forEach(function(c){c.hidden=!!cat&&c.dataset.cat!==cat;});
+if(registrar){if(history.replaceState)history.replaceState(null,'',cat?'?servico='+cat:location.pathname);window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'blog_filtro',servico:cat||'todos'});}}
+bs.forEach(function(b){b.addEventListener('click',function(){escolher(b.dataset.cat,true);});});
+var q=new URLSearchParams(location.search).get('servico');if(q&&bs.some(function(b){return b.dataset.cat===q;}))escolher(q,false);
+})();
+</script>`;
 
 function paginaIndice(posts, l) {
   const L = IDIOMAS[l];
   const meus = posts.filter(p => p.versoes[l]);
   const alternativos = Object.fromEntries(Object.keys(IDIOMAS).map(k => [k, urlBlog(k)]));
-  const cartoes = meus.map(p => {
-    const v = p.versoes[l];
-    const img = p.meta.image ? `/blog/img/${p.versoes.pt?.slug || v.slug}${extname(p.meta.image).toLowerCase()}` : '/assets/og-image.png';
-    return `<a class="cartao" href="${urlPost(l, v.slug)}"><img src="${img}" alt="${esc(v.image_alt || '')}" loading="lazy" width="1200" height="630"><div class="corpo"><time class="data" datetime="${p.meta.date}">${dataLonga(p.meta.date, l)}</time><h2>${esc(v.title)}</h2><p>${esc(v.description)}</p><span class="mais">${L.lerPost} →</span></div></a>`;
+  const cartoes = meus.map((p, i) => {
+    const v = p.versoes[l], s = p.meta.service ? servico(l, p.meta.service) : null;
+    const carga = i === 0 ? ' fetchpriority="high"' : i < 3 ? '' : ' loading="lazy"';
+    return `<div class="cartao"${s ? ` data-cat="${s.id}"` : ''}><img src="${capaDe(p, v)}" alt="${esc(v.image_alt || '')}" width="1200" height="630"${carga}><div class="corpo"><div class="linha">${s ? `<span class="tag">${esc(s.nome)}</span>` : ''}<time class="data" datetime="${p.meta.date}">${dataLonga(p.meta.date, l)}</time></div><h2><a href="${urlPost(l, v.slug)}">${esc(v.title)}</a></h2><p>${esc(v.description)}</p><span class="mais" aria-hidden="true">${L.lerPost} →</span></div></div>`;
   }).join('\n');
+  // botões só das categorias que têm post, na ordem das abas da home
+  const contagem = {};
+  for (const p of meus) { const s = p.meta.service && servico(l, p.meta.service); if (s) contagem[s.id] = (contagem[s.id] || 0) + 1; }
+  const botoes = [`<button type="button" data-cat="" aria-pressed="true">${L.todos}<span>${meus.length}</span></button>`]
+    .concat(servicosDaHome(l).filter(s => contagem[s.id]).map(s => `<button type="button" data-cat="${s.id}" aria-pressed="false">${esc(s.nome)}<span>${contagem[s.id]}</span></button>`)).join('');
   const ld = {
     '@context': 'https://schema.org', '@type': 'Blog', '@id': `${BASE_URL}${urlBlog(l)}#blog`, name: L.blogTitulo, description: L.blogDescricao,
     inLanguage: L.html, url: `${BASE_URL}${urlBlog(l)}`, publisher: { '@id': `${BASE_URL}/#empresa` },
     blogPost: meus.map(p => ({ '@type': 'BlogPosting', headline: p.versoes[l].title, url: `${BASE_URL}${urlPost(l, p.versoes[l].slug)}`, datePublished: p.meta.date }))
   };
-  const corpo = `<h1 class="titulo-blog">${L.blogTitulo}</h1>
-<p class="sub-blog">${L.blogDescricao}</p>
-${meus.length ? `<div class="grade">\n${cartoes}\n</div>` : `<p class="sub-blog">${L.semPosts}</p>`}`;
-  return documento({ l, titulo: `${L.blogTitulo} | Nocodeia`, descricao: L.blogDescricao, canonico: urlBlog(l), alternativos, imagem: '/assets/og-image.png', tipoOg: 'website', ld, corpo, pagina: 'blog' });
+  const corpo = `<div class="wrap">
+<div class="cabeca"><h1>${L.blogTitulo}</h1><p>${L.blogDescricao}</p></div>
+${meus.length ? `<div class="filtro" role="group" aria-label="${L.filtrar}" hidden>${botoes}</div>
+<div class="grade">
+${cartoes}
+</div>` : `<p class="cabeca">${L.semPosts}</p>`}
+</div>`;
+  const primeira = meus[0] ? `<link rel="preload" as="image" href="${capaDe(meus[0], meus[0].versoes[l])}" fetchpriority="high">\n` : '';
+  return pagina({ l, titulo: `${L.blogTitulo} | Nocodeia`, descricao: L.blogDescricao, canonico: urlBlog(l), alternativos, idiomas: alternativos, imagem: '/assets/og-image.png', tipoOg: 'website', ld, corpo, atual: 'blog', scriptExtra: SCRIPT_FILTRO, preload: primeira });
 }
 
 // ---------- sitemap e llms.txt ----------

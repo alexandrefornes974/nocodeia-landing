@@ -17,18 +17,15 @@ w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n)
 })(window,document);
 </script>
 <script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
-<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<!-- Google Tag Manager carregado depois da página (não trava a tela). A fila de dados existe desde o início. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(w,d){var foi=0;function gtm(){if(foi)return;foi=1;w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});var j=d.createElement('script');j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-W3GSX8NZ';d.head.appendChild(j);}
+function depois(){setTimeout(gtm,5000);}
+if(d.readyState==='complete')depois();else w.addEventListener('load',depois);
+['scroll','pointerdown','keydown','touchstart'].forEach(function(e){w.addEventListener(e,gtm,{once:true,passive:true});});
+})(window,document);
 </script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
-<!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Case Amore Totale: atendimento com IA 24h sem WhatsApp | Nocodeia</title>
@@ -38,7 +35,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/cases/amore-totale/">
 <link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/casos/amore-totale/">
 <link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/casos/amore-totale/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" href="/assets/icon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0E0F14">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Nocodeia">
 <meta property="og:locale" content="pt_BR">
@@ -47,191 +47,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:url" content="https://nocodeiaww.com/casos/amore-totale/">
 <meta property="og:image" content="https://nocodeiaww.com/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
-*{box-sizing:border-box}html{scroll-padding-top:90px}
-body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
-a{color:var(--link)}a:hover{color:#A9C1FF}
-*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
-.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
-.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
-.topo .logo img{height:40px;display:block}
-.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
-.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
-.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
-.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
-.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
-.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
-.botao:hover{color:#fff;filter:brightness(1.08)}
-main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
-.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
-.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
-.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
-.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
-.cartao:hover{border-color:#4A4F5C;color:inherit}
-.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
-.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
-.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
-.cartao p{margin:0;color:var(--suave);font-size:15px}
-.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
-.data{font-size:13px;color:var(--apagado)}
-article{max-width:760px;margin:0 auto}
-.volta{font-size:15px;text-decoration:none}
-article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
-.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
-.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
-.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
-.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
-.conteudo{font-size:18px;color:#E4E6EB}
-.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
-.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
-.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
-.conteudo strong{color:#fff}
-.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
-.conteudo blockquote p:last-child{margin:0}
-.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
-.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
-.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
-.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
-.conteudo img{max-width:100%;height:auto;border-radius:12px}
-.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
-.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
-.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
-.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
-.chamada a.botao{background:#121316}
-.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
-.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
-.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
-footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
-footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
-footer p{margin:0;font-size:14px;color:var(--apagado)}
-@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
+<link rel="preload" href="/assets/fontes/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Space Grotesk";font-style:normal;font-weight:300 700;font-display:swap;src:url(/assets/fontes/space-grotesk.woff2) format("woff2")}:root{--bg:#0E0F14;--surface:#161821;--raise:#1D2030;--line:#2A2D3A;--text:#F2F3F7;--muted:#A6ABBC;--blue:#2B4BFF;--violet:#8A2BE2;--zap:#25D366;--grad:linear-gradient(100deg,var(--blue),var(--violet));--display:"Space Grotesk",system-ui,sans-serif;--body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--wrap:min(1160px,100% - 2.5rem);}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:5rem}body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}a{color:inherit}img{display:block;max-width:100%;height:auto}:focus-visible{outline:3px solid #8FA2FF;outline-offset:3px;border-radius:6px}.wrap{width:var(--wrap);margin-inline:auto}.pular{position:absolute;left:-999px;top:0;background:var(--text);color:var(--bg);padding:.6rem 1rem;z-index:30}.pular:focus{left:1rem}.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:.75rem 1.35rem;border-radius:12px;font:600 1rem/1.2 var(--body);text-decoration:none;border:0;cursor:pointer}.btn-main{background:var(--grad);color:#fff}.btn-zap{background:transparent;color:var(--text);border:1px solid var(--line)}.btn-zap svg{width:1.15rem;height:1.15rem;fill:var(--zap)}.topo{position:sticky;top:0;z-index:10;background:rgba(14,15,20,.97);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:4.25rem}.nav .logo img{width:120px;height:44px}.menu{display:flex;align-items:center;gap:1.4rem}.menu ul{display:flex;gap:1.3rem;list-style:none;margin:0;padding:0;font-size:.95rem;color:var(--muted)}.menu ul a{text-decoration:none}.menu ul a:hover{color:var(--text)}.idiomas{display:flex;gap:.15rem;font-size:.8rem;font-weight:600}.idiomas a{min-width:2.2rem;min-height:2.2rem;display:inline-flex;align-items:center;justify-content:center;border-radius:7px;text-decoration:none;color:var(--muted)}.idiomas a[aria-current]{color:var(--text);background:var(--line)}.nav .btn{min-height:2.6rem;padding:.55rem 1rem;font-size:.92rem}.burger{display:none;position:relative}.burger summary{list-style:none;cursor:pointer;min-width:2.75rem;min-height:2.75rem;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px}.burger summary::-webkit-details-marker{display:none}.burger summary svg{width:1.3rem;height:1.3rem;stroke:var(--text)}.burger .painel{position:absolute;right:0;top:calc(100% + .5rem);width:min(18rem,calc(100vw - 2rem));background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.6rem;display:grid;gap:.1rem;box-shadow:0 12px 30px rgba(0,0,0,.45)}.burger .painel a{padding:.7rem .8rem;border-radius:8px;text-decoration:none}.burger .painel a:hover{background:var(--raise)}.burger .idiomas{padding:.4rem .5rem 0;border-top:1px solid var(--line);margin-top:.3rem}@media (max-width:1060px){.menu ul{display:none}}@media (max-width:760px){.menu>.idiomas,.menu>.btn-cta{display:none}.burger{display:block}}footer.site{border-top:1px solid var(--line);padding:2.5rem 0 5.5rem;color:var(--muted);font-size:.92rem}footer.site .cols{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem}footer.site a{text-decoration:none}footer.site a:hover{color:var(--text)}footer.site nav{display:flex;flex-wrap:wrap;gap:.4rem 1rem}.float-zap{position:fixed;right:1rem;bottom:1rem;width:3.4rem;height:3.4rem;border-radius:50%;background:var(--zap);display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.35);z-index:20}.float-zap svg{width:1.7rem;height:1.7rem;fill:#fff}@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em}main{padding-block:clamp(2.5rem,6vw,4.5rem) clamp(4rem,8vw,6rem)}.tag{display:inline-flex;align-items:center;min-height:1.9rem;padding:.2rem .75rem;border:1px solid rgba(175,160,255,.45);border-radius:999px;color:#C9BEFF;font:600 .8rem/1.2 var(--body);text-decoration:none;letter-spacing:.01em}a.tag:hover{border-color:#AFA0FF;color:#fff}.cabeca{max-width:46rem}.cabeca h1{font-size:clamp(2.3rem,5.5vw,3.9rem);line-height:1.04;margin:0}.cabeca p{color:var(--muted);font-size:clamp(1.05rem,1.6vw,1.2rem);margin:1rem 0 0}.filtro{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem}.filtro button{min-height:2.6rem;padding:.45rem 1rem;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--muted);font:600 .92rem var(--body);cursor:pointer}.filtro button:hover{color:var(--text)}.filtro button[aria-pressed="true"]{color:#fff;border-color:var(--violet);background:rgba(138,43,226,.16)}.filtro button span{font-weight:400;opacity:.75;margin-left:.3rem}.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(20rem,100%),1fr));gap:1.25rem;margin-top:2rem}.cartao{position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:border-color .2s}.cartao:hover{border-color:#4A4F66}.cartao[hidden]{display:none}.cartao>img{width:100%;aspect-ratio:1200/630;object-fit:cover;background:var(--raise)}.cartao .corpo{display:flex;flex-direction:column;gap:.6rem;padding:1.25rem 1.3rem 1.4rem;flex:1}.cartao .linha{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .8rem}.cartao .data{font-size:.85rem;color:var(--muted)}.cartao h2{font-size:1.25rem;line-height:1.22;max-width:none;margin:0}.cartao h2 a{text-decoration:none}.cartao h2 a::after{content:"";position:absolute;inset:0}.cartao p{color:var(--muted);font-size:.95rem;margin:0}.cartao .mais{margin-top:auto;padding-top:.3rem;color:#B9A6FF;font-weight:600;font-size:.92rem}.cartao .tag{position:relative;z-index:1}.cartao .faixa{aspect-ratio:1200/630;background:var(--grad);display:flex;flex-direction:column;justify-content:flex-end;gap:.4rem;padding:1.4rem}.cartao .faixa strong{font:700 clamp(2.6rem,5vw,3.6rem)/1 var(--display);letter-spacing:-.02em;color:#fff}.cartao .faixa span{color:#fff;font-size:.98rem;line-height:1.35;max-width:34ch}.cartao .cliente{font-size:.8rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}article{max-width:46rem;margin-inline:auto}.trilha{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem}.volta{color:var(--muted);font-size:.95rem;text-decoration:none}.volta:hover{color:var(--text)}article h1{font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.06;margin:1.1rem 0 1rem}.resumo{color:var(--muted);font-size:clamp(1.08rem,1.8vw,1.25rem);margin:0 0 1.1rem}.meta{display:flex;flex-wrap:wrap;gap:.3rem .9rem;color:var(--muted);font-size:.9rem;margin-bottom:2rem}.capa{margin:0 0 2.25rem}.capa img{width:100%;border-radius:18px;background:var(--raise)}.capa figcaption{font-size:.78rem;color:var(--muted);margin-top:.5rem}.conteudo{font-size:1.1rem;line-height:1.7;color:#E2E4EC}.conteudo>*:first-child{margin-top:0}.conteudo p{margin:0 0 1.25rem}.conteudo a{color:#B9A6FF}.conteudo a:hover{color:#D6CCFF}.conteudo h2{font-size:clamp(1.55rem,3vw,2rem);line-height:1.15;margin:3rem 0 .9rem;color:#fff;max-width:none;scroll-margin-top:5.5rem}.conteudo h3{font-size:1.25rem;line-height:1.25;margin:2rem 0 .6rem;color:#fff;scroll-margin-top:5.5rem}.conteudo ul,.conteudo ol{margin:0 0 1.4rem;padding-left:1.4rem}.conteudo li{margin-bottom:.5rem}.conteudo strong{color:#fff}.conteudo blockquote{margin:2rem 0;padding:1.2rem 1.4rem;border:1px solid var(--line);border-left:3px solid var(--violet);border-radius:0 14px 14px 0;background:var(--surface);color:var(--text)}.conteudo blockquote p:last-child{margin:0}.conteudo code{font-size:.9em;background:var(--raise);padding:.1rem .4rem;border-radius:6px}.conteudo pre{background:#0A0B0F;border:1px solid var(--line);border-radius:12px;padding:1rem;overflow-x:auto}.conteudo pre code{background:none;padding:0}.conteudo table{width:100%;border-collapse:collapse;margin:0 0 1.5rem;font-size:.98rem;display:block;overflow-x:auto}.conteudo th,.conteudo td{border:1px solid var(--line);padding:.6rem .75rem;text-align:left;vertical-align:top}.conteudo th{background:var(--surface)}.conteudo img{border-radius:12px}.conteudo hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}.numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.75rem;margin:.5rem 0 2.25rem}.numeros div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem;display:flex;flex-direction:column;gap:.35rem}.numeros strong{font:700 1.6rem/1.1 var(--display);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.numeros span{font-size:.88rem;line-height:1.4;color:var(--muted)}.fluxo{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:.5rem 0 1.75rem;font-size:.9rem}.fluxo span{padding:.5rem .75rem;border:1px solid var(--line);border-radius:10px;background:var(--surface)}.fluxo span.destaque{background:var(--grad);border-color:transparent;font-weight:600;color:#fff}.fluxo b{color:var(--muted);font-weight:400}.tela{margin:.5rem 0 2rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}.tela img{width:100%}.tela figcaption{padding:.75rem 1rem;border-top:1px solid var(--line);font-size:.88rem;line-height:1.5;color:var(--muted)}.chamada{margin:3.5rem 0 0;padding:clamp(1.6rem,4vw,2.5rem);border-radius:22px;background:var(--grad);color:#fff}.chamada .tag{border-color:rgba(255,255,255,.55);color:#fff}.chamada h2{font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.12;margin:.9rem 0 .6rem;max-width:none}.chamada p{margin:0;opacity:.95;max-width:40rem}.chamada .acoes{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem 1rem;margin-top:1.4rem}.btn-claro{background:#fff;color:#14152A}.chamada .btn-zap{border-color:rgba(255,255,255,.55);color:#fff}.chamada .btn-zap svg{fill:#fff}.chamada .ver{color:#fff;font-weight:600;font-size:.95rem}.autor{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--line);display:flex;gap:1rem;align-items:flex-start}.autor img{width:3rem;height:3rem;flex-shrink:0}.autor p{margin:0;font-size:.95rem;color:var(--muted)}.autor strong{color:var(--text)}@media (max-width:560px){.conteudo{font-size:1.04rem}.chamada .acoes .btn{width:100%}}</style>
 <script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "Article",
-   "@id": "https://nocodeiaww.com/casos/amore-totale/#case",
-   "headline": "Case Amore Totale: atendimento com IA 24h sem WhatsApp",
-   "description": "Como a Amore Totale trocou o WhatsApp por uma agente de IA no site: 80% das conversas resolvidas sem humano e investimento que se paga em 2 a 4 meses.",
-   "inLanguage": "pt-BR",
-   "datePublished": "2026-10-18",
-   "dateModified": "2026-10-18",
-   "url": "https://nocodeiaww.com/casos/amore-totale/",
-   "mainEntityOfPage": "https://nocodeiaww.com/casos/amore-totale/",
-   "image": "https://nocodeiaww.com/assets/og-image.png",
-   "author": {
-    "@type": "Person",
-    "@id": "https://nocodeiaww.com/#fundador",
-    "name": "Alexandre Fornes",
-    "url": "https://nocodeiaww.com/#sobre"
-   },
-   "publisher": {
-    "@id": "https://nocodeiaww.com/#empresa"
-   },
-   "about": {
-    "@type": "Organization",
-    "name": "Amore Totale",
-    "url": "https://amoretotale.com.br/"
-   }
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Início",
-     "item": "https://nocodeiaww.com/"
-    },
-    {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Casos",
-     "item": "https://nocodeiaww.com/casos/"
-    },
-    {
-     "@type": "ListItem",
-     "position": 3,
-     "name": "Case Amore Totale: atendimento com IA 24h sem WhatsApp",
-     "item": "https://nocodeiaww.com/casos/amore-totale/"
-    }
-   ]
-  },
-  {
-   "@type": "FAQPage",
-   "@id": "https://nocodeiaww.com/casos/amore-totale/#faq",
-   "inLanguage": "pt-BR",
-   "mainEntity": [
-    {
-     "@type": "Question",
-     "name": "Dá para vender produtos para adultos com um agente de IA no WhatsApp?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Pela política do WhatsApp Business, não: produtos e serviços para adultos estão entre os itens proibidos no app. O caminho é atender e vender pelo site, e usar o Instagram e o Facebook só para tirar dúvidas e encaminhar ao site, sem vender produto adulto dentro do chat."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Um chatbot com IA no site substitui o atendente?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Substitui a parte repetitiva. No caso da Amore Totale, a Amora resolveu 80% das conversas nos primeiros meses, e o restante vai para uma pessoa da equipe, com o resumo da conversa pronto."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Quanto custa um agente de IA como a Amora?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Depende dos canais, das integrações e do volume de conversas. O preço sai fechado depois do diagnóstico gratuito, e o nosso guia mostra como estimar o custo por conversa."
-     }
-    }
-   ]
-  }
- ]
-}
+{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://nocodeiaww.com/casos/amore-totale/#case","headline":"Case Amore Totale: atendimento com IA 24h sem WhatsApp","description":"Como a Amore Totale trocou o WhatsApp por uma agente de IA no site: 80% das conversas resolvidas sem humano e investimento que se paga em 2 a 4 meses.","inLanguage":"pt-BR","datePublished":"2026-10-18","dateModified":"2026-10-18","url":"https://nocodeiaww.com/casos/amore-totale/","mainEntityOfPage":"https://nocodeiaww.com/casos/amore-totale/","image":"https://nocodeiaww.com/assets/og-image.png","articleSection":"IA no atendimento","author":{"@type":"Person","@id":"https://nocodeiaww.com/#fundador","name":"Alexandre Fornes","url":"https://nocodeiaww.com/#sobre"},"publisher":{"@id":"https://nocodeiaww.com/#empresa"},"about":{"@type":"Organization","name":"Amore Totale","url":"https://amoretotale.com.br/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://nocodeiaww.com/"},{"@type":"ListItem","position":2,"name":"Casos","item":"https://nocodeiaww.com/casos/"},{"@type":"ListItem","position":3,"name":"Case Amore Totale: atendimento com IA 24h sem WhatsApp","item":"https://nocodeiaww.com/casos/amore-totale/"}]},{"@type":"FAQPage","@id":"https://nocodeiaww.com/casos/amore-totale/#faq","inLanguage":"pt-BR","mainEntity":[{"@type":"Question","name":"Dá para vender produtos para adultos com um agente de IA no WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Pela política do WhatsApp Business, não: produtos e serviços para adultos estão entre os itens proibidos no app. O caminho é atender e vender pelo site, e usar o Instagram e o Facebook só para tirar dúvidas e encaminhar ao site, sem vender produto adulto dentro do chat."}},{"@type":"Question","name":"Um chatbot com IA no site substitui o atendente?","acceptedAnswer":{"@type":"Answer","text":"Substitui a parte repetitiva. No caso da Amore Totale, a Amora resolveu 80% das conversas nos primeiros meses, e o restante vai para uma pessoa da equipe, com o resumo da conversa pronto."}},{"@type":"Question","name":"Quanto custa um agente de IA como a Amora?","acceptedAnswer":{"@type":"Answer","text":"Depende dos canais, das integrações e do volume de conversas. O preço sai fechado depois do diagnóstico gratuito, e o nosso guia mostra como estimar o custo por conversa."}}]}]}
 </script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<header class="topo"><nav aria-label="Principal">
-<a class="logo" href="/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="nocodeia worldwide"></a>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+<div class="wrap nav">
+<a class="logo" href="/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="Nocodeia" width="120" height="44"></a>
 <div class="menu">
-<a class="item" href="/">Início</a>
-<a class="item" href="/#servicos">Serviços</a>
-<a class="item" href="/casos/" aria-current="page">Casos</a>
-<a class="item" href="/blog/">Blog</a>
-<div class="idiomas" role="group" aria-label="Idioma"><a href="/casos/amore-totale/" hreflang="pt-BR" aria-current="page">PT</a><a href="/en/cases/amore-totale/" hreflang="en">EN</a><a href="/es/casos/amore-totale/" hreflang="es">ES</a></div>
-<a class="botao" href="/#vaga">Garantir vaga</a>
-</div></nav></header>
-<main>
-<style>
-.numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:8px 0 36px}
-.numeros div{background:var(--sup);border:1px solid var(--borda);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px}
-.numeros strong{font-family:'Space Grotesk',Inter,sans-serif;font-size:26px;line-height:1.1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.numeros span{font-size:14px;line-height:1.4;color:var(--suave)}
-.fluxo{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0 28px;font-size:14px}
-.fluxo span{padding:8px 12px;border:1px solid #343843;border-radius:10px;background:var(--sup)}
-.fluxo span.destaque{background:var(--grad);border-color:transparent;font-weight:600}
-.fluxo b{color:#6B7080;font-weight:400}
-.tela{margin:8px 0 32px;background:var(--sup);border:1px solid var(--borda);border-radius:14px;overflow:hidden}
-.tela img{display:block;width:100%;height:auto}
-.tela figcaption{padding:12px 16px;border-top:1px solid var(--borda);font-size:14px;line-height:1.5;color:var(--suave)}
-</style>
-<article>
-<a class="volta" href="/casos/">← Todos os casos</a>
+<nav aria-label="Principal"><ul><li><a href="/#o-que-fazemos">O que fazemos</a></li><li><a href="/casos/" aria-current="page">Casos</a></li><li><a href="/#para-quem">Para quem</a></li><li><a href="/#como-funciona">Como funciona</a></li><li><a href="/#duvidas">Dúvidas</a></li><li><a href="/blog/">Blog</a></li></ul></nav>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/casos/amore-totale/" hreflang="pt-BR" lang="pt-BR" aria-current="page" title="Português">PT</a><a href="/en/cases/amore-totale/" hreflang="en" lang="en" title="English">EN</a><a href="/es/casos/amore-totale/" hreflang="es" lang="es" title="Español">ES</a></div>
+<a class="btn btn-main btn-cta" href="/#diagnostico">Agendar diagnóstico</a>
+<details class="burger"><summary aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+<div class="painel"><a href="/#o-que-fazemos">O que fazemos</a><a href="/casos/" aria-current="page">Casos</a><a href="/#para-quem">Para quem</a><a href="/#como-funciona">Como funciona</a><a href="/#duvidas">Dúvidas</a><a href="/blog/">Blog</a><a href="/#diagnostico">Agendar diagnóstico</a><div class="idiomas" role="group" aria-label="Idioma"><a href="/casos/amore-totale/" hreflang="pt-BR" lang="pt-BR" aria-current="page" title="Português">PT</a><a href="/en/cases/amore-totale/" hreflang="en" lang="en" title="English">EN</a><a href="/es/casos/amore-totale/" hreflang="es" lang="es" title="Español">ES</a></div></div>
+</details>
+</div>
+</div>
+</header>
+<main id="conteudo">
+<div class="wrap"><article>
+<div class="trilha"><a class="volta" href="/casos/">← Todos os casos</a><a class="tag" href="/#ia-no-atendimento">IA no atendimento</a></div>
 <h1>Case Amore Totale: atendimento com IA 24h sem WhatsApp</h1>
 <p class="resumo">Como a Amore Totale trocou o WhatsApp por uma agente de IA no site: 80% das conversas resolvidas sem humano e investimento que se paga em 2 a 4 meses.</p>
-<div class="meta"><span>Case de cliente: Amore Totale</span><span>·</span><span>Atualizado em <time datetime="2026-10-18">18 de outubro de 2026</time></span></div>
+<div class="meta"><span>Case de cliente: Amore Totale</span><span aria-hidden="true">·</span><span>Atualizado em <time datetime="2026-10-18">18 de outubro de 2026</time></span></div>
 <div class="conteudo">
 <p>A Amore Totale atende clientes 24 horas com a Amora, uma agente de IA no site, no Instagram e no Facebook, sem vender pelo WhatsApp. A Amora consulta o catálogo, calcula o frete e chama uma pessoa quando precisa. Nos primeiros meses, resolveu 80% das conversas sozinha, e o investimento se paga em 2 a 4 meses, pela conta abaixo.</p>
 <div class="numeros">
@@ -297,16 +140,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>Se a sua loja não pode, ou não quer, depender do WhatsApp, dá para montar o atendimento com IA no site e nos canais que você controla. No diagnóstico gratuito de 45 minutos, a gente olha o seu atendimento e diz com franqueza se vale ter um agente. Conheça os nossos <a href="/#servicos">agentes de IA sob medida</a> e <a href="/#vaga">marque seu diagnóstico grátis</a>.</p>
 
 </div>
-<aside class="chamada">
-<p class="servico">IA no atendimento</p>
-<h2>Quer isso funcionando na sua empresa?</h2>
-<p>Diagnóstico grátis de 45 minutos. Você sai com preço e prazo fechados.</p>
-<a class="botao" href="/#vaga">Quero meu diagnóstico grátis</a>
+<aside class="chamada" aria-labelledby="chamada-titulo">
+<a class="tag" href="/#ia-no-atendimento">IA no atendimento</a>
+<h2 id="chamada-titulo">Quer isso na sua empresa?</h2>
+<p>IA que atende seus clientes no site, WhatsApp, Instagram ou Telegram. No ar em 2 a 4 semanas. Diagnóstico grátis de 45 minutos. Respondemos no mesmo dia útil.</p>
+<div class="acoes">
+<a class="btn btn-claro" href="/#diagnostico">Agendar diagnóstico grátis</a>
+<a class="btn btn-zap" href="https://wa.me/5511967886969?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Nocodeia%20e%20preciso%20de%20IA%20para%20atender%20clientes.%20Quero%20agendar%20o%20diagn%C3%B3stico%20gr%C3%A1tis." data-wa="case" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z"/></svg>Falar no WhatsApp</a>
+<a class="ver" href="/#ia-no-atendimento">Ver o serviço →</a>
+</div>
 </aside>
-<div class="autor"><img src="/assets/icon.webp" alt=""><p><strong>Alexandre, fundador da Nocodeia</strong><br>Mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch. Hoje coloca produtos no ar com no-code e IA em semanas.</p></div>
-</article>
+<div class="autor"><img src="/assets/icon.webp" alt="" width="48" height="48"><p><strong>Alexandre, fundador da Nocodeia</strong><br>Mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch. Hoje coloca produtos no ar com no-code e IA em semanas.</p></div>
+</article></div>
 </main>
-<footer><div class="marca"><img src="/assets/icon.webp" alt=""><img src="/assets/wordmark.webp" alt="nocodeia worldwide"></div><div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia no LinkedIn" title="Nocodeia no LinkedIn" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia no Instagram" title="Nocodeia no Instagram" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me" aria-label="Nocodeia no Facebook" title="Nocodeia no Facebook" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
-<p><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--></p><p>Campinas (SP) · atendimento remoto em todo o Brasil e no exterior</p><p>© 2026 Nocodeia. Feito com no-code, claro.</p></footer>
+<footer class="site">
+<div class="wrap cols">
+<div>Nocodeia · Campinas (SP) · atendimento em todo o Brasil e no exterior<br><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--><br>© 2026 Nocodeia. Todos os direitos reservados.</div>
+<nav aria-label="Rodapé"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me">LinkedIn</a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me">Instagram</a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me">Facebook</a><a href="/casos/">Casos</a><a href="/blog/">Blog</a><a href="/privacidade/">Privacidade</a></nav>
+</div>
+</footer>
+<a class="float-zap" href="https://wa.me/5511967886969?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Nocodeia." data-wa="flutuante" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z"/></svg></a>
+<script>
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-wa]');if(a){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',wa_origem:a.getAttribute('data-wa')});}
+var m=document.querySelector('.burger[open]');if(m&&(!m.contains(e.target)||e.target.closest('.painel a')))m.removeAttribute('open');});
+</script>
 </body>
 </html>

@@ -43,8 +43,6 @@ The objective structure is set up once per cycle. After that, the only monthly w
 5. **Two-way goals:** employees can propose a change or an extra goal, and the manager approves or rejects it with a reason. Nobody approves their own proposal.
 6. **New cycle in one click,** copying the previous structure.
 
-<figure class="tela"><img src="/assets/okr-dashboard.webp" alt="Company dashboard with overdue and at-risk goals, pending check-ins and process discipline" width="1600" height="760" loading="lazy"><figcaption>Dashboard: leadership opens it and immediately sees where to act, with overdue goals, goals at risk, goals with no owner and check-in discipline.</figcaption></figure>
-
 ## Who sees what?
 
 Each role has its own view, and the database enforces it, not just the screen: every query returns only what the person is allowed to see.
@@ -53,8 +51,6 @@ Each role has its own view, and the database enforces it, not just the screen: e
 - **Manager:** the whole team, with owner, progress, status and how many days each sign-off has been pending.
 - **Area lead:** the area's teams and managers, side by side.
 - **Leadership:** the whole company, drilling down from area to team, manager and person.
-
-<figure class="tela"><img src="/assets/okr-painel.webp" alt="Personal OKR dashboard with goals, status and this month's to-dos" width="1600" height="760" loading="lazy"><figcaption>My dashboard: each person sees their own goals, their status and what is left to do this month.</figcaption></figure>
 
 Automated tests check, role by role, that one team cannot read or change another team's data. The database has a daily backup, with a tested restore.
 

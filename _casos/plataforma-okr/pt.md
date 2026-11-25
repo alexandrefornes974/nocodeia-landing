@@ -43,8 +43,6 @@ A estrutura de objetivos é montada uma vez por ciclo. Depois disso, o trabalho 
 5. **Metas em mão dupla:** o colaborador pode propor uma mudança ou uma meta a mais, e o gestor aprova ou recusa com justificativa. Ninguém aprova a própria proposta.
 6. **Ciclo novo em um clique,** copiando a estrutura do anterior.
 
-<figure class="tela"><img src="/assets/okr-dashboard.webp" alt="Dashboard da empresa com metas atrasadas, em risco, check-ins pendentes e disciplina do processo" width="1600" height="760" loading="lazy"><figcaption>Dashboard: a diretoria abre e já vê onde agir, com metas atrasadas, em risco, sem dono e a disciplina de check-in.</figcaption></figure>
-
 ## Quem vê o quê?
 
 Cada papel tem a sua visão, e quem garante isso é o banco de dados, não só a tela: cada consulta devolve apenas o que a pessoa tem permissão de ver.
@@ -53,8 +51,6 @@ Cada papel tem a sua visão, e quem garante isso é o banco de dados, não só a
 - **Gestor:** o time inteiro, com dono, progresso, status e há quantos dias cada aceite está pendente.
 - **Líder de área:** os times e gestores da área, lado a lado.
 - **Diretoria:** a empresa toda, descendo de área para time, gestor e pessoa.
-
-<figure class="tela"><img src="/assets/okr-painel.webp" alt="Painel pessoal da plataforma de OKR com metas, status e pendências do mês" width="1600" height="760" loading="lazy"><figcaption>Meu painel: cada pessoa vê as próprias metas, o status e o que falta fazer no mês.</figcaption></figure>
 
 Testes automáticos conferem, papel por papel, que um time não lê nem altera dados de outro. O banco tem backup diário, com restauração testada.
 

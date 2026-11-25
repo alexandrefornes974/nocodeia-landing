@@ -231,6 +231,13 @@ diagnostico:
     privacidade: Usamos tu correo solo para responder. Consulta la
     privacidade_link: política de privacidad
 
+# Bloco no fim de cada post e case do blog (o nome e o prazo do serviço vêm da aba correspondente acima)
+chamada:
+  titulo: ¿Quieres esto en tu empresa?
+  nota: Diagnóstico gratis de 45 minutos. Respondemos el mismo día hábil.
+  botao: Agendar diagnóstico gratis
+  ver_servico: Ver el servicio
+
 rodape:
   local: Campinas, Brasil
   cnpj: CNPJ

@@ -231,6 +231,13 @@ diagnostico:
     privacidade: We only use your email to reply. See our
     privacidade_link: privacy policy
 
+# Bloco no fim de cada post e case do blog (o nome e o prazo do serviço vêm da aba correspondente acima)
+chamada:
+  titulo: Want this in your business?
+  nota: Free 45-minute diagnosis. We reply the same business day.
+  botao: Book a free diagnosis
+  ver_servico: See the service
+
 rodape:
   local: Campinas, Brazil
   cnpj: Tax ID (CNPJ)

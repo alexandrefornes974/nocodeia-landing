@@ -1,0 +1,56 @@
+/* Casco comum da home, do blog e dos cases: fonte, cores, botões, topo, rodapé e WhatsApp. Entra inline no <head>. */
+@font-face{font-family:"Space Grotesk";font-style:normal;font-weight:300 700;font-display:swap;src:url(/assets/fontes/space-grotesk.woff2) format("woff2")}
+:root{
+  --bg:#0E0F14;--surface:#161821;--raise:#1D2030;--line:#2A2D3A;
+  --text:#F2F3F7;--muted:#A6ABBC;--blue:#2B4BFF;--violet:#8A2BE2;--zap:#25D366;
+  --grad:linear-gradient(100deg,var(--blue),var(--violet));
+  --display:"Space Grotesk",system-ui,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --wrap:min(1160px,100% - 2.5rem);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+:focus-visible{outline:3px solid #8FA2FF;outline-offset:3px;border-radius:6px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.pular{position:absolute;left:-999px;top:0;background:var(--text);color:var(--bg);padding:.6rem 1rem;z-index:30}
+.pular:focus{left:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:.75rem 1.35rem;border-radius:12px;font:600 1rem/1.2 var(--body);text-decoration:none;border:0;cursor:pointer}
+.btn-main{background:var(--grad);color:#fff}
+.btn-zap{background:transparent;color:var(--text);border:1px solid var(--line)}
+.btn-zap svg{width:1.15rem;height:1.15rem;fill:var(--zap)}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:10;background:rgba(14,15,20,.97);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:4.25rem}
+.nav .logo img{width:120px;height:44px}
+.menu{display:flex;align-items:center;gap:1.4rem}
+.menu ul{display:flex;gap:1.3rem;list-style:none;margin:0;padding:0;font-size:.95rem;color:var(--muted)}
+.menu ul a{text-decoration:none}
+.menu ul a:hover{color:var(--text)}
+.idiomas{display:flex;gap:.15rem;font-size:.8rem;font-weight:600}
+.idiomas a{min-width:2.2rem;min-height:2.2rem;display:inline-flex;align-items:center;justify-content:center;border-radius:7px;text-decoration:none;color:var(--muted)}
+.idiomas a[aria-current]{color:var(--text);background:var(--line)}
+.nav .btn{min-height:2.6rem;padding:.55rem 1rem;font-size:.92rem}
+.burger{display:none;position:relative}
+.burger summary{list-style:none;cursor:pointer;min-width:2.75rem;min-height:2.75rem;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px}
+.burger summary::-webkit-details-marker{display:none}
+.burger summary svg{width:1.3rem;height:1.3rem;stroke:var(--text)}
+.burger .painel{position:absolute;right:0;top:calc(100% + .5rem);width:min(18rem,calc(100vw - 2rem));background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.6rem;display:grid;gap:.1rem;box-shadow:0 12px 30px rgba(0,0,0,.45)}
+.burger .painel a{padding:.7rem .8rem;border-radius:8px;text-decoration:none}
+.burger .painel a:hover{background:var(--raise)}
+.burger .idiomas{padding:.4rem .5rem 0;border-top:1px solid var(--line);margin-top:.3rem}
+@media (max-width:1060px){.menu ul{display:none}}
+@media (max-width:760px){.menu>.idiomas,.menu>.btn-cta{display:none}.burger{display:block}}
+
+/* rodapé */
+footer.site{border-top:1px solid var(--line);padding:2.5rem 0 5.5rem;color:var(--muted);font-size:.92rem}
+footer.site .cols{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem}
+footer.site a{text-decoration:none}
+footer.site a:hover{color:var(--text)}
+footer.site nav{display:flex;flex-wrap:wrap;gap:.4rem 1rem}
+.float-zap{position:fixed;right:1rem;bottom:1rem;width:3.4rem;height:3.4rem;border-radius:50%;background:var(--zap);display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.35);z-index:20}
+.float-zap svg{width:1.7rem;height:1.7rem;fill:#fff}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}

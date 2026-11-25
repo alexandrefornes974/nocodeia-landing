@@ -43,8 +43,6 @@ La estructura de objetivos se arma una vez por ciclo. Después, el trabajo de ca
 5. **Metas de doble vía:** el colaborador puede proponer un cambio o una meta adicional, y el gestor aprueba o rechaza con justificación. Nadie aprueba su propia propuesta.
 6. **Ciclo nuevo en un clic,** copiando la estructura del anterior.
 
-<figure class="tela"><img src="/assets/okr-dashboard.webp" alt="Panel de la empresa con metas atrasadas, en riesgo, check-ins pendientes y disciplina del proceso" width="1600" height="760" loading="lazy"><figcaption>Panel: la dirección lo abre y ya ve dónde actuar, con metas atrasadas, en riesgo, sin responsable y la disciplina de check-in.</figcaption></figure>
-
 ## ¿Quién ve qué?
 
 Cada rol tiene su vista, y lo garantiza la base de datos, no solo la pantalla: cada consulta devuelve únicamente lo que la persona tiene permiso de ver.
@@ -53,8 +51,6 @@ Cada rol tiene su vista, y lo garantiza la base de datos, no solo la pantalla: c
 - **Gestor:** todo el equipo, con responsable, avance, estado y cuántos días lleva pendiente cada aceptación.
 - **Líder de área:** los equipos y gestores del área, uno al lado del otro.
 - **Dirección:** toda la empresa, bajando de área a equipo, gestor y persona.
-
-<figure class="tela"><img src="/assets/okr-painel.webp" alt="Panel personal de la plataforma de OKR con metas, estado y pendientes del mes" width="1600" height="760" loading="lazy"><figcaption>Mi panel: cada persona ve sus metas, el estado y lo que falta hacer en el mes.</figcaption></figure>
 
 Pruebas automáticas verifican, rol por rol, que un equipo no lea ni modifique datos de otro. La base de datos tiene respaldo diario, con restauración probada.
 

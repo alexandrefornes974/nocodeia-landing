@@ -13,11 +13,11 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 import { avisoCookies } from '../_blog/aviso-cookies.mjs';
+import { topo, rodape, zapFlutuante, gtmAdiado, gtmNoscript, pular, cssArquivo } from './casca.mjs';
 
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const SITE = join(AQUI, '..');
 const BASE_URL = 'https://nocodeiaww.com';
-const GTM = 'GTM-W3GSX8NZ';
 const LIMITE_KB = 120;
 
 const args = process.argv.slice(2);
@@ -50,7 +50,6 @@ const MARCADORES = { artigos: String(contarArtigos()) };
 const txt = s => esc(String(s ?? '').replace(/\{(\w+)\}/g, (m, k) => (k in MARCADORES ? MARCADORES[k] : m)));
 
 const ICONE_ZAP = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.3Z"/></svg>';
-const ICONE_MENU = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
 
 function exigir(obj, caminhos, l) {
   for (const c of caminhos) {
@@ -65,16 +64,6 @@ function pagina(l, c, emp, disponiveis) {
   const inicio = `${L.base}/`;
   const wa = msg => `https://wa.me/${emp.whatsapp}?text=${encodeURIComponent(msg)}`;
   const linkExterno = u => /^https?:/.test(u) ? ' target="_blank" rel="noopener"' : '';
-
-  // troca de idioma: aponta para a home de cada idioma
-  const idiomas = Object.entries(IDIOMAS).map(([k, I]) =>
-    `<a href="${I.base}/" hreflang="${I.html}" lang="${I.html}"${k === l ? ' aria-current="page"' : ''} title="${I.rotulo}">${k.toUpperCase()}</a>`).join('');
-  const itensMenu = [
-    ['#o-que-fazemos', c.menu.o_que_fazemos], ['#casos', c.menu.casos], ['#para-quem', c.menu.para_quem],
-    ['#como-funciona', c.menu.como_funciona], ['#duvidas', c.menu.duvidas], [c.rodape.blog_url, c.menu.blog],
-  ];
-  const menuLista = itensMenu.map(([h, t]) => `<li><a href="${h}">${esc(t)}</a></li>`).join('');
-  const menuPainel = itensMenu.map(([h, t]) => `<a href="${h}">${esc(t)}</a>`).join('');
 
   const provas = c.hero.provas.map(p => `<li><b>${esc(p.numero)}</b> ${txt(p.texto)}</li>`).join('');
 
@@ -103,7 +92,6 @@ ${ex.nome ? `<div class="case"><small>${esc(c.servicos.rotulo_exemplo)}</small><
   const msgDiag = `${D.mensagem_inicio}. ${D.mensagem_fim}`;
 
   const temCnpj = emp.cnpj && emp.razao_social;
-  const ano = new Date().getFullYear();
 
   // ---------- dados estruturados ----------
   const empresaLd = {
@@ -145,7 +133,7 @@ ${ex.nome ? `<div class="case"><small>${esc(c.servicos.rotulo_exemplo)}</small><
   const hreflang = Object.entries(IDIOMAS).map(([k, I]) => `<link rel="alternate" hreflang="${I.html}" href="${BASE_URL}${I.base}/">`).join('\n')
     + `\n<link rel="alternate" hreflang="x-default" href="${BASE_URL}/">`;
 
-  const css = readFileSync(join(AQUI, 'estilo.css'), 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s*\n\s*/g, '').trim();
+  const css = cssArquivo('casca.css') + cssArquivo('estilo.css');
 
   // Textos usados pelo script da página
   const T = {
@@ -158,15 +146,7 @@ ${ex.nome ? `<div class="case"><small>${esc(c.servicos.rotulo_exemplo)}</small><
 <html lang="${L.html}">
 <head>
 ${avisoCookies(l)}
-<!-- Google Tag Manager carregado depois da página (não trava a tela). A fila de dados existe desde o início. -->
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-(function(w,d){var foi=0;function gtm(){if(foi)return;foi=1;w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});var j=d.createElement('script');j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=${GTM}';d.head.appendChild(j);}
-function depois(){setTimeout(gtm,5000);}
-if(d.readyState==='complete')depois();else w.addEventListener('load',depois);
-['scroll','pointerdown','keydown','touchstart'].forEach(function(e){w.addEventListener(e,gtm,{once:true,passive:true});});
-})(window,document);
-</script>
+${gtmAdiado()}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(c.meta.titulo)}</title>
@@ -192,21 +172,9 @@ ${JSON.stringify(ld)}
 </script>
 </head>
 <body>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<a class="pular" href="#conteudo">${l === 'pt' ? 'Pular para o conteúdo' : l === 'en' ? 'Skip to content' : 'Saltar al contenido'}</a>
-<header class="topo">
-<div class="wrap nav">
-<a class="logo" href="${inicio}" aria-label="${esc(emp.nome)}"><img src="/assets/logo_h.webp" alt="${esc(emp.nome)}" width="120" height="44"></a>
-<div class="menu">
-<nav aria-label="${esc(c.menu.navegacao || 'Principal')}"><ul>${menuLista}</ul></nav>
-<div class="idiomas" role="group" aria-label="${esc(c.menu.idioma)}">${idiomas}</div>
-<a class="btn btn-main btn-cta" href="#diagnostico">${esc(c.menu.botao)}</a>
-<details class="burger"><summary aria-label="${esc(c.menu.abrir_menu)}">${ICONE_MENU}</summary>
-<div class="painel">${menuPainel}<a href="#diagnostico">${esc(c.menu.botao)}</a><div class="idiomas" role="group" aria-label="${esc(c.menu.idioma)}">${idiomas}</div></div>
-</details>
-</div>
-</div>
-</header>
+${gtmNoscript()}
+${pular(l)}
+${topo(l, { idiomas: { pt: '/', en: '/en/', es: '/es/' }, naHome: true })}
 
 <main id="conteudo">
 <section class="hero">
@@ -308,14 +276,9 @@ ${opcoes}
 </section>
 </main>
 
-<footer class="site">
-<div class="wrap cols">
-<div>${esc(emp.nome)} · ${esc(c.rodape.local)}<br>${temCnpj ? `${esc(emp.razao_social)} · ${esc(c.rodape.cnpj)} ${esc(emp.cnpj)}<br>` : ''}<!--email_off--><a href="mailto:${esc(emp.email)}">${esc(emp.email)}</a><!--/email_off--><br>© ${ano} ${esc(emp.nome)}. ${esc(c.rodape.direitos)}</div>
-<nav aria-label="${l === 'pt' ? 'Rodapé' : l === 'en' ? 'Footer' : 'Pie de página'}">${emp.redes.map(r => `<a href="${esc(r.url)}" target="_blank" rel="noopener me">${esc(r.nome)}</a>`).join('')}<a href="${esc(c.rodape.casos_url)}">${esc(c.menu.casos)}</a><a href="${esc(c.rodape.blog_url)}">${esc(c.menu.blog)}</a><a href="${esc(c.rodape.privacidade_url)}">${esc(c.rodape.privacidade)}</a></nav>
-</div>
-</footer>
+${rodape(l)}
 
-<a class="float-zap" href="${esc(wa(c.hero.mensagem_whatsapp))}" data-wa="flutuante" target="_blank" rel="noopener" aria-label="${esc(c.hero.botao_whatsapp)}">${ICONE_ZAP}</a>
+${zapFlutuante(l)}
 
 <script>
 (function(){
