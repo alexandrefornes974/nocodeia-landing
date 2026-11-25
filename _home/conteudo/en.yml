@@ -89,7 +89,7 @@ servicos:
       exemplo:
         nome: Proacta CRM
         texto: SaaS CRM with 28 million companies and a prospecting agent. From the first call to the MVP, 2 weeks.
-        link: ""   # vira /en/cases/proacta-crm/ quando o case for publicado
+        link: /en/cases/proacta-crm/
 
 casos:
   titulo: Client projects already live
@@ -104,7 +104,7 @@ casos:
       segmento: B2B software
       texto: Smart SaaS CRM with a database of 28 million companies and a LinkedIn prospecting agent.
       resultado: MVP live in 2 weeks
-      link: ""   # vira /en/cases/proacta-crm/ quando o case for publicado
+      link: /en/cases/proacta-crm/
     - cliente: OKR Platform
       segmento: Multinational technology consultancy
       texto: "System that replaced a spreadsheet rebuilt every month: monthly check-ins, formal goal sign-off and role-based dashboards."

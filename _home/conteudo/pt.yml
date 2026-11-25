@@ -89,7 +89,7 @@ servicos:
       exemplo:
         nome: Proacta CRM
         texto: CRM em SaaS com 28 milhões de empresas e agente de prospecção. Da primeira conversa ao MVP, 2 semanas.
-        link: ""   # vira /casos/proacta-crm/ quando o case for publicado
+        link: /casos/proacta-crm/
 
 casos:
   titulo: Projetos de clientes que já estão no ar
@@ -104,7 +104,7 @@ casos:
       segmento: Software B2B
       texto: CRM inteligente em SaaS com base de 28 milhões de empresas e agente de prospecção no LinkedIn.
       resultado: MVP no ar em 2 semanas
-      link: ""   # vira /casos/proacta-crm/ quando o case for publicado
+      link: /casos/proacta-crm/
     - cliente: Plataforma de OKR
       segmento: Consultoria multinacional de tecnologia
       texto: "Sistema que substituiu a planilha refeita todo mês: check-in mensal, aceite formal de metas e painel por perfil."

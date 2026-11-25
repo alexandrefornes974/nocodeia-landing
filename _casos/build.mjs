@@ -24,6 +24,14 @@ const IDIOMAS = {
   es: { lang: 'es', pasta: 'es/casos', molde: 'es/blog/cuanto-cuesta-un-agente-de-ia/index.html', moldeIndice: 'es/blog/index.html', inicio: '/es/', volta: '← Todos los casos', titulo: 'Casos de clientes', subtitulo: 'Proyectos de Nocodeia funcionando en empresas reales: el problema, lo que se hizo y los números.', descricao: 'Casos de clientes de Nocodeia: agentes de IA, automatización y sitios funcionando en empresas reales, con el problema, la solución y los resultados.', ver: 'Ver caso', casos: 'Casos', home: 'Inicio', meta: 'Caso de cliente', atualizado: 'Actualizado el', faq: 'Preguntas frecuentes', mes: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'], data: (d, m, a, M) => `${d} de ${M[m]} de ${a}` },
 };
 
+// Nome do serviço (o mesmo das abas da home) para o campo "service" do meta.json.
+const SERVICOS = {
+  site: { pt: 'Site', en: 'Website', es: 'Sitio web' },
+  agentes: { pt: 'IA no atendimento', en: 'AI customer service', es: 'IA en la atención' },
+  automacao: { pt: 'Automação', en: 'Automation', es: 'Automatización' },
+  sistemas: { pt: 'Sistemas e produtos', en: 'Software and products', es: 'Sistemas y productos' },
+};
+
 const ESTILO = `<style>
 .numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:8px 0 36px}
 .numeros div{background:var(--sup);border:1px solid var(--borda);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px}
@@ -90,8 +98,13 @@ for (const nomeCaso of readdirSync(AQUI, { withFileTypes: true }).filter(d => d.
     const [a, mm, d] = meta.updated.split('-').map(Number);
     const dataTexto = cfg.data(d, mm - 1, a, cfg.mes);
 
-    const molde = readFileSync(join(SITE, cfg.molde), 'utf8');
-    const chamada = molde.match(/<aside class="chamada">[\s\S]*?<\/aside>/)[0];
+    // quebra de linha do Windows no molde atrapalha as trocas abaixo (hreflang saía duplicado)
+    const molde = readFileSync(join(SITE, cfg.molde), 'utf8').replace(/\r\n/g, '\n');
+    // rótulo da chamada conforme o serviço do case (o molde traz o do post, que é "Agentes de IA")
+    const rotuloServico = SERVICOS[meta.service]?.[l];
+    if (!rotuloServico) throw new Error(`${nomeCaso}: service "${meta.service}" sem rótulo (use ${Object.keys(SERVICOS).join(', ')})`);
+    const chamada = molde.match(/<aside class="chamada">[\s\S]*?<\/aside>/)[0]
+      .replace(/<p class="servico">[\s\S]*?<\/p>/, `<p class="servico">${rotuloServico}</p>`);
     const autor = molde.match(/<div class="autor">[\s\S]*?<\/div>/)[0];
 
     const ld = {
@@ -187,7 +200,7 @@ ${ESTILO_INDICE}
 ${cartoes}
 </div>
 </main>`;
-  let html = readFileSync(join(SITE, cfg.moldeIndice), 'utf8');
+  let html = readFileSync(join(SITE, cfg.moldeIndice), 'utf8').replace(/\r\n/g, '\n');
   html = trocar(html, /<title>[\s\S]*?<\/title>/, `<title>${esc(cfg.titulo)} | Nocodeia</title>`, 'title');
   html = trocar(html, /<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(cfg.descricao)}">`, 'description');
   html = trocar(html, /<link rel="canonical" href="[^"]*">/, `<link rel="canonical" href="${urlIndice(l)}">`, 'canonical');

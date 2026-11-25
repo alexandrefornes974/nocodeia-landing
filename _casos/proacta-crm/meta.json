@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-24",
+  "updated": "2026-11-24",
+  "cliente": "Proacta CRM",
+  "cliente_url": "https://proactacrm.com/",
+  "service": "sistemas",
+  "keyword": "crm sob medida",
+  "pt": {
+    "slug": "proacta-crm",
+    "title": "Case Proacta CRM: um CRM que procura clientes, em 2 semanas",
+    "description": "Como a Nocodeia criou o Proacta CRM, que sugere clientes numa base de 28 milhões de empresas: MVP no ar 2 semanas depois da primeira conversa.",
+    "destaque": {
+      "numero": "2 semanas",
+      "texto": "da primeira conversa ao MVP no ar"
+    }
+  },
+  "en": {
+    "slug": "proacta-crm",
+    "title": "Proacta CRM Case Study: a CRM That Finds Clients, in 2 Weeks",
+    "description": "How Nocodeia built Proacta CRM, which suggests prospects from a database of 28 million companies: MVP live 2 weeks after the very first call.",
+    "destaque": {
+      "numero": "2 weeks",
+      "texto": "from the first call to a live MVP"
+    }
+  },
+  "es": {
+    "slug": "proacta-crm",
+    "title": "Caso Proacta CRM: un CRM que busca clientes, en 2 semanas",
+    "description": "Cómo Nocodeia creó Proacta CRM, que sugiere clientes en una base de 28 millones de empresas: MVP en línea 2 semanas después de la primera charla.",
+    "destaque": {
+      "numero": "2 semanas",
+      "texto": "de la primera conversación al MVP en línea"
+    }
+  }
+}

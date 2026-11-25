@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<!-- Aviso de cookies Nocodeia v1: precisa ser o PRIMEIRO item dentro do <head> -->
+<script>
+window.NOCODEIA_AVISO = {"namespace":"nocodeia","politica":"/privacidade/#site","cor":"#0047FF","corTexto":"#1a1a1a","fonte":"inherit","semMarketing":false,"textos":{"essenciais":"Necessários para o site funcionar e para lembrar a sua escolha de cookies. Não podem ser desligados.","estatisticas":"Contam visitas, mostram quais páginas interessam mais e medem a velocidade e os erros do site, para melhorarmos o site.","aviso":"Usamos cookies para o site funcionar e, se você permitir, para entender como ele é usado e medir anúncios.","marketing":"Permitem medir e personalizar anúncios no Meta (Instagram/Facebook) e no LinkedIn."}};
+(function(w,d){var ns=w.NOCODEIA_AVISO.namespace,FILAS=["dataLayer","dataLayerGa4"];
+function lido(id){try{return localStorage.getItem("stcm."+ns+".consent."+id)}catch(e){return null}}
+function args(){return arguments}
+function estado(a,m){return{analytics_storage:a?"granted":"denied",ad_storage:m?"granted":"denied",ad_user_data:m?"granted":"denied",ad_personalization:m?"granted":"denied"}}
+var a=lido("analytics")==="true",m=lido("marketing")==="true",ini=estado(a,m);ini.wait_for_update=500;
+var antes=[args("consent","default",ini),args("set","ads_data_redaction",!m)];
+/* Google: a decisão "padrão" entra na frente de tudo, mesmo se a plataforma recriar a fila depois */
+function prep(f){if(!f.__nc){for(var i=antes.length-1;i>=0;i--)f.unshift(antes[i]);f.__nc=1}return f}
+FILAS.forEach(function(n){var atual=prep(w[n]||[]);try{Object.defineProperty(w,n,{configurable:true,enumerable:true,get:function(){return atual},set:function(v){atual=prep(v||[])}})}catch(e){w[n]=atual}});
+w.ncConsent={atualizar:function(a,m){var s=estado(a,m);FILAS.forEach(function(n){w[n].push(args("consent","update",s))});w.dataLayer.push({event:"nc_consent_update",nc_analytics:a,nc_marketing:m})}};
+})(window,document);
+</script>
+<script async src="/kit/aviso-cookies/v1/aviso-cookies.js"></script>
+<!-- gtag: só a fila de dados (o GA4 agora é carregado pelo Google Tag Manager) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3GSX8NZ');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case Proacta CRM: um CRM que procura clientes, em 2 semanas | Nocodeia</title>
+<meta name="description" content="Como a Nocodeia criou o Proacta CRM, que sugere clientes numa base de 28 milhões de empresas: MVP no ar 2 semanas depois da primeira conversa.">
+<link rel="canonical" href="https://nocodeiaww.com/casos/proacta-crm/">
+<link rel="alternate" hreflang="pt-BR" href="https://nocodeiaww.com/casos/proacta-crm/">
+<link rel="alternate" hreflang="en" href="https://nocodeiaww.com/en/cases/proacta-crm/">
+<link rel="alternate" hreflang="es" href="https://nocodeiaww.com/es/casos/proacta-crm/">
+<link rel="alternate" hreflang="x-default" href="https://nocodeiaww.com/casos/proacta-crm/">
+<link rel="icon" type="image/png" href="/assets/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Nocodeia">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Case Proacta CRM: um CRM que procura clientes, em 2 semanas | Nocodeia">
+<meta property="og:description" content="Como a Nocodeia criou o Proacta CRM, que sugere clientes numa base de 28 milhões de empresas: MVP no ar 2 semanas depois da primeira conversa.">
+<meta property="og:url" content="https://nocodeiaww.com/casos/proacta-crm/">
+<meta property="og:image" content="https://nocodeiaww.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--sup:#1A1C21;--borda:#2A2D35;--texto:#FFFFFF;--suave:#C9CCD4;--apagado:#A7ABB6;--link:#7FA3FF;--grad:linear-gradient(45deg,#0047FF,#8A2BE2)}
+*{box-sizing:border-box}html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--texto);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--link)}a:hover{color:#A9C1FF}
+*:focus-visible{outline:3px solid #7FA3FF;outline-offset:3px;border-radius:6px}
+.topo{position:sticky;top:0;z-index:10;background:rgba(18,19,22,.92);border-bottom:1px solid #23262D;backdrop-filter:blur(10px)}
+.topo nav{max-width:1200px;margin:0 auto;padding:14px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topo .logo img{height:40px;display:block}
+.menu{display:flex;align-items:center;gap:clamp(12px,2.5vw,28px);flex-wrap:wrap;justify-content:flex-end}
+.menu>a.item{font-size:15px;text-decoration:none;color:var(--suave)}.menu>a.item[aria-current]{color:#fff;font-weight:600}
+.idiomas{display:flex;gap:2px;padding:3px;border:1px solid #343843;border-radius:10px}
+.idiomas a{min-width:38px;min-height:34px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;text-decoration:none;color:var(--apagado);border-radius:7px}
+.idiomas a[aria-current]{color:#fff;background:#2A2D35;font-weight:700}
+.botao{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;color:#fff;background:var(--grad)}
+.botao:hover{color:#fff;filter:brightness(1.08)}
+main{max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,80px) clamp(20px,5vw,48px)}
+.titulo-blog{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px}
+.sub-blog{color:var(--suave);font-size:clamp(17px,1.8vw,20px);max-width:60ch;margin:0 0 48px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:28px}
+.cartao{display:flex;flex-direction:column;background:var(--sup);border:1px solid var(--borda);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s}
+.cartao:hover{border-color:#4A4F5C;color:inherit}
+.cartao img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;display:block;background:#23262D}
+.cartao .corpo{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.2;margin:0;letter-spacing:-.01em}
+.cartao p{margin:0;color:var(--suave);font-size:15px}
+.cartao .mais{margin-top:auto;color:var(--link);font-weight:600;font-size:15px}
+.data{font-size:13px;color:var(--apagado)}
+article{max-width:760px;margin:0 auto}
+.volta{font-size:15px;text-decoration:none}
+article h1{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 16px}
+.resumo{font-size:clamp(18px,2vw,21px);color:var(--suave);margin:0 0 20px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--apagado);margin-bottom:28px}
+.capa{margin:0 0 36px}.capa img{width:100%;height:auto;border-radius:16px;display:block;background:#23262D}
+.capa figcaption{font-size:12px;color:var(--apagado);margin-top:8px}
+.conteudo{font-size:18px;color:#E4E6EB}
+.conteudo h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-.02em;margin:48px 0 14px;color:#fff}
+.conteudo h3{font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;line-height:1.25;margin:32px 0 10px;color:#fff}
+.conteudo p{margin:0 0 20px}.conteudo ul,.conteudo ol{margin:0 0 22px;padding-left:24px}.conteudo li{margin-bottom:8px}
+.conteudo strong{color:#fff}
+.conteudo blockquote{margin:28px 0;padding:18px 22px;border-left:4px solid #5A39F0;background:var(--sup);border-radius:0 12px 12px 0;color:var(--suave)}
+.conteudo blockquote p:last-child{margin:0}
+.conteudo code{font-size:.9em;background:#23262D;padding:2px 6px;border-radius:6px}
+.conteudo pre{background:#0D0E10;border:1px solid var(--borda);border-radius:12px;padding:16px;overflow-x:auto}.conteudo pre code{background:none;padding:0}
+.conteudo table{width:100%;border-collapse:collapse;margin:0 0 24px;font-size:16px;display:block;overflow-x:auto}
+.conteudo th,.conteudo td{border:1px solid var(--borda);padding:10px 12px;text-align:left}.conteudo th{background:var(--sup)}
+.conteudo img{max-width:100%;height:auto;border-radius:12px}
+.conteudo hr{border:0;border-top:1px solid var(--borda);margin:40px 0}
+.chamada{margin:56px 0 0;padding:clamp(28px,5vw,44px);border-radius:20px;background:var(--grad)}
+.chamada h2{font-family:'Space Grotesk',Inter,sans-serif;font-size:clamp(24px,3vw,32px);line-height:1.15;margin:0 0 10px}
+.chamada p{margin:0 0 20px;color:#fff;opacity:.92}
+.chamada a.botao{background:#121316}
+.chamada .servico{font-size:14px;opacity:.85;margin:0 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.autor{margin-top:40px;padding-top:24px;border-top:1px solid var(--borda);display:flex;gap:16px;align-items:flex-start}
+.autor img{width:48px;height:48px;flex-shrink:0}.autor p{margin:0;font-size:15px;color:var(--suave)}.autor strong{color:#fff}
+footer{border-top:1px solid #23262D;padding:56px clamp(20px,5vw,48px) 44px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+footer .marca{display:flex;align-items:center;gap:10px}footer .marca img:first-child{height:40px}footer .marca img:last-child{height:26px}
+footer p{margin:0;font-size:14px;color:var(--apagado)}
+@media (max-width:640px){.menu>a.item{display:none}.topo .logo img{height:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://nocodeiaww.com/casos/proacta-crm/#case",
+   "headline": "Case Proacta CRM: um CRM que procura clientes, em 2 semanas",
+   "description": "Como a Nocodeia criou o Proacta CRM, que sugere clientes numa base de 28 milhões de empresas: MVP no ar 2 semanas depois da primeira conversa.",
+   "inLanguage": "pt-BR",
+   "datePublished": "2026-11-24",
+   "dateModified": "2026-11-24",
+   "url": "https://nocodeiaww.com/casos/proacta-crm/",
+   "mainEntityOfPage": "https://nocodeiaww.com/casos/proacta-crm/",
+   "image": "https://nocodeiaww.com/assets/og-image.png",
+   "author": {
+    "@type": "Person",
+    "@id": "https://nocodeiaww.com/#fundador",
+    "name": "Alexandre Fornes",
+    "url": "https://nocodeiaww.com/#sobre"
+   },
+   "publisher": {
+    "@id": "https://nocodeiaww.com/#empresa"
+   },
+   "about": {
+    "@type": "Organization",
+    "name": "Proacta CRM",
+    "url": "https://proactacrm.com/"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Início",
+     "item": "https://nocodeiaww.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Casos",
+     "item": "https://nocodeiaww.com/casos/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Case Proacta CRM: um CRM que procura clientes, em 2 semanas",
+     "item": "https://nocodeiaww.com/casos/proacta-crm/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nocodeiaww.com/casos/proacta-crm/#faq",
+   "inLanguage": "pt-BR",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Quanto tempo leva para criar um CRM sob medida?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "O MVP do Proacta ficou pronto em 2 semanas. Na Nocodeia, um MVP leva de 2 a 6 semanas, e sistemas maiores, de 1 a 3 meses, sempre entregues em fatias que já vão para o ar. O prazo fechado sai no diagnóstico gratuito."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Vale mais a pena criar um CRM próprio ou assinar um pronto?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Se o CRM pronto resolve, assine. Faz sentido criar o seu quando o CRM é o próprio produto, como no Proacta, ou quando o seu processo de vendas não cabe nas ferramentas do mercado sem gambiarra."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Os dados e o código ficam no nome da empresa?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. Nos projetos da Nocodeia, domínio, contas, código e dados ficam no nome da empresa cliente desde o primeiro dia."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GSX8NZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="topo"><nav aria-label="Principal">
+<a class="logo" href="/" aria-label="Nocodeia"><img src="/assets/logo_h.webp" alt="nocodeia worldwide"></a>
+<div class="menu">
+<a class="item" href="/">Início</a>
+<a class="item" href="/#servicos">Serviços</a>
+<a class="item" href="/casos/" aria-current="page">Casos</a>
+<a class="item" href="/blog/">Blog</a>
+<div class="idiomas" role="group" aria-label="Idioma"><a href="/casos/proacta-crm/" hreflang="pt-BR" aria-current="page">PT</a><a href="/en/cases/proacta-crm/" hreflang="en">EN</a><a href="/es/casos/proacta-crm/" hreflang="es">ES</a></div>
+<a class="botao" href="/#vaga">Garantir vaga</a>
+</div></nav></header>
+<main>
+<style>
+.numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:8px 0 36px}
+.numeros div{background:var(--sup);border:1px solid var(--borda);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.numeros strong{font-family:'Space Grotesk',Inter,sans-serif;font-size:26px;line-height:1.1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.numeros span{font-size:14px;line-height:1.4;color:var(--suave)}
+.fluxo{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0 28px;font-size:14px}
+.fluxo span{padding:8px 12px;border:1px solid #343843;border-radius:10px;background:var(--sup)}
+.fluxo span.destaque{background:var(--grad);border-color:transparent;font-weight:600}
+.fluxo b{color:#6B7080;font-weight:400}
+.tela{margin:8px 0 32px;background:var(--sup);border:1px solid var(--borda);border-radius:14px;overflow:hidden}
+.tela img{display:block;width:100%;height:auto}
+.tela figcaption{padding:12px 16px;border-top:1px solid var(--borda);font-size:14px;line-height:1.5;color:var(--suave)}
+</style>
+<article>
+<a class="volta" href="/casos/">← Todos os casos</a>
+<h1>Case Proacta CRM: um CRM que procura clientes, em 2 semanas</h1>
+<p class="resumo">Como a Nocodeia criou o Proacta CRM, que sugere clientes numa base de 28 milhões de empresas: MVP no ar 2 semanas depois da primeira conversa.</p>
+<div class="meta"><span>Case de cliente: Proacta CRM</span><span>·</span><span>Atualizado em <time datetime="2026-11-24">24 de novembro de 2026</time></span></div>
+<div class="conteudo">
+<p>O Proacta CRM é um CRM de vendas B2B que, em vez de esperar o vendedor preencher, sai procurando cliente: o vendedor digita o CNPJ, o sistema preenche o resto e depois sugere empresas parecidas com a carteira dele, numa base de mais de 28 milhões de empresas ativas. A Nocodeia construiu o produto inteiro, do site ao sistema, e o MVP ficou pronto 2 semanas depois da primeira conversa.</p>
+<div class="numeros">
+<div><strong>2 semanas</strong><span>da primeira conversa ao MVP no ar</span></div>
+<div><strong>28,6 milhões</strong><span>de empresas ativas na base, atualizada todo mês</span></div>
+<div><strong>Zero digitação</strong><span>para cadastrar empresa: só o CNPJ</span></div>
+<div><strong>14 dias</strong><span>de teste grátis, sem cartão, direto no site</span></div>
+</div>
+
+<h2 id="qual-era-o-problema">Qual era o problema?</h2>
+<p>O Luiz Almeida, Diretor de Vendas do Proacta, conhecia bem a rotina de quem vende para empresas: o CRM vira uma caixa vazia que o vendedor precisa encher à mão. Ele digita razão social, endereço, setor e porte de cada empresa, e ainda precisa descobrir sozinho para quem vender depois.</p>
+<p>A ideia era inverter isso. Um CRM que já nasce com o mercado inteiro dentro, preenche os dados sozinho e aponta as próximas empresas para prospectar. Para funcionar, o produto precisava aguentar uma base com dezenas de milhões de empresas e continuar rápido.</p>
+<h2 id="o-que-a-nocodeia-construiu">O que a Nocodeia construiu?</h2>
+<p>O produto completo, em três partes:</p>
+<ol>
+<li><strong>O sistema</strong>, um CRM em SaaS com conta para cada empresa cliente, usuários, permissões e plano de assinatura.</li>
+<li><strong>A base de empresas</strong>, com a carga mensal da base aberta do CNPJ da Receita Federal, que hoje soma 28.654.371 empresas ativas na contagem do Proacta, incluindo MEIs e filiais.</li>
+<li><strong>O site</strong> <a href="https://proactacrm.com/" target="_blank" rel="noopener">proactacrm.com</a>, com o texto pronto no código para o Google e as IAs lerem na primeira visita, e cadastro para o teste de 14 dias.</li>
+</ol>
+<figure class="tela"><img src="/assets/proacta-site-novo.webp" alt="Página inicial do site do Proacta CRM com o título O CRM que sai procurando cliente por você" width="1280" height="800" loading="lazy"><figcaption>O site do Proacta: a promessa logo no topo e o teste de 14 dias a um clique.</figcaption></figure>
+
+<h2 id="como-o-proacta-procura-clientes">Como o Proacta procura clientes?</h2>
+<p>O cadastro é por CNPJ. O vendedor digita o número e o Proacta busca razão social, atividade, porte, endereço e site da empresa, sem ninguém digitar mais nada. A equipe chama isso de &quot;Zero Input&quot;.</p>
+<p>Depois, o motor de indicações compara a carteira do cliente com a base e sugere empresas parecidas que ainda não estão nela. Cada sugestão traz o motivo, como &quot;você tem 6 clientes parecidos&quot;, e dois botões: &quot;Quero prospectar&quot; ou &quot;Não serve&quot;. O motor aprende com as duas respostas, inclusive com as recusas.</p>
+<figure class="tela"><img src="/assets/proacta-indicacoes.webp" alt="Lista de empresas sugeridas pelo Proacta CRM com os botões Quero prospectar e Não serve" width="928" height="612" loading="lazy"><figcaption>Indicações: empresas parecidas com a carteira, com o motivo de cada sugestão. Dados de demonstração.</figcaption></figure>
+
+<p>Para quem quer montar uma lista do zero, a prospecção filtra a base por setor, porte, estado, cidade e data de abertura. Dá para achar, por exemplo, as indústrias de médio porte de São Paulo abertas nos últimos 90 dias.</p>
+<figure class="tela"><img src="/assets/proacta-base.webp" alt="Filtros de prospecção do Proacta CRM por setor, porte, estado, cidade e data de abertura" width="800" height="628" loading="lazy"><figcaption>Prospecção na base: setor, porte, estado, cidade e data de abertura.</figcaption></figure>
+
+<h2 id="o-que-tem-alem-da-prospeccao">O que tem além da prospecção?</h2>
+<p>Tudo o que um time comercial usa no dia a dia:</p>
+<ul>
+<li><strong>Funil de vendas</strong> em kanban, com valor por etapa, previsão ponderada pela chance de cada etapa e alerta de negócio parado.</li>
+<li><strong>Meu dia</strong>, a tela de abertura de cada vendedor, com as tarefas, as prioridades e as indicações novas.</li>
+<li><strong>Painéis</strong> de receita, funil e desempenho, com a comparação contra a meta.</li>
+<li><strong>Convite no LinkedIn</strong> preparado pelo sistema e aprovado pelo vendedor antes de sair.</li>
+<li><strong>Permissões por perfil</strong> e cuidados de LGPD: base legal, pedido de oposição, lista de bloqueio e contrato de tratamento de dados.</li>
+</ul>
+<figure class="tela"><img src="/assets/proacta-funil.webp" alt="Funil de oportunidades do Proacta CRM em kanban com valores por etapa e previsão ponderada" width="1280" height="800" loading="lazy"><figcaption>Funil em kanban: valor em aberto, previsão ponderada e o que pede ação. Dados de demonstração.</figcaption></figure>
+
+<figure class="tela"><img src="/assets/proacta-painel.webp" alt="Painel executivo do Proacta CRM com receita ganha, ticket médio, taxa de ganho e ciclo de venda" width="1280" height="800" loading="lazy"><figcaption>Painel executivo: o mês em seis números, com a tendência ao lado de cada um. Dados de demonstração.</figcaption></figure>
+
+<h2 id="como-o-mvp-ficou-pronto-em-2-semanas">Como o MVP ficou pronto em 2 semanas?</h2>
+<p>O projeto começou em 21 de agosto de 2026 e foi dividido em fatias. Cada fatia tem a sua especificação, o seu plano e os seus testes automáticos, e vai para o ar assim que passa na revisão. O cadastro por CNPJ foi a primeira fatia, e o funil, as tarefas e os painéis vieram nas seguintes.</p>
+<p>Agentes de IA escrevem e revisam o código com a supervisão da Nocodeia, o que acelera a entrega sem pular a revisão. Os dados de cada empresa cliente ficam separados no próprio banco de dados: cada consulta devolve só o que aquela conta pode ver, mesmo se a tela errar.</p>
+<blockquote>
+<p>Queríamos criar um CRM inteligente em SaaS com 28 milhões de empresas ativas dentro dele, então o produto precisava ser robusto. Da primeira conversa com a Nocodeia até o MVP lançado foram 2 semanas.</p>
+<p>— Luiz Almeida, Diretor de Vendas do Proacta CRM</p>
+</blockquote>
+<h2 id="quais-foram-os-resultados">Quais foram os resultados?</h2>
+<ul>
+<li><strong>MVP no ar em 2 semanas</strong>, a partir da primeira conversa.</li>
+<li><strong>Mais de 2.100 alterações no código</strong> nos 3 primeiros meses: o produto não parou de evoluir depois do MVP.</li>
+<li><strong>Base de 28,6 milhões de empresas ativas</strong>, atualizada todo mês com a carga da Receita Federal.</li>
+<li><strong>Teste de 14 dias aberto no site</strong>, sem cartão de crédito.</li>
+</ul>
+<p>O Proacta está em fase de lançamento, por isso este case fala da construção do produto e não de vendas dos clientes dele. Quando esses números fecharem, esta página vai ser atualizada.</p>
+<p>Para ver o produto em ação numa prospecção de verdade, leia o nosso guia de <a href="/blog/prospeccao-b2b-com-ia/">prospecção B2B com IA</a>.</p>
+<h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+<h3 id="quanto-tempo-leva-para-criar-um-crm-sob-medida">Quanto tempo leva para criar um CRM sob medida?</h3>
+<p>O MVP do Proacta ficou pronto em 2 semanas. Na Nocodeia, um MVP leva de 2 a 6 semanas, e sistemas maiores, de 1 a 3 meses, sempre entregues em fatias que já vão para o ar. O prazo fechado sai no diagnóstico gratuito.</p>
+<h3 id="vale-mais-a-pena-criar-um-crm-proprio-ou-assinar-um-pronto">Vale mais a pena criar um CRM próprio ou assinar um pronto?</h3>
+<p>Se o CRM pronto resolve, assine. Faz sentido criar o seu quando o CRM é o próprio produto, como no Proacta, ou quando o seu processo de vendas não cabe nas ferramentas do mercado sem gambiarra.</p>
+<h3 id="os-dados-e-o-codigo-ficam-no-nome-da-empresa">Os dados e o código ficam no nome da empresa?</h3>
+<p>Sim. Nos projetos da Nocodeia, domínio, contas, código e dados ficam no nome da empresa cliente desde o primeiro dia.</p>
+<h2 id="o-seu-processo-de-vendas-nao-cabe-no-crm-que-voce-usa">O seu processo de vendas não cabe no CRM que você usa?</h2>
+<p>Seja um CRM, um portal ou um produto para vender, a Nocodeia constrói em semanas e continua evoluindo com você. No diagnóstico gratuito de 45 minutos, a gente entende o seu processo e diz com franqueza se vale fazer sob medida. Conheça os nossos <a href="/#sistemas-e-produtos">sistemas e produtos sob medida</a> e <a href="/#diagnostico">agende seu diagnóstico grátis</a>.</p>
+
+</div>
+<aside class="chamada">
+<p class="servico">Sistemas e produtos</p>
+<h2>Quer isso funcionando na sua empresa?</h2>
+<p>Diagnóstico grátis de 45 minutos. Você sai com preço e prazo fechados.</p>
+<a class="botao" href="/#vaga">Quero meu diagnóstico grátis</a>
+</aside>
+<div class="autor"><img src="/assets/icon.webp" alt=""><p><strong>Alexandre, fundador da Nocodeia</strong><br>Mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch. Hoje coloca produtos no ar com no-code e IA em semanas.</p></div>
+</article>
+</main>
+<footer><div class="marca"><img src="/assets/icon.webp" alt=""><img src="/assets/wordmark.webp" alt="nocodeia worldwide"></div><div class="redes" style="display: flex; gap: 12px; justify-content: center; align-items: center"><a href="https://www.linkedin.com/company/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia no LinkedIn" title="Nocodeia no LinkedIn" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.instagram.com/nocodeiaww/" target="_blank" rel="noopener me" aria-label="Nocodeia no Instagram" title="Nocodeia no Instagram" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595488161472" target="_blank" rel="noopener me" aria-label="Nocodeia no Facebook" title="Nocodeia no Facebook" style="color: #C9CCD4; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div>
+<p><!--email_off--><a href="mailto:contato@nocodeiaww.com">contato@nocodeiaww.com</a><!--/email_off--></p><p>Campinas (SP) · atendimento remoto em todo o Brasil e no exterior</p><p>© 2026 Nocodeia. Feito com no-code, claro.</p></footer>
+</body>
+</html>
