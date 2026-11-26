@@ -25,11 +25,11 @@ O SEO da prévia aparece como 69 só porque a prévia vem com `x-robots-tag: noi
 | R2 | LCP < 2,5 s | Feito na home PT | LCP 1,85 s (mediana), elemento H1 |
 | R3 | 1 H1; home < 120 KB | Feito na home PT | 1 `<h1>` no HTML cru; 41 KB. O build falha se houver mais de 1 H1 ou passar de 120 KB |
 | R4 | E-mail em texto | Feito | `contato@nocodeiaww.com` no HTML cru (rodapé com `email_off`) e no schema |
-| R5 | CNPJ e razão social | Falta o dado | Campos em `_home/conteudo/empresa.yml`; ao preencher, entram no rodapé e no `taxID` |
+| R5 | CNPJ e razão social | Adiado (decisão do Alexandre em 26/11/2026) | O rodapé sai sem eles por enquanto. Campos em `_home/conteudo/empresa.yml`; ao preencher, entram no rodapé e no `taxID` |
 | R6 | Perfil da Empresa no Google | Com o Alexandre | Schema já declara área de atendimento: Campinas e Região Metropolitana |
 | R7 | HSTS e cabeçalhos | Feito | `_headers`: Strict-Transport-Security, X-Content-Type-Options, Referrer-Policy, X-Frame-Options, Permissions-Policy (conferidos na prévia) |
 | R8 | /favicon.ico | Feito | 200, image/vnd.microsoft.icon (prévia) |
-| R9 | hreflang da calculadora | A fazer | |
+| R9 | hreflang da calculadora | Feito (25/11/2026) | Calculadora em PT, EN e ES (`/calculadora-whatsapp/`, `/en/whatsapp-cost-calculator/`, `/es/calculadora-whatsapp/`) com hreflang entre as três e no sitemap |
 | R10 | 3 cases e 3 depoimentos | Em andamento | 3 cases com número na home; 1 depoimento (faltam 2) |
 | R11 | Resposta direta + FAQ | Home feita | FAQ com 5 perguntas e FAQPage igual ao texto; matriz de prompts a montar |
 
