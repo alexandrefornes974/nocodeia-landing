@@ -30,7 +30,7 @@ O SEO da prévia aparece como 69 só porque a prévia vem com `x-robots-tag: noi
 | R7 | HSTS e cabeçalhos | Feito | `_headers`: Strict-Transport-Security, X-Content-Type-Options, Referrer-Policy, X-Frame-Options, Permissions-Policy (conferidos na prévia) |
 | R8 | /favicon.ico | Feito | 200, image/vnd.microsoft.icon (prévia) |
 | R9 | hreflang da calculadora | Feito (25/11/2026) | Calculadora em PT, EN e ES (`/calculadora-whatsapp/`, `/en/whatsapp-cost-calculator/`, `/es/calculadora-whatsapp/`) com hreflang entre as três e no sitemap |
-| R10 | 3 cases e 3 depoimentos | Em andamento | 3 cases com número na home; 2 depoimentos (Luiz Almeida, Proacta CRM; Tai Vieira, Amore Totale, em 26/11/2026). Falta 1 |
+| R10 | 3 cases e 3 depoimentos | Em andamento | 3 cases com número na home; 2 depoimentos (Luiz Almeida, Proacta CRM; Tais Vieira, Amore Totale, em 26/11/2026). Falta 1 |
 | R11 | Resposta direta + FAQ | Home feita | FAQ com 5 perguntas e FAQPage igual ao texto; matriz de prompts a montar |
 
 ## Achado durante a medição
