@@ -6,3 +6,4 @@ _casos export-ignore
 functions export-ignore
 _home export-ignore
 _paginas export-ignore
+.pages.yml export-ignore

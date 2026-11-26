@@ -114,6 +114,9 @@ casos:
     - texto: We wanted to build a smart SaaS CRM with 28 million active companies inside it, so the product had to be robust. From the first conversation with Nocodeia to the MVP launch, it took 2 weeks.
       nome: Luiz Almeida
       cargo: Sales Director at Proacta CRM
+    - texto: With the AI agent, our WhatsApp messages dropped by 83% and the agent resolves 75% of interactions on its own. That freed up my time to focus on other priorities in the business.
+      nome: Tai Vieira
+      cargo: Manager at Amore Totale
 
 para_quem:
   titulo: Built for small and mid-sized businesses

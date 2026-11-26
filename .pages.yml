@@ -1,0 +1,1270 @@
+# Configuração do Pages CMS (https://app.pagescms.org): painel para editar os textos da página inicial.
+# Cada "Salvar" vira um commit no GitHub, e a publicação refaz a home, o blog, os cases e as páginas avulsas.
+# Gerado por um script; para mudar o formulário, peça ao Claude ou edite com cuidado (o nome de cada campo
+# precisa ser igual à chave no arquivo .yml).
+
+content:
+  - name: home-pt
+    label: "Página inicial: português"
+    type: file
+    path: _home/conteudo/pt.yml
+    fields:
+      - name: meta
+        label: "Google e redes (título e descrição da página)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título da aba do navegador"
+            type: string
+            description: "Até uns 60 caracteres."
+          - name: descricao
+            label: "Descrição para o Google"
+            type: text
+            description: "Até uns 155 caracteres."
+      - name: menu
+        label: "Menu do topo"
+        type: object
+        fields:
+          - name: o_que_fazemos
+            label: "O que fazemos"
+            type: string
+          - name: casos
+            label: "Casos"
+            type: string
+          - name: para_quem
+            label: "Para quem"
+            type: string
+          - name: como_funciona
+            label: "Como funciona"
+            type: string
+          - name: duvidas
+            label: "Dúvidas"
+            type: string
+          - name: blog
+            label: "Blog"
+            type: string
+          - name: botao
+            label: "Botão do menu"
+            type: string
+          - name: abrir_menu
+            label: "Texto do botão de menu no celular"
+            type: string
+          - name: idioma
+            label: "Rótulo do seletor de idioma"
+            type: string
+          - name: navegacao
+            label: "Nome do menu para leitores de tela"
+            type: string
+      - name: hero
+        label: "Topo da página"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título principal (H1)"
+            type: text
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: botao_principal
+            label: "Botão principal"
+            type: string
+          - name: botao_whatsapp
+            label: "Botão do WhatsApp"
+            type: string
+          - name: mensagem_whatsapp
+            label: "Mensagem que já vem escrita no WhatsApp"
+            type: string
+          - name: rotulo_provas
+            label: "Rótulo dos números"
+            type: string
+          - name: provas
+            label: "Números em destaque"
+            type: object
+            list: true
+            fields:
+              - name: numero
+                label: "Número"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: string
+      - name: servicos
+        label: "Serviços (abas)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: rotulo_exemplo
+            label: "Rótulo do exemplo"
+            type: string
+          - name: itens
+            label: "Abas"
+            type: object
+            list: true
+            fields:
+              - name: id
+                label: "Endereço da aba"
+                type: string
+                description: "NÃO MUDE depois de publicado: é o endereço da aba (ex.: nocodeiaww.com/#automacao) e liga os posts e cases a ela."
+              - name: nome
+                label: "Nome da aba"
+                type: string
+              - name: titulo
+                label: "Título"
+                type: text
+              - name: entregas
+                label: "O que entrega (um item por linha)"
+                type: string
+                list: true
+              - name: prazo
+                label: "Prazo"
+                type: string
+                description: "Também aparece no bloco do fim dos posts e cases."
+              - name: exemplo
+                label: "Exemplo real"
+                type: object
+                fields:
+                  - name: nome
+                    label: "Nome"
+                    type: string
+                  - name: texto
+                    label: "Texto"
+                    type: text
+                    description: "{artigos} vira o número de artigos do blog na publicação."
+                  - name: link
+                    label: "Link"
+                    type: string
+                  - name: link_texto
+                    label: "Texto do link"
+                    type: string
+                    description: "Opcional. Vazio = texto padrão."
+      - name: casos
+        label: "Casos e depoimentos"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: ver_case
+            label: "Texto do link do case"
+            type: string
+          - name: itens
+            label: "Casos"
+            type: object
+            list: true
+            fields:
+              - name: cliente
+                label: "Cliente"
+                type: string
+              - name: segmento
+                label: "Segmento"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+              - name: resultado
+                label: "Resultado"
+                type: string
+              - name: link
+                label: "Link do case"
+                type: string
+          - name: depoimentos
+            label: "Depoimentos"
+            type: object
+            list: true
+            fields:
+              - name: texto
+                label: "Depoimento"
+                type: text
+                description: "Só publique com a autorização da pessoa."
+              - name: nome
+                label: "Nome"
+                type: string
+              - name: cargo
+                label: "Cargo e empresa"
+                type: string
+      - name: para_quem
+        label: "Para quem (setores)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: itens
+            label: "Setores"
+            description: "Os 4 primeiros aparecem logo; os outros ficam no botão de ver mais."
+            type: object
+            list: true
+            fields:
+              - name: nome
+                label: "Setor"
+                type: string
+              - name: problema
+                label: "Problema"
+                type: text
+              - name: solucao
+                label: "Solução"
+                type: text
+          - name: nota
+            label: "Nota no fim"
+            type: text
+          - name: nota_link
+            label: "Texto do link da nota"
+            type: string
+          - name: ver_mais
+            label: "Botão ver mais"
+            type: string
+            description: "{n} vira o número de setores escondidos."
+          - name: ver_menos
+            label: "Botão ver menos"
+            type: string
+      - name: como_funciona
+        label: "Como funciona"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: passos
+            label: "Passos"
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: "Título"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+      - name: sobre
+        label: "Sobre o fundador"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: texto
+            label: "Texto"
+            type: text
+          - name: fatos
+            label: "Fatos"
+            type: object
+            list: true
+            fields:
+              - name: destaque
+                label: "Destaque"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+      - name: duvidas
+        label: "Dúvidas frequentes"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: itens
+            label: "Perguntas"
+            description: "Também viram os dados de FAQ que o Google e as IAs leem."
+            type: object
+            list: true
+            fields:
+              - name: pergunta
+                label: "Pergunta"
+                type: string
+              - name: resposta
+                label: "Resposta"
+                type: text
+      - name: diagnostico
+        label: "Agendar diagnóstico (formulário)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: pergunta
+            label: "Pergunta"
+            type: string
+          - name: opcoes
+            label: "Opções"
+            description: "Mantenha a ordem: Site, IA no atendimento, Automação, Sistema ou produto, Ainda não sei."
+            type: object
+            list: true
+            fields:
+              - name: rotulo
+                label: "Rótulo"
+                type: string
+              - name: frase
+                label: "Frase que entra na mensagem do WhatsApp"
+                type: string
+          - name: botao
+            label: "Botão"
+            type: string
+          - name: mensagem_inicio
+            label: "Início da mensagem"
+            type: string
+          - name: mensagem_precisa
+            label: "Ligação antes dos itens"
+            type: string
+          - name: mensagem_fim
+            label: "Fim da mensagem"
+            type: string
+          - name: sem_itens
+            label: "Aviso sem itens marcados"
+            type: string
+          - name: previa
+            label: "Rótulo da prévia"
+            type: string
+          - name: email
+            label: "Opção por e-mail"
+            type: object
+            fields:
+              - name: titulo
+                label: "Título"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+              - name: rotulo
+                label: "Rótulo do campo"
+                type: string
+              - name: exemplo
+                label: "Exemplo no campo"
+                type: string
+              - name: botao
+                label: "Botão"
+                type: string
+              - name: enviando
+                label: "Enviando"
+                type: string
+              - name: ok
+                label: "Mensagem de sucesso"
+                type: text
+              - name: invalido
+                label: "E-mail inválido"
+                type: string
+              - name: falhou
+                label: "Mensagem de falha"
+                type: text
+              - name: privacidade
+                label: "Aviso de privacidade"
+                type: string
+              - name: privacidade_link
+                label: "Texto do link"
+                type: string
+      - name: chamada
+        label: "Bloco do fim dos posts e cases"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: nota
+            label: "Nota"
+            type: text
+          - name: botao
+            label: "Botão"
+            type: string
+          - name: ver_servico
+            label: "Link para o serviço"
+            type: string
+      - name: rodape
+        label: "Rodapé"
+        type: object
+        fields:
+          - name: local
+            label: "Local e atendimento"
+            type: string
+          - name: cnpj
+            label: "Rótulo do CNPJ"
+            type: string
+          - name: privacidade
+            label: "Texto do link de privacidade"
+            type: string
+          - name: privacidade_url
+            label: "Endereço da privacidade"
+            type: string
+            description: "Não mude."
+          - name: blog_url
+            label: "Endereço do blog"
+            type: string
+            description: "Não mude."
+          - name: casos_url
+            label: "Endereço dos casos"
+            type: string
+            description: "Não mude."
+          - name: direitos
+            label: "Direitos"
+            type: string
+  - name: home-en
+    label: "Página inicial: inglês"
+    type: file
+    path: _home/conteudo/en.yml
+    fields:
+      - name: meta
+        label: "Google e redes (título e descrição da página)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título da aba do navegador"
+            type: string
+            description: "Até uns 60 caracteres."
+          - name: descricao
+            label: "Descrição para o Google"
+            type: text
+            description: "Até uns 155 caracteres."
+      - name: menu
+        label: "Menu do topo"
+        type: object
+        fields:
+          - name: o_que_fazemos
+            label: "O que fazemos"
+            type: string
+          - name: casos
+            label: "Casos"
+            type: string
+          - name: para_quem
+            label: "Para quem"
+            type: string
+          - name: como_funciona
+            label: "Como funciona"
+            type: string
+          - name: duvidas
+            label: "Dúvidas"
+            type: string
+          - name: blog
+            label: "Blog"
+            type: string
+          - name: botao
+            label: "Botão do menu"
+            type: string
+          - name: abrir_menu
+            label: "Texto do botão de menu no celular"
+            type: string
+          - name: idioma
+            label: "Rótulo do seletor de idioma"
+            type: string
+          - name: navegacao
+            label: "Nome do menu para leitores de tela"
+            type: string
+      - name: hero
+        label: "Topo da página"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título principal (H1)"
+            type: text
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: botao_principal
+            label: "Botão principal"
+            type: string
+          - name: botao_whatsapp
+            label: "Botão do WhatsApp"
+            type: string
+          - name: mensagem_whatsapp
+            label: "Mensagem que já vem escrita no WhatsApp"
+            type: string
+          - name: rotulo_provas
+            label: "Rótulo dos números"
+            type: string
+          - name: provas
+            label: "Números em destaque"
+            type: object
+            list: true
+            fields:
+              - name: numero
+                label: "Número"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: string
+      - name: servicos
+        label: "Serviços (abas)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: rotulo_exemplo
+            label: "Rótulo do exemplo"
+            type: string
+          - name: itens
+            label: "Abas"
+            type: object
+            list: true
+            fields:
+              - name: id
+                label: "Endereço da aba"
+                type: string
+                description: "NÃO MUDE depois de publicado: é o endereço da aba (ex.: nocodeiaww.com/#automacao) e liga os posts e cases a ela."
+              - name: nome
+                label: "Nome da aba"
+                type: string
+              - name: titulo
+                label: "Título"
+                type: text
+              - name: entregas
+                label: "O que entrega (um item por linha)"
+                type: string
+                list: true
+              - name: prazo
+                label: "Prazo"
+                type: string
+                description: "Também aparece no bloco do fim dos posts e cases."
+              - name: exemplo
+                label: "Exemplo real"
+                type: object
+                fields:
+                  - name: nome
+                    label: "Nome"
+                    type: string
+                  - name: texto
+                    label: "Texto"
+                    type: text
+                    description: "{artigos} vira o número de artigos do blog na publicação."
+                  - name: link
+                    label: "Link"
+                    type: string
+                  - name: link_texto
+                    label: "Texto do link"
+                    type: string
+                    description: "Opcional. Vazio = texto padrão."
+      - name: casos
+        label: "Casos e depoimentos"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: ver_case
+            label: "Texto do link do case"
+            type: string
+          - name: itens
+            label: "Casos"
+            type: object
+            list: true
+            fields:
+              - name: cliente
+                label: "Cliente"
+                type: string
+              - name: segmento
+                label: "Segmento"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+              - name: resultado
+                label: "Resultado"
+                type: string
+              - name: link
+                label: "Link do case"
+                type: string
+          - name: depoimentos
+            label: "Depoimentos"
+            type: object
+            list: true
+            fields:
+              - name: texto
+                label: "Depoimento"
+                type: text
+                description: "Só publique com a autorização da pessoa."
+              - name: nome
+                label: "Nome"
+                type: string
+              - name: cargo
+                label: "Cargo e empresa"
+                type: string
+      - name: para_quem
+        label: "Para quem (setores)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: itens
+            label: "Setores"
+            description: "Os 4 primeiros aparecem logo; os outros ficam no botão de ver mais."
+            type: object
+            list: true
+            fields:
+              - name: nome
+                label: "Setor"
+                type: string
+              - name: problema
+                label: "Problema"
+                type: text
+              - name: solucao
+                label: "Solução"
+                type: text
+          - name: nota
+            label: "Nota no fim"
+            type: text
+          - name: nota_link
+            label: "Texto do link da nota"
+            type: string
+          - name: ver_mais
+            label: "Botão ver mais"
+            type: string
+            description: "{n} vira o número de setores escondidos."
+          - name: ver_menos
+            label: "Botão ver menos"
+            type: string
+      - name: como_funciona
+        label: "Como funciona"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: passos
+            label: "Passos"
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: "Título"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+      - name: sobre
+        label: "Sobre o fundador"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: texto
+            label: "Texto"
+            type: text
+          - name: fatos
+            label: "Fatos"
+            type: object
+            list: true
+            fields:
+              - name: destaque
+                label: "Destaque"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+      - name: duvidas
+        label: "Dúvidas frequentes"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: itens
+            label: "Perguntas"
+            description: "Também viram os dados de FAQ que o Google e as IAs leem."
+            type: object
+            list: true
+            fields:
+              - name: pergunta
+                label: "Pergunta"
+                type: string
+              - name: resposta
+                label: "Resposta"
+                type: text
+      - name: diagnostico
+        label: "Agendar diagnóstico (formulário)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: pergunta
+            label: "Pergunta"
+            type: string
+          - name: opcoes
+            label: "Opções"
+            description: "Mantenha a ordem: Site, IA no atendimento, Automação, Sistema ou produto, Ainda não sei."
+            type: object
+            list: true
+            fields:
+              - name: rotulo
+                label: "Rótulo"
+                type: string
+              - name: frase
+                label: "Frase que entra na mensagem do WhatsApp"
+                type: string
+          - name: botao
+            label: "Botão"
+            type: string
+          - name: mensagem_inicio
+            label: "Início da mensagem"
+            type: string
+          - name: mensagem_precisa
+            label: "Ligação antes dos itens"
+            type: string
+          - name: mensagem_fim
+            label: "Fim da mensagem"
+            type: string
+          - name: sem_itens
+            label: "Aviso sem itens marcados"
+            type: string
+          - name: previa
+            label: "Rótulo da prévia"
+            type: string
+          - name: email
+            label: "Opção por e-mail"
+            type: object
+            fields:
+              - name: titulo
+                label: "Título"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+              - name: rotulo
+                label: "Rótulo do campo"
+                type: string
+              - name: exemplo
+                label: "Exemplo no campo"
+                type: string
+              - name: botao
+                label: "Botão"
+                type: string
+              - name: enviando
+                label: "Enviando"
+                type: string
+              - name: ok
+                label: "Mensagem de sucesso"
+                type: text
+              - name: invalido
+                label: "E-mail inválido"
+                type: string
+              - name: falhou
+                label: "Mensagem de falha"
+                type: text
+              - name: privacidade
+                label: "Aviso de privacidade"
+                type: string
+              - name: privacidade_link
+                label: "Texto do link"
+                type: string
+      - name: chamada
+        label: "Bloco do fim dos posts e cases"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: nota
+            label: "Nota"
+            type: text
+          - name: botao
+            label: "Botão"
+            type: string
+          - name: ver_servico
+            label: "Link para o serviço"
+            type: string
+      - name: rodape
+        label: "Rodapé"
+        type: object
+        fields:
+          - name: local
+            label: "Local e atendimento"
+            type: string
+          - name: cnpj
+            label: "Rótulo do CNPJ"
+            type: string
+          - name: privacidade
+            label: "Texto do link de privacidade"
+            type: string
+          - name: privacidade_url
+            label: "Endereço da privacidade"
+            type: string
+            description: "Não mude."
+          - name: blog_url
+            label: "Endereço do blog"
+            type: string
+            description: "Não mude."
+          - name: casos_url
+            label: "Endereço dos casos"
+            type: string
+            description: "Não mude."
+          - name: direitos
+            label: "Direitos"
+            type: string
+  - name: home-es
+    label: "Página inicial: espanhol"
+    type: file
+    path: _home/conteudo/es.yml
+    fields:
+      - name: meta
+        label: "Google e redes (título e descrição da página)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título da aba do navegador"
+            type: string
+            description: "Até uns 60 caracteres."
+          - name: descricao
+            label: "Descrição para o Google"
+            type: text
+            description: "Até uns 155 caracteres."
+      - name: menu
+        label: "Menu do topo"
+        type: object
+        fields:
+          - name: o_que_fazemos
+            label: "O que fazemos"
+            type: string
+          - name: casos
+            label: "Casos"
+            type: string
+          - name: para_quem
+            label: "Para quem"
+            type: string
+          - name: como_funciona
+            label: "Como funciona"
+            type: string
+          - name: duvidas
+            label: "Dúvidas"
+            type: string
+          - name: blog
+            label: "Blog"
+            type: string
+          - name: botao
+            label: "Botão do menu"
+            type: string
+          - name: abrir_menu
+            label: "Texto do botão de menu no celular"
+            type: string
+          - name: idioma
+            label: "Rótulo do seletor de idioma"
+            type: string
+          - name: navegacao
+            label: "Nome do menu para leitores de tela"
+            type: string
+      - name: hero
+        label: "Topo da página"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título principal (H1)"
+            type: text
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: botao_principal
+            label: "Botão principal"
+            type: string
+          - name: botao_whatsapp
+            label: "Botão do WhatsApp"
+            type: string
+          - name: mensagem_whatsapp
+            label: "Mensagem que já vem escrita no WhatsApp"
+            type: string
+          - name: rotulo_provas
+            label: "Rótulo dos números"
+            type: string
+          - name: provas
+            label: "Números em destaque"
+            type: object
+            list: true
+            fields:
+              - name: numero
+                label: "Número"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: string
+      - name: servicos
+        label: "Serviços (abas)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: rotulo_exemplo
+            label: "Rótulo do exemplo"
+            type: string
+          - name: itens
+            label: "Abas"
+            type: object
+            list: true
+            fields:
+              - name: id
+                label: "Endereço da aba"
+                type: string
+                description: "NÃO MUDE depois de publicado: é o endereço da aba (ex.: nocodeiaww.com/#automacao) e liga os posts e cases a ela."
+              - name: nome
+                label: "Nome da aba"
+                type: string
+              - name: titulo
+                label: "Título"
+                type: text
+              - name: entregas
+                label: "O que entrega (um item por linha)"
+                type: string
+                list: true
+              - name: prazo
+                label: "Prazo"
+                type: string
+                description: "Também aparece no bloco do fim dos posts e cases."
+              - name: exemplo
+                label: "Exemplo real"
+                type: object
+                fields:
+                  - name: nome
+                    label: "Nome"
+                    type: string
+                  - name: texto
+                    label: "Texto"
+                    type: text
+                    description: "{artigos} vira o número de artigos do blog na publicação."
+                  - name: link
+                    label: "Link"
+                    type: string
+                  - name: link_texto
+                    label: "Texto do link"
+                    type: string
+                    description: "Opcional. Vazio = texto padrão."
+      - name: casos
+        label: "Casos e depoimentos"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: ver_case
+            label: "Texto do link do case"
+            type: string
+          - name: itens
+            label: "Casos"
+            type: object
+            list: true
+            fields:
+              - name: cliente
+                label: "Cliente"
+                type: string
+              - name: segmento
+                label: "Segmento"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+              - name: resultado
+                label: "Resultado"
+                type: string
+              - name: link
+                label: "Link do case"
+                type: string
+          - name: depoimentos
+            label: "Depoimentos"
+            type: object
+            list: true
+            fields:
+              - name: texto
+                label: "Depoimento"
+                type: text
+                description: "Só publique com a autorização da pessoa."
+              - name: nome
+                label: "Nome"
+                type: string
+              - name: cargo
+                label: "Cargo e empresa"
+                type: string
+      - name: para_quem
+        label: "Para quem (setores)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: itens
+            label: "Setores"
+            description: "Os 4 primeiros aparecem logo; os outros ficam no botão de ver mais."
+            type: object
+            list: true
+            fields:
+              - name: nome
+                label: "Setor"
+                type: string
+              - name: problema
+                label: "Problema"
+                type: text
+              - name: solucao
+                label: "Solução"
+                type: text
+          - name: nota
+            label: "Nota no fim"
+            type: text
+          - name: nota_link
+            label: "Texto do link da nota"
+            type: string
+          - name: ver_mais
+            label: "Botão ver mais"
+            type: string
+            description: "{n} vira o número de setores escondidos."
+          - name: ver_menos
+            label: "Botão ver menos"
+            type: string
+      - name: como_funciona
+        label: "Como funciona"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: passos
+            label: "Passos"
+            type: object
+            list: true
+            fields:
+              - name: titulo
+                label: "Título"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+      - name: sobre
+        label: "Sobre o fundador"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: texto
+            label: "Texto"
+            type: text
+          - name: fatos
+            label: "Fatos"
+            type: object
+            list: true
+            fields:
+              - name: destaque
+                label: "Destaque"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+      - name: duvidas
+        label: "Dúvidas frequentes"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: itens
+            label: "Perguntas"
+            description: "Também viram os dados de FAQ que o Google e as IAs leem."
+            type: object
+            list: true
+            fields:
+              - name: pergunta
+                label: "Pergunta"
+                type: string
+              - name: resposta
+                label: "Resposta"
+                type: text
+      - name: diagnostico
+        label: "Agendar diagnóstico (formulário)"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: subtitulo
+            label: "Subtítulo"
+            type: text
+          - name: pergunta
+            label: "Pergunta"
+            type: string
+          - name: opcoes
+            label: "Opções"
+            description: "Mantenha a ordem: Site, IA no atendimento, Automação, Sistema ou produto, Ainda não sei."
+            type: object
+            list: true
+            fields:
+              - name: rotulo
+                label: "Rótulo"
+                type: string
+              - name: frase
+                label: "Frase que entra na mensagem do WhatsApp"
+                type: string
+          - name: botao
+            label: "Botão"
+            type: string
+          - name: mensagem_inicio
+            label: "Início da mensagem"
+            type: string
+          - name: mensagem_precisa
+            label: "Ligação antes dos itens"
+            type: string
+          - name: mensagem_fim
+            label: "Fim da mensagem"
+            type: string
+          - name: sem_itens
+            label: "Aviso sem itens marcados"
+            type: string
+          - name: previa
+            label: "Rótulo da prévia"
+            type: string
+          - name: email
+            label: "Opção por e-mail"
+            type: object
+            fields:
+              - name: titulo
+                label: "Título"
+                type: string
+              - name: texto
+                label: "Texto"
+                type: text
+              - name: rotulo
+                label: "Rótulo do campo"
+                type: string
+              - name: exemplo
+                label: "Exemplo no campo"
+                type: string
+              - name: botao
+                label: "Botão"
+                type: string
+              - name: enviando
+                label: "Enviando"
+                type: string
+              - name: ok
+                label: "Mensagem de sucesso"
+                type: text
+              - name: invalido
+                label: "E-mail inválido"
+                type: string
+              - name: falhou
+                label: "Mensagem de falha"
+                type: text
+              - name: privacidade
+                label: "Aviso de privacidade"
+                type: string
+              - name: privacidade_link
+                label: "Texto do link"
+                type: string
+      - name: chamada
+        label: "Bloco do fim dos posts e cases"
+        type: object
+        fields:
+          - name: titulo
+            label: "Título"
+            type: string
+          - name: nota
+            label: "Nota"
+            type: text
+          - name: botao
+            label: "Botão"
+            type: string
+          - name: ver_servico
+            label: "Link para o serviço"
+            type: string
+      - name: rodape
+        label: "Rodapé"
+        type: object
+        fields:
+          - name: local
+            label: "Local e atendimento"
+            type: string
+          - name: cnpj
+            label: "Rótulo do CNPJ"
+            type: string
+          - name: privacidade
+            label: "Texto do link de privacidade"
+            type: string
+          - name: privacidade_url
+            label: "Endereço da privacidade"
+            type: string
+            description: "Não mude."
+          - name: blog_url
+            label: "Endereço do blog"
+            type: string
+            description: "Não mude."
+          - name: casos_url
+            label: "Endereço dos casos"
+            type: string
+            description: "Não mude."
+          - name: direitos
+            label: "Direitos"
+            type: string
+  - name: empresa
+    label: "Dados da empresa (todas as páginas)"
+    type: file
+    path: _home/conteudo/empresa.yml
+    fields:
+      - name: nome
+        label: "Nome da empresa"
+        type: string
+      - name: razao_social
+        label: "Razão social"
+        type: string
+        description: "Vazio = não aparece. Preenchido junto com o CNPJ, entra no rodapé de todas as páginas."
+      - name: cnpj
+        label: "CNPJ"
+        type: string
+        description: "Formato 00.000.000/0000-00."
+      - name: email
+        label: "E-mail"
+        type: string
+      - name: telefone
+        label: "Telefone"
+        type: string
+        description: "Formato +55-11-99999-9999."
+      - name: whatsapp
+        label: "WhatsApp"
+        type: string
+        description: "Só números, com país e DDD (ex.: 5511967886969). Muda todos os botões de WhatsApp."
+      - name: cidade
+        label: "Cidade"
+        type: string
+      - name: estado
+        label: "Estado (sigla)"
+        type: string
+      - name: regiao_atendida
+        label: "Região atendida"
+        type: string
+      - name: fundador
+        label: "Fundador"
+        type: object
+        fields:
+          - name: nome
+            label: "Nome"
+            type: string
+            description: "O perfil pessoal do LinkedIn não entra no site."
+      - name: redes
+        label: "Redes da empresa"
+        type: object
+        list: true
+        fields:
+          - name: nome
+            label: "Rede"
+            type: string
+          - name: url
+            label: "Endereço"
+            type: string

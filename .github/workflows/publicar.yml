@@ -32,6 +32,22 @@ jobs:
         with:
           node-version: 20
 
+      # Os textos comuns (menu, rodapé, abas, WhatsApp, CNPJ) ficam em _home/conteudo e podem ser editados
+      # pelo Pages CMS (.pages.yml). Por isso o blog, os cases e as páginas avulsas são refeitos aqui,
+      # e o resultado vira um commit só local (não é enviado ao GitHub) para entrar na cópia limpa.
+      # Se algum gerador falhar, a publicação para e o site continua como estava.
+      - name: Refazer blog, cases e páginas avulsas com os textos atuais
+        run: |
+          npm ci --prefix _blog --no-audit --no-fund
+          node _blog/build.mjs
+          node _casos/build.mjs
+          node _paginas/build.mjs
+          git add -A
+          if ! git diff --cached --quiet; then
+            git diff --cached --stat | tail -1
+            git -c user.name="publicacao" -c user.email="publicacao@localhost" commit -q -m "Páginas refeitas na publicação"
+          fi
+
       - name: Cópia limpa do site
         run: |
           mkdir -p "$RUNNER_TEMP/site"
