@@ -19,7 +19,7 @@ São cinco: modelo de IA, canal, servidor ou plataforma, montagem e o tempo do h
 | Parte | Como é cobrada | Referência |
 |---|---|---|
 | Modelo de IA | Por token de entrada (o que o modelo lê) e de saída (o que ele escreve) | Claude Sonnet 5.5: US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de saída, na [página de preços da Claude](https://claude.com/pricing), consultada em outubro de 2026 |
-| Canal | No WhatsApp, a Meta cobra por mensagem de modelo entregue | Mensagens comuns dentro da janela de 24 horas aberta pelo cliente são grátis, segundo a [documentação de preços do WhatsApp](https://developers.facebook.com/docs/whatsapp/pricing) |
+| Canal | No WhatsApp, a Meta cobra por mensagem entregue, com preço por categoria | Desde 1º de outubro de 2026, a resposta dentro da janela de 24 horas aberta pelo cliente custa R$ 0,035 no Brasil a partir da 1.001ª mensagem do mês, por número, segundo a [documentação de preços do WhatsApp](https://developers.facebook.com/docs/whatsapp/pricing) |
 | Servidor ou plataforma | Hospedagem, banco de dados ou mensalidade de ferramenta | Depende de como o agente é construído |
 | Montagem e ajustes | Projeto com escopo definido | Preço fechado depois do diagnóstico |
 | Humano de retaguarda | Tempo da equipe nos casos que o agente passa adiante | Depende da regra de passagem |
@@ -101,7 +101,7 @@ Cada modelo tem o seu preço, cobrado por milhão de tokens. No Claude Sonnet 5.
 
 ### Quanto custa a API do WhatsApp?
 
-A Meta cobra por mensagem de modelo entregue, com preço que varia por país e categoria. Mensagens comuns dentro da janela de 24 horas aberta pelo cliente são grátis.
+A Meta cobra por mensagem entregue, com preço que varia por país e categoria. No Brasil, desde 1º de outubro de 2026, a mensagem de atendimento (resposta dentro da janela de 24 horas aberta pelo cliente) custa R$ 0,035 a partir da 1.001ª do mês, por número; as 1.000 primeiras não são cobradas.
 
 ### Existe agente de IA grátis?
 

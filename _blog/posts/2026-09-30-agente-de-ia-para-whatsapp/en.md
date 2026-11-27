@@ -60,11 +60,11 @@ Based on the sources, the built-in AI covers the first two; the others aren't me
 
 The cost has three parts, and every business combines them differently. That's why you should be wary of anyone who quotes a fixed price without understanding your customer service.
 
-1. **The messages.** If the agent uses WhatsApp's official platform (the so-called API, the entry point that lets systems talk to WhatsApp), Meta charges per delivered message, with rates that vary by country and message type. Service messages and utility messages sent in response to the customer are not charged, according to [WhatsApp's official pricing page](https://whatsappbusiness.com/products/platform-pricing/).
+1. **The messages.** If the agent uses WhatsApp's official platform (the so-called API, the entry point that lets systems talk to WhatsApp), Meta charges per delivered message, with rates that vary by country and message type. Since October 1, 2026, replies to the customer inside the 24-hour window (service messages) are charged from the 1,001st of the month, per number: in Brazil, R$ 0.035 (US$ 0.0068) each. Utility messages, such as order confirmations, are charged too, according to the [WhatsApp pricing documentation](https://developers.facebook.com/docs/whatsapp/pricing).
 2. **The tool or the infrastructure.** With no-code, it's the platform subscription, which usually goes up with the number of executions. With a coded agent, it's the server and the AI model it uses.
 3. **The setup.** With the built-in AI, you configure it yourself. With no-code, you or someone else builds it. With a coded agent, a team develops, tests and fine-tunes it with you.
 
-To estimate the first part, run the numbers yourself: how many marketing messages you send per month times the rate for your category. If your WhatsApp is almost all customer service, this part tends to be small. For the second part, see [how to estimate an AI agent's cost per conversation](/en/blog/how-much-does-an-ai-agent-cost/). And if your business can't sell through WhatsApp, see [the Amore Totale case, with AI customer service on the website](/en/cases/amore-totale/).
+To estimate the first part, run the numbers yourself: marketing and utility messages times the rate for each category, plus the service messages above 1,000 in the month. If your WhatsApp is almost all customer service with low volume, this part tends to be small. The [WhatsApp cost calculator](/en/whatsapp-cost-calculator/) does this math for you. For the second part, see [how to estimate an AI agent's cost per conversation](/en/blog/how-much-does-an-ai-agent-cost/). And if your business can't sell through WhatsApp, see [the Amore Totale case, with AI customer service on the website](/en/cases/amore-totale/).
 
 ## How do you build your first agent, step by step?
 
@@ -76,9 +76,9 @@ You can build it in five steps, as the [Exame guide](https://exame.com/inteligen
 4. **Give it actions.** Checking the calendar, logging the order in the spreadsheet, alerting the salesperson.
 5. **Test before going live.** Talk to the agent like a difficult customer would. Try to confuse it.
 
-At Nocodeia, we build custom-coded agents, and the process starts before step 1: a [free 45-minute consultation](/en/#como) to understand your customer service, then a scope with a fixed price and timeline, and delivery usually takes 2 to 4 weeks.
+At Nocodeia, we build custom-coded agents, and the process starts before step 1: a [free 45-minute consultation](/en/#como-funciona) to understand your customer service, then a scope with a fixed price and timeline, and delivery usually takes 2 to 4 weeks.
 
-We've built agents like Proacta CRM's LinkedIn prospecting agent and Amore Totale's content agents (see the [projects we've delivered](/en/#projetos)), and the mistakes we see most are always the same:
+We've built agents like Proacta CRM's LinkedIn prospecting agent and Amore Totale's content agents (see the [projects we've delivered](/en/#casos)), and the mistakes we see most are always the same:
 
 - **Outdated knowledge base.** The price changed and nobody told the agent.
 - **No rule for when to bring in a human.** The agent keeps pushing a conversation it can't resolve, and the customer gives up.
@@ -108,7 +108,7 @@ Yes, but it's limited. Since February 2026, WhatsApp Business in Brazil has offe
 
 ### Is an AI agent for WhatsApp free?
 
-It depends on the part. On WhatsApp's official platform, service messages sent in response to the customer are not charged, but the tool or infrastructure that runs the agent and the setup do cost money. The sources we checked don't say whether WhatsApp Business's built-in AI is paid; check in your app.
+It depends on the part. On WhatsApp's official platform, the first 1,000 service messages of the month, per number, are not charged; from the 1,001st on, Meta charges R$ 0.035 (US$ 0.0068) per message in Brazil, since October 1, 2026. The tool or infrastructure that runs the agent and the setup also cost money. The sources we checked don't say whether WhatsApp Business's built-in AI is paid; check in your app.
 
 ### How do you turn on the AI agent in WhatsApp Business?
 

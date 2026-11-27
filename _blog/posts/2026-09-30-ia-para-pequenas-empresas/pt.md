@@ -39,14 +39,14 @@ Repare que nenhuma dessas tarefas tira o vendedor da conversa. Elas tiram o vend
 
 ## Como escolher a primeira automação em 4 passos?
 
-Escolha a tarefa que mais consome horas do time e que tem regra clara. É o mesmo método que usamos no [diagnóstico da Nocodeia](/#como) antes de qualquer projeto de [automação de processos](/#servicos):
+Escolha a tarefa que mais consome horas do time e que tem regra clara. É o mesmo método que usamos no [diagnóstico da Nocodeia](/#como-funciona) antes de qualquer projeto de [automação de processos](/#servicos):
 
 1. **Liste as tarefas repetidas da semana.** Peça para cada pessoa do time anotar, durante cinco dias, o que fez mais de três vezes.
 2. **Meça o tempo e faça a conta.** Se alguém gasta 2 horas por dia respondendo orçamentos, são 2 horas vezes 20 dias úteis, ou 40 horas por mês. É uma semana inteira de trabalho, todo mês.
 3. **Escolha a tarefa com regra clara e erro barato.** "Mandar a tabela de preços para quem pediu orçamento" tem regra clara. "Negociar desconto com cliente grande" não tem.
 4. **Rode um piloto e compare.** Automatize só essa tarefa, deixe rodando de 1 a 3 semanas e compare o antes e o depois: horas gastas, orçamentos respondidos, propostas com retorno.
 
-Foi com essa lógica que construímos o motor de prospecção B2B (venda para outras empresas) com IA e o Proacta CRM (estão entre os [projetos que já entregamos](/#projetos)), um CRM de vendas sob medida com agente de prospecção no LinkedIn: primeiro a tarefa que mais pesava, depois o resto.
+Foi com essa lógica que construímos o motor de prospecção B2B (venda para outras empresas) com IA e o Proacta CRM (estão entre os [projetos que já entregamos](/#casos)), um CRM de vendas sob medida com agente de prospecção no LinkedIn: primeiro a tarefa que mais pesava, depois o resto.
 
 ## O que costuma dar errado quando a PME começa pela ferramenta?
 

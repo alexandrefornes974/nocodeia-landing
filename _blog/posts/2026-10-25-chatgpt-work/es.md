@@ -93,4 +93,4 @@ Empieza por un mapa de las tareas repetitivas y de las horas que consumen. Haz u
 
 ## ¿Por dónde empezar en tu área?
 
-Antes de pedir licencias para todos, descubre qué tareas de tu área valen un piloto. Mira [cómo funciona el diagnóstico de 45 minutos](/es/#como) y [agenda tu diagnóstico gratis](/es/#vaga): sales con precio y plazo cerrados para la Radiografía de automatización.
+Antes de pedir licencias para todos, descubre qué tareas de tu área valen un piloto. Mira [cómo funciona el diagnóstico de 45 minutos](/es/#como-funciona) y [agenda tu diagnóstico gratis](/es/#vaga): sales con precio y plazo cerrados para la Radiografía de automatización.

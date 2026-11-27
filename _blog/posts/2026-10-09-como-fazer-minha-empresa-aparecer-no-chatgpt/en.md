@@ -63,7 +63,7 @@ We applied the same checklist to our own site. Here's what's live:
 6. **Google Search Console and Bing Webmaster Tools** set up on October 3, 2026, with the sitemap submitted.
 7. **A weekly blog in Portuguese, English and Spanish**, written with AI agents and approved by a person before it goes live.
 
-It's still too early to measure how many citations this brings; what we did was clear the obstacles from the crawler's path. That's the work of our [A website Google and AI recommend](/en/#servicos) service: website rebuild, SEO, GEO (adjustments so the site is read and cited by AIs like ChatGPT and Gemini) and an automated blog, in 2 to 4 weeks, plus the monthly blog. See also the [projects we've already launched](/en/#projetos).
+It's still too early to measure how many citations this brings; what we did was clear the obstacles from the crawler's path. That's the work of our [A website Google and AI recommend](/en/#servicos) service: website rebuild, SEO, GEO (adjustments so the site is read and cited by AIs like ChatGPT and Gemini) and an automated blog, in 2 to 4 weeks, plus the monthly blog. See also the [projects we've already launched](/en/#casos).
 
 ## Can you pay to show up on ChatGPT?
 
@@ -75,7 +75,7 @@ The ad stays separate from the answer. According to OpenAI, as quoted by Canalte
 
 No one controls the AI's answer. Google writes that "Indexing and serving isn't guaranteed." OpenAI says that after you change robots.txt, its systems can take about 24 hours to adjust. That's how long it takes for the file to be read, not a deadline for showing up in answers.
 
-In our assessment, be wary of anyone who promises "first place on ChatGPT." You can clear the obstacles, publish clear answers and keep track. See [how the 45-minute consultation works](/en/#como). If you're interested in using AI inside your business, read [AI for Small Business: Where to Start](/en/blog/ai-for-small-business/).
+In our assessment, be wary of anyone who promises "first place on ChatGPT." You can clear the obstacles, publish clear answers and keep track. See [how the 45-minute consultation works](/en/#como-funciona). If you're interested in using AI inside your business, read [AI for Small Business: Where to Start](/en/blog/ai-for-small-business/).
 
 ## FAQ
 

@@ -65,12 +65,12 @@ Compara el resultado con el costo de mantener código propio: servidor, mantenim
 
 Empezamos rápido con no code para validar y pasamos a código a la medida cuando el negocio lo pide. Así trabajamos con startups:
 
-1. **Diagnóstico gratis de 45 minutos.** Entendemos el producto, el momento de la startup y dónde duele. Mira [cómo funciona el diagnóstico](/es/#como).
+1. **Diagnóstico gratis de 45 minutos.** Entendemos el producto, el momento de la startup y dónde duele. Mira [cómo funciona el diagnóstico](/es/#como-funciona).
 2. **Alcance con precio y plazo cerrados.** Sabes cuánto vas a pagar y cuándo recibes, antes de empezar.
 3. **MVP en línea en 2 a 6 semanas.** No code, código o la combinación de los dos, según lo que necesite el producto. Es nuestro [MVP de producto en línea en semanas](/es/#servicos).
 4. **Migración por partes.** Cuando aparecen las señales de la sección anterior, reescribimos en código primero la parte que más duele y mantenemos en línea lo que ya funciona.
 
-Construimos sistemas a la medida, como Proacta CRM, un CRM (sistema de gestión de clientes) de ventas con agente de prospección en LinkedIn, y una plataforma de gestión de metas (OKR). Mira los [proyectos a la medida que ya entregamos](/es/#projetos).
+Construimos sistemas a la medida, como Proacta CRM, un CRM (sistema de gestión de clientes) de ventas con agente de prospección en LinkedIn, y una plataforma de gestión de metas (OKR). Mira los [proyectos a la medida que ya entregamos](/es/#casos).
 
 ## ¿Reescribir todo desde cero o migrar por partes?
 

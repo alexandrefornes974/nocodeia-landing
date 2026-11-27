@@ -102,4 +102,4 @@ Cadastre o site no Google Search Console, que é gratuito, envie o sitemap (a li
 
 ## Por onde começar?
 
-Faça o teste de 5 minutos hoje, na página inicial e na de serviços. Se o texto não aparecer no código, ou se você não quiser mexer nisso sozinho, veja [como funciona o diagnóstico de 45 minutos](/#como) e [marque seu diagnóstico grátis](/#vaga): olhamos o seu site junto com você e você sai com preço e prazo fechados para resolver.
+Faça o teste de 5 minutos hoje, na página inicial e na de serviços. Se o texto não aparecer no código, ou se você não quiser mexer nisso sozinho, veja [como funciona o diagnóstico de 45 minutos](/#como-funciona) e [marque seu diagnóstico grátis](/#vaga): olhamos o seu site junto com você e você sai com preço e prazo fechados para resolver.

@@ -67,7 +67,7 @@ Quer fazer a mesma conta para o seu caso? Veja [quanto custa um agente de IA por
 
 Os próximos números do case: tempo da primeira resposta, volume de conversas por canal e vendas que começaram numa conversa com a Amora. Vamos atualizar esta página quando eles fecharem.
 
-A Amore Totale também usa um [agente de blog feito pela Nocodeia](/#projetos), que pesquisa, escreve e revisa os posts da loja.
+A Amore Totale também usa um [agente de blog feito pela Nocodeia](/#casos), que pesquisa, escreve e revisa os posts da loja.
 
 ## Perguntas frequentes
 

@@ -19,7 +19,7 @@ There are five: the AI model, the channel, the server or platform, the build and
 | Component | How it's billed | Reference |
 |---|---|---|
 | AI model | Per input token (what the model reads) and output token (what it writes) | Claude Sonnet 5.5: $2 per million input tokens and $10 per million output tokens, on the [Claude pricing page](https://claude.com/pricing), checked in October 2026 |
-| Channel | On WhatsApp, Meta charges per delivered template message | Regular messages within the 24-hour window opened by the customer are free, according to the [WhatsApp pricing documentation](https://developers.facebook.com/docs/whatsapp/pricing) |
+| Channel | On WhatsApp, Meta charges per delivered message, priced by category | Since October 1, 2026, replies inside the 24-hour window opened by the customer cost R$ 0.035 (US$ 0.0068) in Brazil from the 1,001st message of the month, per number, according to the [WhatsApp pricing documentation](https://developers.facebook.com/docs/whatsapp/pricing) |
 | Server or platform | Hosting, database or a tool subscription | Depends on how the agent is built |
 | Build and adjustments | A project with a defined scope | Fixed price after the consultation |
 | Backup human | Team time on the cases the agent hands off | Depends on the handoff rule |
@@ -101,7 +101,7 @@ Each model has its own price, billed per million tokens. On Claude Sonnet 5.5, i
 
 ### How much does the WhatsApp API cost?
 
-Meta charges per delivered template message, with prices that vary by country and category. Regular messages within the 24-hour window opened by the customer are free.
+Meta charges per delivered message, with prices that vary by country and category. In Brazil, since October 1, 2026, service messages (replies inside the 24-hour window opened by the customer) cost R$ 0.035 (US$ 0.0068) from the 1,001st of the month, per number; the first 1,000 are not charged.
 
 ### Is there a free AI agent?
 

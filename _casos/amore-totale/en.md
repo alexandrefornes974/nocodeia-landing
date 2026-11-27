@@ -67,7 +67,7 @@ Want to run the same math for your business? See [how much an AI agent costs per
 
 The next numbers for this case: time to first response, conversation volume by channel, and sales that started in a conversation with Amora. We'll update this page when they're in.
 
-Amore Totale also uses a [blog agent built by Nocodeia](/en/#projetos) that researches, writes, and reviews the store's posts.
+Amore Totale also uses a [blog agent built by Nocodeia](/en/#casos) that researches, writes, and reviews the store's posts.
 
 ## FAQ
 

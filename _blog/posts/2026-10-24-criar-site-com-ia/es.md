@@ -102,4 +102,4 @@ Registra el sitio en Google Search Console, que es gratuito, envía el sitemap (
 
 ## ¿Por dónde empezar?
 
-Haz la prueba de 5 minutos hoy, en la página de inicio y en la de servicios. Si el texto no aparece en el código, o si no quieres encargarte de esto solo, mira [cómo funciona el diagnóstico de 45 minutos](/es/#como) y [agenda tu diagnóstico gratis](/es/#vaga): revisamos tu sitio contigo y sales con precio y plazo cerrados para resolverlo.
+Haz la prueba de 5 minutos hoy, en la página de inicio y en la de servicios. Si el texto no aparece en el código, o si no quieres encargarte de esto solo, mira [cómo funciona el diagnóstico de 45 minutos](/es/#como-funciona) y [agenda tu diagnóstico gratis](/es/#vaga): revisamos tu sitio contigo y sales con precio y plazo cerrados para resolverlo.

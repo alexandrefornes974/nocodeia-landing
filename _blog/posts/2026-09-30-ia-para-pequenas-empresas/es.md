@@ -39,14 +39,14 @@ Fíjate que ninguna de estas tareas saca al vendedor de la conversación. Lo sac
 
 ## ¿Cómo elegir la primera automatización en 4 pasos?
 
-Elige la tarea que más horas le consume al equipo y que tiene una regla clara. Es el mismo método que usamos en el [diagnóstico de Nocodeia](/es/#como) antes de cualquier proyecto de [automatización de procesos](/es/#servicos):
+Elige la tarea que más horas le consume al equipo y que tiene una regla clara. Es el mismo método que usamos en el [diagnóstico de Nocodeia](/es/#como-funciona) antes de cualquier proyecto de [automatización de procesos](/es/#servicos):
 
 1. **Haz una lista de las tareas repetidas de la semana.** Pide a cada persona del equipo que anote, durante cinco días, lo que hizo más de tres veces.
 2. **Mide el tiempo y haz la cuenta.** Si alguien dedica 2 horas al día a responder cotizaciones, son 2 horas por 20 días hábiles, o 40 horas al mes. Una semana entera de trabajo, cada mes.
 3. **Elige la tarea con regla clara y error barato.** "Enviar la lista de precios a quien pidió cotización" tiene una regla clara. "Negociar un descuento con un cliente grande" no la tiene.
 4. **Haz una prueba piloto y compara.** Automatiza solo esa tarea, déjala funcionando de 1 a 3 semanas y compara el antes y el después: horas dedicadas, cotizaciones respondidas, propuestas con respuesta.
 
-Con esa lógica construimos el motor de prospección B2B (venta a otras empresas) con IA y Proacta CRM (están entre los [proyectos que ya entregamos](/es/#projetos)), un CRM de ventas a la medida con un agente de prospección en LinkedIn: primero la tarea que más pesaba, después el resto.
+Con esa lógica construimos el motor de prospección B2B (venta a otras empresas) con IA y Proacta CRM (están entre los [proyectos que ya entregamos](/es/#casos)), un CRM de ventas a la medida con un agente de prospección en LinkedIn: primero la tarea que más pesaba, después el resto.
 
 ## ¿Qué suele salir mal cuando la pyme empieza por la herramienta?
 

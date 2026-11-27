@@ -93,4 +93,4 @@ Start with a map of the repetitive tasks and the hours they take. Run a small pi
 
 ## Where should your department start?
 
-Before requesting licenses for everyone, find out which tasks in your department are worth a pilot. See [how the 45-minute consultation works](/en/#como) and [book your free consultation](/en/#vaga): you walk away with a fixed price and timeline for the Automation X-ray.
+Before requesting licenses for everyone, find out which tasks in your department are worth a pilot. See [how the 45-minute consultation works](/en/#como-funciona) and [book your free consultation](/en/#vaga): you walk away with a fixed price and timeline for the Automation X-ray.

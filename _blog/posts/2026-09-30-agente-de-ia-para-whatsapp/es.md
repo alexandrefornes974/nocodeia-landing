@@ -60,11 +60,11 @@ Según las fuentes, la IA nativa cubre las dos primeras; de las demás, no hay m
 
 El costo tiene tres partes, y cada empresa las combina a su manera. Por eso, desconfía de quien te da un precio cerrado sin entender tu atención.
 
-1. **Los mensajes.** Si el agente usa la plataforma oficial de WhatsApp (la llamada API, la puerta de entrada para que los sistemas hablen con WhatsApp), Meta cobra por mensaje entregado, con un valor que varía por país y por tipo de mensaje. Los mensajes de servicio y de utilidad enviados en respuesta al cliente no se cobran, según la [página oficial de precios de WhatsApp](https://whatsappbusiness.com/es-la/products/platform-pricing/).
+1. **Los mensajes.** Si el agente usa la plataforma oficial de WhatsApp (la llamada API, la puerta de entrada para que los sistemas hablen con WhatsApp), Meta cobra por mensaje entregado, con un valor que varía por país y por tipo de mensaje. Desde el 1 de octubre de 2026, la respuesta al cliente dentro de la ventana de 24 horas (mensaje de servicio) se cobra a partir del 1,001.º del mes, por número: en Brasil, R$ 0.035 (US$ 0.0068) cada uno. Los mensajes de utilidad, como la confirmación de pedido, también se cobran, según la [documentación de precios de WhatsApp](https://developers.facebook.com/docs/whatsapp/pricing).
 2. **La herramienta o la infraestructura.** En el no-code, es la suscripción de la plataforma, que suele subir con el volumen de ejecuciones. En el agente programado, es el servidor y el modelo de IA que usa.
 3. **El armado.** En la IA nativa, la configuras tú. En el no-code, la armas tú o alguien más. En el agente programado, un equipo lo desarrolla, lo prueba y lo ajusta contigo.
 
-Para estimar la primera parte, haz la cuenta con tus números: cuántos mensajes de marketing envías al mes por la tarifa de tu categoría. Si tu WhatsApp es casi solo atención, esa parte suele ser pequeña. Para la segunda parte, mira [cómo estimar el costo por conversación de un agente de IA](/es/blog/cuanto-cuesta-un-agente-de-ia/). Y si tu negocio no puede vender por WhatsApp, mira [el caso de Amore Totale, que atiende con IA en su sitio](/es/casos/amore-totale/).
+Para estimar la primera parte, haz la cuenta con tus números: mensajes de marketing y de utilidad por la tarifa de cada categoría, más los mensajes de servicio que pasen de 1,000 en el mes. Si tu WhatsApp es casi solo atención y con poco volumen, esa parte suele ser pequeña. La [calculadora de costo de WhatsApp](/es/calculadora-whatsapp/) hace esa cuenta. Para la segunda parte, mira [cómo estimar el costo por conversación de un agente de IA](/es/blog/cuanto-cuesta-un-agente-de-ia/). Y si tu negocio no puede vender por WhatsApp, mira [el caso de Amore Totale, que atiende con IA en su sitio](/es/casos/amore-totale/).
 
 ## ¿Cómo armar tu primer agente, paso a paso?
 
@@ -76,9 +76,9 @@ Se puede armar en cinco pasos, como muestra la [guía de Exame](https://exame.co
 4. **Dale acciones.** Consultar la agenda, registrar el pedido en la hoja de cálculo, avisar al vendedor.
 5. **Pruébalo antes de lanzarlo.** Conversa con el agente como si fueras un cliente difícil. Intenta confundirlo.
 
-En Nocodeia construimos agentes programados a la medida, y el camino empieza antes del paso 1: un [diagnóstico gratis de 45 minutos](/es/#como) para entender tu atención, después un alcance con precio y plazo cerrados, y la entrega suele tomar de 2 a 4 semanas.
+En Nocodeia construimos agentes programados a la medida, y el camino empieza antes del paso 1: un [diagnóstico gratis de 45 minutos](/es/#como-funciona) para entender tu atención, después un alcance con precio y plazo cerrados, y la entrega suele tomar de 2 a 4 semanas.
 
-Construimos agentes como el de prospección en LinkedIn de Proacta CRM y los agentes de contenido de Amore Totale (mira los [proyectos que ya entregamos](/es/#projetos)), y los errores que más vemos son siempre los mismos:
+Construimos agentes como el de prospección en LinkedIn de Proacta CRM y los agentes de contenido de Amore Totale (mira los [proyectos que ya entregamos](/es/#casos)), y los errores que más vemos son siempre los mismos:
 
 - **Base de información desactualizada.** El precio cambió y nadie le avisó al agente.
 - **Ninguna regla sobre cuándo llamar a una persona.** El agente insiste en una conversación que no puede resolver, y el cliente se rinde.
@@ -108,7 +108,7 @@ Sí, pero limitada. Desde febrero de 2026, WhatsApp Business en Brasil ofrece un
 
 ### ¿Un agente de IA para WhatsApp es gratis?
 
-Depende de la parte. En la plataforma oficial de WhatsApp, los mensajes de servicio enviados en respuesta al cliente no se cobran, pero la herramienta o la infraestructura que ejecuta el agente y el armado sí tienen costo. Las fuentes consultadas no dicen si la IA nativa de WhatsApp Business es de pago; revísalo en tu app.
+Depende de la parte. En la plataforma oficial de WhatsApp, los primeros 1,000 mensajes de servicio del mes, por número, no se cobran; a partir del 1,001.º, Meta cobra R$ 0.035 (US$ 0.0068) por mensaje en Brasil, desde el 1 de octubre de 2026. La herramienta o la infraestructura que ejecuta el agente y el armado también tienen costo. Las fuentes consultadas no dicen si la IA nativa de WhatsApp Business es de pago; revísalo en tu app.
 
 ### ¿Cómo activar el agente de IA en WhatsApp Business?
 

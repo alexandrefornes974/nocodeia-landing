@@ -65,12 +65,12 @@ Compare o resultado com o custo de manter código próprio: servidor, manutenç�
 
 Começamos rápido com no-code para validar e partimos para código sob medida quando o negócio pede. É assim que trabalhamos com startups:
 
-1. **Diagnóstico grátis de 45 minutos.** Entendemos o produto, o momento da startup e onde dói. Veja [como funciona o diagnóstico](/#como).
+1. **Diagnóstico grátis de 45 minutos.** Entendemos o produto, o momento da startup e onde dói. Veja [como funciona o diagnóstico](/#como-funciona).
 2. **Escopo com preço e prazo fechados.** Você sabe quanto vai pagar e quando recebe, antes de começar.
 3. **MVP no ar em 2 a 6 semanas.** No-code, código ou a combinação dos dois, conforme o que o produto precisa. É o nosso [MVP de produto no ar em semanas](/#servicos).
 4. **Migração por partes.** Quando os sinais da seção anterior aparecem, reescrevemos em código primeiro a parte que mais dói, mantendo no ar o que já funciona.
 
-Construímos sistemas sob medida, como o Proacta CRM, um CRM (sistema de gestão de clientes) de vendas com agente de prospecção no LinkedIn, e uma plataforma de gestão de metas (OKR). Veja os [projetos sob medida que já entregamos](/#projetos).
+Construímos sistemas sob medida, como o Proacta CRM, um CRM (sistema de gestão de clientes) de vendas com agente de prospecção no LinkedIn, e uma plataforma de gestão de metas (OKR). Veja os [projetos sob medida que já entregamos](/#casos).
 
 ## Reescrever tudo do zero ou migrar por partes?
 

@@ -74,9 +74,9 @@ Construímos [sistemas internos e agentes sob medida](/#servicos), programados e
 5. **Acesso por perfil.**
 6. **LGPD considerada desde o desenho.**
 
-O caminho começa com um [diagnóstico grátis de 45 minutos](/#como), segue com um escopo de preço e prazo fechados e chega ao sistema interno em 1 a 3 meses.
+O caminho começa com um [diagnóstico grátis de 45 minutos](/#como-funciona), segue com um escopo de preço e prazo fechados e chega ao sistema interno em 1 a 3 meses.
 
-Já construímos o Proacta CRM, um CRM (sistema de gestão de clientes) de vendas com agente de prospecção no LinkedIn, e uma plataforma de gestão de metas (OKR) para estrutura corporativa. Veja os [projetos que já entregamos](/#projetos). O fundador tem mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch, e você fala direto com ele do começo ao fim.
+Já construímos o Proacta CRM, um CRM (sistema de gestão de clientes) de vendas com agente de prospecção no LinkedIn, e uma plataforma de gestão de metas (OKR) para estrutura corporativa. Veja os [projetos que já entregamos](/#casos). O fundador tem mais de 25 anos em tecnologia, em empresas como IBM, Xerox, DHL e Bosch, e você fala direto com ele do começo ao fim.
 
 ## Quando não dar autonomia total a um agente de IA?
 

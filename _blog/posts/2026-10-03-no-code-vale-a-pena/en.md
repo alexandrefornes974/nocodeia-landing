@@ -65,12 +65,12 @@ Compare the result with the cost of maintaining your own code: servers, maintena
 
 We start fast with no-code to validate, and move to custom code when the business calls for it. This is how we work with startups:
 
-1. **Free 45-minute consultation.** We get to know the product, the startup's stage and where it hurts. See [how the consultation works](/en/#como).
+1. **Free 45-minute consultation.** We get to know the product, the startup's stage and where it hurts. See [how the consultation works](/en/#como-funciona).
 2. **Scope with a fixed price and timeline.** You know how much you'll pay and when you'll get it, before we start.
 3. **MVP live in 2 to 6 weeks.** No-code, code or a mix of both, depending on what the product needs. That's our [product MVP live in weeks](/en/#servicos).
 4. **Migration in stages.** When the signs from the previous section show up, we rewrite in code the part that hurts the most first, while keeping what already works up and running.
 
-We build custom systems such as Proacta CRM, a sales CRM (customer relationship management system) with a LinkedIn prospecting agent, and an OKR (goal management) platform. See the [custom projects we've already delivered](/en/#projetos).
+We build custom systems such as Proacta CRM, a sales CRM (customer relationship management system) with a LinkedIn prospecting agent, and an OKR (goal management) platform. See the [custom projects we've already delivered](/en/#casos).
 
 ## Rewrite everything from scratch or migrate in stages?
 

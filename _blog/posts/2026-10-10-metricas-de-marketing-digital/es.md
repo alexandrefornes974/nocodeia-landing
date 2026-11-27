@@ -114,4 +114,4 @@ Es una etiqueta pegada al final del enlace que le dice a GA4 de dónde vino la v
 
 ## ¿Por dónde empezar?
 
-Empieza por el mes cero: saber cuántas personas ven, visitan y le escriben a tu empresa hoy. Si quieres números confiables desde el primer mes, sin descubrir los errores después, Nocodeia te puede ayudar. En el [diagnóstico de 45 minutos](/es/#como), revisamos esto contigo y te mostramos qué falta para que el sitio cuente de dónde viene cada contacto. Es el trabajo del servicio [Un sitio que Google y la IA recomiendan](/es/#servicos), con informe mensual. [Agenda tu diagnóstico gratis](/es/#vaga).
+Empieza por el mes cero: saber cuántas personas ven, visitan y le escriben a tu empresa hoy. Si quieres números confiables desde el primer mes, sin descubrir los errores después, Nocodeia te puede ayudar. En el [diagnóstico de 45 minutos](/es/#como-funciona), revisamos esto contigo y te mostramos qué falta para que el sitio cuente de dónde viene cada contacto. Es el trabajo del servicio [Un sitio que Google y la IA recomiendan](/es/#servicos), con informe mensual. [Agenda tu diagnóstico gratis](/es/#vaga).

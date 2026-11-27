@@ -74,9 +74,9 @@ We build [custom internal systems and agents](/en/#servicos), written in code, w
 5. **Role-based access.**
 6. **LGPD considered from the design stage.**
 
-The path starts with a [free 45-minute consultation](/en/#como), moves to a scope with a fixed price and timeline, and gets to the internal system in 1 to 3 months.
+The path starts with a [free 45-minute consultation](/en/#como-funciona), moves to a scope with a fixed price and timeline, and gets to the internal system in 1 to 3 months.
 
-We've built Proacta CRM, a sales CRM (customer management system) with a LinkedIn prospecting agent, and a goal management (OKR) platform for corporate structures. See the [projects we've delivered](/en/#projetos). The founder has more than 25 years in tech, at companies like IBM, Xerox, DHL and Bosch, and you talk directly with him from start to finish.
+We've built Proacta CRM, a sales CRM (customer management system) with a LinkedIn prospecting agent, and a goal management (OKR) platform for corporate structures. See the [projects we've delivered](/en/#casos). The founder has more than 25 years in tech, at companies like IBM, Xerox, DHL and Bosch, and you talk directly with him from start to finish.
 
 ## When should you not give an AI agent full autonomy?
 

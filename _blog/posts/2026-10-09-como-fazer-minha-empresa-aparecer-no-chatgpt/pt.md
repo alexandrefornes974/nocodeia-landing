@@ -63,7 +63,7 @@ Aplicamos no nosso site o mesmo checklist. O que está no ar:
 6. **Google Search Console e Bing Webmaster Tools** configurados em 03/10/2026, com o sitemap enviado.
 7. **Blog semanal em português, inglês e espanhol**, escrito com agentes de IA e aprovado por uma pessoa antes de ir ao ar.
 
-Ainda é cedo para medir quantas citações isso traz; o que fizemos foi tirar os obstáculos do caminho do robô. É o trabalho do serviço [Site que o Google e a IA recomendam](/#servicos): reformulação do site, SEO, GEO (ajustes para o site ser lido e citado por IAs como ChatGPT e Gemini) e blog automatizado, em 2 a 4 semanas, mais o blog mensal. Veja também os [projetos que já saíram do papel](/#projetos).
+Ainda é cedo para medir quantas citações isso traz; o que fizemos foi tirar os obstáculos do caminho do robô. É o trabalho do serviço [Site que o Google e a IA recomendam](/#servicos): reformulação do site, SEO, GEO (ajustes para o site ser lido e citado por IAs como ChatGPT e Gemini) e blog automatizado, em 2 a 4 semanas, mais o blog mensal. Veja também os [projetos que já saíram do papel](/#casos).
 
 ## Dá para pagar para aparecer no ChatGPT?
 
@@ -75,7 +75,7 @@ O anúncio fica separado da resposta. Segundo a OpenAI, citada pelo Canaltech, "
 
 Ninguém controla a resposta da IA. O Google escreve que "A indexação e a veiculação não são garantidas". A OpenAI informa que, depois de mudar o robots.txt, os sistemas dela podem levar cerca de 24 horas para se ajustar. Esse é o prazo de leitura do arquivo, não um prazo para aparecer nas respostas.
 
-Na nossa avaliação, desconfie de quem promete "primeiro lugar no ChatGPT". Dá para tirar os obstáculos, publicar respostas claras e acompanhar. Veja [como funciona o diagnóstico de 45 minutos](/#como). Se o seu interesse é usar IA dentro da empresa, leia [IA para pequenas empresas: por onde começar](/blog/ia-para-pequenas-empresas/).
+Na nossa avaliação, desconfie de quem promete "primeiro lugar no ChatGPT". Dá para tirar os obstáculos, publicar respostas claras e acompanhar. Veja [como funciona o diagnóstico de 45 minutos](/#como-funciona). Se o seu interesse é usar IA dentro da empresa, leia [IA para pequenas empresas: por onde começar](/blog/ia-para-pequenas-empresas/).
 
 ## Perguntas frequentes
 

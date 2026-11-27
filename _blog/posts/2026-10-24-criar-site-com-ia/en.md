@@ -102,4 +102,4 @@ Add the site to Google Search Console, which is free, submit the sitemap (the li
 
 ## Where should you start?
 
-Run the 5-minute test today, on your home page and your services page. If the text doesn't show up in the code, or if you'd rather not handle it yourself, see [how the 45-minute consultation works](/en/#como) and [book your free consultation](/en/#vaga): we look at your website with you and you walk away with a fixed price and timeline to fix it.
+Run the 5-minute test today, on your home page and your services page. If the text doesn't show up in the code, or if you'd rather not handle it yourself, see [how the 45-minute consultation works](/en/#como-funciona) and [book your free consultation](/en/#vaga): we look at your website with you and you walk away with a fixed price and timeline to fix it.

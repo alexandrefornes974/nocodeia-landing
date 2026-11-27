@@ -63,7 +63,7 @@ Aplicamos en nuestro sitio la misma lista. Lo que está en línea:
 6. **Google Search Console y Bing Webmaster Tools** configurados el 3 de octubre de 2026, con el sitemap enviado.
 7. **Blog semanal en portugués, inglés y español**, escrito con agentes de IA y aprobado por una persona antes de publicarse.
 
-Todavía es pronto para medir cuántas citas trae esto; lo que hicimos fue quitar los obstáculos del camino del robot. Es el trabajo del servicio [Un sitio que Google y la IA recomiendan](/es/#servicos): renovación del sitio, SEO, GEO (ajustes para que el sitio sea leído y citado por IAs como ChatGPT y Gemini) y blog automatizado, en 2 a 4 semanas, más el blog mensual. Mira también los [proyectos que ya pasaron del papel a la realidad](/es/#projetos).
+Todavía es pronto para medir cuántas citas trae esto; lo que hicimos fue quitar los obstáculos del camino del robot. Es el trabajo del servicio [Un sitio que Google y la IA recomiendan](/es/#servicos): renovación del sitio, SEO, GEO (ajustes para que el sitio sea leído y citado por IAs como ChatGPT y Gemini) y blog automatizado, en 2 a 4 semanas, más el blog mensual. Mira también los [proyectos que ya pasaron del papel a la realidad](/es/#casos).
 
 ## ¿Se puede pagar para aparecer en ChatGPT?
 
@@ -75,7 +75,7 @@ El anuncio va separado de la respuesta. Según OpenAI, citada por Canaltech, en 
 
 Nadie controla la respuesta de la IA. Google escribe que "No se garantiza la indexación ni la publicación". OpenAI informa que, después de cambiar el robots.txt, sus sistemas pueden tardar unas 24 horas en ajustarse. Ese es el plazo para leer el archivo, no un plazo para aparecer en las respuestas.
 
-En nuestra evaluación, desconfía de quien prometa "el primer lugar en ChatGPT". Se pueden quitar los obstáculos, publicar respuestas claras y darles seguimiento. Mira [cómo funciona el diagnóstico de 45 minutos](/es/#como). Si lo que te interesa es usar IA dentro de tu empresa, lee [IA para pymes: por dónde empezar](/es/blog/ia-para-pymes/).
+En nuestra evaluación, desconfía de quien prometa "el primer lugar en ChatGPT". Se pueden quitar los obstáculos, publicar respuestas claras y darles seguimiento. Mira [cómo funciona el diagnóstico de 45 minutos](/es/#como-funciona). Si lo que te interesa es usar IA dentro de tu empresa, lee [IA para pymes: por dónde empezar](/es/blog/ia-para-pymes/).
 
 ## Preguntas frecuentes
 

@@ -39,14 +39,14 @@ Notice that none of these tasks takes the salesperson out of the conversation. T
 
 ## How do you pick your first automation in 4 steps?
 
-Pick the task that eats up the most team hours and has a clear rule. It's the same method we use in the [free Nocodeia consultation](/en/#como) before any [workflow automation](/en/#servicos) project:
+Pick the task that eats up the most team hours and has a clear rule. It's the same method we use in the [free Nocodeia consultation](/en/#como-funciona) before any [workflow automation](/en/#servicos) project:
 
 1. **List the tasks that repeat every week.** Ask everyone on the team to write down, for five days, anything they did more than three times.
 2. **Measure the time and do the math.** If someone spends 2 hours a day answering quote requests, that's 2 hours times 20 working days, or 40 hours a month. A full work week, every month.
 3. **Choose the task with a clear rule and a cheap mistake.** "Send the price list to anyone who asked for a quote" has a clear rule. "Negotiate a discount with a big customer" doesn't.
 4. **Run a pilot and compare.** Automate only that task, let it run for 1 to 3 weeks and compare before and after: hours spent, quotes answered, proposals that got a reply.
 
-That's the logic behind the AI-powered B2B (business-to-business) prospecting engine and Proacta CRM we built (both among the [projects we've delivered](/en/#projetos)), a custom sales CRM with a LinkedIn prospecting agent: first the task that weighed the most, then the rest.
+That's the logic behind the AI-powered B2B (business-to-business) prospecting engine and Proacta CRM we built (both among the [projects we've delivered](/en/#casos)), a custom sales CRM with a LinkedIn prospecting agent: first the task that weighed the most, then the rest.
 
 ## What usually goes wrong when a small business starts with the tool?
 

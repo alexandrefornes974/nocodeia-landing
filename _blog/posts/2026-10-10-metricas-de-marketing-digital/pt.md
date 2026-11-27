@@ -112,4 +112,4 @@ São números que agradam mas não mostram venda, como curtidas e seguidores. S�
 
 ## Por onde começar?
 
-Comece pelo mês zero: saber quantas pessoas veem, visitam e chamam a sua empresa hoje. Se quiser números confiáveis desde o primeiro mês, sem descobrir os erros depois, a Nocodeia pode ajudar. No [diagnóstico de 45 minutos](/#como), olhamos isso com você e mostramos o que falta para o site contar de onde vem cada contato. É o trabalho do serviço [Site que o Google e a IA recomendam](/#servicos), com relatório mensal. [Marque seu diagnóstico grátis](/#vaga).
+Comece pelo mês zero: saber quantas pessoas veem, visitam e chamam a sua empresa hoje. Se quiser números confiáveis desde o primeiro mês, sem descobrir os erros depois, a Nocodeia pode ajudar. No [diagnóstico de 45 minutos](/#como-funciona), olhamos isso com você e mostramos o que falta para o site contar de onde vem cada contato. É o trabalho do serviço [Site que o Google e a IA recomendam](/#servicos), com relatório mensal. [Marque seu diagnóstico grátis](/#vaga).

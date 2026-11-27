@@ -93,4 +93,4 @@ Comece por um mapa das tarefas repetitivas e das horas que elas consomem. Rode u
 
 ## Por onde começar na sua área?
 
-Antes de pedir licença para todo mundo, descubra quais tarefas da sua área valem um piloto. Veja [como funciona o diagnóstico de 45 minutos](/#como) e [marque seu diagnóstico grátis](/#vaga): você sai com preço e prazo fechados para o Raio-X.
+Antes de pedir licença para todo mundo, descubra quais tarefas da sua área valem um piloto. Veja [como funciona o diagnóstico de 45 minutos](/#como-funciona) e [marque seu diagnóstico grátis](/#vaga): você sai com preço e prazo fechados para o Raio-X.

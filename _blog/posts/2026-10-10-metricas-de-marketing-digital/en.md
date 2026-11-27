@@ -112,4 +112,4 @@ It's a tag added to the end of a link that tells GA4 where the visit came from, 
 
 ## Where should you start?
 
-Start with month zero: knowing how many people see, visit and contact your business today. If you want reliable numbers from the first month, without finding the mistakes later, Nocodeia can help. In the [45-minute consultation](/en/#como), we look at this with you and show what's missing for your website to tell where each lead comes from. That's the work of our [A website Google and AI recommend](/en/#servicos) service, with a monthly report. [Book your free consultation](/en/#vaga).
+Start with month zero: knowing how many people see, visit and contact your business today. If you want reliable numbers from the first month, without finding the mistakes later, Nocodeia can help. In the [45-minute consultation](/en/#como-funciona), we look at this with you and show what's missing for your website to tell where each lead comes from. That's the work of our [A website Google and AI recommend](/en/#servicos) service, with a monthly report. [Book your free consultation](/en/#vaga).

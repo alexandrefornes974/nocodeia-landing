@@ -67,7 +67,7 @@ Cómo hicimos el cálculo del retorno: dividimos el costo de la implementación 
 
 Los próximos números del caso: tiempo de la primera respuesta, volumen de conversaciones por canal y ventas que empezaron en una conversación con Amora. Actualizaremos esta página cuando estén listos.
 
-Amore Totale también usa un [agente de blog hecho por Nocodeia](/es/#projetos), que investiga, escribe y revisa los artículos de la tienda.
+Amore Totale también usa un [agente de blog hecho por Nocodeia](/es/#casos), que investiga, escribe y revisa los artículos de la tienda.
 
 ## Preguntas frecuentes
 

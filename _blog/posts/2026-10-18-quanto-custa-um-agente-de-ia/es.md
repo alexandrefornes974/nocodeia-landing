@@ -19,7 +19,7 @@ Son cinco: el modelo de IA, el canal, el servidor o la plataforma, el desarrollo
 | Parte | Cómo se cobra | Referencia |
 |---|---|---|
 | Modelo de IA | Por token de entrada (lo que el modelo lee) y de salida (lo que escribe) | Claude Sonnet 5.5: US$ 2 por millón de tokens de entrada y US$ 10 por millón de salida, en la [página de precios de Claude](https://claude.com/pricing) (en inglés), consultada en octubre de 2026 |
-| Canal | En WhatsApp, Meta cobra por mensaje de plantilla entregado | Los mensajes comunes dentro de la ventana de 24 horas abierta por el cliente son gratis, según la [documentación de precios de WhatsApp](https://developers.facebook.com/docs/whatsapp/pricing) |
+| Canal | En WhatsApp, Meta cobra por mensaje entregado, según la categoría | Desde el 1 de octubre de 2026, la respuesta dentro de la ventana de 24 horas abierta por el cliente cuesta R$ 0.035 (US$ 0.0068) en Brasil a partir del 1,001.º mensaje del mes, por número, según la [documentación de precios de WhatsApp](https://developers.facebook.com/docs/whatsapp/pricing) |
 | Servidor o plataforma | Hosting, base de datos o mensualidad de una herramienta | Depende de cómo se construya el agente |
 | Desarrollo y ajustes | Proyecto con alcance definido | Precio cerrado después del diagnóstico |
 | Humano de respaldo | Tiempo del equipo en los casos que el agente le pasa | Depende de la regla de traspaso |
@@ -101,7 +101,7 @@ Cada modelo tiene su precio, cobrado por millón de tokens. En Claude Sonnet 5.5
 
 ### ¿Cuánto cuesta la API de WhatsApp?
 
-Meta cobra por mensaje de plantilla entregado, con un precio que varía por país y categoría. Los mensajes comunes dentro de la ventana de 24 horas abierta por el cliente son gratis.
+Meta cobra por mensaje entregado, con un precio que varía por país y categoría. En Brasil, desde el 1 de octubre de 2026, el mensaje de atención (respuesta dentro de la ventana de 24 horas abierta por el cliente) cuesta R$ 0.035 (US$ 0.0068) a partir del 1,001.º del mes, por número; los primeros 1,000 no se cobran.
 
 ### ¿Existe un agente de IA gratis?
 
