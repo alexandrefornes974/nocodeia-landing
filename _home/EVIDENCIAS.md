@@ -31,7 +31,7 @@ O SEO da prévia aparece como 69 só porque a prévia vem com `x-robots-tag: noi
 | R8 | /favicon.ico | Feito | 200, image/vnd.microsoft.icon (prévia) |
 | R9 | hreflang da calculadora | Feito (25/11/2026) | Calculadora em PT, EN e ES (`/calculadora-whatsapp/`, `/en/whatsapp-cost-calculator/`, `/es/calculadora-whatsapp/`) com hreflang entre as três e no sitemap |
 | R10 | 3 cases e 3 depoimentos | Em andamento | 3 cases com número na home; 2 depoimentos (Luiz Almeida, Proacta CRM; Tais Vieira, Amore Totale, texto aprovado por ela em 27/11/2026: 75% menos conversas no WhatsApp e 80% resolvidas pela Amora). Falta 1 |
-| R11 | Resposta direta + FAQ | Home feita; matriz pronta | FAQ com 5 perguntas e FAQPage igual ao texto. Matriz mensal de 20 perguntas × 5 IAs (ChatGPT, Gemini, Perplexity, Google Modo IA, Copilot) na planilha "Nocodeia nas IAs" (https://claude.ai/artifact/KMtyifp7mXY4evdGuLeRiw), criada em 26/11/2026; primeira medição a fazer |
+| R11 | Resposta direta + FAQ | Home feita; 1ª medição feita | FAQ com 5 perguntas e FAQPage igual ao texto. Matriz mensal de 21 perguntas × 5 IAs (ChatGPT, Gemini, Perplexity, Google Modo IA, Copilot) na planilha "Nocodeia nas IAs" (https://claude.ai/artifact/KMtyifp7mXY4evdGuLeRiw), criada em 26/11/2026. 1ª medição em 27/11/2026: a Nocodeia aparece em 2 de 21 perguntas no ChatGPT, Gemini e Google Modo IA (só nas que citam o nome dela, com o site como fonte). Não aparece em nenhuma pergunta de quem procura fornecedor. Perplexity só mediu 1 pergunta (exige login); Copilot não medido |
 
 ## Achado durante a medição
 
